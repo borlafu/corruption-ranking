@@ -3,6 +3,14 @@ import type { Case } from './types';
 export const initialCases: Case[] = [
   {
     id: '1',
+    mainSuspect: 'Álvaro García Ortíz (Fiscal General del Estado)',
+    accusations: 1,
+    sentences: 1,
+    category: 'institucional',
+    sourceUrls: ['https://example.com/news7'],
+  },
+  {
+    id: '2',
     mainSuspect: 'Begoña Gómez (esposa de Pedro Sánchez)',
     accusations: 5,
     sentences: 0,
@@ -10,7 +18,7 @@ export const initialCases: Case[] = [
     sourceUrls: ['https://example.com/news1'],
   },
   {
-    id: '2',
+    id: '3',
     mainSuspect: 'Pardo de Vera',
     accusations: 5,
     sentences: 0,
@@ -18,7 +26,7 @@ export const initialCases: Case[] = [
     sourceUrls: ['https://example.com/news2'],
   },
   {
-    id: '3',
+    id: '4',
     mainSuspect: 'Kolgo García',
     accusations: 4,
     sentences: 0,
@@ -26,7 +34,7 @@ export const initialCases: Case[] = [
     sourceUrls: ['https://example.com/news3', 'https://example.com/news4'],
   },
   {
-    id: '4',
+    id: '5',
     mainSuspect: 'José Luis Ábalos (Ministro de Transportes)',
     accusations: 4,
     sentences: 0,
@@ -34,7 +42,7 @@ export const initialCases: Case[] = [
     sourceUrls: ['https://example.com/news5'],
   },
   {
-    id: '5',
+    id: '6',
     mainSuspect: 'Santos Cerdán (Secretario de Organización del PSOE)',
     accusations: 3,
     sentences: 0,
@@ -42,7 +50,7 @@ export const initialCases: Case[] = [
     sourceUrls: ['https://example.com/news6'],
   },
   {
-    id: '6',
+    id: '7',
     mainSuspect: 'David Sánchez (El Hermanísimo)',
     accusations: 2,
     sentences: 0,
@@ -50,7 +58,7 @@ export const initialCases: Case[] = [
     sourceUrls: ['https://example.com/news7'],
   },
   {
-    id: '7',
+    id: '8',
     mainSuspect: 'Leire Díez',
     accusations: 2,
     sentences: 0,
@@ -58,19 +66,11 @@ export const initialCases: Case[] = [
     sourceUrls: ['https://example.com/news7'],
   },
   {
-    id: '8',
+    id: '9',
     mainSuspect: 'Miguel Ángel Gallardo',
     accusations: 2,
     sentences: 0,
     category: 'psoe',
-    sourceUrls: ['https://example.com/news7'],
-  },
-  {
-    id: '9',
-    mainSuspect: 'Álvaro García Ortíz (Fiscal General del Estado)',
-    accusations: 1,
-    sentences: 1,
-    category: 'institucional',
     sourceUrls: ['https://example.com/news7'],
   },
   {
