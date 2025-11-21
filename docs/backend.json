@@ -1,0 +1,148 @@
+{
+  "entities": {
+    "CorruptionCase": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "CorruptionCase",
+      "type": "object",
+      "description": "Represents a single corruption case.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the CorruptionCase entity."
+        },
+        "accused": {
+          "type": "string",
+          "description": "Name of the accused individual or entity."
+        },
+        "accusationsCount": {
+          "type": "number",
+          "description": "Number of accusations in the case."
+        },
+        "sentencesCount": {
+          "type": "number",
+          "description": "Number of sentences in the case."
+        },
+        "categoryIds": {
+          "type": "array",
+          "description": "References to PoliticalAllegianceCategory. (Relationship: PoliticalAllegianceCategory N:N CorruptionCase)",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sourceUrls": {
+          "type": "array",
+          "description": "URLs to sources providing information about the case.",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "accused",
+        "accusationsCount",
+        "sentencesCount"
+      ]
+    },
+    "PoliticalAllegianceCategory": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "PoliticalAllegianceCategory",
+      "type": "object",
+      "description": "Represents a category of political allegiance (e.g., member of government, family member).",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the PoliticalAllegianceCategory entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the political allegiance category (e.g., 'Member of Government')."
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "AuthorizedUser": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "AuthorizedUser",
+      "type": "object",
+      "description": "Represents an authorized user who can update the application data.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the AuthorizedUser entity. Could be an email address."
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the authorized user.",
+          "format": "email"
+        }
+      },
+      "required": [
+        "id",
+        "email"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "google",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/corruptionCases/{caseId}",
+        "definition": {
+          "entityName": "CorruptionCase",
+          "schema": {
+            "$ref": "#/backend/entities/CorruptionCase"
+          },
+          "description": "Stores individual corruption cases. Includes denormalized 'categoryIds' and 'sourceUrls' for authorization independence.",
+          "params": [
+            {
+              "name": "caseId",
+              "description": "Unique identifier for the corruption case."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/politicalAllegianceCategories/{categoryId}",
+        "definition": {
+          "entityName": "PoliticalAllegianceCategory",
+          "schema": {
+            "$ref": "#/backend/entities/PoliticalAllegianceCategory"
+          },
+          "description": "Stores categories of political allegiance.",
+          "params": [
+            {
+              "name": "categoryId",
+              "description": "Unique identifier for the political allegiance category."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/authorizedUsers/{userId}",
+        "definition": {
+          "entityName": "AuthorizedUser",
+          "schema": {
+            "$ref": "#/backend/entities/AuthorizedUser"
+          },
+          "description": "Stores authorized users who can update the application data. Access is granted based on the existence of the document.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "Unique identifier for the authorized user. This is also the authorized email."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "The Firestore structure is designed to support the 'España Corrupta' web application, focusing on displaying and managing corruption cases effectively. The structure prioritizes secure access, data integrity, and efficient querying. It incorporates the following key elements:\n\n1.  **Authorization Independence:** The `CorruptionCase` documents include denormalized `categoryIds` and `sourceUrls` which enables QAPs. Access control relies on checking the existence of the user's email in the `authorizedUsers` collection, thus not requiring data `get()` calls in rules, and enabling atomic operations.\n\n2.  **Structural Segregation:** The `politicalAllegianceCategories` collection stores categories separate from the cases themselves, which allows for individual management and querying without mixing concerns.\n\n3.  **Access Modeling:** The `authorizedUsers` collection grants update permissions based on email existence, adhering to the 'Existence over Content' principle for global roles. The structure uses top-level collections to optimize list operations, following the recommendation of homogeneous security postures.\n\n4. **QAPs:** The structure is designed to provide Query-Aware Permissions. The top level collection `/corruptionCases` can be listed without filtering, since only authorized users can update these cases. Additionally, the categorization is simple and does not involve any hierarchy. Since the `CorruptionCase` includes `categoryIds` and `sourceUrls`, the rules don't need to `get()` any data.\n\nThis structure ensures efficient querying, simplifies security rules, and optimizes data management for the 'España Corrupta' application."
+  }
+}

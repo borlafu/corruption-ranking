@@ -1,0 +1,71 @@
+
+# Node dependencies
+/node_modules/
+.pnp/
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Next.js build output
+/.next/
+/out/
+/dist/
+/build/
+
+# Vercel / Now
+/.vercel/
+/now/
+
+# Local env files (do NOT commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+logs/
+logs/**
+
+# macOS
+.DS_Store
+
+# Editor directories and IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# TypeScript
+*.tsbuildinfo
+
+# Debug and coverage
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.cache-loader/
+.next/cache
+
+# Storybook
+storybook-static/
+.out/
+
+# Misc
+*.swp
+*.tmp
+*.temp
+thumbs.db
+
+# Optional: lockfiles (only if you intentionally ignore them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
