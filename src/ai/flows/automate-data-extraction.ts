@@ -30,12 +30,12 @@ const ExtractedCaseDataSchema = z.object({
     .int()
     .min(0)
     .describe('El número de sentencias que ha recibido el sospechoso.'),
-  politicalAllegianceCategory: z
+  category: z
     .enum([
-      'miembro del gobierno',
-      'miembro de la familia',
-      'servidor publico',
-      'institución',
+      'gobierno',
+      'familia',
+      'psoe',
+      'institucional',
     ])
     .describe(
       'La categoría de afiliación política del sospechoso (p. ej., miembro del gobierno, miembro de la familia, servidor público, institución).'

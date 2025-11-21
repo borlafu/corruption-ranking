@@ -1,17 +1,17 @@
-export const politicalAllegianceCategories = [
-  "miembro del gobierno",
-  "miembro de la familia",
-  "servidor publico",
-  "institución",
+export const category = [
+  "gobierno",
+  "familia",
+  "psoe",
+  "institucional",
 ] as const;
 
-export type PoliticalAllegiance = (typeof politicalAllegianceCategories)[number];
+export type Allegiance = (typeof category)[number];
 
 export type Case = {
   id: string;
   mainSuspect: string;
   accusations: number;
   sentences: number;
-  politicalAllegianceCategory: PoliticalAllegiance;
+  category: Allegiance;
   sourceUrls: string[];
 };

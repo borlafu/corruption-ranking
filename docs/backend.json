@@ -24,7 +24,7 @@
         },
         "categoryIds": {
           "type": "array",
-          "description": "References to PoliticalAllegianceCategory. (Relationship: PoliticalAllegianceCategory N:N CorruptionCase)",
+          "description": "References to Category. (Relationship: Category N:N CorruptionCase)",
           "items": {
             "type": "string"
           }
@@ -44,15 +44,15 @@
         "sentencesCount"
       ]
     },
-    "PoliticalAllegianceCategory": {
+    "Category": {
       "$schema": "http://json-schema.org/draft-07/schema#",
-      "title": "PoliticalAllegianceCategory",
+      "title": "Category",
       "type": "object",
       "description": "Represents a category of political allegiance (e.g., member of government, family member).",
       "properties": {
         "id": {
           "type": "string",
-          "description": "Unique identifier for the PoliticalAllegianceCategory entity."
+          "description": "Unique identifier for the Category entity."
         },
         "name": {
           "type": "string",
@@ -111,11 +111,11 @@
         }
       },
       {
-        "path": "/politicalAllegianceCategories/{categoryId}",
+        "path": "/categories/{categoryId}",
         "definition": {
-          "entityName": "PoliticalAllegianceCategory",
+          "entityName": "Category",
           "schema": {
-            "$ref": "#/backend/entities/PoliticalAllegianceCategory"
+            "$ref": "#/backend/entities/Category"
           },
           "description": "Stores categories of political allegiance.",
           "params": [

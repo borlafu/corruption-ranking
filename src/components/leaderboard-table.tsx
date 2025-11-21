@@ -5,23 +5,23 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Badge } from '@/components/ui/badge';
-import { ArrowUpDown, Landmark, Users, Briefcase, Building2, ExternalLink } from 'lucide-react';
-import type { Case, PoliticalAllegiance } from '@/lib/types';
+import { ArrowUpDown, Landmark, Users, Flower2, ExternalLink, Briefcase } from 'lucide-react';
+import type { Case, Allegiance } from '@/lib/types';
 
 type SortKey = keyof Pick<Case, 'mainSuspect' | 'accusations' | 'sentences'>;
 
-const allegianceIcons: Record<PoliticalAllegiance, React.ElementType> = {
-  'miembro del gobierno': Landmark,
-  'miembro de la familia': Users,
-  'servidor publico': Briefcase,
-  'institución': Building2,
+const allegianceIcons: Record<Allegiance, React.ElementType> = {
+  'gobierno': Briefcase,
+  'familia': Users,
+  'psoe': Flower2,
+  'institucional': Landmark,
 };
 
-const allegianceLabels: Record<PoliticalAllegiance, string> = {
-  'miembro del gobierno': 'Miembro del Gobierno',
-  'miembro de la familia': 'Miembro de la Familia',
-  'servidor publico': 'Servidor Público',
-  'institución': 'Institución',
+const allegianceLabels: Record<Allegiance, string> = {
+  'gobierno': 'Gobierno',
+  'familia': 'Familia',
+  'psoe': 'PSOE',
+  'institucional': 'Institucional',
 };
 
 const SortableHeader: FC<{
@@ -84,8 +84,8 @@ export function LeaderboardTable({ cases }: { cases: Case[] }) {
           <TableBody>
             {sortedCases.length > 0 ? (
               sortedCases.map((c, index) => {
-                const Icon = allegianceIcons[c.politicalAllegianceCategory];
-                const label = allegianceLabels[c.politicalAllegianceCategory];
+                const Icon = allegianceIcons[c.category];
+                const label = allegianceLabels[c.category];
                 return (
                   <TableRow key={c.id} className="transition-colors hover:bg-muted/20">
                     <TableCell className="text-center text-muted-foreground font-medium">{index + 1}</TableCell>
