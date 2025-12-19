@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "suspect": "Álvaro García Ortiz",
+    "title": "Fiscal General del Estado",
+    "accusations": 1,
+    "sentences": 1,
+    "category": "institucional",
+    "sourceUrls": [
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/El-Tribunal-Supremo-condena-a-Alvaro-Garcia-Ortiz-por-un-delito-de-revelacion-de-secretos",
+      "https://elpais.com/espana/2025-12-10/radiografia-de-la-sentencia-del-supremo-que-condena-e-inhabilita-a-alvaro-garcia-ortiz.html"
+    ]
+  },
+  {
+    "id": 2,
+    "suspect": "Begoña Gómez",
+    "title": "esposa de Pedro Sánchez",
+    "accusations": 5,
+    "sentences": 0,
+    "category": "familia",
+    "sourceUrls": [
+      "https://www.canalsur.es/noticias/begona-gomez-se-enfrenta-a-cinco-delitos-investigados-por-el-juez-peinado/2201225.html",
+      "https://www.lasexta.com/noticias/nacional/cinco-imputaciones-begona-gomez-trafico-influencias-malversacion_2025093068dbf044f10d3",
+      "https://www.rtve.es/noticias/20250926/jurado-popular-preguntas-respuestas-caso-begona-gomez/16744554.shtml",
+      "https://es.wikipedia.org/wiki/Caso_Bego%C3%B1a_G%C3%B3mez"
+    ]
+  },
+  {
+    "id": 3,
+    "suspect": "Isabel Pardo de Vera",
+    "title": "ex-directora Adif",
+    "accusations": 5,
+    "sentences": 0,
+    "category": "institucional",
+    "sourceUrls": [
+      "https://es.euronews.com/2025/07/08/pardo-de-vera-exdirectora-de-adif-imputada-por-5-delitos-tras-un-hallazgo-clave-en-el-caso",
+      "https://elpais.com/espana/2025-07-08/la-audiencia-nacional-investiga-a-pardo-de-vera-por-cinco-delitos.html"
+    ]
+  },
+  {
+    "id": 4,
+    "suspect": "Koldo García",
+    "title": "ex-asesor Ábalos",
+    "accusations": 5,
+    "sentences": 0,
+    "category": "psoe",
+    "sourceUrls": [
+      "https://elpais.com/espana/2025-06-22/del-caso-koldo-de-mascarillas-al-caso-cerdan-de-amano-de-obras-las-claves-de-la-trama-que-salta-al-sindicato-de-trafico",
+      "https://es.wikipedia.org/wiki/Caso_Koldo"
+    ]
+  },
+  {
+    "id": 5,
+    "suspect": "José Luis Ábalos",
+    "title": "ex-Ministro de Transportes",
+    "accusations": 5,
+    "sentences": 0,
+    "category": "gobierno",
+    "sourceUrls": [
+      "https://www.dw.com/es/a-juicio-por-corrupci%C3%B3n-exministro-cercano-al-presidente-espa%C3%B1ol-pedro-s%C3%A1nchez/a-75105841",
+      "https://es.wikipedia.org/wiki/Caso_Koldo"
+    ]
+  },
+  {
+    "id": 6,
+    "suspect": "Santos Cerdán",
+    "title": "ex-Secretario de Organización del PSOE",
+    "accusations": 4,
+    "sentences": 0,
+    "category": "psoe",
+    "sourceUrls": [
+      "https://elpais.com/espana/2025-06-22/del-caso-koldo-de-mascarillas-al-caso-cerdan-de-amano-de-obras-las-claves-de-la-trama-que-salta-al-sindicato-de-trafico",
+      "https://elpais.com/espana/2025-12-14/el-mapa-de-la-corrupcion-una-decena-de-investigaciones-acorralan-al-psoe.html"
+    ]
+  },
+  {
+    "id": 7,
+    "suspect": "David Sánchez Pérez-Castejón",
+    "title": "hermano de Pedro Sánchez",
+    "accusations": 2,
+    "sentences": 0,
+    "category": "familia",
+    "sourceUrls": [
+      "https://okdiario.com/espana/quien-david-azagra-hermano-pedro-sanchez-12978006",
+      "https://www.newtral.es/miguel-angel-gallardo-caso-david-sanchez/20251210"
+    ]
+  },
+  {
+    "id": 8,
+    "suspect": "Leire Díez",
+    "title": "militante PSOE",
+    "accusations": 3,
+    "sentences": 0,
+    "category": "psoe",
+    "sourceUrls": [
+      "https://www.elmundo.es/espana/2025/12/18/69442a9de4d4d8f30d8b4596.html",
+      "https://es.wikipedia.org/wiki/Caso_Leire_D%C3%ADez"
+    ]
+  },
+  {
+    "id": 9,
+    "suspect": "Miguel Ángel Gallardo",
+    "title": "líder PSOE Extremadura",
+    "accusations": 2,
+    "sentences": 0,
+    "category": "psoe",
+    "sourceUrls": [
+      "https://www.newtral.es/miguel-angel-gallardo-caso-david-sanchez/20251210",
+      "https://okdiario.com/investigacion/procesado-miguel-angel-gallardo-vpo-casoplon-psoe-alcalde-extremadura-15867260"
+    ]
+  },
+  {
+    "id": 10,
+    "suspect": "Juan Bernardo Fuentes Curbelo 'Tito Berni'",
+    "title": "diputado PSOE",
+    "accusations": 3,
+    "sentences": 0,
+    "category": "psoe",
+    "sourceUrls": [
+      "https://www.elconfidencial.com/espana/2025-02-17/tito-berni-inspector-investigacion-denuncia-maniobras-proteger-psoe_4065343",
+      "https://theobjective.com/espana/tribunales/2025-06-23/policia-marlaska-caso-tito-berni"
+    ]
+  },
+  {
+    "id": 11,
+    "suspect": "Vicente Fernández Guerrero",
+    "title": "ex-SEPI",
+    "accusations": 4,
+    "sentences": 0,
+    "category": "institucional",
+    "sourceUrls": [
+      "https://elpais.com/espana/2025-12-14/el-mapa-de-la-corrupcion-una-decena-de-investigaciones-acorralan-al-psoe.html"
+    ]
+  }
+]

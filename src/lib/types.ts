@@ -8,8 +8,9 @@ export const category = [
 export type Allegiance = (typeof category)[number];
 
 export type Case = {
-  id: string;
-  mainSuspect: string;
+  id: number;
+  suspect: string;
+  title: string;
   accusations: number;
   sentences: number;
   category: Allegiance;

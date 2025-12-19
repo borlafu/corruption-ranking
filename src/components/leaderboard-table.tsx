@@ -89,7 +89,7 @@ export function LeaderboardTable({ cases }: { cases: Case[] }) {
                 return (
                   <TableRow key={c.id} className="transition-colors hover:bg-muted/20">
                     <TableCell className="text-center text-muted-foreground font-medium">{index + 1}</TableCell>
-                    <TableCell className="font-medium">{c.mainSuspect}</TableCell>
+                    <TableCell className="font-medium">{c.suspect} <span className="text-muted-foreground sm:text-ellipsis">({c.title})</span></TableCell>
                     <TableCell className="hidden md:table-cell">
                       <Tooltip>
                         <TooltipTrigger asChild>
@@ -104,7 +104,7 @@ export function LeaderboardTable({ cases }: { cases: Case[] }) {
                       </Tooltip>
                     </TableCell>
                     <TableCell className="text-right font-mono text-lg font-bold">{c.accusations}</TableCell>
-                    <TableCell className="text-right font-mono text-lg text-primary">{c.sentences}</TableCell>
+                    <TableCell className="text-right font-mono text-lg font-bold text-primary">{c.sentences}</TableCell>
                     <TableCell className="text-center">
                       {c.sourceUrls.length > 0 && (
                         <Tooltip>
