@@ -19,7 +19,7 @@ const SourceDocumentSchema = z.object({
 export type SourceDocument = z.infer<typeof SourceDocumentSchema>;
 
 const ExtractedCaseDataSchema = z.object({
-  mainSuspect: z.string().describe('El nombre del principal sospechoso en el caso de corrupción.'),
+  suspect: z.string().describe('El nombre del principal sospechoso en el caso de corrupción.'),
   numberOfAccusations: z
     .number()
     .int()
