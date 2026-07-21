@@ -78,7 +78,7 @@ export function CaseLeaderboardPage({ cases: initialCases }: CaseLeaderboardPage
                 />
               </div>
               <p className="text-center text-muted-foreground mt-2 max-w-2xl mx-auto">
-                Un marcador no oficial que rastrea acusaciones y sentencias en casos de corrupción en España.
+                Un marcador no oficial que rastrea acusaciones y condenas en casos de corrupción en España.
               </p>
               {lastUpdated && (
                 <p className="text-xs text-muted-foreground mt-1 text-center">Última actualización: {lastUpdated}</p>

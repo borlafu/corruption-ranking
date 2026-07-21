@@ -106,7 +106,7 @@ export function LeaderboardTable({ cases, allCases }: { cases: Case[]; allCases:
                 className="text-right"
               />
               <SortableHeader
-                label="Sentencias"
+                label="Condenas"
                 sortKey="sentences"
                 activeSortKey={sortKey}
                 sortDirection={sortDirection}
