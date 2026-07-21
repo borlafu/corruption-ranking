@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import type { Case, Allegiance } from "@/lib/types";
 import { LeaderboardTable } from "@/components/leaderboard-table";
 import { Button } from "@/components/ui/button";
-import { Landmark, Users, Flower2, Briefcase } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Landmark, Users, Flower2, Briefcase, Search } from "lucide-react";
 import Image from "next/image";
 
 const allegianceFilters: { name: Allegiance | "all"; icon: React.ElementType; label: string }[] = [
@@ -20,20 +21,37 @@ type CaseLeaderboardPageProps = {
 };
 
 export function CaseLeaderboardPage({ cases: initialCases }: CaseLeaderboardPageProps) {
-  const [cases, setCases] = useState<Case[]>(initialCases);
-  const [lastUpdated, setLastUpdated] = useState<string>("");
   const [activeFilter, setActiveFilter] = useState<Allegiance | "all">("all");
+  const [searchQuery, setSearchQuery] = useState("");
 
-  useEffect(() => {
-    setLastUpdated(new Date().toLocaleString("es-ES"));
-  }, []);
+  const lastUpdated = useMemo(() => {
+    const maxDate = initialCases
+      .map((c) => c.lastUpdated)
+      .filter(Boolean)
+      .sort()
+      .at(-1);
+    if (!maxDate) return "";
+    return new Date(maxDate).toLocaleDateString("es-ES", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  }, [initialCases]);
 
   const filteredCases = useMemo(() => {
-    if (activeFilter === "all") {
-      return cases;
-    }
-    return cases.filter((c) => c.category === activeFilter);
-  }, [cases, activeFilter]);
+    const byCategory =
+      activeFilter === "all"
+        ? initialCases
+        : initialCases.filter((c) => c.category === activeFilter);
+    if (!searchQuery.trim()) return byCategory;
+    const q = searchQuery.toLowerCase();
+    return byCategory.filter(
+      (c) =>
+        c.suspect.toLowerCase().includes(q) ||
+        (c.caseName?.toLowerCase().includes(q) ?? false) ||
+        c.title.toLowerCase().includes(q)
+    );
+  }, [initialCases, activeFilter, searchQuery]);
 
   return (
     <div
@@ -68,7 +86,7 @@ export function CaseLeaderboardPage({ cases: initialCases }: CaseLeaderboardPage
             </div>
           </header>
 
-          <div className="mb-6 flex flex-wrap gap-2 items-center justify-center">
+          <div className="mb-4 flex flex-wrap gap-2 items-center justify-center">
             <p className="text-sm font-medium mr-2 text-muted-foreground">Filtrar por:</p>
             {allegianceFilters.map((filter) => (
               <Button
@@ -84,12 +102,22 @@ export function CaseLeaderboardPage({ cases: initialCases }: CaseLeaderboardPage
             ))}
           </div>
 
+          <div className="mb-4 relative max-w-sm mx-auto">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
+            <Input
+              placeholder="Buscar sospechoso o caso..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-9 bg-card/60 backdrop-blur-sm"
+            />
+          </div>
+
           <div className="rounded-lg border shadow-lg overflow-hidden bg-card/80 backdrop-blur-sm">
-            <LeaderboardTable cases={filteredCases} />
+            <LeaderboardTable cases={filteredCases} allCases={initialCases} />
           </div>
 
           <footer className="text-center mt-12 text-muted-foreground text-sm">
-            <p className="mt-4">Este proyecto es para fines de demostración. Los datos son ilustrativos.</p>
+            <p>Los datos se basan en informaciones publicadas por medios de comunicación e instituciones judiciales.</p>
           </footer>
         </main>
       </div>

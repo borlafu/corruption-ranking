@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useMemo, type FC } from "react";
+import { useState, useMemo, Fragment, type FC } from "react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpDown, Landmark, Users, Flower2, ExternalLink, Briefcase } from "lucide-react";
-import type { Case, Allegiance } from "@/lib/types";
+import { ArrowUpDown, Landmark, Users, Flower2, ExternalLink, Briefcase, ChevronDown, ChevronUp } from "lucide-react";
+import type { Case, Allegiance, CaseStatus } from "@/lib/types";
+import { CaseDetailRow } from "@/components/case-detail-row";
 
 type SortKey = keyof Pick<Case, "suspect" | "accusations" | "sentences">;
 
@@ -22,6 +24,13 @@ const allegianceLabels: Record<Allegiance, string> = {
   familia: "Familia",
   psoe: "PSOE",
   institucional: "Institucional",
+};
+
+const statusConfig: Record<CaseStatus, { label: string; className: string }> = {
+  investigado: { label: "Investigado/a", className: "border-yellow-500/40 bg-yellow-500/10 text-yellow-300" },
+  procesado: { label: "Procesado/a", className: "border-orange-500/40 bg-orange-500/10 text-orange-300" },
+  condenado: { label: "Condenado/a", className: "border-red-600/40 bg-red-600/15 text-red-300" },
+  sobreseido: { label: "Sobreseído/a", className: "border-border bg-muted text-muted-foreground" },
 };
 
 const SortableHeader: FC<{
@@ -40,9 +49,10 @@ const SortableHeader: FC<{
   </TableHead>
 );
 
-export function LeaderboardTable({ cases }: { cases: Case[] }) {
+export function LeaderboardTable({ cases, allCases }: { cases: Case[]; allCases: Case[] }) {
   const [sortKey, setSortKey] = useState<SortKey | null>("sentences");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
+  const [expandedRowId, setExpandedRowId] = useState<number | null>(null);
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -53,12 +63,15 @@ export function LeaderboardTable({ cases }: { cases: Case[] }) {
     }
   };
 
+  const toggleRow = (id: number) =>
+    setExpandedRowId((prev) => (prev === id ? null : id));
+
   const sortedCases = useMemo(() => {
-    cases.sort((a, b) => {
-      return b.accusations - a.accusations;
-    });
-    if (!sortKey) return cases;
-    return cases.sort((a, b) => {
+    const copy = [...cases];
+    if (!sortKey) {
+      return copy.sort((a, b) => b.accusations - a.accusations);
+    }
+    return copy.sort((a, b) => {
       const valA = a[sortKey];
       const valB = b[sortKey];
       let comparison = 0;
@@ -83,6 +96,7 @@ export function LeaderboardTable({ cases }: { cases: Case[] }) {
                 onClick={handleSort}
               />
               <TableHead className="hidden md:table-cell">Categoría</TableHead>
+              <TableHead className="hidden sm:table-cell">Estado</TableHead>
               <SortableHeader
                 label="Acusaciones"
                 sortKey="accusations"
@@ -100,57 +114,118 @@ export function LeaderboardTable({ cases }: { cases: Case[] }) {
                 className="text-right"
               />
               <TableHead className="text-center">Fuentes</TableHead>
+              <TableHead className="w-[40px]" />
             </TableRow>
           </TableHeader>
           <TableBody>
             {sortedCases.length > 0 ? (
               sortedCases.map((c, index) => {
                 const Icon = allegianceIcons[c.category];
-                const label = allegianceLabels[c.category];
+                const allegianceLabel = allegianceLabels[c.category];
+                const status = statusConfig[c.status];
+                const isExpanded = expandedRowId === c.id;
                 return (
-                  <TableRow key={c.id} className="transition-colors hover:bg-muted/20">
-                    <TableCell className="text-center text-muted-foreground font-medium">{index + 1}</TableCell>
-                    <TableCell className="font-medium">
-                      {c.suspect} <span className="text-muted-foreground sm:text-ellipsis">({c.title})</span>
-                    </TableCell>
-                    <TableCell className="hidden md:table-cell">
-                      <Tooltip>
-                        <TooltipTrigger asChild>
-                          <Badge variant="outline" className="gap-2 cursor-default capitalize">
-                            <Icon className="h-3.5 w-3.5 text-accent" />
-                            <span className="hidden lg:inline">{label}</span>
-                          </Badge>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>{label}</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TableCell>
-                    <TableCell className="text-right font-mono text-lg font-bold">{c.accusations}</TableCell>
-                    <TableCell className="text-right font-mono text-lg font-bold text-primary">{c.sentences}</TableCell>
-                    <TableCell className="text-center">
-                      {c.sourceUrls.length > 0 && (
+                  <Fragment key={c.id}>
+                    <TableRow
+                      className="transition-colors hover:bg-muted/20 cursor-pointer"
+                      onClick={() => toggleRow(c.id)}
+                    >
+                      <TableCell className="text-center text-muted-foreground font-medium">{index + 1}</TableCell>
+                      <TableCell className="font-medium">
+                        <div>{c.suspect}</div>
+                        {c.caseName && (
+                          <div className="text-xs text-muted-foreground font-normal">{c.caseName}</div>
+                        )}
+                      </TableCell>
+                      <TableCell className="hidden md:table-cell">
                         <Tooltip>
                           <TooltipTrigger asChild>
-                            <Button variant="ghost" size="icon" asChild>
-                              <a href={c.sourceUrls[0]} target="_blank" rel="noopener noreferrer">
-                                <ExternalLink className="h-4 w-4" />
-                                <span className="sr-only">Ver Fuente</span>
-                              </a>
-                            </Button>
+                            <Badge variant="outline" className="gap-2 cursor-default capitalize">
+                              <Icon className="h-3.5 w-3.5 text-accent" />
+                              <span className="hidden lg:inline">{allegianceLabel}</span>
+                            </Badge>
                           </TooltipTrigger>
                           <TooltipContent>
-                            <p>Ver {c.sourceUrls.length} fuente(s)</p>
+                            <p>{allegianceLabel}</p>
                           </TooltipContent>
                         </Tooltip>
-                      )}
-                    </TableCell>
-                  </TableRow>
+                      </TableCell>
+                      <TableCell className="hidden sm:table-cell">
+                        <Badge variant="outline" className={`text-xs ${status.className}`}>
+                          {status.label}
+                        </Badge>
+                      </TableCell>
+                      <TableCell className="text-right font-mono text-lg font-bold">{c.accusations}</TableCell>
+                      <TableCell className="text-right font-mono text-lg font-bold text-primary">{c.sentences}</TableCell>
+                      <TableCell className="text-center" onClick={(e) => e.stopPropagation()}>
+                        {c.sourceUrls.length > 0 && (
+                          <Popover>
+                            <PopoverTrigger asChild>
+                              <Button variant="outline" size="sm" className="font-mono text-xs h-7 min-w-[2rem]">
+                                {c.sourceUrls.length}
+                              </Button>
+                            </PopoverTrigger>
+                            <PopoverContent className="w-72 p-3" align="end">
+                              <p className="text-xs font-semibold mb-2 text-muted-foreground">
+                                {c.sourceUrls.length} fuente(s)
+                              </p>
+                              <ul className="space-y-1.5">
+                                {c.sourceUrls.map((url, i) => {
+                                  let hostname = url;
+                                  try {
+                                    hostname = new URL(url).hostname.replace(/^www\./, "");
+                                  } catch {
+                                    // keep original
+                                  }
+                                  return (
+                                    <li key={i}>
+                                      <a
+                                        href={url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-xs flex items-center gap-1.5 text-primary hover:underline break-all"
+                                      >
+                                        <ExternalLink className="h-3 w-3 shrink-0" />
+                                        {hostname}
+                                      </a>
+                                    </li>
+                                  );
+                                })}
+                              </ul>
+                            </PopoverContent>
+                          </Popover>
+                        )}
+                      </TableCell>
+                      <TableCell className="w-[40px]" onClick={(e) => e.stopPropagation()}>
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="h-7 w-7"
+                          aria-expanded={isExpanded}
+                          aria-label={isExpanded ? "Cerrar detalles" : "Ver detalles"}
+                          onClick={() => toggleRow(c.id)}
+                        >
+                          {isExpanded ? (
+                            <ChevronUp className="h-4 w-4" />
+                          ) : (
+                            <ChevronDown className="h-4 w-4" />
+                          )}
+                        </Button>
+                      </TableCell>
+                    </TableRow>
+                    {isExpanded && (
+                      <TableRow className="hover:bg-transparent">
+                        <TableCell colSpan={8} className="p-0">
+                          <CaseDetailRow caseData={c} allCases={allCases} />
+                        </TableCell>
+                      </TableRow>
+                    )}
+                  </Fragment>
                 );
               })
             ) : (
               <TableRow>
-                <TableCell colSpan={6} className="h-24 text-center">
+                <TableCell colSpan={8} className="h-24 text-center">
                   No hay casos que coincidan con el filtro actual.
                 </TableCell>
               </TableRow>

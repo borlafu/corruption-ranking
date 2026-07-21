@@ -1,0 +1,76 @@
+name: Update corruption data
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'   # Mondays 08:00 UTC = 09:00 CET
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (skip PR creation)'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run data update script
+        run: npm run update-data
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet src/lib/data.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes to data.json"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Changes detected:"
+            git diff --stat src/lib/data.json
+          fi
+
+      - name: Create pull request
+        if: steps.diff.outputs.changed == 'true' && inputs.dry_run != 'true'
+        run: |
+          DATE=$(date -u '+%Y-%m-%d')
+          BRANCH="data/update-${DATE}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "${BRANCH}"
+          git add src/lib/data.json
+          git commit -m "chore(data): automated case update ${DATE}"
+          git push origin "${BRANCH}"
+          gh pr create \
+            --title "chore(data): automated case update ${DATE}" \
+            --body "## Automated data update
+
+          This PR was created by the weekly data update workflow.
+
+          ### Review checklist
+          - [ ] Verify all status changes against the linked source URLs
+          - [ ] Check that any new cases have credible sources
+          - [ ] Verify accusation/sentence counts are accurate
+          - [ ] Confirm no cases were incorrectly removed
+
+          **Merging this PR triggers a live deployment to Firebase Hosting.**" \
+            --base main \
+            --head "${BRANCH}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
