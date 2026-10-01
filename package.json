@@ -53,8 +53,8 @@
     "@types/react-dom": "^19.3",
     "postcss": "^8",
     "tailwindcss": "^4.3",
-    "tsx": "^4.23.13",
+    "tsx": "^4.23.15",
     "typescript": "^7.0",
-    "zod": "^4.5.4"
+    "zod": "^4.6.5"
   }
 }
