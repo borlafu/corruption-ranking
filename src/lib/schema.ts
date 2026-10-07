@@ -4,7 +4,7 @@ import { z } from "zod";
 export const CATEGORIES = ["gobierno", "familia", "partido", "institucional", "entorno"] as const;
 
 /** Party the suspect belonged to when the facts occurred. Add a value here rather than free text. */
-export const PARTIES = ["psoe", "pp", "vox", "podemos", "sumar", "junts", "erc", "pnv", "cs"] as const;
+export const PARTIES = ["psoe", "pp", "vox", "podemos", "sumar", "iu", "junts", "erc", "pnv", "cs"] as const;
 
 /**
  * Legal status of one cause.

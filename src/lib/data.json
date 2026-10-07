@@ -2632,5 +2632,261 @@
     "sourceUrls": [
       "https://www.diariodeleon.es/castilla-y-leon/250108/1763649/corrupcion-perla-negra-zanja-dos-anos-medio-prision.html"
     ]
+  },
+  {
+    "id": 85,
+    "suspect": "Juan Carlos Monedero",
+    "title": "cofundador de Podemos",
+    "categories": [
+      "partido"
+    ],
+    "party": "podemos",
+    "causes": [
+      {
+        "name": "Caso Neurona",
+        "status": "sobreseido",
+        "charges": [
+          "falsedad documental"
+        ],
+        "amount": 363000
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 42 de Madrid",
+    "startYear": 2021,
+    "lastUpdated": "2026-10-07",
+    "summary": "16-feb-2021: imputado por una supuesta factura falsa de 26.200 € de Neurona. 15-mar-2021: declara como investigado. 6-sep-2023: el juez archiva su causa al no hallar indicios de intermediación y aceptar la autenticidad de la factura.",
+    "sourceUrls": [
+      "https://www.eldiario.es/agencias/monedero-declarara-investigado-posible-factura-falsa-neurona_1_7307428.html",
+      "https://www.eldiario.es/politica/juez-archiva-caso-neurona-juan-carlos-monedero-saca-procedimiento_1_10497970.html",
+      "https://www.eldiario.es/politica/justicia-entierra-forma-definitiva-acusaciones-financiacion-ilegal-caso-neurona_1_11719877.html"
+    ]
+  },
+  {
+    "id": 86,
+    "suspect": "Daniel de Frutos",
+    "title": "ex-responsable de Finanzas de Podemos y administrador mancomunado de Unidas Podemos",
+    "categories": [
+      "partido"
+    ],
+    "party": "podemos",
+    "causes": [
+      {
+        "name": "Caso Neurona",
+        "status": "sobreseido",
+        "charges": [
+          "malversación",
+          "apropiación indebida"
+        ],
+        "amount": 363000
+      }
+    ],
+    "court": "Audiencia Provincial de Madrid",
+    "startYear": 2020,
+    "lastUpdated": "2026-10-07",
+    "summary": "20-nov-2020: declara como investigado ante el Juzgado nº 42. Causa abierta el 16-jul-2020 por administración desleal y malversación en el contrato de 363.000 € con Neurona. 12-dic-2023: sobreseimiento provisional; 9-oct-2024 la Audiencia de Madrid lo ratifica.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/archivan-caso-neurona-juez-concluye-no-apropio-fondos-electorales_1_10760967.html",
+      "https://www.eldiario.es/politica/justicia-entierra-forma-definitiva-acusaciones-financiacion-ilegal-caso-neurona_1_11719877.html",
+      "https://www.eldiario.es/agencias/juanma-olmo-gestores-declaran-juez_1_6446720.html"
+    ]
+  },
+  {
+    "id": 87,
+    "suspect": "Juan Manuel del Olmo",
+    "title": "ex-secretario de Comunicación de Podemos y director de Estrategia y Comunicación en la Vicepresidencia segunda",
+    "categories": [
+      "partido",
+      "institucional"
+    ],
+    "party": "podemos",
+    "causes": [
+      {
+        "name": "Caso Neurona",
+        "status": "sobreseido",
+        "charges": [
+          "malversación",
+          "apropiación indebida"
+        ],
+        "amount": 363000
+      }
+    ],
+    "court": "Audiencia Provincial de Madrid",
+    "startYear": 2020,
+    "lastUpdated": "2026-10-07",
+    "summary": "20-nov-2020: declara como investigado ante el Juzgado nº 42. Causa abierta el 16-jul-2020 por administración desleal y malversación en el contrato de 363.000 € con Neurona. 12-dic-2023: sobreseimiento provisional; 9-oct-2024 la Audiencia de Madrid lo ratifica.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/archivan-caso-neurona-juez-concluye-no-apropio-fondos-electorales_1_10760967.html",
+      "https://www.eldiario.es/politica/justicia-entierra-forma-definitiva-acusaciones-financiacion-ilegal-caso-neurona_1_11719877.html",
+      "https://www.eldiario.es/agencias/juanma-olmo-gestores-declaran-juez_1_6446720.html"
+    ]
+  },
+  {
+    "id": 88,
+    "suspect": "Rocío Val",
+    "title": "ex-gerente de Podemos",
+    "categories": [
+      "partido"
+    ],
+    "party": "podemos",
+    "causes": [
+      {
+        "name": "Caso Neurona",
+        "status": "sobreseido",
+        "charges": [
+          "malversación",
+          "apropiación indebida"
+        ],
+        "amount": 363000
+      }
+    ],
+    "court": "Audiencia Provincial de Madrid",
+    "startYear": 2020,
+    "lastUpdated": "2026-10-07",
+    "summary": "20-nov-2020: declara como investigada ante el Juzgado nº 42 por la gestión del partido. Causa abierta el 16-jul-2020 por administración desleal y malversación en el contrato de 363.000 € con Neurona. 12-dic-2023: sobreseimiento provisional; 9-oct-2024 la Audiencia de Madrid lo ratifica.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/archivan-caso-neurona-juez-concluye-no-apropio-fondos-electorales_1_10760967.html",
+      "https://www.eldiario.es/politica/justicia-entierra-forma-definitiva-acusaciones-financiacion-ilegal-caso-neurona_1_11719877.html",
+      "https://www.eldiario.es/agencias/juanma-olmo-gestores-declaran-juez_1_6446720.html"
+    ]
+  },
+  {
+    "id": 89,
+    "suspect": "Andrea Deodato",
+    "title": "ex-responsable de Compras de Podemos",
+    "categories": [
+      "partido"
+    ],
+    "party": "podemos",
+    "causes": [
+      {
+        "name": "Caso Neurona",
+        "status": "sobreseido",
+        "charges": [
+          "malversación",
+          "apropiación indebida"
+        ],
+        "amount": 363000
+      }
+    ],
+    "court": "Audiencia Provincial de Madrid",
+    "startYear": 2020,
+    "lastUpdated": "2026-10-07",
+    "summary": "20-nov-2020: declara como investigada ante el Juzgado nº 42. Causa abierta el 16-jul-2020 por administración desleal y malversación en el contrato de 363.000 € con Neurona. 12-dic-2023: sobreseimiento provisional; 9-oct-2024 la Audiencia de Madrid lo ratifica.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/archivan-caso-neurona-juez-concluye-no-apropio-fondos-electorales_1_10760967.html",
+      "https://www.eldiario.es/politica/justicia-entierra-forma-definitiva-acusaciones-financiacion-ilegal-caso-neurona_1_11719877.html",
+      "https://www.eldiario.es/agencias/juanma-olmo-gestores-declaran-juez_1_6446720.html"
+    ]
+  },
+  {
+    "id": 90,
+    "suspect": "Carlos García Ramos",
+    "title": "administrador mancomunado de la coalición Unidas Podemos (IU)",
+    "categories": [
+      "partido"
+    ],
+    "party": "iu",
+    "causes": [
+      {
+        "name": "Caso Neurona",
+        "status": "sobreseido",
+        "charges": [
+          "malversación",
+          "apropiación indebida"
+        ],
+        "amount": 363000
+      }
+    ],
+    "court": "Audiencia Provincial de Madrid",
+    "startYear": 2020,
+    "lastUpdated": "2026-10-07",
+    "summary": "Nov-2020: declara como testigo y niega haber supervisado el contrato; después pasa a investigado. Causa abierta el 16-jul-2020 por administración desleal y malversación en el contrato de 363.000 € con Neurona. 12-dic-2023: sobreseimiento provisional; 9-oct-2024 la Audiencia de Madrid lo ratifica.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/archivan-caso-neurona-juez-concluye-no-apropio-fondos-electorales_1_10760967.html",
+      "https://www.eldiario.es/politica/justicia-entierra-forma-definitiva-acusaciones-financiacion-ilegal-caso-neurona_1_11719877.html",
+      "https://www.eldiario.es/agencias/juanma-olmo-gestores-declaran-juez_1_6446720.html"
+    ]
+  },
+  {
+    "id": 91,
+    "suspect": "Elías Castejón",
+    "title": "administrador de Neurona Comunidad S.L.",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Neurona",
+        "status": "sobreseido",
+        "charges": [
+          "malversación",
+          "apropiación indebida"
+        ],
+        "amount": 363000
+      }
+    ],
+    "court": "Audiencia Provincial de Madrid",
+    "startYear": 2020,
+    "lastUpdated": "2026-10-07",
+    "summary": "2020: declara como imputado por los pagos de Neurona a terceros. Causa abierta el 16-jul-2020 por administración desleal y malversación en el contrato de 363.000 € con Neurona. 12-dic-2023: sobreseimiento provisional; 9-oct-2024 la Audiencia de Madrid lo ratifica.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/archivan-caso-neurona-juez-concluye-no-apropio-fondos-electorales_1_10760967.html",
+      "https://www.eldiario.es/politica/justicia-entierra-forma-definitiva-acusaciones-financiacion-ilegal-caso-neurona_1_11719877.html",
+      "https://www.eldiario.es/agencias/juanma-olmo-gestores-declaran-juez_1_6446720.html"
+    ]
+  },
+  {
+    "id": 92,
+    "suspect": "Teresa Arévalo",
+    "title": "ex-jefa de gabinete de la ministra de Igualdad",
+    "categories": [
+      "institucional",
+      "partido"
+    ],
+    "party": "podemos",
+    "causes": [
+      {
+        "name": "Caso Niñera",
+        "status": "sobreseido",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 42 de Madrid",
+    "startYear": 2021,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigada por si cuidó de la hija de Irene Montero cobrando del partido. 29-oct-2021: la Audiencia de Madrid ordena abrir pieza separada. 29-jul-2022: el juez Escalonilla archiva al no acreditarse que se encargase del cuidado de los hijos.",
+    "sourceUrls": [
+      "https://www.eldiario.es/agencias/juez-archiva-caso-ninera-falta-indicios_1_9209796.html",
+      "https://www.eldiario.es/agencias/vuelco-caso-ninera-tribunal-deja-efecto-investigado_1_8463727.html"
+    ]
+  },
+  {
+    "id": 93,
+    "suspect": "Gara Santana",
+    "title": "ex-jefa de prensa de Podemos",
+    "categories": [
+      "partido"
+    ],
+    "party": "podemos",
+    "causes": [
+      {
+        "name": "Caso Niñera",
+        "status": "sobreseido",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 42 de Madrid",
+    "startYear": 2022,
+    "lastUpdated": "2026-10-07",
+    "summary": "11-abr-2022: citada como investigada por un presunto delito de malversación en el 'caso Niñera'; declaró el 10-may-2022. 29-jul-2022: archivo por falta de indicio racional suficiente.",
+    "sourceUrls": [
+      "https://www.eldiario.es/canariasahora/tribunales/juez-escalonilla-cita-declarar-exjefa-prensa-caso-ninera_1_8907370.html",
+      "https://www.eldiario.es/agencias/juez-archiva-caso-ninera-falta-indicios_1_9209796.html",
+      "https://www.eldiario.es/agencias/vuelco-caso-ninera-tribunal-deja-efecto-investigado_1_8463727.html"
+    ]
   }
 ]
