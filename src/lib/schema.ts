@@ -32,6 +32,7 @@ export const CRIMES = [
   "uso de información privilegiada",
   "fraude a la Hacienda Pública",
   "estafa",
+  "apropiación indebida",
 ] as const;
 
 /** Most serious first. Used to pick the badge shown in the table. */

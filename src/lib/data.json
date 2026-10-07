@@ -1298,5 +1298,1339 @@
       "https://www.vozpopuli.com/tribunales/el-juez-del-caso-begona-gomez-archiva-la-causa-contra-el-delegado-del-gobierno-en-madrid.html",
       "https://www.eldiario.es/politica/delegado-gobierno-madrid-niega-haber-participado-contratacion-asesora-begona-gomez_1_12298144.amp.html"
     ]
+  },
+  {
+    "id": 45,
+    "suspect": "Jorge Fernández Díaz",
+    "title": "ex-Ministro del Interior",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Kitchen",
+        "status": "procesado",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2020,
+    "lastUpdated": "2026-10-07",
+    "summary": "Juzgado en la Audiencia Nacional (6-abr a 28-jul-2026) por el espionaje a Bárcenas con fondos reservados; visto para sentencia, sin fallo a 7-oct-2026. Imputado en sep-2020. Anticorrupción pide 15 años por encubrimiento, malversación y contra la intimidad.",
+    "sourceUrls": [
+      "https://www.telecinco.es/noticias/espana/20260728/fin-juicio-caso-kitchen-cuatro-meses_18_019827260.html",
+      "https://www.moncloa.com/2026/07/27/operacion-kitchen-juicio-villarejo-19-anos-3406279/",
+      "https://rtvc.es/el-juez-procesa-al-exministro-del-interior-jorge-fernandez-diaz-y-deja-fuera-a-maria-dolores-de-cospedal/",
+      "https://www.deia.eus/politica/2020/09/18/exministro-jorge-fernandez-diaz-imputado-4680568.html"
+    ]
+  },
+  {
+    "id": 46,
+    "suspect": "Francisco Martínez Vázquez",
+    "title": "ex-Secretario de Estado de Seguridad",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Kitchen",
+        "status": "procesado",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2019,
+    "lastUpdated": "2026-10-07",
+    "summary": "Juzgado en la Audiencia Nacional (6-abr a 28-jul-2026) por el espionaje a Bárcenas con fondos reservados; visto para sentencia, sin fallo a 7-oct-2026. Anticorrupción pide 15 años por encubrimiento, malversación y contra la intimidad.",
+    "sourceUrls": [
+      "https://www.telecinco.es/noticias/espana/20260728/fin-juicio-caso-kitchen-cuatro-meses_18_019827260.html",
+      "https://www.moncloa.com/2026/07/27/operacion-kitchen-juicio-villarejo-19-anos-3406279/",
+      "https://rtvc.es/el-juez-procesa-al-exministro-del-interior-jorge-fernandez-diaz-y-deja-fuera-a-maria-dolores-de-cospedal/",
+      "https://www.diaridetarragona.com/espana/266956/audiencia-nacional-deja-visto-sentencia-juicio-kitchen.html"
+    ]
+  },
+  {
+    "id": 47,
+    "suspect": "Eugenio Pino",
+    "title": "ex-Director Adjunto Operativo de la Policía",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Kitchen",
+        "status": "procesado",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2019,
+    "lastUpdated": "2026-10-07",
+    "summary": "Juzgado en la Audiencia Nacional (6-abr a 28-jul-2026) por el espionaje a Bárcenas con fondos reservados; visto para sentencia, sin fallo a 7-oct-2026. Anticorrupción pide 15 años por encubrimiento, malversación y contra la intimidad.",
+    "sourceUrls": [
+      "https://www.telecinco.es/noticias/espana/20260728/fin-juicio-caso-kitchen-cuatro-meses_18_019827260.html",
+      "https://www.moncloa.com/2026/07/27/operacion-kitchen-juicio-villarejo-19-anos-3406279/",
+      "https://rtvc.es/el-juez-procesa-al-exministro-del-interior-jorge-fernandez-diaz-y-deja-fuera-a-maria-dolores-de-cospedal/"
+    ]
+  },
+  {
+    "id": 48,
+    "suspect": "Andrés Gómez Gordo",
+    "title": "Comisario de Policía, ex-asesor de Cospedal en Castilla-La Mancha",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Kitchen",
+        "status": "procesado",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2019,
+    "lastUpdated": "2026-10-07",
+    "summary": "Juzgado en la Audiencia Nacional (6-abr a 28-jul-2026) por el espionaje a Bárcenas con fondos reservados; visto para sentencia, sin fallo a 7-oct-2026. Anticorrupción pide 15 años por encubrimiento, malversación y contra la intimidad.",
+    "sourceUrls": [
+      "https://www.telecinco.es/noticias/espana/20260728/fin-juicio-caso-kitchen-cuatro-meses_18_019827260.html",
+      "https://www.moncloa.com/2026/07/27/operacion-kitchen-juicio-villarejo-19-anos-3406279/",
+      "https://rtvc.es/el-juez-procesa-al-exministro-del-interior-jorge-fernandez-diaz-y-deja-fuera-a-maria-dolores-de-cospedal/"
+    ]
+  },
+  {
+    "id": 49,
+    "suspect": "José Manuel Villarejo",
+    "title": "Comisario de Policía jubilado",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Kitchen",
+        "status": "procesado",
+        "charges": [
+          "cohecho",
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-07",
+    "summary": "Juzgado en la Audiencia Nacional (6-abr a 28-jul-2026) por el espionaje a Bárcenas con fondos reservados; visto para sentencia, sin fallo a 7-oct-2026. Anticorrupción pide 19 años por cohecho, malversación, encubrimiento y contra la intimidad.",
+    "sourceUrls": [
+      "https://www.telecinco.es/noticias/espana/20260728/fin-juicio-caso-kitchen-cuatro-meses_18_019827260.html",
+      "https://www.moncloa.com/2026/07/27/operacion-kitchen-juicio-villarejo-19-anos-3406279/",
+      "https://rtvc.es/el-juez-procesa-al-exministro-del-interior-jorge-fernandez-diaz-y-deja-fuera-a-maria-dolores-de-cospedal/"
+    ]
+  },
+  {
+    "id": 50,
+    "suspect": "Sergio Ríos Esgueva",
+    "title": "ex-chófer de Bárcenas, confidente pagado con fondos reservados",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Kitchen",
+        "status": "procesado",
+        "charges": [
+          "malversación",
+          "revelación de secretos"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-07",
+    "summary": "Juzgado en la Audiencia Nacional (6-abr a 28-jul-2026) por el espionaje a Bárcenas con fondos reservados; visto para sentencia, sin fallo a 7-oct-2026. Anticorrupción pide 12 años y medio.",
+    "sourceUrls": [
+      "https://www.telecinco.es/noticias/espana/20260728/fin-juicio-caso-kitchen-cuatro-meses_18_019827260.html",
+      "https://www.moncloa.com/2026/07/27/operacion-kitchen-juicio-villarejo-19-anos-3406279/",
+      "https://rtvc.es/el-juez-procesa-al-exministro-del-interior-jorge-fernandez-diaz-y-deja-fuera-a-maria-dolores-de-cospedal/",
+      "https://www.eldiario.es/politica/anticorrupcion-detecta-trampa-camuflar-fondos-reservados-espionaje-barcenas_1_6616687.html"
+    ]
+  },
+  {
+    "id": 51,
+    "suspect": "Cristóbal Montoro Romero",
+    "title": "ex-Ministro de Hacienda",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Fundador de Equipo Económico. Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/",
+      "https://www.eldiario.es/politica/supremo-rechaza-decidir-si-envia-caso-montoro-madrid-deja-cuestion-manos-audiencia-tarragona_1_13564150.html"
+    ]
+  },
+  {
+    "id": 52,
+    "suspect": "Miguel Ferre Navarrete",
+    "title": "ex-Secretario de Estado de Hacienda",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 53,
+    "suspect": "Pilar Platero Sanz",
+    "title": "ex-Subsecretaria de Hacienda y ex-presidenta de la SEPI",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 54,
+    "suspect": "Felipe Martínez Rico",
+    "title": "ex-Subsecretario y ex-director de gabinete de Hacienda",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 55,
+    "suspect": "Salvador Ruiz Gallud",
+    "title": "ex-director general de la Agencia Tributaria, socio de Equipo Económico",
+    "categories": [
+      "institucional",
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 56,
+    "suspect": "Manuel de Vicente-Tutor",
+    "title": "ex-director de gabinete en la AEAT, socio de Equipo Económico",
+    "categories": [
+      "institucional",
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 57,
+    "suspect": "Francisco Piedras Camacho",
+    "title": "ex-director del gabinete de Montoro, socio de Equipo Económico",
+    "categories": [
+      "institucional",
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 58,
+    "suspect": "Diego Martín-Abril Calvo",
+    "title": "ex-director general de Tributos",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 59,
+    "suspect": "José Alberto García Valera",
+    "title": "ex-director general de Tributos",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 60,
+    "suspect": "Óscar del Amo Galán",
+    "title": "ex-subdirector general de Tributos Locales",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 61,
+    "suspect": "Rogelio Menéndez Menéndez",
+    "title": "ex-director económico-financiero de Loterías y Apuestas del Estado",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 62,
+    "suspect": "Santiago Menéndez Menéndez",
+    "title": "ex-director de la Agencia Tributaria",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 63,
+    "suspect": "José María Buenaventura Zabala",
+    "title": "ex-director de gabinete del Secretario de Estado de Hacienda",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 64,
+    "suspect": "Ricardo Martínez Rico",
+    "title": "presidente y fundador de Equipo Económico",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Montoro",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 2 de Tarragona",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 por presuntas reformas fiscales a medida de gasistas a cambio de pagos a Equipo Económico. 27-jul-2026: instrucción prorrogada 6 meses. 6-oct-2026: el Supremo devuelve a la Audiencia de Tarragona la cuestión de competencia.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
+      "https://theobjective.com/espana/tribunales/2026-07-27/montoro-prorroga-seis-meses-investigacion-15-imputados/",
+      "https://confilegal.com/20261006-supremo-incompetente-caso-montoro-audiencia-tarragona-madrid/"
+    ]
+  },
+  {
+    "id": 65,
+    "suspect": "Luis Bárcenas",
+    "title": "ex-Tesorero del PP",
+    "categories": [
+      "partido"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Gürtel",
+        "status": "condenado",
+        "charges": [
+          "blanqueo de capitales",
+          "fraude a la Hacienda Pública"
+        ],
+        "convictions": [
+          "blanqueo de capitales",
+          "fraude a la Hacienda Pública"
+        ],
+        "sentence": {
+          "date": "2020-10-14",
+          "prisonMonths": 349,
+          "firm": true
+        }
+      },
+      {
+        "name": "Caso Papeles de Bárcenas",
+        "status": "condenado",
+        "charges": [
+          "fraude a la Hacienda Pública",
+          "falsedad documental",
+          "blanqueo de capitales",
+          "tráfico de influencias"
+        ],
+        "convictions": [
+          "fraude a la Hacienda Pública"
+        ],
+        "sentence": {
+          "date": "2024-11-15",
+          "prisonMonths": 8,
+          "firm": true
+        },
+        "amount": 1072000
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2009,
+    "lastUpdated": "2026-10-07",
+    "summary": "Gürtel: la AN le condenó a 33a4m (17-may-2018); el Supremo lo rebajó a 29a1m (14-oct-2020, firme). Reforma de Génova con caja B (1,07 M€): 2 años en la AN (28-oct-2021); el Supremo lo rebajó a 8 meses por delito fiscal (15-nov-2024). Libertad condicional en dic-2024.",
+    "sourceUrls": [
+      "https://www.libertaddigital.com/espana/2020-10-14/el-supremo-penas-gurtel-condena-pp-contradictoria-6669927/",
+      "https://www.eldiario.es/politica/audiencia-nacional-condena-luis-barcenas-pp-reforma-sede-genova-dinero-negro_1_8439000.amp.html",
+      "https://www.infobae.com/espana/agencias/2024/11/15/el-ts-reduce-las-condenas-de-los-papeles-de-barcenas-y-confirma-al-pp-responsable-civil/",
+      "https://theobjective.com/espana/tribunales/2024-12-17/audiencia-nacional-libertad-condicional-luis-barcenas/"
+    ]
+  },
+  {
+    "id": 66,
+    "suspect": "Alberto López Viejo",
+    "title": "ex-Consejero de Deportes de la Comunidad de Madrid",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Gürtel",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación",
+          "cohecho",
+          "blanqueo de capitales"
+        ],
+        "convictions": [
+          "prevaricación",
+          "malversación",
+          "cohecho",
+          "blanqueo de capitales"
+        ],
+        "sentence": {
+          "date": "2020-10-14",
+          "prisonMonths": 334,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2009,
+    "lastUpdated": "2026-10-07",
+    "summary": "La AN le condenó a 31a9m en la primera época de Gürtel (17-may-2018) por prevaricación, malversación, fraude, cohecho y blanqueo; el Supremo lo rebajó a 27a10m (14-oct-2020, firme).",
+    "sourceUrls": [
+      "https://www.libertaddigital.com/espana/2020-10-14/el-supremo-penas-gurtel-condena-pp-contradictoria-6669927/",
+      "https://valenciaplaza.com/estos-son-todos-los-condenados-por-el-caso-gurtel-y-sus-penas",
+      "https://www.moncloa.com/2023/08/04/an-autoriza-2129569/"
+    ]
+  },
+  {
+    "id": 67,
+    "suspect": "Milagrosa Martínez",
+    "title": "ex-Consellera de Turismo y ex-Presidenta de Les Corts Valencianes",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Gürtel",
+        "status": "condenado",
+        "charges": [
+          "malversación",
+          "cohecho",
+          "prevaricación"
+        ],
+        "convictions": [
+          "malversación",
+          "cohecho",
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2018-05-08",
+          "prisonMonths": 108,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2009,
+    "lastUpdated": "2026-10-07",
+    "summary": "Pieza Fitur de Gürtel: el Supremo confirmó el 8-may-2018 su condena a 9 años por malversación, cohecho pasivo y prevaricación en los contratos del expositor valenciano en Fitur.",
+    "sourceUrls": [
+      "https://officialpress.es/el-supremo-confirma-9-anos-de-carcel-para-la-exconsellera-milagrosa-martinez-por-fitur/amp/",
+      "https://www.elindependiente.com/politica/2018/05/08/primera-sentencia-firme-la-trama-gurtel-supremo-confirma-las-condenas-correa-crespo-bigotes/amp/"
+    ]
+  },
+  {
+    "id": 68,
+    "suspect": "Francisco Camps",
+    "title": "ex-Presidente de la Generalitat Valenciana",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Gürtel",
+        "status": "absuelto",
+        "charges": [
+          "tráfico de influencias",
+          "prevaricación"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2009,
+    "lastUpdated": "2026-10-07",
+    "summary": "27-may-2024: la AN le absuelve en la pieza de contratos menores de Gürtel (más de 1,8 M€ a empresas de Correa, 2004-2009, y Fitur 2009). El PSPV recurrió en casación; la Fiscalía pide inadmitirla. Sin resolución del Supremo a oct-2026.",
+    "sourceUrls": [
+      "https://valenciaplaza.com/camps-absuelto-gurtel",
+      "https://www.vozpopuli.com/espana/comunidad-valenciana/fiscal-supremo-inadmita-recurso-absolucion-camps.html",
+      "https://www.eldiario.es/comunitat-valenciana/pspv-psoe-anuncia-recurso-sentencia-absolvio-francisco-camps_1_11697964.html"
+    ]
+  },
+  {
+    "id": 69,
+    "suspect": "Eduardo Zaplana",
+    "title": "ex-Presidente de la Generalitat Valenciana y ex-Ministro de Trabajo",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Erial",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "cohecho",
+          "falsedad documental",
+          "blanqueo de capitales",
+          "grupo criminal"
+        ],
+        "convictions": [
+          "prevaricación",
+          "cohecho",
+          "falsedad documental",
+          "blanqueo de capitales"
+        ],
+        "sentence": {
+          "date": "2024-10-15",
+          "prisonMonths": 125,
+          "disqualificationMonths": 214,
+          "fineEur": 25000000,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Valencia",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-07",
+    "summary": "15-oct-2024: la Audiencia de Valencia le condena a 10a5m, 17a10m de inhabilitación y más de 25 M€ de multa por las mordidas de las ITV; absuelto de grupo criminal. Recurrió en casación al Supremo (mar-2025), pendiente.",
+    "sourceUrls": [
+      "https://www.poderjudicial.es/cgpj/ca/Poder-Judicial/Novetats/La-Audiencia-de-Valencia-condena-a-10-anos-y-5-meses-de-prision-al-expresidente-de-la-Generalitat-Eduardo-Zaplana-por-el--caso-Erial-",
+      "https://www.eldiario.es/comunitat-valenciana/zaplana-recurre-supremo-condena-caso-erial-fundarse-conexion-disparatada-pruebas-prefabricadas_1_12124620.html",
+      "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/zaplana-recurre-al-supremo-su-condena-en-erial-por-basarse-en-pruebas-prefabricadas"
+    ]
+  },
+  {
+    "id": 70,
+    "suspect": "Juan Francisco García",
+    "title": "ex-Jefe de Gabinete de la Presidencia de la Generalitat Valenciana",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Erial",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "cohecho",
+          "falsedad documental",
+          "blanqueo de capitales"
+        ],
+        "convictions": [
+          "prevaricación",
+          "cohecho",
+          "falsedad documental",
+          "blanqueo de capitales"
+        ],
+        "sentence": {
+          "date": "2024-10-15",
+          "prisonMonths": 35,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Valencia",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-07",
+    "summary": "15-oct-2024: 2a11m de prisión con atenuante muy cualificada de confesión; reconoció en el juicio el amaño de las ITV. Sentencia recurrible en casación.",
+    "sourceUrls": [
+      "https://www.poderjudicial.es/cgpj/ca/Poder-Judicial/Novetats/La-Audiencia-de-Valencia-condena-a-10-anos-y-5-meses-de-prision-al-expresidente-de-la-Generalitat-Eduardo-Zaplana-por-el--caso-Erial-",
+      "https://www.noticiasdenavarra.com/politica/2024/04/16/sobrino-juan-cotino-admite-difunto-8123028.amp.html"
+    ]
+  },
+  {
+    "id": 71,
+    "suspect": "Francisco Grau",
+    "title": "Abogado y asesor fiscal",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Erial",
+        "status": "condenado",
+        "charges": [
+          "blanqueo de capitales"
+        ],
+        "convictions": [
+          "blanqueo de capitales"
+        ],
+        "sentence": {
+          "date": "2024-10-15",
+          "prisonMonths": 60,
+          "fineEur": 20000000,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Valencia",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-07",
+    "summary": "15-oct-2024: 5 años de prisión y 20 M€ de multa por blanquear las comisiones de Zaplana. Sentencia recurrible en casación.",
+    "sourceUrls": [
+      "https://www.poderjudicial.es/cgpj/ca/Poder-Judicial/Novetats/La-Audiencia-de-Valencia-condena-a-10-anos-y-5-meses-de-prision-al-expresidente-de-la-Generalitat-Eduardo-Zaplana-por-el--caso-Erial-",
+      "https://www.noticiasdenavarra.com/politica/2024/10/22/anticorrupcion-pide-ingreso-prision-zaplana-8836772.amp.html"
+    ]
+  },
+  {
+    "id": 72,
+    "suspect": "Serafín Castellano",
+    "title": "ex-Conseller de Gobernación y ex-Delegado del Gobierno en la Comunitat Valenciana",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Cártel del Fuego",
+        "status": "condenado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "malversación",
+          "falsedad documental"
+        ],
+        "convictions": [
+          "cohecho",
+          "prevaricación",
+          "malversación",
+          "falsedad documental"
+        ],
+        "sentence": {
+          "date": "2025-02-06",
+          "prisonMonths": 21,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-07",
+    "summary": "Feb-2025: la AN le condena a 1a9m por cohecho, prevaricación, malversación y falsedad continuados en los contratos de extinción de incendios, con atenuantes de confesión y dilaciones tras pacto con la Fiscalía; absuelto de asociación ilícita. Consignó 904.000 € con otro acusado.",
+    "sourceUrls": [
+      "https://www.esdiario.com/comunidad-valenciana/valencia/250206/152251/condenado-exconseller-serafin-castellano-cartel-fuego.html",
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Audiencia-Nacional/Oficina-de-Comunicacion/Notas-de-prensa/La-Audiencia-Nacional-aplica-por-primera-vez-a-un-acusado-la--excusa-absolutoria--por-haber-denunciado-un-cartel-para-extincion-incendios-y-le-exime-de-responsabilidad-penal-",
+      "https://valenciaplaza.com/cvalenciana/castellano-en-libertad-con-cargos-el-golpe-definitivo-al-pp-de-fabra"
+    ]
+  },
+  {
+    "id": 73,
+    "suspect": "Ignacio González",
+    "title": "ex-Presidente de la Comunidad de Madrid",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Lezo",
+        "status": "procesado",
+        "charges": [
+          "malversación",
+          "cohecho",
+          "tráfico de influencias",
+          "prevaricación"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2017,
+    "lastUpdated": "2026-10-07",
+    "summary": "Detenido en abr-2017 por el saqueo del Canal de Isabel II. Procesado en tres piezas: Emissao (Fiscalía pide 8 años), campo de golf del Canal (6 años) y tren de Navalcarnero (4 años). Archivadas para él las piezas de Inassa (2019) y blanqueo.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/audiencia-nacional-juzgara-ignacio-gonzalez-campo-golf-canal-23-anos-despues_1_12865400.html",
+      "https://www.elindependiente.com/politica/2020/01/29/la-fiscalia-pide-ocho-anos-de-prision-para-ignacio-gonzalez-por-el-caso-lezo/amp/",
+      "https://www.eldiario.es/madrid/audiencia-nacional-comienza-juzgar-caso-lezo-canal-isabel-ii-diez-anos-despues_1_13491733.html"
+    ]
+  },
+  {
+    "id": 74,
+    "suspect": "Francisco Granados",
+    "title": "ex-Consejero de Presidencia, Justicia e Interior de la Comunidad de Madrid",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Púnica",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "cohecho",
+          "tráfico de influencias",
+          "malversación",
+          "falsedad documental"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-02",
+          "prisonMonths": 30,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2014,
+    "lastUpdated": "2026-10-07",
+    "summary": "Detenido en oct-2014. Condenado a 2 años por el chivatazo de Púnica (firme, Supremo mar-2019) y a 2a6m por fraude y prevaricación en la pieza de festejos (jul-2026, recurrible). Juicio oral abierto en la pieza de suelo y Metro (may-2026).",
+    "sourceUrls": [
+      "https://orain.eus/es/politica/2026/07/02/dos-anos-medio-carcel-el-exconsejero-madrileno-francisco-granados-punica/",
+      "https://www.infobae.com/espana/2026/06/01/procesados-12-anos-despues-41-ex-politicos-funcionarios-y-empresarios-por-amanar-contratos-en-viviendas-y-metro-una-de-las-tramas-de-corrupcion-del-gobierno-de-esperanza-aguirre/",
+      "https://confilegal.com/20190314-el-supremo-confirma-la-condena-de-dos-anos-de-carcel-para-granados-por-el-chivatazo-de-punica/amp/"
+    ]
+  },
+  {
+    "id": 75,
+    "suspect": "Cristina Cifuentes",
+    "title": "ex-Presidenta de la Comunidad de Madrid",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Máster",
+        "status": "absuelto",
+        "charges": [
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Tribunal Superior de Justicia de Madrid",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-07",
+    "summary": "Absuelta el 15-feb-2021 por la Audiencia de Madrid de inducir la falsificación del acta de su TFM; el TSJM confirmó la absolución (28-jun-2021). Imputada también en Púnica (financiación del PP de Madrid), archivada.",
+    "sourceUrls": [
+      "https://www.elindependiente.com/espana/2021/06/28/el-tribunal-superior-de-madrid-confirma-la-absolucion-de-cifuentes/",
+      "https://www.eldiario.es/politica/tribunal-caso-master-absuelve-cifuentes_1_7220411.html",
+      "https://www.infolibre.es/politica/audiencia-nacional-confirma-archivo-punica-cifuentes_1_1209414.html"
+    ]
+  },
+  {
+    "id": 76,
+    "suspect": "María Teresa Feito",
+    "title": "ex-Asesora de la Consejería de Educación de la Comunidad de Madrid",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Máster",
+        "status": "condenado",
+        "charges": [
+          "falsedad documental"
+        ],
+        "convictions": [
+          "falsedad documental"
+        ],
+        "sentence": {
+          "date": "2021-06-28",
+          "prisonMonths": 24,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-07",
+    "summary": "Condenada a 3 años como inductora de la falsificación del acta del máster de Cifuentes (15-feb-2021); el TSJM lo rebajó a 2 años (28-jun-2021) y el Supremo lo confirmó (abr-2022).",
+    "sourceUrls": [
+      "https://www.elindependiente.com/espana/2021/06/28/el-tribunal-superior-de-madrid-confirma-la-absolucion-de-cifuentes/",
+      "https://www.eldiario.es/politica/tribunal-caso-master-absuelve-cifuentes_1_7220411.html",
+      "https://www.publico.es/politica/supremo-confirma-pena-dos-anos-carcel-condenada-caso-master-absolvio-cifuentes.html"
+    ]
+  },
+  {
+    "id": 77,
+    "suspect": "Cecilia Rosado",
+    "title": "Profesora de la URJC",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Máster",
+        "status": "condenado",
+        "charges": [
+          "falsedad documental"
+        ],
+        "convictions": [
+          "falsedad documental"
+        ],
+        "sentence": {
+          "date": "2021-06-28",
+          "prisonMonths": 12,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Tribunal Superior de Justicia de Madrid",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-07",
+    "summary": "Condenada a 1a6m por falsificar el acta del máster de Cifuentes (15-feb-2021); el TSJM lo rebajó a 1 año (28-jun-2021).",
+    "sourceUrls": [
+      "https://www.elindependiente.com/espana/2021/06/28/el-tribunal-superior-de-madrid-confirma-la-absolucion-de-cifuentes/",
+      "https://www.eldiario.es/politica/tribunal-caso-master-absuelve-cifuentes_1_7220411.html"
+    ]
+  },
+  {
+    "id": 78,
+    "suspect": "Rodrigo Rato",
+    "title": "ex-Vicepresidente del Gobierno y ex-Ministro de Economía",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Rato",
+        "status": "condenado",
+        "charges": [
+          "fraude a la Hacienda Pública",
+          "blanqueo de capitales"
+        ],
+        "convictions": [
+          "fraude a la Hacienda Pública",
+          "blanqueo de capitales"
+        ],
+        "sentence": {
+          "date": "2024-12-20",
+          "prisonMonths": 57,
+          "fineEur": 2000000,
+          "firm": false
+        }
+      },
+      {
+        "name": "Caso Tarjetas black",
+        "status": "condenado",
+        "charges": [
+          "apropiación indebida"
+        ],
+        "convictions": [
+          "apropiación indebida"
+        ],
+        "sentence": {
+          "date": "2018-10-03",
+          "prisonMonths": 54,
+          "firm": true
+        }
+      },
+      {
+        "name": "Caso Bankia",
+        "status": "absuelto",
+        "charges": [
+          "estafa"
+        ]
+      }
+    ],
+    "court": "Audiencia Provincial de Madrid",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-07",
+    "summary": "20-dic-2024: condenado a 4a9m y más de 2 M€ de multa por tres delitos fiscales, blanqueo y corrupción entre particulares; casación pendiente. Tarjetas black: 4,5 años firmes (Supremo, 3-oct-2018). Salida a bolsa de Bankia: absuelto (AN 2020, confirmado por el Supremo).",
+    "sourceUrls": [
+      "https://www.elespanol.com/espana/tribunales/20241220/justicia-condena-rodrigo-rato-exvicepresidente-economico-pp-anos-carcel-fraude-fiscal/910159133_0.html",
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunal-Supremo/Noticias-Judiciales/El-Tribunal-Supremo-confirma-la-condena-de-Rodrigo-Rato-a-cuatro-anos-y-medio-de-prision-por-las--tarjetas-black-",
+      "https://www.publico.es/politica/supremo-confirma-absolucion-acusados-salida-bolsa-bankia.html"
+    ]
+  },
+  {
+    "id": 79,
+    "suspect": "Ramón Luis Valcárcel",
+    "title": "ex-Presidente de la Región de Murcia",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Desaladora de Escombreras",
+        "status": "procesado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Audiencia Provincial de Murcia",
+    "startYear": 2020,
+    "lastUpdated": "2026-10-07",
+    "summary": "30-mar-2023: la jueza abre juicio oral por prevaricación continuada, fraude continuado y malversación en el arrendamiento de la desaladora de Escombreras; fianza de 74,2 M€. Fiscalía pide 11 años. Juicio previsto para finales de 2027.",
+    "sourceUrls": [
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/La-juez-ordena-la-apertura-de-juicio-oral-contra-el-expresidente-de-la-Region-de-Murcia-por-delitos-de-prevaricacion--malversacion-y-fraude",
+      "https://www.eldiario.es/murcia/politica/jueza-abre-juicio-oral-expresidente-murcia-ramon-luis-valcarcel-delitos-prevaricacion-malversacion-fraude_1_10080738.html",
+      "https://www.eldiario.es/murcia/politica/trama-murciana-caso-punica-acaba-nueve-condenados-decada-despues_1_12587138.html"
+    ]
+  },
+  {
+    "id": 80,
+    "suspect": "Antonio Cerdá",
+    "title": "ex-Consejero de Agricultura y Agua de la Región de Murcia",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Novo Carthago",
+        "status": "absuelto",
+        "charges": [
+          "prevaricación",
+          "falsedad documental"
+        ]
+      },
+      {
+        "name": "Caso Desaladora de Escombreras",
+        "status": "investigado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Audiencia Provincial de Murcia",
+    "startYear": 2013,
+    "lastUpdated": "2026-10-07",
+    "summary": "Novo Carthago: absuelto con todos los acusados por la Audiencia de Murcia (nov-2025); la orden del PORN de 2003 había prescrito. Desaladora de Escombreras (La Sal I): investigado como presidente del Ente Público del Agua; juicio oral abierto a 15 investigados (12-nov-2024).",
+    "sourceUrls": [
+      "https://www.eldiario.es/murcia/politica/audiencia-absuelve-acusados-caso-novo-carthago_1_12782915.html",
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/La-Audiencia-de-Murcia-absuelve-a-todos-los-acusados-en-el-caso-Novo-Carthago-",
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/La-juez-ordena-la-apertura-de-juicio-oral-a-15-investigados-del-proyecto-de-la-planta-desalinizadora-de-Escombreras--Cartagena-"
+    ]
+  },
+  {
+    "id": 81,
+    "suspect": "Juan Carlos Ruiz",
+    "title": "ex-Consejero de Industria y Turismo de la Región de Murcia",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Púnica",
+        "status": "condenado",
+        "charges": [
+          "cohecho",
+          "prevaricación"
+        ],
+        "convictions": [
+          "cohecho",
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2025-09-08",
+          "prisonMonths": 48,
+          "disqualificationMonths": 84,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-07",
+    "summary": "8-sep-2025: la AN le condena en la rama murciana de Púnica a 4 años por fraude y cohecho y 7 de inhabilitación por prevaricación, por contratos de reputación online con Alejandro de Pedro. Dimitió en 2015.",
+    "sourceUrls": [
+      "https://www.eldiario.es/murcia/politica/trama-murciana-caso-punica-acaba-nueve-condenados-decada-despues_1_12587138.html",
+      "https://www.eldebate.com/espana/20250909/audiencia-nacional-impone-hasta-cuatro-anos-carcel-trama-murciana-caso-punica_332666.html"
+    ]
+  },
+  {
+    "id": 82,
+    "suspect": "Jaume Matas",
+    "title": "ex-Presidente del Govern balear y ex-Ministro de Medio Ambiente",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "pp",
+    "causes": [
+      {
+        "name": "Caso Son Espases",
+        "status": "condenado",
+        "charges": [
+          "tráfico de influencias",
+          "prevaricación",
+          "falsedad documental"
+        ],
+        "convictions": [
+          "tráfico de influencias",
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2021-11-02",
+          "prisonMonths": 10,
+          "disqualificationMonths": 120,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2014,
+    "lastUpdated": "2026-10-07",
+    "summary": "Son Espases: imputado en 2014; la Audiencia de Baleares (2019) le condenó a 10 meses y 10 años de inhabilitación por tráfico de influencias, inducción a la prevaricación y fraude en la adjudicación del hospital; el Supremo confirmó (nov-2021). Acumula nueve condenas.",
+    "sourceUrls": [
+      "https://theobjective.com/espana/tribunales/2021-11-02/supremo-condena-jaume-matas-son-espases/",
+      "https://www.periodicodeibiza.es/historia/caso-son-espases.html",
+      "https://www.ultimahora.es/noticias/local/2021/11/07/1316609/matas-fin-del-proceso-derrotas-por-puntos-ningun-ko.html"
+    ]
+  },
+  {
+    "id": 83,
+    "suspect": "Rafael Delgado",
+    "title": "ex-Viceconsejero de Economía de la Junta de Castilla y León",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Perla Negra",
+        "status": "condenado",
+        "charges": [
+          "malversación",
+          "prevaricación",
+          "revelación de secretos",
+          "tráfico de influencias",
+          "cohecho",
+          "organización criminal"
+        ],
+        "convictions": [
+          "malversación",
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2025-01-08",
+          "prisonMonths": 30,
+          "disqualificationMonths": 42,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Valladolid",
+    "startYear": 2014,
+    "lastUpdated": "2026-10-07",
+    "summary": "8-ene-2025: condenado a 2a6m por malversación y 3a6m de inhabilitación por prevaricación (edificio Arroyo y polígono Portillo); absuelto del resto. Recurrible en casación. Juzgado también en la trama eólica, vista para sentencia en ene-2026.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/castilla-y-leon/250108/1763649/corrupcion-perla-negra-zanja-dos-anos-medio-prision.html",
+      "https://www.elespanol.com/castilla-y-leon/region/20260121/trama-eolica-queda-vista-sentencia-meses-juicio-valladolid/1003744098153_0.html"
+    ]
+  },
+  {
+    "id": 84,
+    "suspect": "Begoña Hernández",
+    "title": "ex-Viceconsejera de Economía de la Junta de Castilla y León",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Perla Negra",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "revelación de secretos",
+          "tráfico de influencias",
+          "cohecho",
+          "organización criminal"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2025-01-08",
+          "disqualificationMonths": 26,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Valladolid",
+    "startYear": 2014,
+    "lastUpdated": "2026-10-07",
+    "summary": "8-ene-2025: condenada a 2a2m de inhabilitación por prevaricación administrativa continuada en la compra del edificio de Arroyo; absuelta del resto. Recurrible en casación.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/castilla-y-leon/250108/1763649/corrupcion-perla-negra-zanja-dos-anos-medio-prision.html"
+    ]
   }
 ]
