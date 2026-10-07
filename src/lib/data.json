@@ -729,5 +729,566 @@
       "https://www.estrelladigital.es/articulo/tribunales/pedraz-reclama-psoe-todos-contratos-abogados-consultoras-2021-2025-cita-nervis-villalobos/20261006150011451867.html",
       "https://www.infobae.com/america/agencias/2026/10/07/el-juez-del-caso-leire-aplaza-la-declaracion-como-imputado-del-excargo-chavista-nervis-villalobos-al-30-de-octubre/"
     ]
+  },
+  {
+    "id": 25,
+    "suspect": "Jéssica Rodríguez",
+    "title": "ex-pareja de José Luis Ábalos",
+    "categories": [
+      "familia"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "investigado",
+        "charges": [
+          "malversación",
+          "tráfico de influencias"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Citada como investigada por el juez Moreno el 3-jul-2026, a petición de Anticorrupción, por su contratación sin trabajo efectivo en Ineco y Tragsatec. Delitos: malversación y tráfico de influencias. El 20-jul-2026 se acogió a su derecho a no declarar.",
+    "sourceUrls": [
+      "https://www.eldebate.com/espana/20260720/jessica-rodriguez-expareja-abalos-niega-declarar-primera-citacion-como-imputada_441436_amp.html",
+      "https://rtvc.es/jessica-rodriguez-guarda-silencio-ante-juez-enchufe-empresas-publicas-20-julio-2026/"
+    ]
+  },
+  {
+    "id": 26,
+    "suspect": "Joseba García",
+    "title": "hermano de Koldo García",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "investigado",
+        "charges": [
+          "malversación",
+          "tráfico de influencias"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Citado como investigado por el juez Moreno el 3-jul-2026 por su presunta intervención en la contratación de Jéssica Rodríguez en Ineco y Tragsatec. Delitos: malversación y tráfico de influencias. Declaró el 20-jul-2026.",
+    "sourceUrls": [
+      "https://www.eldebate.com/espana/20260720/jessica-rodriguez-expareja-abalos-niega-declarar-primera-citacion-como-imputada_441436_amp.html",
+      "https://rtvc.es/jessica-rodriguez-guarda-silencio-ante-juez-enchufe-empresas-publicas-20-julio-2026/"
+    ]
+  },
+  {
+    "id": 27,
+    "suspect": "Ignacio Zaldívar",
+    "title": "ex-directivo de Adif",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "investigado",
+        "charges": [
+          "malversación",
+          "tráfico de influencias"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Citado como investigado por el juez Moreno el 3-jul-2026 por su presunta intervención en la contratación de Jéssica Rodríguez en Ineco y Tragsatec. Delitos: malversación y tráfico de influencias. Declaró el 20-jul-2026.",
+    "sourceUrls": [
+      "https://www.eldebate.com/espana/20260720/jessica-rodriguez-expareja-abalos-niega-declarar-primera-citacion-como-imputada_441436_amp.html",
+      "https://rtvc.es/jessica-rodriguez-guarda-silencio-ante-juez-enchufe-empresas-publicas-20-julio-2026/"
+    ]
+  },
+  {
+    "id": 28,
+    "suspect": "Javier Herrero",
+    "title": "ex-director general de Carreteras",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "organización criminal",
+          "tráfico de influencias"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputado por el juez Moreno el 7-jul-2025 por cohecho, organización criminal y tráfico de influencias en la pieza de obra pública. Declaró el 21-jul-2025: libertad con retirada de pasaporte y comparecencias quincenales. Unificado en la pieza 65/23 el 9-mar-2026.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/juez-retira-pasaporte-expresidenta-adif-imputada-caso-koldo_1_12480512.html",
+      "https://es.ara.cat/politica/audiencia-nacional-imputa-expresidenta-adif-ex-director-general-carreteras-caso-koldo_1_5435517.html",
+      "https://www.menorca.info/actualidad/nacional/2026/03/09/2585415/juez-del-caso-koldo-unifica-causa-mordidas-obra-publica-imputados.html"
+    ]
+  },
+  {
+    "id": 29,
+    "suspect": "Antxon Alonso",
+    "title": "administrador de Servinabar 2000, socio de Santos Cerdán",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "investigado",
+        "charges": [
+          "organización criminal",
+          "cohecho"
+        ]
+      },
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado",
+        "charges": [
+          "malversación",
+          "tráfico de influencias",
+          "organización criminal",
+          "prevaricación"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde jul-2025 (Supremo, juez Puente) por organización criminal y cohecho activo por las mordidas de obra pública vía Servinabar; unificado en la pieza 65/23 de Moreno el 9-mar-2026. Detenido el 11-dic-2025 en la pieza SEPI del caso Leire Díez ('Hirurok').",
+    "sourceUrls": [
+      "https://es.ara.cat/politica/audiencia-nacional-imputa-expresidenta-adif-ex-director-general-carreteras-caso-koldo_1_5435517.html",
+      "https://www.menorca.info/actualidad/nacional/2026/03/09/2585415/juez-del-caso-koldo-unifica-causa-mordidas-obra-publica-imputados.html",
+      "https://www.elespanol.com/espana/tribunales/20251213/audiencia-nacional-deja-libertad-fontanera-leire-antxon-alonso-expresidente-sepi/1003744053793_0.html"
+    ]
+  },
+  {
+    "id": 30,
+    "suspect": "Justo Vicente Pelegrini",
+    "title": "ex-director de Construcción de Acciona en España",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "organización criminal"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Citado como investigado por el juez Puente (Supremo) el 18-nov-2025 por presuntas mordidas en obra pública a través de Servinabar. Declaró el 3-dic-2025 y admitió reuniones con Cerdán; retirada de pasaporte. Unificado en la pieza 65/23 de Moreno el 9-mar-2026.",
+    "sourceUrls": [
+      "https://www.elindependiente.com/espana/2025/11/18/el-juez-cita-como-investigados-a-tres-directivos-de-acciona-por-el-amano-de-obras-publicas/amp/",
+      "https://nuevecuatrouno.com/2025/12/03/caso-koldo-juez-retira-pasaporte-directivos-acciona-mordidas-ronda-sur/",
+      "https://www.menorca.info/actualidad/nacional/2026/03/09/2585415/juez-del-caso-koldo-unifica-causa-mordidas-obra-publica-imputados.html"
+    ]
+  },
+  {
+    "id": 31,
+    "suspect": "Tomás Olarte Sanz",
+    "title": "responsable de la Zona Norte de Acciona",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "organización criminal"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Citado como investigado por el juez Puente (Supremo) el 18-nov-2025 por presuntas mordidas en obra pública vía Servinabar. Declaró el 3-dic-2025, negó conocer a Cerdán; retirada de pasaporte. Suspendido por Acciona. Unificado en la pieza 65/23 el 9-mar-2026.",
+    "sourceUrls": [
+      "https://www.elindependiente.com/espana/2025/11/18/el-juez-cita-como-investigados-a-tres-directivos-de-acciona-por-el-amano-de-obras-publicas/amp/",
+      "https://nuevecuatrouno.com/2025/12/03/caso-koldo-juez-retira-pasaporte-directivos-acciona-mordidas-ronda-sur/",
+      "https://www.menorca.info/actualidad/nacional/2026/03/09/2585415/juez-del-caso-koldo-unifica-causa-mordidas-obra-publica-imputados.html"
+    ]
+  },
+  {
+    "id": 32,
+    "suspect": "Manuel José García Alconchel",
+    "title": "director de Zona Sur y África de Acciona",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "organización criminal"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Citado como investigado por el juez Puente (Supremo) el 18-nov-2025 por presuntas mordidas en obra pública vía Servinabar. Declaró el 15-dic-2025 y negó irregularidades. Suspendido cautelarmente por Acciona. Unificado en la pieza 65/23 de Moreno el 9-mar-2026.",
+    "sourceUrls": [
+      "https://www.elindependiente.com/espana/2025/11/18/el-juez-cita-como-investigados-a-tres-directivos-de-acciona-por-el-amano-de-obras-publicas/amp/",
+      "https://www.menorca.info/actualidad/nacional/2025/12/15/2532085/otro-directivo-acciona-niega-conocer-cerdan-cualquier-irregularidad-servinabar.html",
+      "https://www.menorca.info/actualidad/nacional/2026/03/09/2585415/juez-del-caso-koldo-unifica-causa-mordidas-obra-publica-imputados.html"
+    ]
+  },
+  {
+    "id": 33,
+    "suspect": "Juan Manuel Serrano",
+    "title": "ex-jefe de gabinete de Pedro Sánchez, ex-presidente de Correos",
+    "categories": [
+      "institucional",
+      "psoe"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado",
+        "charges": [
+          "organización criminal"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputado por el juez Pedraz el 10-jul-2026, a petición de Anticorrupción, por su relación con la organización de Leire Díez y Vicente Fernández y la contratación de Díez en Correos. El 20-jul-2026 ordenó clonar su móvil (más de 10.000 mensajes con Díez); citado el 5-ago-2026.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/juez-pedraz-imputa-ex-jefe-gabinete-sanchez-psoe-caso-leire-diez_1_13370534.html",
+      "https://www.elindependiente.com/espana/2026/07/10/pedraz-imputa-al-exjefe-de-gabinete-de-sanchez-juanma-serrano-en-el-caso-leire/",
+      "https://www.eldebate.com/espana/20260720/pedraz-cita-5-agosto-exjefe-gabinete-sanchez-clonado-movil_441568.html"
+    ]
+  },
+  {
+    "id": 34,
+    "suspect": "Ismael Oliver",
+    "title": "abogado de Koldo García, socio de Leire Díez",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado",
+        "charges": [
+          "organización criminal",
+          "cohecho",
+          "revelación de secretos",
+          "falso testimonio",
+          "acusación falsa",
+          "falsedad documental",
+          "prevaricación",
+          "tráfico de influencias",
+          "delito contra las instituciones del Estado"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado por el juez Pedraz desde el 27-may-2026 en la trama de las 'cloacas' del PSOE, con la misma calificación que Cerdán, Díez y Zarrías. Sus honorarios se habrían pagado con fondos del PSOE y habría canalizado dinero a Díez vía Oliver Gruppe SL.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/uco-persona-sede-psoe-ferraz-investigacion-audiencia-nacional_1_13252759.html",
+      "https://www.elespanol.com/espana/tribunales/20260612/juez-pedraz-cita-imputado-caso-leire-jacobo-teijelo-abogado-santos-cerdan/1003744283689_0.html"
+    ]
+  },
+  {
+    "id": 35,
+    "suspect": "Jacobo Teijelo",
+    "title": "abogado de Santos Cerdán",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado",
+        "charges": [
+          "revelación de secretos",
+          "cohecho",
+          "delito contra las instituciones del Estado"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado por el juez Pedraz desde may-2026 (citado el 25-jun-2026) por revelación de secretos, cohecho y delito contra las instituciones del Estado. Habría cobrado fondos del PSOE y asistido a la reunión del 10-dic-2024 con el exagente de la UCO Sánchez Yepes.",
+    "sourceUrls": [
+      "https://www.elespanol.com/espana/tribunales/20260612/juez-pedraz-cita-imputado-caso-leire-jacobo-teijelo-abogado-santos-cerdan/1003744283689_0.html",
+      "https://www.eldiario.es/politica/uco-persona-sede-psoe-ferraz-investigacion-audiencia-nacional_1_13252759.html",
+      "https://www.moncloa.com/2026/06/12/teijelo-imputado-caso-leire-3384346/"
+    ]
+  },
+  {
+    "id": 36,
+    "suspect": "Javier Pérez Dolset",
+    "title": "empresario",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado",
+        "charges": [
+          "organización criminal",
+          "cohecho",
+          "revelación de secretos",
+          "falso testimonio",
+          "acusación falsa",
+          "falsedad documental",
+          "prevaricación",
+          "tráfico de influencias",
+          "delito contra las instituciones del Estado"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputado en oct-2025 por el juez Zamarriego (Madrid) por presunto cohecho y tráfico de influencias al ofrecer favores a los fiscales Stampa y Grinda; declaró en nov-2025. Desde el 27-may-2026 investigado por Pedraz en la trama de Cerdán y Díez, con la misma calificación que ellos.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/uco-persona-sede-psoe-ferraz-investigacion-audiencia-nacional_1_13252759.html",
+      "https://es.ara.cat/politica/lio-guerra-cloacas-juez-investiga-leire-diez-perez-dolset-presunto-cohecho_1_5524678.amp.html",
+      "https://www.vozpopuli.com/espana/el-juez-investigara-las-denuncias-de-dos-fiscales-contra-leire-diez-e-imputa-al-empresario-dolset-por-intento-de-soborno.html"
+    ]
+  },
+  {
+    "id": 37,
+    "suspect": "Juan Sánchez Yepes",
+    "title": "ex-capitán de la UCO de la Guardia Civil",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado",
+        "charges": [
+          "revelación de secretos",
+          "cohecho",
+          "delito contra las instituciones del Estado"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado por el juez Pedraz desde el 27-may-2026 por presuntamente revelar a Díez, Dolset y Teijelo datos reservados sobre la UCO en una reunión del 10-dic-2024. Misma calificación que Teijelo: revelación de secretos, cohecho y delito contra las instituciones del Estado.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/uco-persona-sede-psoe-ferraz-investigacion-audiencia-nacional_1_13252759.html",
+      "https://www.deia.eus/actualidad/sociedad/2026/05/27/juez-cree-exagente-uco-revelo-leire-diez-psoe-ferraz-guardia-civil-11125231.html",
+      "https://theobjective.com/espana/2026-05-28/exmando-uco-datos-sensibles-leire-diez-psoe/"
+    ]
+  },
+  {
+    "id": 38,
+    "suspect": "Laura Rodríguez Espinosa",
+    "title": "hija de José Luis Rodríguez Zapatero, administradora de Whathefav SL",
+    "categories": [
+      "familia"
+    ],
+    "causes": [
+      {
+        "name": "Caso Plus Ultra",
+        "status": "investigado",
+        "charges": [
+          "blanqueo de capitales",
+          "tráfico de influencias"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputada el 18-jun-2026 por el juez Calama, a petición de Anticorrupción, por blanqueo de capitales y tráfico de influencias como administradora de Whathefav, agencia que habría recibido pagos del entramado de Plus Ultra (239.755 € de Análisis Relevante). Declara el 30-nov-2026.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/juez-calama-imputa-hijas-secretaria-zapatero_1_13314717.html",
+      "https://rtvc.es/el-juez-cita-como-investigadas-a-las-hijas-de-zapatero-por-el-caso-plus-ultra-21-septiembre-2026/",
+      "https://www.vozpopuli.com/tribunales/el-juez-citara-a-las-hijas-de-zapatero-tras-escuchar-las-revelaciones-de-los-directivos-de-plus-ultra.html"
+    ]
+  },
+  {
+    "id": 39,
+    "suspect": "Alba Rodríguez Espinosa",
+    "title": "hija de José Luis Rodríguez Zapatero, administradora de Whathefav SL",
+    "categories": [
+      "familia"
+    ],
+    "causes": [
+      {
+        "name": "Caso Plus Ultra",
+        "status": "investigado",
+        "charges": [
+          "blanqueo de capitales",
+          "tráfico de influencias"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputada el 18-jun-2026 por el juez Calama por blanqueo de capitales y tráfico de influencias como coadministradora de Whathefav, empresa vinculada a los pagos del caso Plus Ultra. Citada a declarar como investigada el 30-nov-2026.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/juez-calama-imputa-hijas-secretaria-zapatero_1_13314717.html",
+      "https://rtvc.es/el-juez-cita-como-investigadas-a-las-hijas-de-zapatero-por-el-caso-plus-ultra-21-septiembre-2026/",
+      "https://www.vozpopuli.com/tribunales/el-juez-citara-a-las-hijas-de-zapatero-tras-escuchar-las-revelaciones-de-los-directivos-de-plus-ultra.html"
+    ]
+  },
+  {
+    "id": 40,
+    "suspect": "Gertrudis Alcázar",
+    "title": "secretaria de José Luis Rodríguez Zapatero",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Plus Ultra",
+        "status": "investigado",
+        "charges": [
+          "tráfico de influencias",
+          "blanqueo de capitales"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputada el 18-jun-2026 por el juez Calama, a petición de Anticorrupción, en el mismo auto que las hijas de Zapatero (tráfico de influencias y posible blanqueo). La UDEF la sitúa en un tercer nivel de la trama, ejecutando instrucciones del expresidente. Sin fecha de declaración.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/juez-calama-imputa-hijas-secretaria-zapatero_1_13314717.html",
+      "https://rtvc.es/el-juez-cita-como-investigadas-a-las-hijas-de-zapatero-por-el-caso-plus-ultra-21-septiembre-2026/",
+      "https://www.vozpopuli.com/tribunales/el-juez-citara-a-las-hijas-de-zapatero-tras-escuchar-las-revelaciones-de-los-directivos-de-plus-ultra.html"
+    ]
+  },
+  {
+    "id": 41,
+    "suspect": "Simon Leendert Verhoeven",
+    "title": "financiero neerlandés, presunto cerebro financiero de la trama Plus Ultra",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Plus Ultra",
+        "status": "investigado",
+        "charges": [
+          "tráfico de influencias",
+          "blanqueo de capitales",
+          "organización criminal"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Detenido en Alemania y entregado a España en sep-2026; el juez Calama lo dejó en libertad con retirada de pasaporte. Investigado por tráfico de influencias, blanqueo de capitales y organización criminal. Declara como investigado el 16-oct-2026.",
+    "sourceUrls": [
+      "https://www.democrata.es/tribunales/el-juez-interroga-como-imputado-al-supuesto-cerebro-financiero-del-caso-plus-ultra-el-16-de-octubre/",
+      "https://www.elespanol.com/espana/20260922/detenido-alemania-simon-verhoeven-cerebro-financiero-caso-plus-ultra/1003744393308_0.html"
+    ]
+  },
+  {
+    "id": 42,
+    "suspect": "Cristina Álvarez",
+    "title": "asesora de Begoña Gómez en Moncloa",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Begoña Gómez",
+        "status": "procesado",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Audiencia Provincial de Madrid",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputada por malversación por el juez Peinado el 18-ago-2025. El 21-sep-2026 Peinado dictó auto de apertura de juicio oral con jurado contra ella solo por malversación, tras recortar la Audiencia Provincial otros delitos el 16-jul-2026. La Fiscalía pide su absolución. Sin fecha de juicio.",
+    "sourceUrls": [
+      "https://rtvc.es/el-juez-peinado-envia-a-juicio-con-jurado-a-begona-gomez-21-septiembre-2026/",
+      "https://www.economistjurist.es/?p=254746",
+      "https://rtvc.es/imputacion-begona-gomez-y-su-asesora-por-malversacion-18-agosto-2025/"
+    ]
+  },
+  {
+    "id": 43,
+    "suspect": "Juan Carlos Barrabés",
+    "title": "empresario, Grupo Barrabés",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Begoña Gómez",
+        "status": "investigado",
+        "charges": [
+          "tráfico de influencias",
+          "prevaricación"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 41 de Madrid",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado desde 2024 por tráfico de influencias por los contratos públicos avalados por Begoña Gómez. El 19-jun-2026 Peinado abrió una pieza por prevaricación y fraude; el 16-jul-2026 la Audiencia Provincial lo separó del juicio con jurado y sigue en procedimiento abreviado.",
+    "sourceUrls": [
+      "https://www.vozpopuli.com/tribunales/la-audiencia-de-madrid-avala-el-juicio-con-jurado-a-begona-gomez-por-malversacion-y-trafico-de-influencias.html",
+      "https://www.infobae.com/espana/2026/06/19/el-juez-peinado-abre-una-nueva-pieza-en-el-caso-begona-gomez-y-le-imputa-otros-dos-delitos-por-presuntas-irregularidades-en-un-contrato-a-barrabes/",
+      "https://www.elindependiente.com/espana/tribunales/2026/06/20/peinado-retira-el-pasaporte-a-begona-gomez-y-la-envia-a-juicio-con-jurado-por-cuatro-delitos/"
+    ]
+  },
+  {
+    "id": 44,
+    "suspect": "Francisco Martín Aguirre",
+    "title": "Delegado del Gobierno en Madrid, ex-secretario general de Presidencia",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Begoña Gómez",
+        "status": "sobreseido",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 41 de Madrid",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputado por Peinado en may-2025 por malversación, tras querella de Vox, por la contratación de la asesora Cristina Álvarez. La Audiencia Provincial de Madrid estimó en dic-2025 los recursos de Fiscalía y Abogacía del Estado por falta de indicios y Peinado acordó el sobreseimiento libre.",
+    "sourceUrls": [
+      "https://www.vozpopuli.com/tribunales/la-audiencia-de-madrid-rechaza-que-el-juez-del-caso-begona-investigue-al-delegado-del-gobierno.html",
+      "https://www.vozpopuli.com/tribunales/el-juez-del-caso-begona-gomez-archiva-la-causa-contra-el-delegado-del-gobierno-en-madrid.html",
+      "https://www.eldiario.es/politica/delegado-gobierno-madrid-niega-haber-participado-contratacion-asesora-begona-gomez_1_12298144.amp.html"
+    ]
   }
 ]
