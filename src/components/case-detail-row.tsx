@@ -2,24 +2,25 @@
 
 import { ExternalLink, Scale, Calendar, Euro } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import type { Case } from "@/lib/types";
+import type { SuspectView } from "@/lib/schema";
 
 type Props = {
-  caseData: Case;
-  allCases: Case[];
+  caseData: SuspectView;
+  allCases: SuspectView[];
 };
 
 export function CaseDetailRow({ caseData: c, allCases }: Props) {
-  const relatedCases = (c.relatedCaseIds ?? [])
+  const relatedCases = c.relatedIds
     .map((rid) => allCases.find((a) => a.id === rid))
-    .filter((a): a is Case => a !== undefined);
+    .filter((a): a is SuspectView => a !== undefined);
 
-  const amountFormatted = c.amount
+  const amount = c.causes.find((cause) => cause.amount)?.amount;
+  const amountFormatted = amount
     ? new Intl.NumberFormat("es-ES", {
         style: "currency",
         currency: "EUR",
         maximumFractionDigits: 0,
-      }).format(c.amount)
+      }).format(amount)
     : null;
 
   return (
@@ -57,7 +58,7 @@ export function CaseDetailRow({ caseData: c, allCases }: Props) {
               <div className="flex flex-wrap gap-1.5">
                 {relatedCases.map((rel) => (
                   <Badge key={rel.id} variant="outline" className="text-xs cursor-default">
-                    {rel.caseName ?? rel.suspect}
+                    {rel.suspect}
                   </Badge>
                 ))}
               </div>

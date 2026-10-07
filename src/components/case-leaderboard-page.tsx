@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import type { Case, Allegiance } from "@/lib/types";
+import type { SuspectView, Allegiance } from "@/lib/schema";
 import { LeaderboardTable } from "@/components/leaderboard-table";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Landmark, Users, Flower2, Briefcase, Search } from "lucide-react";
+import { Landmark, Users, Flower2, Briefcase, Search, Handshake } from "lucide-react";
 import Image from "next/image";
 
 const allegianceFilters: { name: Allegiance | "all"; icon: React.ElementType; label: string }[] = [
@@ -14,10 +14,11 @@ const allegianceFilters: { name: Allegiance | "all"; icon: React.ElementType; la
   { name: "familia", icon: Users, label: "Familia" },
   { name: "psoe", icon: Flower2, label: "PSOE" },
   { name: "institucional", icon: Landmark, label: "Institucional" },
+  { name: "entorno", icon: Handshake, label: "Entorno" },
 ];
 
 type CaseLeaderboardPageProps = {
-  cases: Case[];
+  cases: SuspectView[];
 };
 
 export function CaseLeaderboardPage({ cases: initialCases }: CaseLeaderboardPageProps) {
@@ -42,13 +43,13 @@ export function CaseLeaderboardPage({ cases: initialCases }: CaseLeaderboardPage
     const byCategory =
       activeFilter === "all"
         ? initialCases
-        : initialCases.filter((c) => c.category === activeFilter);
+        : initialCases.filter((c) => c.categories.includes(activeFilter));
     if (!searchQuery.trim()) return byCategory;
     const q = searchQuery.toLowerCase();
     return byCategory.filter(
       (c) =>
         c.suspect.toLowerCase().includes(q) ||
-        (c.caseName?.toLowerCase().includes(q) ?? false) ||
+        c.caseName.toLowerCase().includes(q) ||
         c.title.toLowerCase().includes(q)
     );
   }, [initialCases, activeFilter, searchQuery]);

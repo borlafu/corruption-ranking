@@ -6,17 +6,18 @@ import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpDown, Landmark, Users, Flower2, ExternalLink, Briefcase, ChevronDown, ChevronUp } from "lucide-react";
-import type { Case, Allegiance, CaseStatus } from "@/lib/types";
+import { ArrowUpDown, Landmark, Users, Flower2, ExternalLink, Briefcase, Handshake, ChevronDown, ChevronUp } from "lucide-react";
+import type { SuspectView, Allegiance, CaseStatus } from "@/lib/schema";
 import { CaseDetailRow } from "@/components/case-detail-row";
 
-type SortKey = keyof Pick<Case, "suspect" | "accusations" | "sentences">;
+type SortKey = keyof Pick<SuspectView, "suspect" | "accusations" | "sentences">;
 
 const allegianceIcons: Record<Allegiance, React.ElementType> = {
   gobierno: Briefcase,
   familia: Users,
   psoe: Flower2,
   institucional: Landmark,
+  entorno: Handshake,
 };
 
 const allegianceLabels: Record<Allegiance, string> = {
@@ -24,12 +25,14 @@ const allegianceLabels: Record<Allegiance, string> = {
   familia: "Familia",
   psoe: "PSOE",
   institucional: "Institucional",
+  entorno: "Entorno",
 };
 
 const statusConfig: Record<CaseStatus, { label: string; className: string }> = {
   investigado: { label: "Investigado/a", className: "border-yellow-500/40 bg-yellow-500/10 text-yellow-300" },
   procesado: { label: "Procesado/a", className: "border-orange-500/40 bg-orange-500/10 text-orange-300" },
   condenado: { label: "Condenado/a", className: "border-red-600/40 bg-red-600/15 text-red-300" },
+  absuelto: { label: "Absuelto/a", className: "border-green-600/40 bg-green-600/10 text-green-300" },
   sobreseido: { label: "Sobreseído/a", className: "border-border bg-muted text-muted-foreground" },
 };
 
@@ -49,7 +52,7 @@ const SortableHeader: FC<{
   </TableHead>
 );
 
-export function LeaderboardTable({ cases, allCases }: { cases: Case[]; allCases: Case[] }) {
+export function LeaderboardTable({ cases, allCases }: { cases: SuspectView[]; allCases: SuspectView[] }) {
   const [sortKey, setSortKey] = useState<SortKey | null>("sentences");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
   const [expandedRowId, setExpandedRowId] = useState<number | null>(null);
@@ -120,8 +123,6 @@ export function LeaderboardTable({ cases, allCases }: { cases: Case[]; allCases:
           <TableBody>
             {sortedCases.length > 0 ? (
               sortedCases.map((c, index) => {
-                const Icon = allegianceIcons[c.category];
-                const allegianceLabel = allegianceLabels[c.category];
                 const status = statusConfig[c.status];
                 const isExpanded = expandedRowId === c.id;
                 return (
@@ -133,22 +134,27 @@ export function LeaderboardTable({ cases, allCases }: { cases: Case[]; allCases:
                       <TableCell className="text-center text-muted-foreground font-medium">{index + 1}</TableCell>
                       <TableCell className="font-medium">
                         <div>{c.suspect}</div>
-                        {c.caseName && (
-                          <div className="text-xs text-muted-foreground font-normal">{c.caseName}</div>
-                        )}
+                        <div className="text-xs text-muted-foreground font-normal">{c.caseName}</div>
                       </TableCell>
                       <TableCell className="hidden md:table-cell">
-                        <Tooltip>
-                          <TooltipTrigger asChild>
-                            <Badge variant="outline" className="gap-2 cursor-default capitalize">
-                              <Icon className="h-3.5 w-3.5 text-accent" />
-                              <span className="hidden lg:inline">{allegianceLabel}</span>
-                            </Badge>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p>{allegianceLabel}</p>
-                          </TooltipContent>
-                        </Tooltip>
+                        <div className="flex flex-wrap gap-1">
+                          {c.categories.map((cat) => {
+                            const Icon = allegianceIcons[cat];
+                            return (
+                              <Tooltip key={cat}>
+                                <TooltipTrigger asChild>
+                                  <Badge variant="outline" className="gap-2 cursor-default capitalize">
+                                    <Icon className="h-3.5 w-3.5 text-accent" />
+                                    <span className="hidden lg:inline">{allegianceLabels[cat]}</span>
+                                  </Badge>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                  <p>{allegianceLabels[cat]}</p>
+                                </TooltipContent>
+                              </Tooltip>
+                            );
+                          })}
+                        </div>
                       </TableCell>
                       <TableCell className="hidden sm:table-cell">
                         <Badge variant="outline" className={`text-xs ${status.className}`}>
