@@ -703,5 +703,31 @@
       "https://www.estrelladigital.es/articulo/tribunales/que-delitos-imputa-pedraz-mercedes-gonzalez-dao-guardia-civil-uco-caso-leire/20260702132039448229.html",
       "https://www.elespanol.com/espana/20260717/dao-acorralado-implica-ministro-marlaska-mercedes-gonzalez-alega-uco-no-debe-proactiva-investigar/1003744324386_0.html"
     ]
+  },
+  {
+    "id": 24,
+    "suspect": "Nervis Villalobos",
+    "title": "ex-viceministro de Energía de Venezuela, socio de Leire Díez",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado",
+        "charges": [
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Citado como investigado el 6-oct-2026 por el juez Pedraz (Audiencia Nacional) por presunta falsificación documental en su expediente de nacionalidad española por la 'ley de nietos', tramitado con ayuda de la red de Leire Díez. Declaración fijada para el 30-oct-2026.",
+    "sourceUrls": [
+      "https://www.infobae.com/espana/2026/10/06/el-juez-del-caso-leire-cita-como-investigado-a-un-exviceministro-chavista-por-falsificar-los-documentos-para-obtener-la-nacionalidad-a-traves-de-la-ley-de-nietos/",
+      "https://www.estrelladigital.es/articulo/tribunales/pedraz-reclama-psoe-todos-contratos-abogados-consultoras-2021-2025-cita-nervis-villalobos/20261006150011451867.html",
+      "https://www.infobae.com/america/agencias/2026/10/07/el-juez-del-caso-leire-aplaza-la-declaracion-como-imputado-del-excargo-chavista-nervis-villalobos-al-30-de-octubre/"
+    ]
   }
 ]
