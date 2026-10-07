@@ -25,6 +25,7 @@ export const partyLabel: Record<Party, string> = {
   vox: "Vox",
   podemos: "Podemos",
   sumar: "Sumar",
+  iu: "IU",
   junts: "Junts",
   erc: "ERC",
   pnv: "PNV",
