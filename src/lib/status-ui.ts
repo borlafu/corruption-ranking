@@ -1,5 +1,5 @@
-import { Briefcase, Flower2, Handshake, Landmark, Users, type LucideIcon } from "lucide-react";
-import type { Allegiance, CaseStatus } from "@/lib/schema";
+import { Briefcase, Handshake, Landmark, Users, Vote, type LucideIcon } from "lucide-react";
+import type { Allegiance, CaseStatus, Party } from "@/lib/schema";
 
 // Class names are spelled out in full so Tailwind can detect them.
 export const statusConfig: Record<CaseStatus, { label: string; className: string }> = {
@@ -13,9 +13,22 @@ export const statusConfig: Record<CaseStatus, { label: string; className: string
 export const categoryConfig: Record<Allegiance, { label: string; icon: LucideIcon }> = {
   gobierno: { label: "Gobierno", icon: Briefcase },
   familia: { label: "Familia", icon: Users },
-  psoe: { label: "PSOE", icon: Flower2 },
+  partido: { label: "Partido", icon: Vote },
   institucional: { label: "Institucional", icon: Landmark },
   entorno: { label: "Entorno", icon: Handshake },
+};
+
+// Text only: no party logos or colours.
+export const partyLabel: Record<Party, string> = {
+  psoe: "PSOE",
+  pp: "PP",
+  vox: "Vox",
+  podemos: "Podemos",
+  sumar: "Sumar",
+  junts: "Junts",
+  erc: "ERC",
+  pnv: "PNV",
+  cs: "Cs",
 };
 
 const UTC_DATE: Intl.DateTimeFormatOptions = { timeZone: "UTC", day: "numeric", month: "short", year: "numeric" };

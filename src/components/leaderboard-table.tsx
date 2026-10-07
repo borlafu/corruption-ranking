@@ -8,7 +8,7 @@ import { badgeVariants } from "@/components/ui/badge";
 import { ArrowDown, ArrowUp, ArrowUpDown, ChevronDown, ChevronUp } from "lucide-react";
 import { formatPenalty, type SuspectView } from "@/lib/schema";
 import { slug } from "@/lib/filters";
-import { categoryConfig, statusConfig } from "@/lib/status-ui";
+import { categoryConfig, partyLabel, statusConfig } from "@/lib/status-ui";
 import { CaseDetailRow } from "@/components/case-detail-row";
 import { FilterLink } from "@/components/nav";
 import { SourceList } from "@/components/source-list";
@@ -179,6 +179,15 @@ export function LeaderboardTable({ cases, allCases, openId, onToggle }: Props) {
                             </FilterLink>
                           );
                         })}
+                        {c.party && (
+                          <FilterLink
+                            patch={{ partido: c.party }}
+                            title={`Filtrar por ${partyLabel[c.party]}`}
+                            className={`${badgeVariants({ variant: "outline" })} hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring`}
+                          >
+                            {partyLabel[c.party]}
+                          </FilterLink>
+                        )}
                       </div>
                     </TableCell>
                     <TableCell className="hidden sm:table-cell">

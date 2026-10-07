@@ -141,9 +141,9 @@
     "suspect": "José Luis Ábalos",
     "title": "ex-Ministro de Transportes",
     "categories": [
-      "gobierno",
-      "psoe"
+      "gobierno"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso Koldo",
@@ -185,8 +185,9 @@
     "suspect": "Santos Cerdán",
     "title": "ex-Secretario de Organización del PSOE",
     "categories": [
-      "psoe"
+      "partido"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso Koldo",
@@ -264,8 +265,9 @@
     "suspect": "Leire Díez",
     "title": "ex-militante PSOE",
     "categories": [
-      "psoe"
+      "partido"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso Leire Díez",
@@ -298,8 +300,10 @@
     "suspect": "Miguel Ángel Gallardo",
     "title": "ex-líder PSOE Extremadura",
     "categories": [
-      "psoe"
+      "partido",
+      "institucional"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso David Sánchez",
@@ -332,8 +336,9 @@
     "suspect": "Juan Bernardo Fuentes Curbelo",
     "title": "ex-diputado PSOE, 'Tito Berni'",
     "categories": [
-      "psoe"
+      "institucional"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso Mediador",
@@ -441,9 +446,9 @@
     "suspect": "José Luis Rodríguez Zapatero",
     "title": "ex-Presidente del Gobierno (2004-2011)",
     "categories": [
-      "psoe",
       "gobierno"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso Plus Ultra",
@@ -472,8 +477,9 @@
     "suspect": "José Antonio Griñán Martínez",
     "title": "ex-Presidente de la Junta de Andalucía (2009-2013)",
     "categories": [
-      "psoe"
+      "gobierno"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso ERE",
@@ -507,9 +513,9 @@
     "suspect": "Manuel Chaves González",
     "title": "ex-Presidente de la Junta de Andalucía (1990-2009), ex-Vicepresidente del Gobierno",
     "categories": [
-      "psoe",
       "gobierno"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso ERE",
@@ -598,8 +604,9 @@
     "suspect": "Gaspar Zarrías Arévalo",
     "title": "ex-dirigente PSOE Andalucía, ex-consejero Junta de Andalucía",
     "categories": [
-      "psoe"
+      "gobierno"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso Leire Díez",
@@ -632,8 +639,9 @@
     "suspect": "Ana María Fuentes Pacheco",
     "title": "gerente del PSOE",
     "categories": [
-      "psoe"
+      "partido"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso Leire Díez",
@@ -959,9 +967,9 @@
     "suspect": "Juan Manuel Serrano",
     "title": "ex-jefe de gabinete de Pedro Sánchez, ex-presidente de Correos",
     "categories": [
-      "institucional",
-      "psoe"
+      "institucional"
     ],
+    "party": "psoe",
     "causes": [
       {
         "name": "Caso Leire Díez",

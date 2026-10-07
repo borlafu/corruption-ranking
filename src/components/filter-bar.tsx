@@ -4,13 +4,14 @@ import { X, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { CATEGORIES, type Crime } from "@/lib/schema";
+import { CATEGORIES, type Crime, type Party } from "@/lib/schema";
 import { hasFilters, type Filters } from "@/lib/filters";
-import { categoryConfig } from "@/lib/status-ui";
+import { categoryConfig, partyLabel } from "@/lib/status-ui";
 
 type Props = {
   filters: Filters;
   years: number[];
+  parties: Party[];
   crimes: Crime[];
   /** Display name for the active `caso` slug. */
   caseName?: string;
@@ -46,9 +47,10 @@ function Chip({ pressed, onClick, children, className = "" }: { pressed: boolean
   );
 }
 
-export function FilterBar({ filters, years, crimes, caseName, onChange, onSearch, onClear }: Props) {
+export function FilterBar({ filters, years, parties, crimes, caseName, onChange, onSearch, onClear }: Props) {
   const labels: Record<keyof Filters, string | undefined> = {
     cat: filters.cat && categoryConfig[filters.cat].label,
+    partido: filters.partido && partyLabel[filters.partido],
     anio: filters.anio?.toString(),
     delito: filters.delito,
     caso: filters.caso && (caseName ?? filters.caso),
@@ -73,6 +75,17 @@ export function FilterBar({ filters, years, crimes, caseName, onChange, onSearch
             </Chip>
           );
         })}
+      </ChipGroup>
+
+      <ChipGroup label="Partido">
+        <Chip pressed={!filters.partido} onClick={() => onChange({ partido: undefined })}>
+          Todos
+        </Chip>
+        {parties.map((partido) => (
+          <Chip key={partido} pressed={filters.partido === partido} onClick={() => onChange({ partido })}>
+            {partyLabel[partido]}
+          </Chip>
+        ))}
       </ChipGroup>
 
       <ChipGroup label="Año">

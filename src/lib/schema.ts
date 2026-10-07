@@ -1,7 +1,10 @@
 import { z } from "zod";
 
-/** Political allegiance of a suspect. A suspect may carry several. */
-export const CATEGORIES = ["gobierno", "familia", "psoe", "institucional", "entorno"] as const;
+/** Role of a suspect. A suspect may carry several. */
+export const CATEGORIES = ["gobierno", "familia", "partido", "institucional", "entorno"] as const;
+
+/** Party the suspect belonged to when the facts occurred. Add a value here rather than free text. */
+export const PARTIES = ["psoe", "pp", "vox", "podemos", "sumar", "junts", "erc", "pnv", "cs"] as const;
 
 /**
  * Legal status of one cause.
@@ -80,6 +83,7 @@ export const SuspectSchema = z
     /** Role description shown under the name. */
     title: z.string().min(1),
     categories: z.array(z.enum(CATEGORIES)).min(1),
+    party: z.enum(PARTIES).optional(),
     causes: z.array(CauseSchema).min(1),
     /** Year the suspect entered the case. Shown as "Año" and used by the year filter. */
     startYear: z.number().int().min(1970).max(2040),
@@ -116,6 +120,7 @@ export const DataSchema = z.array(SuspectSchema).superRefine((all, ctx) => {
 });
 
 export type Allegiance = (typeof CATEGORIES)[number];
+export type Party = (typeof PARTIES)[number];
 export type CaseStatus = (typeof STATUSES)[number];
 export type Crime = (typeof CRIMES)[number];
 export type Sentence = z.infer<typeof SentenceSchema>;

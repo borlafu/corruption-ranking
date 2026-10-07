@@ -16,20 +16,22 @@ Schema and JSDoc live in `src/lib/schema.ts`. Summary:
 - `causes[].charges` = distinct crimes charged in that cause, values from the `CRIMES` enum in `schema.ts` (add an enum value rather than free text). `causes[].convictions` ⊆ charges, only when `condenado`. The UI derives "Acusaciones"/"Condenas" counts from these; never store counts.
 - `causes[].sentence` only when `condenado`: `{ date, prisonMonths?, disqualificationMonths?, fineEur?, suspended?, firm }`. `firm: false` while an appeal or re-sentencing is pending.
 - `startYear` (required) = year the suspect entered the case; drives the "Año" column and filter.
-- `categories`: `gobierno` (member of central government, past or present), `familia` (family of a government member), `psoe` (party official/member), `institucional` (public servant or public body officer), `entorno` (businessman or private intermediary). A suspect can have several.
+- `categories` (roles): `gobierno` (member of central or regional government, past or present), `familia` (family of a government member), `partido` (party official or member with no public office), `institucional` (public servant, legislator or public body officer), `entorno` (businessman or private intermediary). A suspect can have several.
+- `party`: party the suspect belonged to when the facts occurred, from the `PARTIES` enum (add a value rather than free text). Omit for non-members.
+- **Scope**: every party, national and regional level (no municipal-only cases), causes still open or resolved on or after 2018-01-01. Apply the same bar and the same sources to every party.
 - `amount`: total EUR of the whole case, on the cause, identical for every suspect sharing that cause.
 - `court`: court that issued the last ruling or is instructing. Note appeals in `summary`.
 - `summary`: Spanish, factual, ≤ 300 chars, dated milestones ("22-jun-2026").
 - `lastUpdated`: bump to today **only** on records whose content changed.
 - `sourceUrls`: https only, no duplicates, at least one non-Wikipedia source. Only URLs that appeared in a search result or were fetched successfully. Never construct a URL.
 
-Preferred sources: poderjudicial.es, elpais.com, elmundo.es, rtve.es, abc.es, elconfidencial.com, elespanol.com, elperiodico.com, europapress.es, efe.com, eldiario.es, infobae.com/espana. Treat partisan outlets as leads to confirm elsewhere.
+Preferred sources: poderjudicial.es, elpais.com, elmundo.es, rtve.es, abc.es, elconfidencial.com, elespanol.com, elperiodico.com, europapress.es, efe.com, eldiario.es, infobae.com/espana. Treat partisan outlets of any side as leads to confirm elsewhere.
 
 ## Steps
 
 1. **Prepare**: `git checkout main && git pull`, then branch `data/update-YYYY-MM-DD`. Read `src/lib/data.json` and `src/lib/schema.ts`.
 2. **Per-suspect research**: for each record, WebSearch "<suspect> <cause name>" restricted to developments after that record's `lastUpdated`. Batch suspects across sonnet subagents (about 10 per agent); each agent returns, per record: verdict (CORRECT / OUTDATED / WRONG / UNVERIFIABLE), changed fields only, 1–3 URLs with dates, confidence. The main agent decides every edit. Before changing `status` or counts, confirm with a second source or a WebFetch of the article.
-3. **Discovery**: one search pass for new cases opened or escalated since the newest `lastUpdated` involving the categories above. Dedup against existing records by normalised suspect name and by cause name. Add only cases that meet the court-opened bar.
+3. **Discovery**: search for new cases opened or escalated since the newest `lastUpdated`, one pass per party in `PARTIES` plus one for non-party public officials, within the scope above. Dedup against existing records by normalised suspect name and by cause name. Add only cases that meet the court-opened bar.
 4. **Edit** `data.json`: apply changes, preserve ids, new ids = max + 1. Remove a record only if it fails the court-opened bar; say why in the PR body.
 5. **Verify**:
    ```bash

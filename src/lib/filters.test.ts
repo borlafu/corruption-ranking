@@ -8,13 +8,18 @@ const cases = deriveView(DataSchema.parse(data));
 const names = (f: Parameters<typeof filterCases>[1]) => filterCases(cases, f).map((c) => c.suspect);
 
 test("query string round-trips through parseFilters/toSearch", () => {
-  const search = "?cat=psoe&anio=2024&delito=cohecho&caso=caso-koldo&q=abalos";
+  const search = "?cat=gobierno&partido=psoe&anio=2024&delito=cohecho&caso=caso-koldo&q=abalos";
   assert.equal(toSearch(parseFilters(search)), search);
   assert.equal(toSearch({}), "");
 });
 
 test("drops unknown or malformed params", () => {
   assert.deepEqual(parseFilters("?cat=vox&anio=abc&delito=robo&caso=<x>&q=%20&foo=1"), {});
+});
+
+test("legacy cat=psoe maps to partido=psoe", () => {
+  assert.deepEqual(parseFilters("?cat=psoe"), { partido: "psoe" });
+  assert.ok(names({ partido: "psoe" }).includes("Santos Cerdán"));
 });
 
 test("slug strips accents and punctuation", () => {
