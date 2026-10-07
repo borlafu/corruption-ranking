@@ -622,16 +622,35 @@
           "tráfico de influencias",
           "delito contra las instituciones del Estado"
         ]
+      },
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "disqualificationMonths": 108,
+          "firm": false
+        },
+        "amount": 680000000
       }
     ],
     "court": "Audiencia Nacional",
     "startYear": 2026,
-    "lastUpdated": "2026-10-07",
-    "summary": "Imputado el 27-may-2026 por el juez Pedraz en el caso de las 'cloacas' del PSOE por nueve delitos, entre ellos organización criminal, cohecho, revelación de secretos, falsedad, prevaricación y tráfico de influencias. La UCO halló 19.850 € en efectivo en su domicilio.",
+    "lastUpdated": "2026-10-08",
+    "summary": "Imputado el 27-may-2026 por el juez Pedraz en el caso de las 'cloacas' del PSOE por nueve delitos, entre ellos organización criminal, cohecho y tráfico de influencias. Fue condenado en el caso ERE a 9 años de inhabilitación por prevaricación (Supremo, 26-jul-2022); nueva sentencia pendiente.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/uco-persona-sede-psoe-ferraz-investigacion-audiencia-nacional_1_13252759.html",
       "https://www.abc.es/espana/andalucia/uco-halla-20000-euros-metalico-salon-casa-20260603143123-nts.html",
-      "https://www.moncloa.com/2026/10/06/pp-juez-pedraz-caso-leire-3443394"
+      "https://www.moncloa.com/2026/10/06/pp-juez-pedraz-caso-leire-3443394",
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/supremo-confirma-penas-chaves-grinan-ingresara-carcel_1_9038584.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html"
     ]
   },
   {
@@ -3527,6 +3546,1221 @@
     "sourceUrls": [
       "https://www.economistjurist.es/tribunal-supremo/el-supremo-confirma-las-principales-condenas-por-corrupcion-impuestas-a-integrantes-del-pnv-en-alava/",
       "https://www.eldiario.es/euskadi/aitor-telleria-exdirigente-pnv-condenado-corrupcion-19-abril-ingresar-prision_1_10080442.html"
+    ]
+  },
+  {
+    "id": 113,
+    "suspect": "José Antonio Viera Chacón",
+    "title": "ex-Consejero de Empleo de la Junta de Andalucía",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación",
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "prisonMonths": 84,
+          "disqualificationMonths": 216,
+          "firm": true
+        },
+        "amount": 680000000
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenado en el caso ERE (unos 680 M€) a 7 años de prisión y 18 de inhabilitación por prevaricación y malversación, confirmado por el Supremo el 26-jul-2022. El Constitucional rechazó por unanimidad su amparo el 17-jun-2024 por defectos de forma, sin entrar en el fondo.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/constitucional-rechaza-primer-recurso-condenado-ere-andalucia_1_11454607.html",
+      "https://www.eldiario.es/politica/supremo-confirma-penas-chaves-grinan-ingresara-carcel_1_9038584.html"
+    ]
+  },
+  {
+    "id": 114,
+    "suspect": "Antonio Fernández García",
+    "title": "ex-Consejero de Empleo de la Junta de Andalucía",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación",
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "prisonMonths": 95,
+          "disqualificationMonths": 234,
+          "firm": false
+        },
+        "amount": 680000000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenado a 7 años y 11 meses de prisión y 19 años y medio de inhabilitación, la pena más alta del caso ERE; el Constitucional estimó en parte su amparo el 3-jul-2024 y ordenó una nueva sentencia. El 29-abr-2026 fue sobreseído en la pieza de las ayudas de 54,28 M€ a Boliden Apirsa.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/andalucia/constitucional-reduce-malversacion-exconsejero-empleo-recibio-condena-carcel-alta-ere_1_11496827.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html",
+      "https://www.eldiario.es/sevilla/juez-procesa-siete-ex-altos-cargos-junta-dar-ayudas-54-millones-ere-boliden-minera-aznalcollar_1_13181414.html"
+    ]
+  },
+  {
+    "id": 115,
+    "suspect": "Magdalena Álvarez Arza",
+    "title": "ex-Consejera de Economía y Hacienda de la Junta de Andalucía, ex-Ministra de Fomento",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "disqualificationMonths": 108,
+          "firm": false
+        },
+        "amount": 680000000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenada a 9 años de inhabilitación por prevaricación en el caso ERE. El Constitucional anuló la pena el 19-jun-2024 al entender que aprobar proyectos de ley y de presupuestos no es prevaricación; la Audiencia de Sevilla debe dictar nueva sentencia, aún pendiente.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/andalucia/constitucional-anula-condena-magdalena-alvarez-ere-andalucia-tumba-delito-prevaricacion_1_11456778.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html"
+    ]
+  },
+  {
+    "id": 116,
+    "suspect": "Carmen Martínez Aguayo",
+    "title": "ex-Consejera de Hacienda de la Junta de Andalucía",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "prisonMonths": 72,
+          "disqualificationMonths": 180,
+          "firm": false
+        },
+        "amount": 680000000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenada a 6 años de prisión y 15 de inhabilitación por prevaricación y malversación en el caso ERE. El Constitucional la exoneró de la malversación el 3-jul-2024 y la Audiencia de Sevilla la excarceló; la nueva sentencia sigue pendiente de la consulta al TJUE.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/constitucional-anula-malversacion-ere-exconsejera-hacienda-martinez-aguayo_1_11497111.html",
+      "https://www.eldiario.es/andalucia/audiencia-excarcela-exconsejeros-vallejo-aguayo-anular-constitucional-condena-ere_1_11497852.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html"
+    ]
+  },
+  {
+    "id": 117,
+    "suspect": "Francisco Vallejo Serrano",
+    "title": "ex-Consejero de Innovación, Ciencia y Empresa de la Junta de Andalucía",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "prisonMonths": 84,
+          "disqualificationMonths": 216,
+          "firm": false
+        },
+        "amount": 680000000
+      },
+      {
+        "name": "Caso Avales",
+        "status": "procesado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ]
+      },
+      {
+        "name": "Caso Invercaria",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación",
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2026-07-20",
+          "prisonMonths": 42,
+          "disqualificationMonths": 78,
+          "firm": false
+        },
+        "amount": 1180000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenado a 7 años de prisión en el caso ERE; el Constitucional lo exoneró de la malversación el 3-jul-2024 y fue excarcelado. El 20-jul-2026 fue condenado en Invercaria a 3 años y medio por el préstamo de 1,18 M€ a Servivation, y el 8-jul-2026 fue enviado a juicio en el caso Avales.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/constitucional-borra-malversacion-exconsejeros-andaluces-ere_1_11497252.html",
+      "https://www.eldiario.es/andalucia/audiencia-excarcela-exconsejeros-vallejo-aguayo-anular-constitucional-condena-ere_1_11497852.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html",
+      "https://www.canalsur.es/noticias/andalucia/condena-tres-anos-vallejo-perez_1_1423981.html",
+      "https://www.eldebate.com/espana/andalucia/sevilla/20260709/juez-sienta-banquillo-14-ex-altos-cargos-psoe-andalucia-aval-publico-12-millones_437682.html"
+    ]
+  },
+  {
+    "id": 118,
+    "suspect": "Agustín Barberá Salvador",
+    "title": "ex-Viceconsejero de Empleo de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación",
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "prisonMonths": 84,
+          "disqualificationMonths": 216,
+          "firm": false
+        },
+        "amount": 680000000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenado a 7 años de prisión y 18 de inhabilitación por prevaricación y malversación en el caso ERE, confirmado por el Supremo el 26-jul-2022. Ingresó en prisión en 2023 y salió el 16-ago-2024, el último alto cargo de los ERE encarcelado. Pendiente de la nueva sentencia de la Audiencia.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/andalucia/exviceconsejero-barbera-sale-prision-acceder-tercer-grado-condena-ere_1_11592943.html",
+      "https://www.eldiario.es/andalucia/entran-prision-tres-condenados-caso-ere-faltaban-terminara-plazo_1_9838890.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html"
+    ]
+  },
+  {
+    "id": 119,
+    "suspect": "Jesús María Rodríguez Román",
+    "title": "ex-Viceconsejero de Innovación, Ciencia y Empresa de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación",
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "prisonMonths": 72,
+          "disqualificationMonths": 180,
+          "firm": false
+        },
+        "amount": 680000000
+      },
+      {
+        "name": "Caso Avales",
+        "status": "procesado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenado a 6 años de prisión y 15 de inhabilitación en el caso ERE; el Constitucional ordenó rebajar su condena el 3-jul-2024 y fue excarcelado. En el caso Avales, archivado en 2019 y reabierto por piezas, fue enviado a juicio oral el 8-jul-2026 por el aval de 1,18 M€ a Cofrutex.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/constitucional-borra-malversacion-exconsejeros-andaluces-ere_1_11497252.html",
+      "https://www.eldiario.es/andalucia/archivan-avales-idea-exaltos-junta_1_1534212.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html",
+      "https://www.eldebate.com/espana/andalucia/sevilla/20260709/juez-sienta-banquillo-14-ex-altos-cargos-psoe-andalucia-aval-publico-12-millones_437682.html"
+    ]
+  },
+  {
+    "id": 120,
+    "suspect": "José Salgueiro Carmona",
+    "title": "ex-Consejero de Hacienda de la Junta de Andalucía",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "disqualificationMonths": 108,
+          "firm": false
+        },
+        "amount": 680000000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Viceconsejero de Hacienda entre 1990 y 2004 y consejero en 2004, condenado en el caso ERE a 9 años de inhabilitación especial por prevaricación por avalar las modificaciones presupuestarias. El Supremo confirmó la pena el 26-jul-2022; la nueva sentencia de la Audiencia sigue pendiente.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/supremo-confirma-penas-chaves-grinan-ingresara-carcel_1_9038584.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html"
+    ]
+  },
+  {
+    "id": 121,
+    "suspect": "Antonio Vicente Lozano Peña",
+    "title": "ex-Director General de Presupuestos de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "disqualificationMonths": 108,
+          "firm": false
+        },
+        "amount": 680000000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Director General de Presupuestos entre 2002 y 2009, condenado en el caso ERE a 9 años de inhabilitación especial por prevaricación; el Supremo confirmó la pena el 26-jul-2022. La Audiencia de Sevilla no ha dictado la nueva sentencia: elevó una cuestión prejudicial al TJUE el 15-jul-2025.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/supremo-confirma-penas-chaves-grinan-ingresara-carcel_1_9038584.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html"
+    ]
+  },
+  {
+    "id": 122,
+    "suspect": "Miguel Ángel Serrano Aguilar",
+    "title": "ex-Director General de la Agencia IDEA (IFA) de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "prisonMonths": 78,
+          "disqualificationMonths": 204,
+          "firm": false
+        },
+        "amount": 680000000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenado a 6 años y medio de prisión y 17 de inhabilitación por firmar 42 convenios del caso ERE. El Constitucional anuló su condena por malversación el 2-jul-2024 y la Audiencia de Sevilla ordenó su excarcelación ese mismo día tras año y medio en prisión.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/andalucia/constitucional-anula-condena-malversacion-exalto-cargo-ere-abre-puerta-excarcelaciones_1_11493497.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html"
+    ]
+  },
+  {
+    "id": 123,
+    "suspect": "Jacinto Cañete Rolloso",
+    "title": "ex-Director General de la Agencia IDEA de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "disqualificationMonths": 102,
+          "firm": false
+        },
+        "amount": 680000000
+      },
+      {
+        "name": "Caso Avales",
+        "status": "procesado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 6 de Sevilla",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenado en el caso ERE a 8 años y 6 meses de inhabilitación por prevaricación —absuelto de malversación— por firmar 124 convenios; el Supremo confirmó la pena el 26-jul-2022. El 8-jul-2026 fue enviado a juicio oral en el caso Avales por el aval de 1,18 M€ a Cofrutex.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/supremo-confirma-penas-chaves-grinan-ingresara-carcel_1_9038584.html",
+      "https://www.eldiario.es/andalucia/archivan-avales-idea-exaltos-junta_1_1534212.html",
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-lleva-justicia-europea-sentencias-constitucional-anulan-condenas-caso-ere_1_12293725.html",
+      "https://www.eldebate.com/espana/andalucia/sevilla/20260709/juez-sienta-banquillo-14-ex-altos-cargos-psoe-andalucia-aval-publico-12-millones_437682.html"
+    ]
+  },
+  {
+    "id": 124,
+    "suspect": "Juan Márquez Contreras",
+    "title": "ex-Director General de Trabajo de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación",
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "prisonMonths": 36,
+          "disqualificationMonths": 90,
+          "firm": true
+        },
+        "amount": 680000000
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "El Supremo rebajó su condena el 26-jul-2022 a 3 años de prisión y 7 años y 6 meses de inhabilitación por prevaricación y malversación, aplicando la atenuante muy cualificada de reparación del daño. El Constitucional desestimó su amparo en jul-2024, el primero rechazado en el fondo.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/supremo-confirma-penas-chaves-grinan-ingresara-carcel_1_9038584.html"
+    ]
+  },
+  {
+    "id": 125,
+    "suspect": "Javier Aguado Hinojal",
+    "title": "ex-Secretario General Técnico de Empleo de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "absuelto",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "amount": 680000000
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "La Audiencia de Sevilla le impuso 9 años de inhabilitación por prevaricación continuada en el caso ERE, pero el Tribunal Supremo lo absolvió el 26-jul-2022 al estimar su recurso de casación. La acusación por malversación ya se había retirado durante el juicio.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/supremo-confirma-penas-chaves-grinan-ingresara-carcel_1_9038584.html"
+    ]
+  },
+  {
+    "id": 126,
+    "suspect": "Juan Francisco Sánchez García",
+    "title": "ex-Secretario General Técnico de Empleo e Innovación de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "absuelto",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "amount": 680000000
+      },
+      {
+        "name": "Caso Avales",
+        "status": "sobreseido",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Absuelto por el Tribunal Supremo el 26-jul-2022 de la prevaricación continuada por la que la Audiencia de Sevilla le había impuesto 9 años de inhabilitación en el caso ERE. También fue investigado en el caso de los avales de la Agencia IDEA, archivado el 27-may-2019.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/supremo-confirma-penas-chaves-grinan-ingresara-carcel_1_9038584.html",
+      "https://www.eldiario.es/andalucia/archivan-avales-idea-exaltos-junta_1_1534212.html"
+    ]
+  },
+  {
+    "id": 127,
+    "suspect": "Lourdes Medina Varo",
+    "title": "ex-Secretaria General Técnica de Empleo de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "absuelto",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "amount": 680000000
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2015,
+    "lastUpdated": "2026-10-08",
+    "summary": "Absuelta por el Tribunal Supremo el 26-jul-2022 del delito continuado de prevaricación por el que la Audiencia de Sevilla le había impuesto 8 años, 6 meses y 1 día de inhabilitación especial en el caso ERE.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/ere-condena-definitiva_1_9199953.html",
+      "https://www.eldiario.es/politica/supremo-confirma-penas-chaves-grinan-ingresara-carcel_1_9038584.html"
+    ]
+  },
+  {
+    "id": 128,
+    "suspect": "Martín Soler Márquez",
+    "title": "ex-Consejero de Innovación, Ciencia y Empresa de la Junta de Andalucía",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso Avales",
+        "status": "sobreseido",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ]
+      },
+      {
+        "name": "Caso ERE",
+        "status": "sobreseido",
+        "charges": [
+          "prevaricación",
+          "malversación",
+          "falsedad documental"
+        ],
+        "amount": 680000000
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 6 de Sevilla",
+    "startYear": 2016,
+    "lastUpdated": "2026-10-08",
+    "summary": "Investigado por prevaricación y malversación en el caso de los avales de la Agencia IDEA; el Juzgado nº 6 de Sevilla archivó la causa el 27-may-2019 y Anticorrupción recurrió el 18-jun-2019. El 29-abr-2026 fue sobreseído también en la pieza de los ERE sobre las ayudas de 54,28 M€ a Boliden Apirsa.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/archivan-avales-idea-exaltos-junta_1_1534212.html",
+      "https://www.eldiario.es/andalucia/fiscalia-anticorrupcion-nunez-agencia-idea_1_1494512.html",
+      "https://www.eldiario.es/sevilla/juez-procesa-siete-ex-altos-cargos-junta-dar-ayudas-54-millones-ere-boliden-minera-aznalcollar_1_13181414.html"
+    ]
+  },
+  {
+    "id": 129,
+    "suspect": "Fernando José Villén Rueda",
+    "title": "ex-Director Técnico de la FAFFE (Junta de Andalucía)",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Faffe",
+        "status": "condenado",
+        "charges": [
+          "malversación",
+          "prevaricación"
+        ],
+        "convictions": [
+          "malversación",
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2025-04-30",
+          "prisonMonths": 42,
+          "disqualificationMonths": 84,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-08",
+    "summary": "Exdirector de la FAFFE. El 21-sep-2023 un jurado lo condenó a 6 años por gastar 32.375 € de la fundación en prostíbulos; el TSJA rebajó esa pena el 24-abr-2026. El 30-abr-2025 fue condenado además a 3 años y 6 meses por enchufar al exalcalde de Lebrija, con 359.973 € a devolver.",
+    "sourceUrls": [
+      "https://okdiario.com/andalucia/socialista-que-gasto-32-000-prostibulos-condenado-nuevo-prision-enchufes-faffe-14693661",
+      "https://www.eldiario.es/agencias/abren-juicio-exdirectivos-faffe-gastos-prostibulos_1_8930628.html",
+      "https://www.eldiario.es/andalucia/exdirectora-contable-faffe-niega-conociese-pagos-prostibulos-siente-totalmente-enganada_1_10252434.html"
+    ]
+  },
+  {
+    "id": 130,
+    "suspect": "Ana Valls",
+    "title": "ex-Directora Económico-Financiera de la FAFFE (Junta de Andalucía)",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Faffe",
+        "status": "condenado",
+        "charges": [
+          "malversación"
+        ],
+        "convictions": [
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2023-09-21",
+          "prisonMonths": 63,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-08",
+    "summary": "Exdirectora económico-financiera de la FAFFE entre 2004 y 2011, condenada el 21-sep-2023 por un jurado a 5 años y 3 meses de prisión por malversación, por su colaboración en la salida irregular de los fondos gastados en prostíbulos. Declaró en el juicio el 30-may-2023 negando conocerlo.",
+    "sourceUrls": [
+      "https://okdiario.com/andalucia/socialista-que-gasto-32-000-prostibulos-condenado-nuevo-prision-enchufes-faffe-14693661",
+      "https://www.eldiario.es/agencias/abren-juicio-exdirectivos-faffe-gastos-prostibulos_1_8930628.html",
+      "https://www.eldiario.es/andalucia/exdirectora-contable-faffe-niega-conociese-pagos-prostibulos-siente-totalmente-enganada_1_10252434.html"
+    ]
+  },
+  {
+    "id": 131,
+    "suspect": "Taishet Fuentes",
+    "title": "ex-Director General de Ganadería del Gobierno de Canarias",
+    "categories": [
+      "gobierno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Mediador",
+        "status": "procesado",
+        "charges": [
+          "cohecho",
+          "grupo criminal"
+        ]
+      }
+    ],
+    "court": "Audiencia Provincial de Santa Cruz de Tenerife",
+    "startYear": 2023,
+    "lastUpdated": "2026-10-08",
+    "summary": "Sobrino de 'Tito Berni' y ex-director general de Ganadería del Gobierno de Canarias. Detenido el 14-feb-2023. Procesado en feb-2026 y enviado a juicio oral el 24-sep-2026 por cohecho y pertenencia a grupo criminal; la Fiscalía pide 11 años de prisión.",
+    "sourceUrls": [
+      "https://www.eldiario.es/canariasahora/tribunales/caso-mediador-juicio-tito-berni-general-espinosa-navarro-tacoronte-trama-sobornos_1_13536306.html",
+      "https://www.infobae.com/espana/agencias/2026/09/25/abren-juicio-oral-a-tito-berni-su-sobrino-y-mas-de-una-decena-de-personas-por-los-sobornos-del-caso-mediador/",
+      "https://www.canarias7.es/politica/mediador-jueza-manda-banquillo-tito-berni-sobrino-20260924155602-nt.html"
+    ],
+    "party": "psoe"
+  },
+  {
+    "id": 132,
+    "suspect": "Álvaro de la Bárcena",
+    "title": "ex-Viceconsejero de Sector Primario del Gobierno de Canarias",
+    "categories": [
+      "gobierno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Mediador",
+        "status": "procesado",
+        "charges": [
+          "prevaricación"
+        ]
+      }
+    ],
+    "court": "Audiencia Provincial de Santa Cruz de Tenerife",
+    "startYear": 2023,
+    "lastUpdated": "2026-10-08",
+    "summary": "Ex-viceconsejero de Sector Primario del Gobierno de Canarias, investigado desde 2023 por favorecer a los empresarios de la trama. Enviado a juicio oral el 24-sep-2026 en el caso Mediador por un delito continuado de prevaricación; la Fiscalía pide 12 años de inhabilitación, sin prisión.",
+    "sourceUrls": [
+      "https://www.eldiario.es/canariasahora/tribunales/caso-mediador-juicio-tito-berni-general-espinosa-navarro-tacoronte-trama-sobornos_1_13536306.html",
+      "https://www.infobae.com/espana/agencias/2026/09/25/abren-juicio-oral-a-tito-berni-su-sobrino-y-mas-de-una-decena-de-personas-por-los-sobornos-del-caso-mediador/"
+    ]
+  },
+  {
+    "id": 133,
+    "suspect": "Estefanía Margarita González",
+    "title": "jefa de servicio de la Consejería de Agricultura, Ganadería y Pesca del Gobierno de Canarias",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Mediador",
+        "status": "procesado",
+        "charges": [
+          "prevaricación"
+        ]
+      }
+    ],
+    "court": "Audiencia Provincial de Santa Cruz de Tenerife",
+    "startYear": 2023,
+    "lastUpdated": "2026-10-08",
+    "summary": "Jefa de servicio de la Consejería de Agricultura, Ganadería y Pesca del Gobierno de Canarias, enviada a juicio oral el 24-sep-2026 en el caso Mediador por prevaricación administrativa al tramitar ayudas y expedientes a favor de la trama. La Fiscalía pide 10 años de inhabilitación.",
+    "sourceUrls": [
+      "https://www.eldiario.es/canariasahora/tribunales/caso-mediador-juicio-tito-berni-general-espinosa-navarro-tacoronte-trama-sobornos_1_13536306.html",
+      "https://www.infobae.com/espana/agencias/2026/09/25/abren-juicio-oral-a-tito-berni-su-sobrino-y-mas-de-una-decena-de-personas-por-los-sobornos-del-caso-mediador/"
+    ]
+  },
+  {
+    "id": 134,
+    "suspect": "Olga García García",
+    "title": "ex-Consejera para la Transición Ecológica de la Junta de Extremadura, presidenta de Enresa",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso FV Tagus",
+        "status": "sobreseido",
+        "charges": [
+          "prevaricación"
+        ]
+      }
+    ],
+    "court": "Audiencia Provincial de Madrid",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-08",
+    "summary": "Imputada el 3-jul-2026 por el juez Peinado (Juzgado nº 41 de Madrid) por prevaricación en los permisos de la macroplanta solar 'FV Tagus' de Alcántara, sobre 500 ha protegidas. La Audiencia de Madrid dejó sin efecto la imputación en jul-2026 por prórroga extemporánea de la instrucción.",
+    "sourceUrls": [
+      "https://www.eldiario.es/extremadura/politica/juez-peinado-imputa-exconsejera-extremena-olga-garcia-prevaricacion-macroplanta-solar-alcantara_1_13355663.html",
+      "https://www.eldiario.es/extremadura/politica/audiencia-madrid-tumba-imputacion-exconsejera-extremena-olga-garcia-dictada-juez-peinado_1_13384622.html"
+    ]
+  },
+  {
+    "id": 135,
+    "suspect": "Antonio Torres",
+    "title": "ex-Alcalde de Lebrija, alto cargo de la FAFFE (Junta de Andalucía)",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso Faffe",
+        "status": "condenado",
+        "charges": [
+          "malversación",
+          "prevaricación"
+        ],
+        "convictions": [
+          "malversación",
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2025-04-30",
+          "prisonMonths": 27,
+          "disqualificationMonths": 48,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2018,
+    "lastUpdated": "2026-10-08",
+    "summary": "Contratado por la FAFFE tras perder las municipales de 2003 'por su sola voluntad, amistad y afinidad política' y sin hacer, según el tribunal, trabajo alguno. Condenado el 30-abr-2025 a 2 años y 3 meses como cooperador necesario en la malversación, con 359.973 € a devolver.",
+    "sourceUrls": [
+      "https://okdiario.com/andalucia/socialista-que-gasto-32-000-prostibulos-condenado-nuevo-prision-enchufes-faffe-14693661",
+      "https://www.eldiario.es/agencias/abren-juicio-exdirectivos-faffe-gastos-prostibulos_1_8930628.html"
+    ]
+  },
+  {
+    "id": 136,
+    "suspect": "Manuel Recio Menéndez",
+    "title": "ex-Consejero de Empleo de la Junta de Andalucía",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "procesado",
+        "charges": [
+          "prevaricación",
+          "malversación",
+          "falsedad documental"
+        ],
+        "amount": 680000000
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 6 de Sevilla",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-08",
+    "summary": "Ex-consejero de Empleo. El 29-abr-2026 el juez Vilaplana lo procesó, junto a tres exviceconsejeros, dos exdirectores de Trabajo y un exdirector de IDEA, por las ayudas de 54,28 M€ a Boliden Apirsa, concedidas 'de manera injusta y arbitraria', por prevaricación, malversación y falsedad.",
+    "sourceUrls": [
+      "https://www.eldiario.es/sevilla/juez-procesa-siete-ex-altos-cargos-junta-dar-ayudas-54-millones-ere-boliden-minera-aznalcollar_1_13181414.html"
+    ]
+  },
+  {
+    "id": 137,
+    "suspect": "Daniel Alberto Rivera",
+    "title": "ex-Director General de Trabajo y Seguridad Social de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación",
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2026-06-03",
+          "prisonMonths": 12,
+          "disqualificationMonths": 60,
+          "firm": false
+        },
+        "amount": 680000000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2016,
+    "lastUpdated": "2026-10-08",
+    "summary": "Ex-director general de Trabajo, condenado el 3-jun-2026 por la Audiencia de Sevilla a 1 año de prisión y 5 de inhabilitación por prevaricación en concurso medial con malversación por la ayuda de 37.500 € a una empresa de encimeras de Alcalá de Guadaíra. Recurrible ante el TSJA.",
+    "sourceUrls": [
+      "https://www.eldiario.es/sevilla/nueva-condena-ere-ano-carcel-exdirector-trabajo-ayudas-empresa-encimeras-alcala_1_13271257.html",
+      "https://www.eldiario.es/sevilla/juez-procesa-siete-ex-altos-cargos-junta-dar-ayudas-54-millones-ere-boliden-minera-aznalcollar_1_13181414.html"
+    ]
+  },
+  {
+    "id": 138,
+    "suspect": "Antonio Valverde Ramos",
+    "title": "ex-Director General de la Junta de Andalucía (Innovación / Agencia IDEA)",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso Avales",
+        "status": "procesado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 6 de Sevilla",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-08",
+    "summary": "Ex-director general. Procesado en sep-2025 y enviado a juicio oral el 8-jul-2026 por el aval público de más de 1,18 M€ a la cooperativa Cofrutex, concedido sin que la empresa hubiera ni solicitado la ayuda. Anticorrupción pide 98 años de prisión para los 14 ex altos cargos acusados.",
+    "sourceUrls": [
+      "https://www.eldebate.com/espana/andalucia/sevilla/20260709/juez-sienta-banquillo-14-ex-altos-cargos-psoe-andalucia-aval-publico-12-millones_437682.html"
+    ]
+  },
+  {
+    "id": 139,
+    "suspect": "Francisco del Río Muñoz",
+    "title": "ex-Jefe del Gabinete Jurídico de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso Avales",
+        "status": "procesado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 6 de Sevilla",
+    "startYear": 2025,
+    "lastUpdated": "2026-10-08",
+    "summary": "Fundador y jefe del Gabinete Jurídico de la Junta durante unas tres décadas. Procesado en sep-2025 y enviado a juicio oral el 8-jul-2026 por prevaricación continuada y malversación en el aval de 1,18 M€ a Cofrutex, con un perjuicio fijado en 1.266.241,65 €.",
+    "sourceUrls": [
+      "https://www.eldebate.com/espana/andalucia/sevilla/20260709/juez-sienta-banquillo-14-ex-altos-cargos-psoe-andalucia-aval-publico-12-millones_437682.html"
+    ]
+  },
+  {
+    "id": 140,
+    "suspect": "Gaspar Llanes",
+    "title": "Diputado del PSOE-A en el Parlamento de Andalucía, ex-vocal del Consejo Rector de la Agencia IDEA",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso Avales",
+        "status": "investigado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 6 de Sevilla",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-08",
+    "summary": "Diputado socialista andaluz. El 20-ene-2026 el juez Vilaplana lo situó entre los 21 investigados por el aval indebido de 1,3 M€ que la Agencia IDEA concedió a Pickman La Cartuja, por prevaricación y malversación. El juez pidió al Parlamento certificar su condición de aforado.",
+    "sourceUrls": [
+      "https://theobjective.com/espana/tribunales/2026-01-20/juez-investigado-caso-ere-diputado-psoe/"
+    ]
+  },
+  {
+    "id": 141,
+    "suspect": "Tomás Pérez Sauquillo",
+    "title": "ex-Presidente de Invercaria (Junta de Andalucía)",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso Invercaria",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación",
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2026-07-20",
+          "prisonMonths": 42,
+          "disqualificationMonths": 72,
+          "firm": false
+        },
+        "amount": 1180000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2016,
+    "lastUpdated": "2026-10-08",
+    "summary": "Ex-presidente de Invercaria, condenado el 20-jul-2026 a 3 años y 6 meses de prisión y 6 de inhabilitación absoluta por prevaricación y malversación por el préstamo participativo de 1.180.000 € a Servivation, con 'flagrante ausencia de procedimiento'. Recurrible ante el TSJA.",
+    "sourceUrls": [
+      "https://www.canalsur.es/noticias/andalucia/condena-tres-anos-vallejo-perez_1_1423981.html"
+    ]
+  },
+  {
+    "id": 142,
+    "suspect": "Marco Antonio Navarro Tacoronte",
+    "title": "intermediario, 'el Mediador'",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Mediador",
+        "status": "condenado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "falsedad documental"
+        ],
+        "convictions": [
+          "cohecho"
+        ],
+        "sentence": {
+          "date": "2026-02-25",
+          "prisonMonths": 4,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Santa Cruz de Tenerife",
+    "startYear": 2023,
+    "lastUpdated": "2026-10-08",
+    "summary": "Intermediario que da nombre al caso. Un jurado lo declaró culpable en ene-2026 y el 25-feb-2026 fue condenado a 4 meses y medio de prisión por cohecho continuado en la primera pieza. El 24-sep-2026 fue enviado a juicio oral en la pieza principal; la Fiscalía pide 13 años.",
+    "sourceUrls": [
+      "https://www.eldiario.es/canariasahora/tribunales/penas-carcel-cohecho-general-espinosa-bautista-navarro-primera-pieza-caso-mediador_1_13020125.html",
+      "https://www.eldiario.es/canariasahora/tribunales/caso-mediador-juicio-tito-berni-general-espinosa-navarro-tacoronte-trama-sobornos_1_13536306.html",
+      "https://www.infobae.com/espana/agencias/2026/09/25/abren-juicio-oral-a-tito-berni-su-sobrino-y-mas-de-una-decena-de-personas-por-los-sobornos-del-caso-mediador/"
+    ]
+  },
+  {
+    "id": 143,
+    "suspect": "Francisco Espinosa",
+    "title": "general retirado de la Guardia Civil",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Mediador",
+        "status": "condenado",
+        "charges": [
+          "cohecho",
+          "tráfico de influencias"
+        ],
+        "convictions": [
+          "cohecho"
+        ],
+        "sentence": {
+          "date": "2026-02-25",
+          "prisonMonths": 9,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Santa Cruz de Tenerife",
+    "startYear": 2023,
+    "lastUpdated": "2026-10-08",
+    "summary": "General retirado de la Guardia Civil. Condenado el 25-feb-2026 a 9 meses de prisión por cohecho continuado en la primera pieza del caso Mediador, sobre los sobornos por contratos de placas solares. El 24-sep-2026 fue enviado a juicio oral en la pieza principal; la Fiscalía pide 2 años.",
+    "sourceUrls": [
+      "https://www.eldiario.es/canariasahora/tribunales/penas-carcel-cohecho-general-espinosa-bautista-navarro-primera-pieza-caso-mediador_1_13020125.html",
+      "https://www.eldiario.es/canariasahora/tribunales/caso-mediador-juicio-tito-berni-general-espinosa-navarro-tacoronte-trama-sobornos_1_13536306.html",
+      "https://www.infobae.com/espana/agencias/2026/09/25/abren-juicio-oral-a-tito-berni-su-sobrino-y-mas-de-una-decena-de-personas-por-los-sobornos-del-caso-mediador/"
+    ]
+  },
+  {
+    "id": 144,
+    "suspect": "Antonio Bautista",
+    "title": "empresario de energía fotovoltaica",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Mediador",
+        "status": "condenado",
+        "charges": [
+          "cohecho",
+          "tráfico de influencias"
+        ],
+        "convictions": [
+          "cohecho"
+        ],
+        "sentence": {
+          "date": "2026-02-25",
+          "prisonMonths": 9,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Santa Cruz de Tenerife",
+    "startYear": 2023,
+    "lastUpdated": "2026-10-08",
+    "summary": "Empresario de energías fotovoltaicas que pagó los sobornos de la primera pieza del caso Mediador. Condenado el 25-feb-2026 a 9 meses de prisión por cohecho continuado tras el veredicto del jurado de ene-2026. El 24-sep-2026 fue enviado a juicio oral en la pieza principal.",
+    "sourceUrls": [
+      "https://www.eldiario.es/canariasahora/tribunales/penas-carcel-cohecho-general-espinosa-bautista-navarro-primera-pieza-caso-mediador_1_13020125.html",
+      "https://www.eldiario.es/canariasahora/tribunales/caso-mediador-juicio-tito-berni-general-espinosa-navarro-tacoronte-trama-sobornos_1_13536306.html",
+      "https://www.infobae.com/espana/agencias/2026/09/25/abren-juicio-oral-a-tito-berni-su-sobrino-y-mas-de-una-decena-de-personas-por-los-sobornos-del-caso-mediador/"
+    ]
+  },
+  {
+    "id": 145,
+    "suspect": "Conrado Domínguez",
+    "title": "ex-Director del Servicio Canario de la Salud",
+    "categories": [
+      "gobierno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Mascarillas Canarias",
+        "status": "investigado",
+        "charges": [
+          "prevaricación",
+          "tráfico de influencias"
+        ],
+        "amount": 4000000
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 7 de Las Palmas de Gran Canaria",
+    "startYear": 2022,
+    "lastUpdated": "2026-10-08",
+    "summary": "Ex-director del Servicio Canario de la Salud. El 19-jul-2022 el Juzgado nº 7 de Las Palmas admitió la querella de Anticorrupción contra él por prevaricación y tráfico de influencias en el contrato de emergencia de 4 M€ con RR7 United por un millón de mascarillas que nunca llegaron.",
+    "sourceUrls": [
+      "https://www.eldiario.es/canariasahora/tribunales/admitida-querella-anticorrupcion-director-servicio-canario-salud-caso-mascarillas_1_9186789.html",
+      "https://www.eldiario.es/canariasahora/tribunales/fiscalia-europea-cita-declarar-conrado-dominguez-caso-mascarillas-sanidad_1_11342004.html"
+    ]
+  },
+  {
+    "id": 146,
+    "suspect": "Ana María Pérez",
+    "title": "ex-Directora de Recursos Económicos del Servicio Canario de la Salud",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Mascarillas Canarias",
+        "status": "investigado",
+        "charges": [
+          "prevaricación"
+        ],
+        "amount": 4000000
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 7 de Las Palmas de Gran Canaria",
+    "startYear": 2022,
+    "lastUpdated": "2026-10-08",
+    "summary": "Ex-directora de Recursos Económicos del Servicio Canario de la Salud. Investigada por prevaricación desde el 19-jul-2022, cuando el Juzgado nº 7 de Las Palmas admitió la querella de Anticorrupción por el contrato de 4 M€ con RR7 United por mascarillas nunca entregadas.",
+    "sourceUrls": [
+      "https://www.eldiario.es/canariasahora/tribunales/admitida-querella-anticorrupcion-director-servicio-canario-salud-caso-mascarillas_1_9186789.html"
+    ]
+  },
+  {
+    "id": 147,
+    "suspect": "Rayco Rubén González",
+    "title": "administrador de RR7 United S.L.",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Mascarillas Canarias",
+        "status": "investigado",
+        "charges": [
+          "estafa",
+          "blanqueo de capitales"
+        ],
+        "amount": 4000000
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 7 de Las Palmas de Gran Canaria",
+    "startYear": 2022,
+    "lastUpdated": "2026-10-08",
+    "summary": "Administrador de RR7 United S.L., investigado por estafa agravada y blanqueo de capitales desde el 19-jul-2022 por cobrar por adelantado 4 M€ del Servicio Canario de la Salud por un millón de mascarillas FFP3 que nunca entregó. El juez le bloqueó cuentas y siete vehículos de lujo.",
+    "sourceUrls": [
+      "https://www.eldiario.es/canariasahora/tribunales/admitida-querella-anticorrupcion-director-servicio-canario-salud-caso-mascarillas_1_9186789.html"
     ]
   }
 ]
