@@ -1,257 +1,253 @@
 "use client";
 
-import { useState, useMemo, Fragment, type FC } from "react";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { useState, useMemo, Fragment, type MouseEvent } from "react";
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Badge } from "@/components/ui/badge";
-import { ArrowUpDown, Landmark, Users, Flower2, ExternalLink, Briefcase, Handshake, ChevronDown, ChevronUp } from "lucide-react";
-import { formatPenalty, type SuspectView, type Allegiance } from "@/lib/schema";
-import { statusConfig } from "@/lib/status-ui";
+import { badgeVariants } from "@/components/ui/badge";
+import { ArrowDown, ArrowUp, ArrowUpDown, ChevronDown, ChevronUp } from "lucide-react";
+import { formatPenalty, type SuspectView } from "@/lib/schema";
+import { slug } from "@/lib/filters";
+import { categoryConfig, statusConfig } from "@/lib/status-ui";
 import { CaseDetailRow } from "@/components/case-detail-row";
+import { FilterLink } from "@/components/nav";
+import { SourceList } from "@/components/source-list";
 
 type SortKey = keyof Pick<SuspectView, "suspect" | "accusations" | "sentences" | "startYear" | "penaltyMonths">;
+type SortDirection = "asc" | "desc";
 
-const allegianceIcons: Record<Allegiance, React.ElementType> = {
-  gobierno: Briefcase,
-  familia: Users,
-  psoe: Flower2,
-  institucional: Landmark,
-  entorno: Handshake,
-};
+const COLUMN_COUNT = 10;
 
-const allegianceLabels: Record<Allegiance, string> = {
-  gobierno: "Gobierno",
-  familia: "Familia",
-  psoe: "PSOE",
-  institucional: "Institucional",
-  entorno: "Entorno",
-};
+const subtleLink =
+  "rounded-sm hover:text-foreground hover:underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
 
-const SortableHeader: FC<{
+function SortableHeader({
+  label,
+  sortKey,
+  active,
+  direction,
+  onSort,
+  className,
+}: {
   label: string;
   sortKey: SortKey;
-  activeSortKey: SortKey | null;
-  sortDirection: "asc" | "desc";
-  onClick: (key: SortKey) => void;
+  active: boolean;
+  direction: SortDirection;
+  onSort: (key: SortKey) => void;
   className?: string;
-}> = ({ label, sortKey, activeSortKey, sortDirection, onClick, className }) => (
-  <TableHead className={className}>
-    <Button variant="ghost" onClick={() => onClick(sortKey)} className="px-2">
-      {label}
-      <ArrowUpDown className={`ml-2 h-4 w-4 ${activeSortKey === sortKey ? "" : "text-muted-foreground/50"}`} />
-    </Button>
-  </TableHead>
-);
+}) {
+  const Icon = !active ? ArrowUpDown : direction === "asc" ? ArrowUp : ArrowDown;
+  return (
+    <TableHead className={className} aria-sort={active ? (direction === "asc" ? "ascending" : "descending") : "none"}>
+      <Button variant="ghost" onClick={() => onSort(sortKey)} className="px-2">
+        {label}
+        <Icon className={`h-4 w-4 ${active ? "" : "text-muted-foreground/60"}`} aria-hidden />
+      </Button>
+    </TableHead>
+  );
+}
 
-export function LeaderboardTable({ cases, allCases }: { cases: SuspectView[]; allCases: SuspectView[] }) {
-  const [sortKey, setSortKey] = useState<SortKey | null>("sentences");
-  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
-  const [expandedRowId, setExpandedRowId] = useState<number | null>(null);
+function compareBy(key: SortKey, a: SuspectView, b: SuspectView): number {
+  const x = a[key];
+  const y = b[key];
+  return typeof x === "string" ? x.localeCompare(y as string, "es") : x - (y as number);
+}
+
+type Props = {
+  cases: SuspectView[];
+  allCases: SuspectView[];
+  openId: number | null;
+  onToggle: (id: number) => void;
+};
+
+export function LeaderboardTable({ cases, allCases, openId, onToggle }: Props) {
+  const [sortKey, setSortKey] = useState<SortKey>("sentences");
+  const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
       setSortDirection(sortDirection === "asc" ? "desc" : "asc");
     } else {
       setSortKey(key);
-      setSortDirection("desc");
+      setSortDirection(key === "suspect" ? "asc" : "desc");
     }
   };
 
-  const toggleRow = (id: number) =>
-    setExpandedRowId((prev) => (prev === id ? null : id));
-
   const sortedCases = useMemo(() => {
-    const copy = [...cases];
-    if (!sortKey) {
-      return copy.sort((a, b) => b.accusations - a.accusations);
-    }
-    return copy.sort((a, b) => {
-      const valA = a[sortKey];
-      const valB = b[sortKey];
-      let comparison = 0;
-      if (valA > valB) comparison = 1;
-      else if (valA < valB) comparison = -1;
-      return sortDirection === "desc" ? comparison * -1 : comparison;
-    });
+    const sign = sortDirection === "desc" ? -1 : 1;
+    return [...cases].sort(
+      (a, b) => sign * compareBy(sortKey, a, b) || a.suspect.localeCompare(b.suspect, "es")
+    );
   }, [cases, sortKey, sortDirection]);
 
+  // Row click is a mouse shortcut; links and buttons inside the row keep their own behavior.
+  const onRowClick = (e: MouseEvent, id: number) => {
+    if ((e.target as HTMLElement).closest("a, button, [role=dialog]")) return;
+    onToggle(id);
+  };
+
+  const sortProps = { direction: sortDirection, onSort: handleSort };
+
   return (
-    <TooltipProvider>
-      <div className="w-full overflow-x-auto">
-        <Table>
-          <TableHeader className="bg-muted/30">
-            <TableRow>
-              <TableHead className="w-[50px] text-center">#</TableHead>
-              <SortableHeader
-                label="Sospechoso"
-                sortKey="suspect"
-                activeSortKey={sortKey}
-                sortDirection={sortDirection}
-                onClick={handleSort}
-              />
-              <TableHead className="hidden md:table-cell">Categoría</TableHead>
-              <TableHead className="hidden sm:table-cell">Estado</TableHead>
-              <SortableHeader
-                label="Año"
-                sortKey="startYear"
-                activeSortKey={sortKey}
-                sortDirection={sortDirection}
-                onClick={handleSort}
-                className="hidden sm:table-cell text-right"
-              />
-              <SortableHeader
-                label="Acusaciones"
-                sortKey="accusations"
-                activeSortKey={sortKey}
-                sortDirection={sortDirection}
-                onClick={handleSort}
-                className="text-right"
-              />
-              <SortableHeader
-                label="Condenas"
-                sortKey="sentences"
-                activeSortKey={sortKey}
-                sortDirection={sortDirection}
-                onClick={handleSort}
-                className="text-right"
-              />
-              <SortableHeader
-                label="Pena"
-                sortKey="penaltyMonths"
-                activeSortKey={sortKey}
-                sortDirection={sortDirection}
-                onClick={handleSort}
-                className="hidden lg:table-cell"
-              />
-              <TableHead className="text-center">Fuentes</TableHead>
-              <TableHead className="w-[40px]" />
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {sortedCases.length > 0 ? (
-              sortedCases.map((c, index) => {
-                const status = statusConfig[c.status];
-                const isExpanded = expandedRowId === c.id;
-                return (
-                  <Fragment key={c.id}>
-                    <TableRow
-                      className="transition-colors hover:bg-muted/20 cursor-pointer"
-                      onClick={() => toggleRow(c.id)}
+    <div className="w-full overflow-x-auto">
+      <Table>
+        <TableCaption className="sr-only">
+          Sospechosos en casos de corrupción. Cada fila tiene un botón para ver detalles.
+        </TableCaption>
+        <TableHeader className="bg-muted/30">
+          <TableRow>
+            <TableHead className="w-[50px] text-center">#</TableHead>
+            <SortableHeader label="Sospechoso" sortKey="suspect" active={sortKey === "suspect"} {...sortProps} />
+            <TableHead className="hidden md:table-cell">Categoría</TableHead>
+            <TableHead className="hidden sm:table-cell">Estado</TableHead>
+            <SortableHeader
+              label="Año"
+              sortKey="startYear"
+              active={sortKey === "startYear"}
+              className="hidden sm:table-cell text-right"
+              {...sortProps}
+            />
+            <SortableHeader
+              label="Acusaciones"
+              sortKey="accusations"
+              active={sortKey === "accusations"}
+              className="text-right"
+              {...sortProps}
+            />
+            <SortableHeader
+              label="Condenas"
+              sortKey="sentences"
+              active={sortKey === "sentences"}
+              className="text-right"
+              {...sortProps}
+            />
+            <SortableHeader
+              label="Pena"
+              sortKey="penaltyMonths"
+              active={sortKey === "penaltyMonths"}
+              className="hidden lg:table-cell"
+              {...sortProps}
+            />
+            <TableHead className="text-center">Fuentes</TableHead>
+            <TableHead className="w-[40px]">
+              <span className="sr-only">Detalles</span>
+            </TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {sortedCases.length > 0 ? (
+            sortedCases.map((c, index) => {
+              const status = statusConfig[c.status];
+              const isExpanded = openId === c.id;
+              return (
+                <Fragment key={c.id}>
+                  <TableRow
+                    id={`s-${c.id}`}
+                    className={`scroll-mt-4 cursor-pointer transition-colors hover:bg-muted/20 ${isExpanded ? "bg-muted/30" : ""}`}
+                    onClick={(e) => onRowClick(e, c.id)}
+                  >
+                    <TableCell className="text-center text-muted-foreground font-medium">{index + 1}</TableCell>
+                    <TableCell className="font-medium">
+                      <div>{c.suspect}</div>
+                      <div className="text-xs text-muted-foreground font-normal">
+                        {c.causes.map((k, i) => (
+                          <Fragment key={k.name}>
+                            {i > 0 && " / "}
+                            <FilterLink patch={{ caso: slug(k.name) }} title={`Ver todos los implicados en ${k.name}`} className={subtleLink}>
+                              {k.name}
+                            </FilterLink>
+                          </Fragment>
+                        ))}
+                      </div>
+                      <span className={`sm:hidden mt-1 ${badgeVariants({ variant: "outline" })} ${status.className}`}>
+                        {status.label}
+                      </span>
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">
+                      <div className="flex flex-wrap gap-1">
+                        {c.categories.map((cat) => {
+                          const { icon: Icon, label } = categoryConfig[cat];
+                          return (
+                            <FilterLink
+                              key={cat}
+                              patch={{ cat }}
+                              title={`Filtrar por ${label}`}
+                              className={`${badgeVariants({ variant: "outline" })} gap-2 hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring`}
+                            >
+                              <Icon className="h-3.5 w-3.5 text-accent" aria-hidden />
+                              <span className="sr-only lg:not-sr-only">{label}</span>
+                            </FilterLink>
+                          );
+                        })}
+                      </div>
+                    </TableCell>
+                    <TableCell className="hidden sm:table-cell">
+                      <span className={`${badgeVariants({ variant: "outline" })} ${status.className}`}>{status.label}</span>
+                    </TableCell>
+                    <TableCell className="hidden sm:table-cell text-right font-mono text-muted-foreground">
+                      <FilterLink patch={{ anio: c.startYear }} title={`Filtrar por ${c.startYear}`} className={subtleLink}>
+                        {c.startYear}
+                      </FilterLink>
+                    </TableCell>
+                    <TableCell className="text-right font-mono text-lg font-bold">{c.accusations}</TableCell>
+                    <TableCell className="text-right font-mono text-lg font-bold text-primary">{c.sentences}</TableCell>
+                    <TableCell
+                      className={`hidden lg:table-cell text-xs ${c.sentence?.prisonMonths ? "text-status-condenado" : "text-muted-foreground"}`}
                     >
-                      <TableCell className="text-center text-muted-foreground font-medium">{index + 1}</TableCell>
-                      <TableCell className="font-medium">
-                        <div>{c.suspect}</div>
-                        <div className="text-xs text-muted-foreground font-normal">{c.caseName}</div>
-                      </TableCell>
-                      <TableCell className="hidden md:table-cell">
-                        <div className="flex flex-wrap gap-1">
-                          {c.categories.map((cat) => {
-                            const Icon = allegianceIcons[cat];
-                            return (
-                              <Tooltip key={cat}>
-                                <TooltipTrigger asChild>
-                                  <Badge variant="outline" className="gap-2 cursor-default capitalize">
-                                    <Icon className="h-3.5 w-3.5 text-accent" />
-                                    <span className="hidden lg:inline">{allegianceLabels[cat]}</span>
-                                  </Badge>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                  <p>{allegianceLabels[cat]}</p>
-                                </TooltipContent>
-                              </Tooltip>
-                            );
-                          })}
-                        </div>
-                      </TableCell>
-                      <TableCell className="hidden sm:table-cell">
-                        <Badge variant="outline" className={`text-xs ${status.className}`}>
-                          {status.label}
-                        </Badge>
-                      </TableCell>
-                      <TableCell className="hidden sm:table-cell text-right font-mono text-muted-foreground">{c.startYear}</TableCell>
-                      <TableCell className="text-right font-mono text-lg font-bold">{c.accusations}</TableCell>
-                      <TableCell className="text-right font-mono text-lg font-bold text-primary">{c.sentences}</TableCell>
-                      <TableCell className={`hidden lg:table-cell text-xs ${c.sentence?.prisonMonths ? "text-red-300" : "text-muted-foreground"}`}>
-                        {c.sentence ? formatPenalty(c.sentence) : "—"}
-                      </TableCell>
-                      <TableCell className="text-center" onClick={(e) => e.stopPropagation()}>
-                        {c.sourceUrls.length > 0 && (
-                          <Popover>
-                            <PopoverTrigger asChild>
-                              <Button variant="outline" size="sm" className="font-mono text-xs h-7 min-w-[2rem]">
-                                {c.sourceUrls.length}
-                              </Button>
-                            </PopoverTrigger>
-                            <PopoverContent className="w-72 p-3" align="end">
-                              <p className="text-xs font-semibold mb-2 text-muted-foreground">
-                                {c.sourceUrls.length} fuente(s)
-                              </p>
-                              <ul className="space-y-1.5">
-                                {c.sourceUrls.map((url, i) => {
-                                  let hostname = url;
-                                  try {
-                                    hostname = new URL(url).hostname.replace(/^www\./, "");
-                                  } catch {
-                                    // keep original
-                                  }
-                                  return (
-                                    <li key={i}>
-                                      <a
-                                        href={url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-xs flex items-center gap-1.5 text-primary hover:underline break-all"
-                                      >
-                                        <ExternalLink className="h-3 w-3 shrink-0" />
-                                        {hostname}
-                                      </a>
-                                    </li>
-                                  );
-                                })}
-                              </ul>
-                            </PopoverContent>
-                          </Popover>
-                        )}
-                      </TableCell>
-                      <TableCell className="w-[40px]" onClick={(e) => e.stopPropagation()}>
-                        <Button
-                          variant="ghost"
-                          size="icon"
-                          className="h-7 w-7"
-                          aria-expanded={isExpanded}
-                          aria-label={isExpanded ? "Cerrar detalles" : "Ver detalles"}
-                          onClick={() => toggleRow(c.id)}
-                        >
-                          {isExpanded ? (
-                            <ChevronUp className="h-4 w-4" />
-                          ) : (
-                            <ChevronDown className="h-4 w-4" />
-                          )}
-                        </Button>
+                      {c.sentence ? formatPenalty(c.sentence) : "—"}
+                    </TableCell>
+                    <TableCell className="text-center">
+                      <Popover>
+                        <PopoverTrigger asChild>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="font-mono text-xs h-7 min-w-[2rem]"
+                            aria-label={`Ver ${c.sourceUrls.length} fuentes de ${c.suspect}`}
+                          >
+                            {c.sourceUrls.length}
+                          </Button>
+                        </PopoverTrigger>
+                        <PopoverContent className="w-72 p-3" align="end">
+                          <p className="text-xs font-semibold mb-2 text-muted-foreground">Fuentes ({c.sourceUrls.length})</p>
+                          <SourceList urls={c.sourceUrls} />
+                        </PopoverContent>
+                      </Popover>
+                    </TableCell>
+                    <TableCell className="w-[40px]">
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="h-7 w-7"
+                        data-toggle
+                        aria-expanded={isExpanded}
+                        aria-controls={isExpanded ? `detail-${c.id}` : undefined}
+                        aria-label={`${isExpanded ? "Cerrar" : "Ver"} detalles de ${c.suspect}`}
+                        onClick={() => onToggle(c.id)}
+                      >
+                        {isExpanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                      </Button>
+                    </TableCell>
+                  </TableRow>
+                  {isExpanded && (
+                    <TableRow className="hover:bg-transparent">
+                      <TableCell colSpan={COLUMN_COUNT} className="p-0">
+                        <CaseDetailRow caseData={c} allCases={allCases} />
                       </TableCell>
                     </TableRow>
-                    {isExpanded && (
-                      <TableRow className="hover:bg-transparent">
-                        <TableCell colSpan={10} className="p-0">
-                          <CaseDetailRow caseData={c} allCases={allCases} />
-                        </TableCell>
-                      </TableRow>
-                    )}
-                  </Fragment>
-                );
-              })
-            ) : (
-              <TableRow>
-                <TableCell colSpan={10} className="h-24 text-center">
-                  No hay casos que coincidan con el filtro actual.
-                </TableCell>
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      </div>
-    </TooltipProvider>
+                  )}
+                </Fragment>
+              );
+            })
+          ) : (
+            <TableRow>
+              <TableCell colSpan={COLUMN_COUNT} className="h-24 text-center text-muted-foreground">
+                No hay casos que coincidan con el filtro actual.
+              </TableCell>
+            </TableRow>
+          )}
+        </TableBody>
+      </Table>
+    </div>
   );
 }

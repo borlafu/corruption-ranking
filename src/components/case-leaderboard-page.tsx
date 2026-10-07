@@ -1,177 +1,136 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import type { SuspectView, Allegiance, Crime } from "@/lib/schema";
+import { useState, useMemo, useEffect, useCallback, useRef } from "react";
+import type { SuspectView } from "@/lib/schema";
+import { filterCases, findCause, parseFilters, toSearch, type Filters } from "@/lib/filters";
 import { LeaderboardTable } from "@/components/leaderboard-table";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Landmark, Users, Flower2, Briefcase, Search, Handshake } from "lucide-react";
-import Image from "next/image";
+import { FilterBar } from "@/components/filter-bar";
+import { CaseBanner } from "@/components/case-banner";
+import { NavContext, type Nav } from "@/components/nav";
 
-const allegianceFilters: { name: Allegiance | "all"; icon: React.ElementType; label: string }[] = [
-  { name: "all", icon: () => <span className="text-sm"></span>, label: "Todos" },
-  { name: "gobierno", icon: Briefcase, label: "Gobierno" },
-  { name: "familia", icon: Users, label: "Familia" },
-  { name: "psoe", icon: Flower2, label: "PSOE" },
-  { name: "institucional", icon: Landmark, label: "Institucional" },
-  { name: "entorno", icon: Handshake, label: "Entorno" },
-];
-
-type CaseLeaderboardPageProps = {
+type Props = {
   cases: SuspectView[];
+  /** Pre-formatted at build time. */
+  lastUpdated: string;
 };
 
-export function CaseLeaderboardPage({ cases: initialCases }: CaseLeaderboardPageProps) {
-  const [activeFilter, setActiveFilter] = useState<Allegiance | "all">("all");
-  const [activeYear, setActiveYear] = useState<number | null>(null);
-  const [activeCrime, setActiveCrime] = useState<Crime | "all">("all");
-  const [searchQuery, setSearchQuery] = useState("");
+type HistoryMode = "push" | "replace";
 
-  const years = useMemo(
-    () => [...new Set(initialCases.map((c) => c.startYear))].sort((a, b) => b - a),
-    [initialCases]
-  );
+const HASH_PREFIX = "#s-";
+
+const urlFor = (f: Filters, openId: number | null) =>
+  `${toSearch(f) || "?"}${openId ? `${HASH_PREFIX}${openId}` : ""}`;
+
+/** Drops undefined keys so `{...f, cat: undefined}` really clears the filter. */
+const merge = (f: Filters, patch: Filters): Filters =>
+  Object.fromEntries(Object.entries({ ...f, ...patch }).filter(([, v]) => v !== undefined && v !== "")) as Filters;
+
+export function CaseLeaderboardPage({ cases, lastUpdated }: Props) {
+  const [filters, setFilters] = useState<Filters>({});
+  const [openId, setOpenId] = useState<number | null>(null);
+  // Suspect to scroll to and focus once its row has rendered.
+  const pendingFocus = useRef<number | null>(null);
+
+  // The static HTML renders unfiltered; the URL is applied once mounted and on back/forward.
+  useEffect(() => {
+    const sync = () => {
+      setFilters(parseFilters(window.location.search));
+      const { hash } = window.location;
+      const id = hash.startsWith(HASH_PREFIX) ? Number(hash.slice(HASH_PREFIX.length)) || null : null;
+      setOpenId(id);
+      pendingFocus.current = id;
+    };
+    sync();
+    window.addEventListener("popstate", sync);
+    return () => window.removeEventListener("popstate", sync);
+  }, []);
+
+
+  const commit = useCallback((f: Filters, id: number | null, mode: HistoryMode) => {
+    setFilters(f);
+    setOpenId(id);
+    const url = urlFor(f, id);
+    if (mode === "push") window.history.pushState(null, "", url);
+    else window.history.replaceState(null, "", url);
+  }, []);
+
+  const years = useMemo(() => [...new Set(cases.map((c) => c.startYear))].sort((a, b) => b - a), [cases]);
   const crimes = useMemo(
-    () => [...new Set(initialCases.flatMap((c) => c.crimes))].sort((a, b) => a.localeCompare(b, "es")),
-    [initialCases]
+    () => [...new Set(cases.flatMap((c) => c.crimes))].sort((a, b) => a.localeCompare(b, "es")),
+    [cases]
   );
+  const filteredCases = useMemo(() => filterCases(cases, filters), [cases, filters]);
+  const cause = useMemo(() => (filters.caso ? findCause(cases, filters.caso) : undefined), [cases, filters.caso]);
 
-  const lastUpdated = useMemo(() => {
-    const maxDate = initialCases
-      .map((c) => c.lastUpdated)
-      .filter(Boolean)
-      .sort()
-      .at(-1);
-    if (!maxDate) return "";
-    return new Date(maxDate).toLocaleDateString("es-ES", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  }, [initialCases]);
+  useEffect(() => {
+    const id = pendingFocus.current;
+    if (id === null) return;
+    pendingFocus.current = null;
+    const row = document.getElementById(`s-${id}`);
+    row?.scrollIntoView({ block: "center" });
+    row?.querySelector<HTMLButtonElement>("[data-toggle]")?.focus({ preventScroll: true });
+  }, [openId, filteredCases]);
 
-  const filteredCases = useMemo(() => {
-    const byFilters = initialCases.filter(
-      (c) =>
-        (activeFilter === "all" || c.categories.includes(activeFilter)) &&
-        (activeYear === null || c.startYear === activeYear) &&
-        (activeCrime === "all" || c.crimes.includes(activeCrime))
-    );
-    if (!searchQuery.trim()) return byFilters;
-    const q = searchQuery.toLowerCase();
-    return byFilters.filter(
-      (c) =>
-        c.suspect.toLowerCase().includes(q) ||
-        c.caseName.toLowerCase().includes(q) ||
-        c.title.toLowerCase().includes(q)
-    );
-  }, [initialCases, activeFilter, activeYear, activeCrime, searchQuery]);
+  const nav: Nav = useMemo(
+    () => ({
+      filters,
+      filterHref: (patch) => urlFor(merge(filters, patch), null),
+      suspectHref: (id) => urlFor({}, id),
+      applyFilters: (patch) => commit(merge(filters, patch), null, "push"),
+      openSuspect: (id) => {
+        // Clear filters only if they hide the target suspect.
+        const visible = filteredCases.some((c) => c.id === id);
+        pendingFocus.current = id;
+        commit(visible ? filters : {}, id, "push");
+      },
+    }),
+    [filters, filteredCases, commit]
+  );
 
   return (
-    <div
-      className="min-h-screen bg-cover bg-center bg-fixed"
-      style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1658922184278-9ca61d7209c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGFuaXNoJTIwZ292ZXJubWVudCUyMGJ1aWxkaW5nfGVufDB8fHx8MTc2Mzc0MzYxNXww&ixlib=rb-4.1.0&q=80&w=1920')`,
-      }}
-      data-ai-hint="spanish government building"
-    >
-      <div className="min-h-screen bg-black/70 text-foreground">
-        <main className="container mx-auto px-4 py-8 md:py-12">
-          <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-            <div className="w-full">
-              <div className="flex justify-center items-center gap-4">
-                <h1 className="text-6xl lg:text-8xl font-bold text-primary-foreground font-headline text-center uppercase tracking-wider">
-                  España Corrupta
-                </h1>
-                <Image
-                  src="https://upload.wikimedia.org/wikipedia/commons/4/41/Logotipo_del_PSOE.svg"
-                  alt="PSOE logo"
-                  width={100}
-                  height={100}
-                  className="hidden md:block"
-                />
-              </div>
-              <p className="text-center text-muted-foreground mt-2 max-w-2xl mx-auto">
-                Un marcador no oficial que rastrea acusaciones y condenas en casos de corrupción en España.
-              </p>
-              {lastUpdated && (
-                <p className="text-xs text-muted-foreground mt-1 text-center">Última actualización: {lastUpdated}</p>
-              )}
-            </div>
-          </header>
+    <NavContext.Provider value={nav}>
+      <main className="container mx-auto px-4 py-8 md:py-12">
+        <header className="mb-8 text-center">
+          <h1 className="font-headline text-6xl lg:text-8xl font-bold uppercase tracking-wider">
+            <a href="?" onClick={(e) => { e.preventDefault(); commit({}, null, "push"); }} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm">
+              España <span className="text-primary">Corrupta</span>
+            </a>
+          </h1>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+            Un marcador no oficial que rastrea acusaciones y condenas en casos de corrupción en España.
+          </p>
+          {lastUpdated && <p className="text-xs text-muted-foreground mt-1">Última actualización: {lastUpdated}</p>}
+        </header>
 
-          <div className="mb-4 flex flex-wrap gap-2 items-center justify-center">
-            <p className="text-sm font-medium mr-2 text-muted-foreground">Filtrar por:</p>
-            {allegianceFilters.map((filter) => (
-              <Button
-                key={filter.name}
-                variant={activeFilter === filter.name ? "secondary" : "outline"}
-                size="sm"
-                onClick={() => setActiveFilter(filter.name)}
-                className="gap-2 transition-colors duration-300 capitalize"
-              >
-                <filter.icon className={filter.name === "all" ? "hidden" : "h-4 w-4"} />
-                <span>{filter.label}</span>
-              </Button>
-            ))}
-          </div>
+        <FilterBar
+          filters={filters}
+          years={years}
+          crimes={crimes}
+          caseName={cause?.name}
+          onChange={nav.applyFilters}
+          onSearch={(q) => commit(merge(filters, { q }), null, "replace")}
+          onClear={() => commit({}, null, "push")}
+        />
 
-          <div className="mb-4 flex flex-wrap gap-2 items-center justify-center">
-            <p className="text-sm font-medium mr-2 text-muted-foreground">Año:</p>
-            <Button
-              variant={activeYear === null ? "secondary" : "outline"}
-              size="sm"
-              onClick={() => setActiveYear(null)}
-              className="transition-colors duration-300"
-            >
-              Todos
-            </Button>
-            {years.map((year) => (
-              <Button
-                key={year}
-                variant={activeYear === year ? "secondary" : "outline"}
-                size="sm"
-                onClick={() => setActiveYear(year)}
-                className="font-mono transition-colors duration-300"
-              >
-                {year}
-              </Button>
-            ))}
-            <Select value={activeCrime} onValueChange={(v) => setActiveCrime(v as Crime | "all")}>
-              <SelectTrigger className="w-[260px] h-9 bg-card/60 backdrop-blur-sm" aria-label="Filtrar por delito">
-                <SelectValue placeholder="Delito" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">Todos los delitos</SelectItem>
-                {crimes.map((crime) => (
-                  <SelectItem key={crime} value={crime}>
-                    {crime}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
+        {cause && <CaseBanner cause={cause} />}
 
-          <div className="mb-4 relative max-w-sm mx-auto">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
-            <Input
-              placeholder="Buscar sospechoso o caso..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-9 bg-card/60 backdrop-blur-sm"
-            />
-          </div>
+        <p role="status" className="mb-2 text-center text-sm text-muted-foreground">
+          {filteredCases.length} de {cases.length} sospechosos
+        </p>
 
-          <div className="rounded-lg border shadow-lg overflow-hidden bg-card/80 backdrop-blur-sm">
-            <LeaderboardTable cases={filteredCases} allCases={initialCases} />
-          </div>
+        <div className="rounded-lg border shadow-lg overflow-hidden bg-card/80">
+          <LeaderboardTable
+            cases={filteredCases}
+            allCases={cases}
+            openId={openId}
+            onToggle={(id) => commit(filters, openId === id ? null : id, "replace")}
+          />
+        </div>
 
-          <footer className="text-center mt-12 text-muted-foreground text-sm">
-            <p>Los datos se basan en informaciones publicadas por medios de comunicación e instituciones judiciales.</p>
-          </footer>
-        </main>
-      </div>
-    </div>
+        <footer className="text-center mt-12 text-muted-foreground text-sm">
+          <p>Los datos se basan en informaciones publicadas por medios de comunicación e instituciones judiciales.</p>
+        </footer>
+      </main>
+    </NavContext.Provider>
   );
 }
