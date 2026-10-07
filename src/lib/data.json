@@ -2888,5 +2888,645 @@
       "https://www.eldiario.es/agencias/juez-archiva-caso-ninera-falta-indicios_1_9209796.html",
       "https://www.eldiario.es/agencias/vuelco-caso-ninera-tribunal-deja-efecto-investigado_1_8463727.html"
     ]
+  },
+  {
+    "id": 94,
+    "suspect": "Oriol Junqueras",
+    "title": "ex-Vicepresidente de la Generalitat de Cataluña y presidente de ERC",
+    "categories": [
+      "gobierno",
+      "partido"
+    ],
+    "party": "erc",
+    "causes": [
+      {
+        "name": "Caso procés",
+        "status": "condenado",
+        "charges": [
+          "malversación"
+        ],
+        "convictions": [
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2023-02-13",
+          "disqualificationMonths": 156,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2017,
+    "lastUpdated": "2026-10-07",
+    "summary": "14-oct-2019: 13 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo revisa la pena tras la reforma penal y mantiene 13 años de inhabilitación por malversación. 30-sep-2024: deniega la amnistía. 6-oct-2026: el Constitucional la avala.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
+      "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
+      "https://www.eldiario.es/agencias/supremo-confirma-no-amnistiar-malversacion-junqueras_1_11692918.html",
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+    ]
+  },
+  {
+    "id": 95,
+    "suspect": "Raül Romeva",
+    "title": "ex-Consejero de Acción Exterior de la Generalitat de Cataluña",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "erc",
+    "causes": [
+      {
+        "name": "Caso procés",
+        "status": "condenado",
+        "charges": [
+          "malversación"
+        ],
+        "convictions": [
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2023-02-13",
+          "disqualificationMonths": 144,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2017,
+    "lastUpdated": "2026-10-07",
+    "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación al revisar la sentencia. 6-oct-2026: el Constitucional avala amnistiar la malversación y el Supremo debe pronunciarse de nuevo.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
+      "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+    ]
+  },
+  {
+    "id": 96,
+    "suspect": "Dolors Bassa",
+    "title": "ex-Consejera de Trabajo y Asuntos Sociales de la Generalitat de Cataluña",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "erc",
+    "causes": [
+      {
+        "name": "Caso procés",
+        "status": "condenado",
+        "charges": [
+          "malversación"
+        ],
+        "convictions": [
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2023-02-13",
+          "disqualificationMonths": 144,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2017,
+    "lastUpdated": "2026-10-07",
+    "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultada el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación. 6-oct-2026: el Constitucional estima su recurso y avala amnistiar la malversación; el Supremo debe aplicarla.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
+      "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+    ]
+  },
+  {
+    "id": 97,
+    "suspect": "Jordi Turull",
+    "title": "ex-Consejero de Presidencia de la Generalitat y secretario general de Junts",
+    "categories": [
+      "gobierno",
+      "partido"
+    ],
+    "party": "junts",
+    "causes": [
+      {
+        "name": "Caso procés",
+        "status": "condenado",
+        "charges": [
+          "malversación"
+        ],
+        "convictions": [
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2023-02-13",
+          "disqualificationMonths": 144,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2017,
+    "lastUpdated": "2026-10-07",
+    "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación al revisar la sentencia. 6-oct-2026: el Constitucional avala amnistiar la malversación del procés.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
+      "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+    ]
+  },
+  {
+    "id": 98,
+    "suspect": "Carles Puigdemont",
+    "title": "ex-Presidente de la Generalitat de Cataluña y presidente de Junts",
+    "categories": [
+      "gobierno",
+      "partido"
+    ],
+    "party": "junts",
+    "causes": [
+      {
+        "name": "Caso procés",
+        "status": "procesado",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2017,
+    "lastUpdated": "2026-10-07",
+    "summary": "Procesado por el 1-O sin juicio tras marcharse a Bélgica. 1-jul-2024: el Supremo no le aplica la amnistía y mantiene la malversación y la orden de detención; 10-sep-2024 Llarena lo confirma. 6-oct-2026: el Constitucional avala amnistiar la malversación.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/supremo-no-aplica-amnistia-puigdemont-mantiene-malversacion-orden-arresto_1_11490962.html",
+      "https://www.eldiario.es/catalunya/juez-llarena-confirma-amnistia-no-perdona-malversacion-atribuida-puigdemont_1_11641214.html",
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+    ]
+  },
+  {
+    "id": 99,
+    "suspect": "Toni Comín",
+    "title": "ex-Consejero de Salud de la Generalitat de Cataluña",
+    "categories": [
+      "gobierno"
+    ],
+    "causes": [
+      {
+        "name": "Caso procés",
+        "status": "procesado",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2017,
+    "lastUpdated": "2026-10-07",
+    "summary": "Procesado por malversación en la causa del 1-O, sin juicio tras instalarse en Bélgica. 1-jul-2024: el Supremo rechaza amnistiar la malversación. 6-oct-2026: el Constitucional avala la amnistía del delito y el Supremo debe pronunciarse de nuevo.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/comin-considera-decision-supremo-no-amnistiar-malversacion-matar-democracia_1_11492689.html",
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+    ]
+  },
+  {
+    "id": 100,
+    "suspect": "Lluís Puig",
+    "title": "ex-Consejero de Cultura de la Generalitat de Cataluña",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "junts",
+    "causes": [
+      {
+        "name": "Caso procés",
+        "status": "procesado",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2017,
+    "lastUpdated": "2026-10-07",
+    "summary": "Procesado por malversación en la causa del 1-O; la justicia belga rechazó su entrega el 7-ago-2020 y el 16-ene-2023 descartó comparecer mientras se mantuviera el procesamiento. 6-oct-2026: el Constitucional avala amnistiar la malversación.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/lluis-puig-descarta-comparecer-tribunal-supremo-si-mantiene-procesamiento-malversacion_1_9870958.html",
+      "https://www.eldiario.es/politica/la-justicia-belga-rechaza-la-entrega-a-espana-del-exconsejero-lluis-puig-por-malversacion_1_6152579.html",
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+    ]
+  },
+  {
+    "id": 101,
+    "suspect": "Oriol Pujol Ferrusola",
+    "title": "ex-Secretario general de CDC y ex-diputado del Parlament de Cataluña",
+    "categories": [
+      "partido",
+      "institucional"
+    ],
+    "party": "junts",
+    "causes": [
+      {
+        "name": "Caso ITV",
+        "status": "condenado",
+        "charges": [
+          "cohecho",
+          "falsedad documental",
+          "tráfico de influencias"
+        ],
+        "convictions": [
+          "cohecho",
+          "falsedad documental",
+          "tráfico de influencias"
+        ],
+        "sentence": {
+          "date": "2018-07-24",
+          "prisonMonths": 30,
+          "disqualificationMonths": 24,
+          "fineEur": 76000,
+          "firm": true
+        },
+        "amount": 333838
+      }
+    ],
+    "court": "Audiencia de Barcelona",
+    "startYear": 2013,
+    "lastUpdated": "2026-10-07",
+    "summary": "24-jul-2018: acepta una conformidad con Anticorrupción por el amaño de concesiones de ITV en 2011-2012; admite 443.660 € en comisiones facturadas por su esposa por trabajos inexistentes. 17-ene-2019: ingresa en prisión.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/oriol-pujol-acepta-condena-itv_1_2009715.html",
+      "https://www.eldiario.es/catalunya/politica/audiencia-barcelona-oriol-pujol-ingresar_1_1747719.html"
+    ]
+  },
+  {
+    "id": 102,
+    "suspect": "Laura Borràs",
+    "title": "ex-Presidenta del Parlament de Cataluña y ex-presidenta de Junts",
+    "categories": [
+      "institucional",
+      "partido"
+    ],
+    "party": "junts",
+    "causes": [
+      {
+        "name": "Caso ILC",
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "falsedad documental"
+        ],
+        "convictions": [
+          "prevaricación",
+          "falsedad documental"
+        ],
+        "sentence": {
+          "date": "2023-03-30",
+          "prisonMonths": 54,
+          "disqualificationMonths": 156,
+          "fineEur": 36000,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Tribunal Superior de Justicia de Cataluña",
+    "startYear": 2020,
+    "lastUpdated": "2026-10-07",
+    "summary": "30-mar-2023: condenada por fraccionar contratos de la Institució de les Lletres Catalanes para favorecer a un amigo; 4a6m de prisión, 13 años de inhabilitación y 36.000 € de multa. jul-2026: el Gobierno le indulta la prisión; 4-sep-2026 el TSJC la da por conmutada.",
+    "sourceUrls": [
+      "https://www.eldiario.es/catalunya/justicia-da-conmutada-pena-prision-corrupcion-laura-borras-indulto-gobierno_1_13486760.html",
+      "https://www.eldiario.es/politica/supremo-revisa-condena-4-anos-prision-laura-borras_1_12023792.html",
+      "https://www.eldiario.es/catalunya/supremo-mantiene-laura-borras-escano-parlament-despues-condena-corrupcion_1_10645105.html"
+    ]
+  },
+  {
+    "id": 103,
+    "suspect": "Daniel Osàcar",
+    "title": "ex-Tesorero de Convergència Democràtica de Catalunya",
+    "categories": [
+      "partido"
+    ],
+    "party": "junts",
+    "causes": [
+      {
+        "name": "Caso Palau de la Música",
+        "status": "condenado",
+        "charges": [
+          "blanqueo de capitales"
+        ],
+        "convictions": [
+          "blanqueo de capitales"
+        ],
+        "sentence": {
+          "date": "2018-01-15",
+          "prisonMonths": 53,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2017,
+    "lastUpdated": "2026-10-07",
+    "summary": "15-ene-2018: la Audiencia de Barcelona le condena a 4a5m por blanquear las comisiones que CDC cobró a través del Palau (6,6 millones entre sobres, facturas falsas y convenios ficticios). 30-abr-2020: el Supremo confirma la condena de CDC a devolver 6,6 millones.",
+    "sourceUrls": [
+      "https://www.eldiario.es/catalunya/politica/tribunal-felix-millet-sentencia-palau_1_2924720.html",
+      "https://www.eldiario.es/politica/supremo-confirma-cdc-millones-palau_1_6011005.html"
+    ]
+  },
+  {
+    "id": 104,
+    "suspect": "Germà Gordó",
+    "title": "ex-Consejero de Justicia de la Generalitat de Cataluña",
+    "categories": [
+      "gobierno",
+      "partido"
+    ],
+    "party": "junts",
+    "causes": [
+      {
+        "name": "Caso 3%",
+        "status": "procesado",
+        "charges": [
+          "blanqueo de capitales"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2017,
+    "lastUpdated": "2026-10-07",
+    "summary": "2-jun-2017: el TSJC lo investiga por la trama del 3% de financiación de CDC. 23-oct-2020: imputado por el blanqueo mediante donaciones. 8-nov-2022: el juez Pedraz abre juicio oral contra él, CDC y el PDeCAT; Anticorrupción pide 18a10m. Juicio pendiente.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/tsjc-investigara-exconseller-germa-gordo_1_3366899.html",
+      "https://www.eldiario.es/agencias/el-juez-imputa-a-germa-gordo-por-el-blanqueo-en-cdc-mediante-donaciones_1_6316754.html",
+      "https://www.eldiario.es/politica/juez-pedraz-abre-juicio-pdecat-cdc-3-exgerentes-caso-3_1_9692484.html"
+    ]
+  },
+  {
+    "id": 105,
+    "suspect": "Jordi Pujol Soley",
+    "title": "ex-Presidente de la Generalitat de Cataluña y fundador de CDC",
+    "categories": [
+      "gobierno",
+      "partido"
+    ],
+    "party": "junts",
+    "causes": [
+      {
+        "name": "Caso Pujol",
+        "status": "sobreseido",
+        "charges": [
+          "blanqueo de capitales"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2014,
+    "lastUpdated": "2026-10-07",
+    "summary": "Acusado por la Fiscalía de asociación ilícita y blanqueo de la fortuna oculta en Andorra, que vincula al cobro de comisiones por obra pública; pedía 9 años. 27-abr-2026: la Audiencia Nacional le sobresee la causa por deterioro cognitivo tras examinarle el forense.",
+    "sourceUrls": [
+      "https://www.eldiario.es/catalunya/audiencia-nacional-exime-jordi-pujol-juicio-fortuna-oculta-deterioro-cognitivo_1_13166394.html",
+      "https://www.eldiario.es/catalunya/audiencia-nacional-rechaza-jefe-policial-condenado-adulterar-caso-pujol-declare-juicio-familia_1_12436448.html"
+    ]
+  },
+  {
+    "id": 106,
+    "suspect": "Jordi Pujol Ferrusola",
+    "title": "empresario, primogénito de Jordi Pujol",
+    "categories": [
+      "familia",
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Pujol",
+        "status": "procesado",
+        "charges": [
+          "blanqueo de capitales",
+          "fraude a la Hacienda Pública",
+          "falsedad documental"
+        ]
+      }
+    ],
+    "court": "Audiencia Nacional",
+    "startYear": 2014,
+    "lastUpdated": "2026-10-07",
+    "summary": "La Fiscalía le atribuye cobrar las comisiones, blanquearlas y repartirlas entre sus hermanos; la Abogacía del Estado le acusa de delitos fiscales y falsificación. El juicio de la fortuna oculta se celebra entre nov-2025 y abr-2026 en la Audiencia Nacional.",
+    "sourceUrls": [
+      "https://www.eldiario.es/catalunya/audiencia-nacional-exime-jordi-pujol-juicio-fortuna-oculta-deterioro-cognitivo_1_13166394.html",
+      "https://www.eldiario.es/catalunya/audiencia-nacional-rechaza-jefe-policial-condenado-adulterar-caso-pujol-declare-juicio-familia_1_12436448.html"
+    ]
+  },
+  {
+    "id": 107,
+    "suspect": "Josep Maria Jové",
+    "title": "ex-Secretario general de Vicepresidencia y Economía de la Generalitat de Cataluña",
+    "categories": [
+      "institucional"
+    ],
+    "party": "erc",
+    "causes": [
+      {
+        "name": "Caso organización del 1-O",
+        "status": "procesado",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Tribunal Superior de Justicia de Cataluña",
+    "startYear": 2019,
+    "lastUpdated": "2026-10-07",
+    "summary": "Procesado por la malversación en los preparativos del 1-O; 26-abr-2021 queda a un paso del juicio y 21-nov-2022 se abre juicio oral por malversación. 28-mar-2024: el juicio se aplaza. 30-jul-2024: el TSJC frena la amnistía y eleva la malversación al TC y a Europa.",
+    "sourceUrls": [
+      "https://www.eldiario.es/catalunya/tsjc-deja-paso-juicio-jove-salvado-organizacion-1_1_7870148.html",
+      "https://www.eldiario.es/politica/erc-dice-1-democracia-rechaza-suspender-jove-salvado-seran-juzgados-malversacion_1_9730474.html",
+      "https://www.eldiario.es/agencias/justicia-frena-amnistia-jove-salvado-elevar-malversacion-tc-europa_1_11560528.html"
+    ]
+  },
+  {
+    "id": 108,
+    "suspect": "Lluís Salvadó",
+    "title": "ex-Secretario de Hacienda de la Generalitat de Cataluña",
+    "categories": [
+      "institucional"
+    ],
+    "party": "erc",
+    "causes": [
+      {
+        "name": "Caso organización del 1-O",
+        "status": "procesado",
+        "charges": [
+          "malversación"
+        ]
+      }
+    ],
+    "court": "Tribunal Superior de Justicia de Cataluña",
+    "startYear": 2019,
+    "lastUpdated": "2026-10-07",
+    "summary": "Procesado por la malversación en los preparativos del 1-O; depositó con Jové 1,6 millones de fianza (25-jun-2020) y el 21-nov-2022 se abrió juicio oral por malversación. 30-jul-2024: el TSJC frena la amnistía y eleva la cuestión al TC y a Europa.",
+    "sourceUrls": [
+      "https://www.eldiario.es/politica/jove-salvado-depositan-tsjc-millones_1_6054233.html",
+      "https://www.eldiario.es/politica/erc-dice-1-democracia-rechaza-suspender-jove-salvado-seran-juzgados-malversacion_1_9730474.html",
+      "https://www.eldiario.es/agencias/justicia-frena-amnistia-jove-salvado-elevar-malversacion-tc-europa_1_11560528.html"
+    ]
+  },
+  {
+    "id": 109,
+    "suspect": "Francisco Serrano",
+    "title": "ex-Presidente de Vox en Andalucía y ex-diputado del Parlamento andaluz",
+    "categories": [
+      "partido",
+      "entorno"
+    ],
+    "party": "vox",
+    "causes": [
+      {
+        "name": "Caso Bio Wood Niebla",
+        "status": "procesado",
+        "charges": [
+          "estafa"
+        ],
+        "amount": 2500000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2020,
+    "lastUpdated": "2026-10-07",
+    "summary": "Procesado el 20-ene-2023 por el presunto fraude de un préstamo de 2,5 millones del Ministerio de Industria (dic-2016) para una planta de pélets en Niebla que nunca se construyó. 20-mar-2024: fianza de 3,3 millones. Juicio señalado en la Audiencia de Sevilla para may-2026.",
+    "sourceUrls": [
+      "https://www.eldiario.es/agencias/procesado-exlider-vox-francisco-serrano-fraude-ayuda-millonaria_1_9882991.html",
+      "https://www.eldiario.es/andalucia/juzgado-pide-3-3-millones-fianza-exlider-vox-andalucia-fraude-ayudas-publicas_1_11229620.html",
+      "https://www.infobae.com/espana/2025/05/01/el-exlider-de-vox-en-andalucia-francisco-serrano-se-sentara-en-el-banquillo-de-los-acusados-en-2026-por-un-presunto-fraude-de-subvenciones/"
+    ]
+  },
+  {
+    "id": 110,
+    "suspect": "Alfredo de Miguel",
+    "title": "ex-Número dos del PNV en Álava y ex-director de Administración Local de la Diputación de Álava",
+    "categories": [
+      "institucional",
+      "partido"
+    ],
+    "party": "pnv",
+    "causes": [
+      {
+        "name": "Caso De Miguel",
+        "status": "condenado",
+        "charges": [
+          "tráfico de influencias",
+          "prevaricación",
+          "cohecho",
+          "malversación",
+          "falsedad documental",
+          "blanqueo de capitales"
+        ],
+        "convictions": [
+          "tráfico de influencias",
+          "prevaricación",
+          "cohecho",
+          "malversación",
+          "falsedad documental",
+          "blanqueo de capitales"
+        ],
+        "sentence": {
+          "date": "2023-01-10",
+          "prisonMonths": 148,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2010,
+    "lastUpdated": "2026-10-07",
+    "summary": "Cabeza de la red de mordidas en contratos públicos alaveses a través de Kataia Consulting. Detenido el 17-mar-2010. 17-dic-2019: condenado por la Audiencia de Álava. 10-ene-2023: el Supremo confirma la condena (12a4m, nueve de cumplimiento máximo). 6-jul-2023: ingresa en Zaballa.",
+    "sourceUrls": [
+      "https://www.economistjurist.es/tribunal-supremo/el-supremo-confirma-las-principales-condenas-por-corrupcion-impuestas-a-integrantes-del-pnv-en-alava/",
+      "https://www.eldiario.es/euskadi/alfredo-miguel-ex-numero-pnv-alava-ingresa-prision-cumplir-nueve-anos-corrupcion_1_10355043.html"
+    ]
+  },
+  {
+    "id": 111,
+    "suspect": "Koldo Ochandiano",
+    "title": "ex-Dirigente del PNV en Álava y socio de Kataia Consulting",
+    "categories": [
+      "partido",
+      "entorno"
+    ],
+    "party": "pnv",
+    "causes": [
+      {
+        "name": "Caso De Miguel",
+        "status": "condenado",
+        "charges": [
+          "tráfico de influencias",
+          "prevaricación",
+          "cohecho",
+          "malversación",
+          "falsedad documental",
+          "blanqueo de capitales"
+        ],
+        "convictions": [
+          "tráfico de influencias",
+          "prevaricación",
+          "cohecho",
+          "malversación",
+          "falsedad documental",
+          "blanqueo de capitales"
+        ],
+        "sentence": {
+          "date": "2023-01-10",
+          "prisonMonths": 90,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2010,
+    "lastUpdated": "2026-10-07",
+    "summary": "Socio de De Miguel y Tellería en Kataia Consulting (2005), constituida a nombre de sus tres esposas, por la que pasaron las comisiones. 10-ene-2023: el Supremo confirma su condena de 7a6m (6a9m de cumplimiento). Ingresó en prisión el 5-jul-2023.",
+    "sourceUrls": [
+      "https://www.economistjurist.es/tribunal-supremo/el-supremo-confirma-las-principales-condenas-por-corrupcion-impuestas-a-integrantes-del-pnv-en-alava/",
+      "https://www.eldiario.es/euskadi/alfredo-miguel-ex-numero-pnv-alava-ingresa-prision-cumplir-nueve-anos-corrupcion_1_10355043.html"
+    ]
+  },
+  {
+    "id": 112,
+    "suspect": "Aitor Tellería",
+    "title": "ex-Cargo del PNV en Álava y socio de Kataia Consulting",
+    "categories": [
+      "partido",
+      "entorno"
+    ],
+    "party": "pnv",
+    "causes": [
+      {
+        "name": "Caso De Miguel",
+        "status": "condenado",
+        "charges": [
+          "tráfico de influencias",
+          "prevaricación",
+          "cohecho",
+          "malversación",
+          "falsedad documental",
+          "blanqueo de capitales"
+        ],
+        "convictions": [
+          "tráfico de influencias",
+          "prevaricación",
+          "cohecho",
+          "malversación",
+          "falsedad documental",
+          "blanqueo de capitales"
+        ],
+        "sentence": {
+          "date": "2023-01-10",
+          "prisonMonths": 61,
+          "firm": true
+        }
+      }
+    ],
+    "court": "Tribunal Supremo",
+    "startYear": 2010,
+    "lastUpdated": "2026-10-07",
+    "summary": "Tercer socio de Kataia Consulting, la sociedad por la que se canalizaron las comisiones de contratos alaveses. 10-ene-2023: el Supremo confirma su condena de 5a1m15d. 30-mar-2023: la Audiencia de Álava le ordena ingresar en prisión el 19 de abril.",
+    "sourceUrls": [
+      "https://www.economistjurist.es/tribunal-supremo/el-supremo-confirma-las-principales-condenas-por-corrupcion-impuestas-a-integrantes-del-pnv-en-alava/",
+      "https://www.eldiario.es/euskadi/aitor-telleria-exdirigente-pnv-condenado-corrupcion-19-abril-ingresar-prision_1_10080442.html"
+    ]
   }
 ]
