@@ -16,7 +16,7 @@ Next.js 16, React 19, TypeScript, Tailwind CSS, Radix UI / shadcn, Zod, React Ho
 
 - `src/lib/schema.ts` is the single source of truth (Zod schema, derived TS types, UI view derivation). No separate types file.
 - One record = one suspect; `causes[]` holds each court case with its own `status`. Related suspects are those sharing a cause name.
-- `accusations` = distinct crimes charged; `sentences` = distinct crimes convicted of. `amount` is per case, on the cause.
+- Each cause carries `charges[]`/`convictions[]` from the `CRIMES` enum and, when condenado, a `sentence` (date, prison/disqualification months, fine, `firm`). Counts shown in the UI are derived in `deriveView`, never stored. `amount` is per case, on the cause.
 - Never bump `lastUpdated` without a content change. Never cite Wikipedia alone. Only court-opened causes (imputado/procesado/condenado/absuelto/sobreseido) qualify; complaints alone do not.
 - Updates: `/update-data` skill (`.claude/skills/update-data/SKILL.md`), run weekly by a local Claude Code scheduled task; it opens a PR, merge deploys.
 

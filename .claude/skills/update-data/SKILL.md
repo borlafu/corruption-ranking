@@ -13,7 +13,9 @@ Schema and JSDoc live in `src/lib/schema.ts`. Summary:
 
 - One record = one **suspect** (person). `causes[]` = the court cases they are in, each with its own `status`.
 - `status` per cause: `investigado` (imputado by a court), `procesado` (auto de procesamiento or apertura de juicio oral), `condenado` (convicted, even if appealed), `absuelto`, `sobreseido` (archived). A querella or denuncia alone is **not** `investigado`; a person with no court-opened cause does not belong in the dataset.
-- `accusations` = distinct crimes (delitos) charged across all causes. `sentences` = distinct crimes convicted of, not number of rulings. `sentences <= accusations`; `sentences > 0` iff some cause is `condenado`.
+- `causes[].charges` = distinct crimes charged in that cause, values from the `CRIMES` enum in `schema.ts` (add an enum value rather than free text). `causes[].convictions` ⊆ charges, only when `condenado`. The UI derives "Acusaciones"/"Condenas" counts from these; never store counts.
+- `causes[].sentence` only when `condenado`: `{ date, prisonMonths?, disqualificationMonths?, fineEur?, suspended?, firm }`. `firm: false` while an appeal or re-sentencing is pending.
+- `startYear` (required) = year the suspect entered the case; drives the "Año" column and filter.
 - `categories`: `gobierno` (member of central government, past or present), `familia` (family of a government member), `psoe` (party official/member), `institucional` (public servant or public body officer), `entorno` (businessman or private intermediary). A suspect can have several.
 - `amount`: total EUR of the whole case, on the cause, identical for every suspect sharing that cause.
 - `court`: court that issued the last ruling or is instructing. Note appeals in `summary`.

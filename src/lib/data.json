@@ -9,11 +9,21 @@
     "causes": [
       {
         "name": "Caso García Ortiz",
-        "status": "condenado"
+        "status": "condenado",
+        "charges": [
+          "revelación de secretos"
+        ],
+        "convictions": [
+          "revelación de secretos"
+        ],
+        "sentence": {
+          "date": "2025-11-20",
+          "disqualificationMonths": 24,
+          "fineEur": 7200,
+          "firm": true
+        }
       }
     ],
-    "accusations": 1,
-    "sentences": 1,
     "court": "Tribunal Supremo",
     "startYear": 2024,
     "lastUpdated": "2026-10-07",
@@ -35,11 +45,13 @@
     "causes": [
       {
         "name": "Caso Begoña Gómez",
-        "status": "procesado"
+        "status": "procesado",
+        "charges": [
+          "tráfico de influencias",
+          "malversación"
+        ]
       }
     ],
-    "accusations": 2,
-    "sentences": 0,
     "court": "Audiencia Provincial de Madrid",
     "startYear": 2024,
     "lastUpdated": "2026-10-07",
@@ -61,11 +73,16 @@
     "causes": [
       {
         "name": "Caso Koldo",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "organización criminal",
+          "malversación",
+          "tráfico de influencias"
+        ]
       }
     ],
-    "accusations": 5,
-    "sentences": 0,
     "court": "Audiencia Nacional",
     "startYear": 2025,
     "lastUpdated": "2026-10-07",
@@ -86,11 +103,29 @@
     "causes": [
       {
         "name": "Caso Koldo",
-        "status": "condenado"
+        "status": "condenado",
+        "charges": [
+          "organización criminal",
+          "cohecho",
+          "tráfico de influencias",
+          "malversación",
+          "prevaricación",
+          "uso de información privilegiada",
+          "falsedad documental"
+        ],
+        "convictions": [
+          "organización criminal",
+          "cohecho",
+          "tráfico de influencias",
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2026-06-22",
+          "prisonMonths": 236,
+          "firm": true
+        }
       }
     ],
-    "accusations": 6,
-    "sentences": 4,
     "court": "Tribunal Supremo",
     "startYear": 2024,
     "lastUpdated": "2026-10-07",
@@ -112,11 +147,29 @@
     "causes": [
       {
         "name": "Caso Koldo",
-        "status": "condenado"
+        "status": "condenado",
+        "charges": [
+          "organización criminal",
+          "cohecho",
+          "tráfico de influencias",
+          "malversación",
+          "prevaricación",
+          "uso de información privilegiada",
+          "falsedad documental"
+        ],
+        "convictions": [
+          "organización criminal",
+          "cohecho",
+          "tráfico de influencias",
+          "malversación"
+        ],
+        "sentence": {
+          "date": "2026-06-22",
+          "prisonMonths": 291,
+          "firm": true
+        }
       }
     ],
-    "accusations": 7,
-    "sentences": 4,
     "court": "Tribunal Supremo",
     "startYear": 2024,
     "lastUpdated": "2026-10-07",
@@ -137,15 +190,29 @@
     "causes": [
       {
         "name": "Caso Koldo",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "organización criminal",
+          "cohecho",
+          "tráfico de influencias"
+        ]
       },
       {
         "name": "Caso Leire Díez",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "organización criminal",
+          "cohecho",
+          "revelación de secretos",
+          "falso testimonio",
+          "acusación falsa",
+          "falsedad documental",
+          "prevaricación",
+          "tráfico de influencias",
+          "delito contra las instituciones del Estado"
+        ]
       }
     ],
-    "accusations": 10,
-    "sentences": 0,
     "court": "Audiencia Nacional",
     "startYear": 2024,
     "lastUpdated": "2026-10-07",
@@ -167,11 +234,21 @@
     "causes": [
       {
         "name": "Caso David Sánchez",
-        "status": "condenado"
+        "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "tráfico de influencias"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 108,
+          "firm": false
+        }
       }
     ],
-    "accusations": 2,
-    "sentences": 1,
     "court": "Audiencia Provincial de Badajoz",
     "startYear": 2024,
     "lastUpdated": "2026-10-07",
@@ -192,11 +269,20 @@
     "causes": [
       {
         "name": "Caso Leire Díez",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "organización criminal",
+          "cohecho",
+          "revelación de secretos",
+          "falso testimonio",
+          "acusación falsa",
+          "falsedad documental",
+          "prevaricación",
+          "tráfico de influencias",
+          "delito contra las instituciones del Estado"
+        ]
       }
     ],
-    "accusations": 9,
-    "sentences": 0,
     "court": "Audiencia Nacional",
     "startYear": 2025,
     "lastUpdated": "2026-10-07",
@@ -217,11 +303,20 @@
     "causes": [
       {
         "name": "Caso David Sánchez",
-        "status": "condenado"
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 216,
+          "firm": false
+        }
       }
     ],
-    "accusations": 2,
-    "sentences": 2,
     "court": "Audiencia Provincial de Badajoz",
     "startYear": 2024,
     "lastUpdated": "2026-10-07",
@@ -242,15 +337,21 @@
     "causes": [
       {
         "name": "Caso Mediador",
-        "status": "procesado"
+        "status": "procesado",
+        "charges": [
+          "cohecho",
+          "prevaricación",
+          "tráfico de influencias",
+          "estafa",
+          "falsedad documental",
+          "grupo criminal"
+        ]
       }
     ],
-    "accusations": 3,
-    "sentences": 0,
     "court": "Audiencia Provincial de Santa Cruz de Tenerife",
     "startYear": 2022,
     "lastUpdated": "2026-10-07",
-    "summary": "Auto de apertura de juicio oral (sep-2026) en el caso Mediador por cohecho, prevaricación administrativa y pertenencia a grupo criminal. La Fiscalía pide 8 años de prisión. Juzgará la Audiencia Provincial de Santa Cruz de Tenerife; sin fecha.",
+    "summary": "Auto de apertura de juicio oral (sep-2026) en el caso Mediador por cohecho, prevaricación, tráfico de influencias, estafa, falsedad documental y pertenencia a grupo criminal. La Fiscalía pide 8 años de prisión. Juzgará la Audiencia Provincial de Santa Cruz de Tenerife; sin fecha.",
     "sourceUrls": [
       "https://www.infobae.com/espana/agencias/2026/09/25/abren-juicio-oral-a-tito-berni-su-sobrino-y-mas-de-una-decena-de-personas-por-los-sobornos-del-caso-mediador/",
       "https://www.canarias7.es/politica/mediador-jueza-manda-banquillo-tito-berni-sobrino-20260924155602-nt.html",
@@ -267,11 +368,15 @@
     "causes": [
       {
         "name": "Caso Leire Díez",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "malversación",
+          "tráfico de influencias",
+          "organización criminal",
+          "prevaricación"
+        ]
       }
     ],
-    "accusations": 4,
-    "sentences": 0,
     "court": "Audiencia Nacional",
     "startYear": 2025,
     "lastUpdated": "2026-10-07",
@@ -292,19 +397,39 @@
     "causes": [
       {
         "name": "Caso Koldo",
-        "status": "condenado"
+        "status": "condenado",
+        "charges": [
+          "organización criminal",
+          "cohecho",
+          "prevaricación",
+          "uso de información privilegiada",
+          "falsedad documental"
+        ],
+        "convictions": [
+          "organización criminal",
+          "cohecho"
+        ],
+        "sentence": {
+          "date": "2026-06-22",
+          "prisonMonths": 54,
+          "suspended": true,
+          "firm": true
+        }
       },
       {
         "name": "Caso Hidrocarburos",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "fraude a la Hacienda Pública",
+          "blanqueo de capitales",
+          "organización criminal"
+        ]
       }
     ],
-    "accusations": 4,
-    "sentences": 4,
     "court": "Tribunal Supremo",
     "startYear": 2023,
     "lastUpdated": "2026-10-07",
-    "summary": "Condenado por el Tribunal Supremo el 22-jun-2026 a 4 años y 6 meses de prisión, suspendidos por su colaboración con la justicia, en la trama de mascarillas del caso Koldo. Sigue investigado en la Audiencia Nacional por el fraude del IVA de hidrocarburos (instrucción prorrogada hasta dic-2026).",
+    "summary": "Condenado por el Tribunal Supremo el 22-jun-2026 a 4 años y 6 meses de prisión, suspendidos por colaborar con la justicia, por organización criminal y cohecho en la trama de mascarillas. Sigue investigado en la Audiencia Nacional por el fraude del IVA de hidrocarburos (hasta dic-2026).",
     "sourceUrls": [
       "https://www.elespanol.com/espana/tribunales/20260622/supremo-condena-abalos-anos-prision-liderar-grupo-criminal-koldo-libra-aldama-carcel-ayudar-justicia/1003744278646_0.html",
       "https://www.mundiario.com/articulo/politica/victor-aldama-evita-carcel-supremo-premia-colaboracion-rebaja-condena/20260622135900391444.html",
@@ -322,15 +447,18 @@
     "causes": [
       {
         "name": "Caso Plus Ultra",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "organización criminal",
+          "tráfico de influencias",
+          "falsedad documental"
+        ]
       }
     ],
-    "accusations": 4,
-    "sentences": 0,
     "court": "Audiencia Nacional",
     "startYear": 2026,
     "lastUpdated": "2026-10-07",
-    "summary": "Imputado en may-2026 por el juez Calama (Audiencia Nacional) por tráfico de influencias, blanqueo, organización criminal y falsedad en el caso Plus Ultra. En sep-2026 directivos de la aerolínea confirmaron una comisión del 1 % al 'grupo Zapatero'. Sus hijas, imputadas, declaran el 30-nov-2026.",
+    "summary": "Imputado el 19-may-2026 por el juez Calama (Audiencia Nacional) por organización criminal, tráfico de influencias y falsedad documental en el caso Plus Ultra. En sep-2026 directivos de la aerolínea confirmaron una comisión del 1 % al 'grupo Zapatero'. Sus hijas, imputadas, declaran el 30-nov-2026.",
     "sourceUrls": [
       "https://www.elperiodico.com/es/politica/20260519/audiencia-nacional-imputa-zapatero-presunto-blanqueo-capitales-plus-ultra-130386255",
       "https://confilegal.com/20260520-zapatero-plus-ultra-blanqueo-influencias-organizacion-criminal/",
@@ -350,11 +478,21 @@
       {
         "name": "Caso ERE",
         "status": "condenado",
+        "charges": [
+          "prevaricación",
+          "malversación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "disqualificationMonths": 180,
+          "firm": false
+        },
         "amount": 680000000
       }
     ],
-    "accusations": 2,
-    "sentences": 1,
     "court": "Audiencia Provincial de Sevilla",
     "startYear": 2015,
     "lastUpdated": "2026-10-07",
@@ -376,11 +514,20 @@
       {
         "name": "Caso ERE",
         "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2022-07-26",
+          "disqualificationMonths": 108,
+          "firm": false
+        },
         "amount": 680000000
       }
     ],
-    "accusations": 1,
-    "sentences": 1,
     "court": "Audiencia Provincial de Sevilla",
     "startYear": 2015,
     "lastUpdated": "2026-10-07",
@@ -400,11 +547,12 @@
     "causes": [
       {
         "name": "Caso DANA",
-        "status": "sobreseido"
+        "status": "sobreseido",
+        "charges": [
+          "prevaricación"
+        ]
       }
     ],
-    "accusations": 1,
-    "sentences": 0,
     "court": "Tribunal Supremo",
     "startYear": 2025,
     "lastUpdated": "2026-10-07",
@@ -426,11 +574,15 @@
       {
         "name": "Caso Forestalia",
         "status": "investigado",
+        "charges": [
+          "prevaricación",
+          "cohecho",
+          "blanqueo de capitales",
+          "organización criminal"
+        ],
         "amount": 5200000
       }
     ],
-    "accusations": 4,
-    "sentences": 0,
     "court": "Tribunal de Instancia nº 1 de Teruel",
     "startYear": 2026,
     "lastUpdated": "2026-10-07",
@@ -451,11 +603,20 @@
     "causes": [
       {
         "name": "Caso Leire Díez",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "organización criminal",
+          "cohecho",
+          "revelación de secretos",
+          "falso testimonio",
+          "acusación falsa",
+          "falsedad documental",
+          "prevaricación",
+          "tráfico de influencias",
+          "delito contra las instituciones del Estado"
+        ]
       }
     ],
-    "accusations": 9,
-    "sentences": 0,
     "court": "Audiencia Nacional",
     "startYear": 2026,
     "lastUpdated": "2026-10-07",
@@ -476,11 +637,12 @@
     "causes": [
       {
         "name": "Caso Leire Díez",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "falsedad documental"
+        ]
       }
     ],
-    "accusations": 1,
-    "sentences": 0,
     "court": "Audiencia Nacional",
     "startYear": 2026,
     "lastUpdated": "2026-10-07",
@@ -500,11 +662,13 @@
     "causes": [
       {
         "name": "Caso Leire Díez",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "prevaricación",
+          "obstrucción a la justicia"
+        ]
       }
     ],
-    "accusations": 2,
-    "sentences": 0,
     "court": "Audiencia Nacional",
     "startYear": 2026,
     "lastUpdated": "2026-10-07",
@@ -524,11 +688,13 @@
     "causes": [
       {
         "name": "Caso Leire Díez",
-        "status": "investigado"
+        "status": "investigado",
+        "charges": [
+          "prevaricación",
+          "obstrucción a la justicia"
+        ]
       }
     ],
-    "accusations": 2,
-    "sentences": 0,
     "court": "Audiencia Nacional",
     "startYear": 2026,
     "lastUpdated": "2026-10-07",

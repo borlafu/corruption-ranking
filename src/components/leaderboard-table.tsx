@@ -7,10 +7,11 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpDown, Landmark, Users, Flower2, ExternalLink, Briefcase, Handshake, ChevronDown, ChevronUp } from "lucide-react";
-import type { SuspectView, Allegiance, CaseStatus } from "@/lib/schema";
+import { formatPenalty, type SuspectView, type Allegiance } from "@/lib/schema";
+import { statusConfig } from "@/lib/status-ui";
 import { CaseDetailRow } from "@/components/case-detail-row";
 
-type SortKey = keyof Pick<SuspectView, "suspect" | "accusations" | "sentences">;
+type SortKey = keyof Pick<SuspectView, "suspect" | "accusations" | "sentences" | "startYear" | "penaltyMonths">;
 
 const allegianceIcons: Record<Allegiance, React.ElementType> = {
   gobierno: Briefcase,
@@ -26,14 +27,6 @@ const allegianceLabels: Record<Allegiance, string> = {
   psoe: "PSOE",
   institucional: "Institucional",
   entorno: "Entorno",
-};
-
-const statusConfig: Record<CaseStatus, { label: string; className: string }> = {
-  investigado: { label: "Investigado/a", className: "border-yellow-500/40 bg-yellow-500/10 text-yellow-300" },
-  procesado: { label: "Procesado/a", className: "border-orange-500/40 bg-orange-500/10 text-orange-300" },
-  condenado: { label: "Condenado/a", className: "border-red-600/40 bg-red-600/15 text-red-300" },
-  absuelto: { label: "Absuelto/a", className: "border-green-600/40 bg-green-600/10 text-green-300" },
-  sobreseido: { label: "Sobreseído/a", className: "border-border bg-muted text-muted-foreground" },
 };
 
 const SortableHeader: FC<{
@@ -101,6 +94,14 @@ export function LeaderboardTable({ cases, allCases }: { cases: SuspectView[]; al
               <TableHead className="hidden md:table-cell">Categoría</TableHead>
               <TableHead className="hidden sm:table-cell">Estado</TableHead>
               <SortableHeader
+                label="Año"
+                sortKey="startYear"
+                activeSortKey={sortKey}
+                sortDirection={sortDirection}
+                onClick={handleSort}
+                className="hidden sm:table-cell text-right"
+              />
+              <SortableHeader
                 label="Acusaciones"
                 sortKey="accusations"
                 activeSortKey={sortKey}
@@ -115,6 +116,14 @@ export function LeaderboardTable({ cases, allCases }: { cases: SuspectView[]; al
                 sortDirection={sortDirection}
                 onClick={handleSort}
                 className="text-right"
+              />
+              <SortableHeader
+                label="Pena"
+                sortKey="penaltyMonths"
+                activeSortKey={sortKey}
+                sortDirection={sortDirection}
+                onClick={handleSort}
+                className="hidden lg:table-cell"
               />
               <TableHead className="text-center">Fuentes</TableHead>
               <TableHead className="w-[40px]" />
@@ -161,8 +170,12 @@ export function LeaderboardTable({ cases, allCases }: { cases: SuspectView[]; al
                           {status.label}
                         </Badge>
                       </TableCell>
+                      <TableCell className="hidden sm:table-cell text-right font-mono text-muted-foreground">{c.startYear}</TableCell>
                       <TableCell className="text-right font-mono text-lg font-bold">{c.accusations}</TableCell>
                       <TableCell className="text-right font-mono text-lg font-bold text-primary">{c.sentences}</TableCell>
+                      <TableCell className={`hidden lg:table-cell text-xs ${c.sentence?.prisonMonths ? "text-red-300" : "text-muted-foreground"}`}>
+                        {c.sentence ? formatPenalty(c.sentence) : "—"}
+                      </TableCell>
                       <TableCell className="text-center" onClick={(e) => e.stopPropagation()}>
                         {c.sourceUrls.length > 0 && (
                           <Popover>
@@ -221,7 +234,7 @@ export function LeaderboardTable({ cases, allCases }: { cases: SuspectView[]; al
                     </TableRow>
                     {isExpanded && (
                       <TableRow className="hover:bg-transparent">
-                        <TableCell colSpan={8} className="p-0">
+                        <TableCell colSpan={10} className="p-0">
                           <CaseDetailRow caseData={c} allCases={allCases} />
                         </TableCell>
                       </TableRow>
@@ -231,7 +244,7 @@ export function LeaderboardTable({ cases, allCases }: { cases: SuspectView[]; al
               })
             ) : (
               <TableRow>
-                <TableCell colSpan={8} className="h-24 text-center">
+                <TableCell colSpan={10} className="h-24 text-center">
                   No hay casos que coincidan con el filtro actual.
                 </TableCell>
               </TableRow>
