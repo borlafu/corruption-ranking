@@ -3,394 +3,539 @@
     "id": 1,
     "suspect": "Álvaro García Ortiz",
     "title": "ex-Fiscal General del Estado",
-    "caseName": "Caso García Ortiz",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso García Ortiz",
+        "status": "condenado"
+      }
+    ],
     "accusations": 1,
     "sentences": 1,
-    "category": "institucional",
-    "status": "condenado",
     "court": "Tribunal Supremo",
     "startYear": 2024,
-    "lastUpdated": "2026-08-05",
-    "summary": "Condenado por el Tribunal Supremo a 2 años de inhabilitación y multa de 7.200€ por revelar datos fiscales reservados del empresario Alberto González Amador. Dimitió como Fiscal General. El Supremo se opuso al indulto en junio de 2026.",
+    "lastUpdated": "2026-10-07",
+    "summary": "Condenado por el Tribunal Supremo a 2 años de inhabilitación y multa de 7.200 € por revelar datos fiscales de Alberto González Amador. El Supremo informó en contra del indulto (jun-2026) y confirmó 39.009 € de costas (jul-2026). Recurso de amparo ante el TC pendiente.",
     "sourceUrls": [
-      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/El-Tribunal-Supremo-condena-a-Alvaro-Garcia-Ortiz-por-un-delito-de-revelacion-de-secretos",
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunal-Supremo/Noticias-Judiciales/El-Tribunal-Supremo-condena-a-Alvaro-Garcia-Ortiz-por-un-delito-de-revelacion-de-secretos-a-pena-de-multa-y-2-anos-de-inhabilitacion-para-el-cargo-de-fiscal-general-del-Estado",
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunal-Supremo/Oficina-de-Comunicacion/Notas-de-prensa/El-Tribunal-Supremo-informa-desfavorablemente-al-indulto-del-exfiscal-general-del-Estado-Alvaro-Garcia-Ortiz-al-no-apreciar-razones-de-justicia--equidad-o-utilidad-publica",
       "https://elpais.com/espana/2025-12-10/radiografia-de-la-sentencia-del-supremo-que-condena-e-inhabilita-a-alvaro-garcia-ortiz.html",
-      "https://www.elconfidencial.com/espana/2026-06-11/el-supremo-en-contra-de-indultar-a-garcia-ortiz-los-hechos-fueron-graves_4371244/",
-      "https://www.lasexta.com/noticias/nacional/supremo-desestima-recurso-exfiscal-general-estado-garcia-ortiz-tendra-que-pagar-39000-euros-costas-novio-ayuso_202607076a4d1229772f745d2c37e368.html"
+      "https://www.libertaddigital.com/espana/politica/2026-07-07/el-supremo-rechaza-el-recurso-de-garcia-ortiz-y-le-obliga-a-pagar-39-000-euros-en-costas-7432284/"
     ]
   },
   {
     "id": 2,
     "suspect": "Begoña Gómez",
     "title": "esposa de Pedro Sánchez",
-    "caseName": "Caso Begoña Gómez",
+    "categories": [
+      "familia"
+    ],
+    "causes": [
+      {
+        "name": "Caso Begoña Gómez",
+        "status": "procesado"
+      }
+    ],
     "accusations": 2,
     "sentences": 0,
-    "category": "familia",
-    "status": "procesado",
     "court": "Audiencia Provincial de Madrid",
     "startYear": 2024,
-    "lastUpdated": "2026-08-05",
-    "summary": "La Audiencia Provincial de Madrid confirmó el 16 de julio de 2026 su juicio ante jurado popular por malversación y tráfico de influencias, relacionados con la cátedra que codirigía en la UCM y contratos públicos. Cambió de abogado en julio de 2026.",
+    "lastUpdated": "2026-10-07",
+    "summary": "El 21-sep-2026 el juez Peinado dictó auto de apertura de juicio oral con jurado popular por tráfico de influencias y malversación (cátedra UCM y contratos públicos). La Audiencia Provincial de Madrid fijará fecha. Sin medidas cautelares.",
     "sourceUrls": [
-      "https://www.rtve.es/noticias/20260716/audiencia-madrid-mantiene-juicio-con-jurado-popular-contra-begona-gomez-ordena-devolucion-su-pasaporte/17158645.shtml",
-      "https://www.abc.es/espana/audiencia-confirma-begona-gomez-juzgada-jurado-popular-20260716132736-nt.html",
-      "https://www.elconfidencial.com/espana/2026-07-17/juicio-begona-gomez-delitos-prevision-fecha_4391691/",
-      "https://es.wikipedia.org/wiki/Caso_Bego%C3%B1a_G%C3%B3mez"
+      "https://rtvc.es/el-juez-peinado-envia-a-juicio-con-jurado-a-begona-gomez-21-septiembre-2026/",
+      "https://www.diariodeleon.es/nacional/260921/2098014/juez-peinado-envia-nuevo-juicio-begona-gomez-presuntos-delitos-malversacion-trafico-influencias.html",
+      "https://es.euronews.com/2026/09/08/el-juez-que-investiga-a-begona-gomez-concluye-la-instruccion",
+      "https://www.rtve.es/noticias/20260716/audiencia-madrid-mantiene-juicio-con-jurado-popular-contra-begona-gomez-ordena-devolucion-su-pasaporte/17158645.shtml"
     ]
   },
   {
     "id": 3,
     "suspect": "Isabel Pardo de Vera",
-    "title": "ex-directora Adif",
-    "caseName": "Caso ADIF",
+    "title": "ex-presidenta de Adif",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "investigado"
+      }
+    ],
     "accusations": 5,
     "sentences": 0,
-    "category": "institucional",
-    "status": "investigado",
     "court": "Audiencia Nacional",
     "startYear": 2025,
-    "lastUpdated": "2026-08-05",
-    "summary": "La Audiencia Nacional investiga a la ex-directora de Adif por cinco delitos —entre ellos cohecho y malversación— relacionados con la gestión de contratos durante su etapa al frente del organismo, vinculada al entorno de Ábalos.",
-    "relatedCaseIds": [5],
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigada en la Audiencia Nacional (Juzgado Central de Instrucción nº 2) por cohecho, prevaricación, organización criminal, malversación y tráfico de influencias en la pieza de obra pública del caso Koldo. El juez Moreno ultima la instrucción (sep-2026).",
     "sourceUrls": [
       "https://es.euronews.com/2025/07/08/pardo-de-vera-exdirectora-de-adif-imputada-por-5-delitos-tras-un-hallazgo-clave-en-el-caso",
-      "https://elpais.com/espana/2025-07-08/la-audiencia-nacional-investiga-a-pardo-de-vera-por-cinco-delitos.html"
+      "https://elpais.com/espana/2025-07-08/la-audiencia-nacional-investiga-a-pardo-de-vera-por-cinco-delitos.html",
+      "https://www.libertaddigital.com/espana/2026-09-11/la-audiencia-nacional-prepara-un-nuevo-juicio-a-la-trama-koldo-ismael-moreno-ultima-otro-caso-mascarillas-7458289/"
     ]
   },
   {
     "id": 4,
     "suspect": "Koldo García",
     "title": "ex-asesor de José Luis Ábalos",
-    "caseName": "Caso Koldo",
-    "accusations": 5,
-    "sentences": 1,
-    "category": "psoe",
-    "status": "condenado",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "condenado"
+      }
+    ],
+    "accusations": 6,
+    "sentences": 4,
     "court": "Tribunal Supremo",
     "startYear": 2024,
-    "lastUpdated": "2026-08-05",
-    "summary": "Condenado por el Tribunal Supremo el 22 de junio de 2026 a 19 años y 8 meses de prisión como 'alter ego' de Ábalos en la trama de comisiones ilegales por contratos de mascarillas. Nexo entre Víctor de Aldama, empresarios y el entorno ministerial.",
-    "relatedCaseIds": [5, 6, 12],
+    "lastUpdated": "2026-10-07",
+    "summary": "Condenado por el Tribunal Supremo el 22-jun-2026 a 19 años y 8 meses de prisión por organización criminal, cohecho, tráfico de influencias y malversación en la trama de mascarillas; absuelto de otros dos delitos. El 7-oct-2026 el Supremo rechazó anular la condena; recurrirá al TC.",
     "sourceUrls": [
       "https://www.elespanol.com/espana/tribunales/20260622/supremo-condena-abalos-anos-prision-liderar-grupo-criminal-koldo-libra-aldama-carcel-ayudar-justicia/1003744278646_0.html",
-      "https://www.elperiodico.com/es/politica/20260622/diez-hechos-probados-condenar-24-anos-jose-luis-abalos-131696276",
-      "https://es.wikipedia.org/wiki/Caso_Koldo"
+      "https://www.libertaddigital.com/espana/2026-10-07/el-supremo-rechaza-anular-la-condena-de-abalos-y-koldo-que-acudiran-al-constitucional-de-conde-pumpido-7472004/",
+      "https://confilegal.com/20260901-anticorrupcion-pide-al-supremo-que-rechace-el-incidente-de-nulidad-de-abalos-y-koldo-en-el-caso-mascarillas/"
     ]
   },
   {
     "id": 5,
     "suspect": "José Luis Ábalos",
     "title": "ex-Ministro de Transportes",
-    "caseName": "Caso Koldo",
-    "accusations": 5,
-    "sentences": 1,
-    "category": "gobierno",
-    "status": "condenado",
+    "categories": [
+      "gobierno",
+      "psoe"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "condenado"
+      }
+    ],
+    "accusations": 7,
+    "sentences": 4,
     "court": "Tribunal Supremo",
     "startYear": 2024,
-    "lastUpdated": "2026-08-05",
-    "summary": "Condenado por el Tribunal Supremo el 22 de junio de 2026 a 24 años y 3 meses de prisión (máximo efectivo: 15 años 8 meses) por liderar organización criminal, cohecho, tráfico de influencias y malversación en la trama de mascarillas.",
-    "relatedCaseIds": [4, 6, 3, 12],
+    "lastUpdated": "2026-10-07",
+    "summary": "Condenado por el Tribunal Supremo el 22-jun-2026 a 24 años y 3 meses de prisión (máximo efectivo 16 años y 6 meses) por organización criminal, cohecho, tráfico de influencias y malversación en la trama de mascarillas. El 7-oct-2026 el Supremo rechazó la nulidad; recurrirá al TC.",
     "sourceUrls": [
       "https://www.elespanol.com/espana/tribunales/20260622/supremo-condena-abalos-anos-prision-liderar-grupo-criminal-koldo-libra-aldama-carcel-ayudar-justicia/1003744278646_0.html",
-      "https://www.elperiodico.com/es/politica/20260622/supremo-condena-forma-unanime-abalos-131676499",
-      "https://www.elconfidencial.com/espana/2026-06-23/abalos-ministros-condenados-prision-democracia_4377042/",
-      "https://es.wikipedia.org/wiki/Caso_Koldo"
+      "https://rtvc.es/el-supremo-condena-a-abalos-a-24-anos-de-carcel-22-junio-2026/",
+      "https://www.libertaddigital.com/espana/2026-10-07/el-supremo-rechaza-anular-la-condena-de-abalos-y-koldo-que-acudiran-al-constitucional-de-conde-pumpido-7472004/"
     ]
   },
   {
     "id": 6,
     "suspect": "Santos Cerdán",
     "title": "ex-Secretario de Organización del PSOE",
-    "caseName": "Caso Cerdán / Caso Leire Díez",
-    "accusations": 6,
+    "categories": [
+      "psoe"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "investigado"
+      },
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado"
+      }
+    ],
+    "accusations": 10,
     "sentences": 0,
-    "category": "psoe",
-    "status": "investigado",
     "court": "Audiencia Nacional",
     "startYear": 2024,
-    "lastUpdated": "2026-08-05",
-    "summary": "Investigado en la Audiencia Nacional por dos causas: trama de obras públicas (caso Koldo) y presunta financiación de las 'cloacas' del PSOE (caso Leire Díez). La UCO detectó €323.000 de ingresos irregulares y el juez ordenó rastrear sus cuentas en julio de 2026.",
-    "relatedCaseIds": [4, 5, 8, 12],
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigado en la Audiencia Nacional en dos causas: obra pública del caso Koldo (juez Moreno) y financiación de las 'cloacas' del PSOE (juez Pedraz). La UCO detectó 323.000 € irregulares; en sep-2026 la gerente del PSOE le atribuyó la orden de los pagos. Aún no ha declarado.",
     "sourceUrls": [
       "https://www.elconfidencial.com/espana/2026-05-27/juez-imputa-cerdan-zarrias-gerente-psoe-financiacion-cloacas-psoe_4362320/",
-      "https://www.elconfidencial.com/espana/2026-07-18/psoe-sanchez-cerdan-dinero-efectivo-ferraz-uco_4392127/",
       "https://www.infobae.com/espana/2026/07/22/la-audiencia-nacional-ordena-rastrear-las-cuentas-de-santos-cerdan-y-de-su-entorno-familiar-para-seguir-el-rastro-de-los-fondos-presuntamente-procedentes-de-servinabar/",
-      "https://elpais.com/espana/2025-12-14/el-mapa-de-la-corrupcion-una-decena-de-investigaciones-acorralan-al-psoe.html"
+      "https://www.vozpopuli.com/tribunales/la-gerente-del-psoe-dice-que-fue-santos-cerdan-el-que-le-dio-la-orden-de-emitir-los-pagos-a-las-cloacas.html",
+      "https://www.elindependiente.com/espana/2026/10/06/elecciones-no-frenaran-avance-caso-cloacas-pero-retrasarian-imputacion-psoe/"
     ]
   },
   {
     "id": 7,
     "suspect": "David Sánchez Pérez-Castejón",
     "title": "hermano de Pedro Sánchez",
-    "caseName": "Caso David Sánchez",
+    "categories": [
+      "familia"
+    ],
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado"
+      }
+    ],
     "accusations": 2,
     "sentences": 1,
-    "category": "familia",
-    "status": "condenado",
     "court": "Audiencia Provincial de Badajoz",
     "startYear": 2024,
-    "lastUpdated": "2026-08-05",
-    "summary": "Condenado el 14 de julio de 2026 por la Audiencia Provincial de Badajoz a 9 años de inhabilitación para empleo público por cooperación necesaria en prevaricación administrativa, por su contratación irregular en la Diputación de Badajoz.",
-    "relatedCaseIds": [9],
+    "lastUpdated": "2026-10-07",
+    "summary": "Condenado el 14-jul-2026 por la Audiencia Provincial de Badajoz a 9 años de inhabilitación por cooperación necesaria en prevaricación (su plaza en la Diputación de Badajoz); absuelto de tráfico de influencias. Sentencia no firme, recurrida ante el TSJ de Extremadura.",
     "sourceUrls": [
       "https://es.euronews.com/2026/07/14/david-sanchez-condenado-a-nueve-anos-de-inhabilitacion-por-prevaricacion",
       "https://www.rtve.es/noticias/20260714/claves-entender-sentencia-david-sanchez-hermano-presidente-condenado-prevaricacion/17156475.shtml",
-      "https://www.elperiodico.com/es/politica/20260714/david-sanchez-miguel-angel-gallardo-132490742",
-      "https://www.newtral.es/miguel-angel-gallardo-caso-david-sanchez/20251210"
+      "https://www.infobae.com/espana/agencias/2026/09/17/acusacion-recurre-la-sentencia-a-david-sanchez-por-no-recoger-trafico-de-influencias/"
     ]
   },
   {
     "id": 8,
     "suspect": "Leire Díez",
-    "title": "militante PSOE",
-    "caseName": "Caso Leire Díez",
-    "accusations": 3,
+    "title": "ex-militante PSOE",
+    "categories": [
+      "psoe"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado"
+      }
+    ],
+    "accusations": 9,
     "sentences": 0,
-    "category": "psoe",
-    "status": "investigado",
     "court": "Audiencia Nacional",
     "startYear": 2025,
-    "lastUpdated": "2026-08-05",
-    "summary": "Investigada en la Audiencia Nacional por organización criminal, revelación de secretos y acoso. La UCO registró la sede del PSOE en Ferraz en mayo de 2026, hallando facturas de viajes pagados por el partido. Juez Pedraz rastrea decenas de cuentas vinculadas.",
-    "relatedCaseIds": [6, 20],
+    "lastUpdated": "2026-10-07",
+    "summary": "Investigada por el juez Pedraz (Audiencia Nacional) por organización criminal, cohecho, revelación de secretos, falso testimonio, acusación falsa, falsedad, prevaricación, tráfico de influencias y delito contra las instituciones del Estado. Pedraz asumió toda la causa el 17-ago-2026.",
     "sourceUrls": [
-      "https://www.elmundo.es/espana/2025/12/18/69442a9de4d4d8f30d8b4596.html",
-      "https://www.abc.es/espana/uco-localizo-ferraz-facturas-mensuales-viajes-pagados-20260606013534-nt.html",
-      "https://www.elconfidencial.com/espana/2026-07-31/pedraz-abre-una-pieza-separada-y-autoriza-el-rastreo-de-decenas-de-cuentas-del-psoe-y-las-cloacas_4398943/",
-      "https://es.wikipedia.org/wiki/Caso_Leire_D%C3%ADez"
+      "https://theobjective.com/espana/tribunales/2026-08-17/juez-pedraz-investigacion-caso-leire/",
+      "https://www.elespanol.com/espana/tribunales/20260820/leire-intenta-evitar-pedraz-investigue-maniobras-favor-psoe-tratar-esquivar-delitos-graves/1003744358462_0.amp.html",
+      "https://www.abc.es/espana/uco-localizo-ferraz-facturas-mensuales-viajes-pagados-20260606013534-nt.html"
     ]
   },
   {
     "id": 9,
     "suspect": "Miguel Ángel Gallardo",
     "title": "ex-líder PSOE Extremadura",
-    "caseName": "Caso David Sánchez",
+    "categories": [
+      "psoe"
+    ],
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado"
+      }
+    ],
     "accusations": 2,
-    "sentences": 1,
-    "category": "psoe",
-    "status": "condenado",
+    "sentences": 2,
     "court": "Audiencia Provincial de Badajoz",
     "startYear": 2024,
-    "lastUpdated": "2026-08-05",
-    "summary": "Condenado el 14 de julio de 2026 por la Audiencia Provincial de Badajoz por prevaricación administrativa, al crear y adjudicar irregularmente a dedo el puesto de coordinador musical para David Sánchez en la Diputación de Badajoz.",
-    "relatedCaseIds": [7],
+    "lastUpdated": "2026-10-07",
+    "summary": "Condenado el 14-jul-2026 por la Audiencia Provincial de Badajoz por dos delitos de prevaricación administrativa (18 años de inhabilitación en total) al crear y adjudicar a dedo el puesto de David Sánchez en la Diputación de Badajoz. Sentencia no firme, recurrida ante el TSJ de Extremadura.",
     "sourceUrls": [
-      "https://www.elperiodico.com/es/politica/20260714/david-sanchez-miguel-angel-gallardo-132490742",
+      "https://www.esdiario.com/nacional/260714/193254/gallardo-queda-fuera-juego-dos-prevaricaciones-18-anos-inhabilitacion.html",
       "https://www.rtve.es/noticias/20260714/claves-entender-sentencia-david-sanchez-hermano-presidente-condenado-prevaricacion/17156475.shtml",
-      "https://www.newtral.es/miguel-angel-gallardo-caso-david-sanchez/20251210"
+      "https://www.infobae.com/espana/agencias/2026/09/17/acusacion-recurre-la-sentencia-a-david-sanchez-por-no-recoger-trafico-de-influencias/"
     ]
   },
   {
     "id": 10,
     "suspect": "Juan Bernardo Fuentes Curbelo",
     "title": "ex-diputado PSOE, 'Tito Berni'",
-    "caseName": "Caso Tito Berni",
+    "categories": [
+      "psoe"
+    ],
+    "causes": [
+      {
+        "name": "Caso Mediador",
+        "status": "procesado"
+      }
+    ],
     "accusations": 3,
     "sentences": 0,
-    "category": "psoe",
-    "status": "investigado",
+    "court": "Audiencia Provincial de Santa Cruz de Tenerife",
     "startYear": 2022,
-    "lastUpdated": "2026-08-05",
-    "summary": "Investigado por presunto tráfico de influencias, cohecho y pertenencia a organización criminal en el marco de la trama que aprovechaba la cercanía al Ministerio del Interior para proteger intereses de empresarios canarios.",
+    "lastUpdated": "2026-10-07",
+    "summary": "Auto de apertura de juicio oral (sep-2026) en el caso Mediador por cohecho, prevaricación administrativa y pertenencia a grupo criminal. La Fiscalía pide 8 años de prisión. Juzgará la Audiencia Provincial de Santa Cruz de Tenerife; sin fecha.",
     "sourceUrls": [
-      "https://www.elconfidencial.com/espana/2025-02-17/tito-berni-inspector-investigacion-denuncia-maniobras-proteger-psoe_4065343",
-      "https://theobjective.com/espana/tribunales/2025-06-23/policia-marlaska-caso-tito-berni"
+      "https://www.infobae.com/espana/agencias/2026/09/25/abren-juicio-oral-a-tito-berni-su-sobrino-y-mas-de-una-decena-de-personas-por-los-sobornos-del-caso-mediador/",
+      "https://www.canarias7.es/politica/mediador-jueza-manda-banquillo-tito-berni-sobrino-20260924155602-nt.html",
+      "https://www.soldelsurtenerife.com/sociedad/tito-berni-sobrino-taishet-mediador-banquillo-peticion-13-anos-prision/20260925113122110274.html"
     ]
   },
   {
     "id": 11,
     "suspect": "Vicente Fernández Guerrero",
     "title": "ex-presidente de SEPI",
-    "caseName": "Caso SEPI",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado"
+      }
+    ],
     "accusations": 4,
     "sentences": 0,
-    "category": "institucional",
-    "status": "investigado",
+    "court": "Audiencia Nacional",
     "startYear": 2025,
-    "lastUpdated": "2026-08-05",
-    "summary": "Investigado por presuntas irregularidades en la gestión de la Sociedad Estatal de Participaciones Industriales (SEPI), relacionadas con la concesión de rescates y contratos durante la pandemia.",
+    "lastUpdated": "2026-10-07",
+    "summary": "Detenido en dic-2025 e investigado por el juez Pedraz (Audiencia Nacional) por malversación, tráfico de influencias, organización criminal y prevaricación en la trama 'Hirurok' junto a Leire Díez y Antxon Alonso: unos 750.000 € en comisiones por cinco operaciones de SEPI.",
     "sourceUrls": [
-      "https://elpais.com/espana/2025-12-14/el-mapa-de-la-corrupcion-una-decena-de-investigaciones-acorralan-al-psoe.html"
+      "https://www.elespanol.com/espana/tribunales/20251213/audiencia-nacional-deja-libertad-fontanera-leire-antxon-alonso-expresidente-sepi/1003744053793_0.html",
+      "https://theobjective.com/economia/2026-06-30/maldicion-sepi-tres-presidentes-sanchismo-imputados/",
+      "https://www.elindependiente.com/espana/2026/04/16/expresidente-sepi-guarda-silencio-senado-investigado-en-audiencia-nacional/"
     ]
   },
   {
     "id": 12,
     "suspect": "Víctor de Aldama",
     "title": "empresario, 'El Conseguidor'",
-    "caseName": "Caso Koldo",
-    "accusations": 6,
-    "sentences": 1,
-    "category": "psoe",
-    "status": "condenado",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Koldo",
+        "status": "condenado"
+      },
+      {
+        "name": "Caso Hidrocarburos",
+        "status": "investigado"
+      }
+    ],
+    "accusations": 4,
+    "sentences": 4,
     "court": "Tribunal Supremo",
     "startYear": 2023,
-    "lastUpdated": "2026-08-05",
-    "summary": "Condenado el 22 de junio de 2026 a 4 años y medio de prisión (suspendida por colaborar con la justicia). Coordinó la red de comisiones ilegales del Caso Koldo. No tuvo que devolver los 3,7 millones en comisiones cobrados.",
-    "relatedCaseIds": [4, 5, 6],
+    "lastUpdated": "2026-10-07",
+    "summary": "Condenado por el Tribunal Supremo el 22-jun-2026 a 4 años y 6 meses de prisión, suspendidos por su colaboración con la justicia, en la trama de mascarillas del caso Koldo. Sigue investigado en la Audiencia Nacional por el fraude del IVA de hidrocarburos (instrucción prorrogada hasta dic-2026).",
     "sourceUrls": [
-      "https://www.elperiodico.com/es/politica/20260622/supremo-condena-forma-unanime-abalos-131676499",
-      "https://www.lasexta.com/noticias/nacional/sentencia-economica-caso-mascarillas-abalos-tendra-que-pagar-217000-euros-koldo-211000-aldama-215000_202606226a392aec9f03cb0254d920c1.html",
-      "https://es.wikipedia.org/wiki/Caso_Koldo"
+      "https://www.elespanol.com/espana/tribunales/20260622/supremo-condena-abalos-anos-prision-liderar-grupo-criminal-koldo-libra-aldama-carcel-ayudar-justicia/1003744278646_0.html",
+      "https://www.mundiario.com/articulo/politica/victor-aldama-evita-carcel-supremo-premia-colaboracion-rebaja-condena/20260622135900391444.html",
+      "https://www.infobae.com/espana/agencias/2026/06/08/la-audiencia-nacional-amplia-seis-meses-mas-la-investigacion-del-presunto-fraude-por-hidrocarburos-que-afecta-a-aldama/"
     ]
   },
   {
     "id": 13,
     "suspect": "José Luis Rodríguez Zapatero",
     "title": "ex-Presidente del Gobierno (2004-2011)",
-    "caseName": "Caso Plus Ultra",
-    "accusations": 3,
+    "categories": [
+      "psoe",
+      "gobierno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Plus Ultra",
+        "status": "investigado"
+      }
+    ],
+    "accusations": 4,
     "sentences": 0,
-    "category": "psoe",
-    "status": "investigado",
     "court": "Audiencia Nacional",
     "startYear": 2026,
-    "lastUpdated": "2026-08-05",
-    "summary": "Imputado en mayo de 2026 por la Audiencia Nacional por tráfico de influencias, blanqueo de capitales y organización criminal en el Caso Plus Ultra. Acusado de liderar una red de intermediación en la venta de petróleo venezolano. Sus hijas también imputadas en junio de 2026.",
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputado en may-2026 por el juez Calama (Audiencia Nacional) por tráfico de influencias, blanqueo, organización criminal y falsedad en el caso Plus Ultra. En sep-2026 directivos de la aerolínea confirmaron una comisión del 1 % al 'grupo Zapatero'. Sus hijas, imputadas, declaran el 30-nov-2026.",
     "sourceUrls": [
-      "https://www.publico.es/politica/tribunales/zapatero-imputado-caso-plus-ultra-blanqueo-capitales.html",
       "https://www.elperiodico.com/es/politica/20260519/audiencia-nacional-imputa-zapatero-presunto-blanqueo-capitales-plus-ultra-130386255",
+      "https://confilegal.com/20260520-zapatero-plus-ultra-blanqueo-influencias-organizacion-criminal/",
       "https://www.elindependiente.com/espana/2026/06/18/el-juez-calama-imputa-a-las-hijas-de-zapatero-en-el-caso-plus-ultra/",
-      "https://es.wikipedia.org/wiki/Caso_Zapatero"
+      "https://www.moncloa.com/2026/09/07/el-presidente-de-plus-ultra-confirma-la-comision-del-1-para-el-grupo-zapatero-3427497",
+      "https://www.estrelladigital.es/articulo/tribunales/calama-estudia-retirar-pasaporte-zapatero-caso-plus-ultra/20260913084932451003.html"
     ]
   },
   {
     "id": 14,
     "suspect": "José Antonio Griñán Martínez",
     "title": "ex-Presidente de la Junta de Andalucía (2009-2013)",
-    "caseName": "Caso ERE",
+    "categories": [
+      "psoe"
+    ],
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "amount": 680000000
+      }
+    ],
     "accusations": 2,
-    "sentences": 2,
-    "category": "psoe",
-    "status": "condenado",
-    "court": "Tribunal Supremo",
+    "sentences": 1,
+    "court": "Audiencia Provincial de Sevilla",
     "startYear": 2015,
-    "lastUpdated": "2026-08-05",
-    "amount": 680000000,
-    "summary": "Condenado por el Tribunal Supremo por prevaricación y malversación en el Caso ERE de Andalucía, el mayor escándalo de corrupción de la historia democrática española: ~680 millones de euros desviados de fondos de ayuda a trabajadores en ERE.",
-    "relatedCaseIds": [15],
+    "lastUpdated": "2026-10-07",
+    "summary": "Condenado en el caso ERE (unos 680 M€ desviados) por prevaricación y malversación. El Tribunal Constitucional anuló en jul-2024 la condena por malversación y ordenó rebajar la inhabilitación por prevaricación; la Audiencia de Sevilla aún no ha dictado la nueva sentencia.",
     "sourceUrls": [
-      "https://es.wikipedia.org/wiki/Caso_ERE_de_Andaluc%C3%ADa",
-      "https://es.wikipedia.org/wiki/Jos%C3%A9_Antonio_Gri%C3%B1%C3%A1n"
+      "https://www.eldiario.es/andalucia/constitucional-ordena-rebajar-condena-inhabilitacion-expresidente-chaves-ere-andalucia_1_11525694.html",
+      "https://www.eldiario.es/andalucia/bruselas-frena-pp-justicia-europea-revise-fallo-tc-anulo-condenas-chaves-grinan_1_13155857.html"
     ]
   },
   {
     "id": 15,
     "suspect": "Manuel Chaves González",
     "title": "ex-Presidente de la Junta de Andalucía (1990-2009), ex-Vicepresidente del Gobierno",
-    "caseName": "Caso ERE",
+    "categories": [
+      "psoe",
+      "gobierno"
+    ],
+    "causes": [
+      {
+        "name": "Caso ERE",
+        "status": "condenado",
+        "amount": 680000000
+      }
+    ],
     "accusations": 1,
     "sentences": 1,
-    "category": "psoe",
-    "status": "condenado",
-    "court": "Tribunal Supremo",
+    "court": "Audiencia Provincial de Sevilla",
     "startYear": 2015,
-    "lastUpdated": "2026-08-05",
-    "amount": 680000000,
-    "summary": "Condenado por prevaricación administrativa por el Tribunal Supremo en el Caso ERE. Fue presidente de la Junta de Andalucía durante la instrumentalización de los ERE como mecanismo de corrupción, sentenciado a 9 años de inhabilitación.",
-    "relatedCaseIds": [14],
+    "lastUpdated": "2026-10-07",
+    "summary": "Condenado por prevaricación administrativa en el caso ERE a 9 años de inhabilitación, confirmada por el Supremo en 2022. El Tribunal Constitucional ordenó en jul-2024 rebajar la pena; la Audiencia de Sevilla aún no ha dictado la nueva sentencia (cuestión prejudicial ante el TJUE).",
     "sourceUrls": [
-      "https://es.wikipedia.org/wiki/Caso_ERE_de_Andaluc%C3%ADa",
-      "https://es.wikipedia.org/wiki/Manuel_Chaves_Gonz%C3%A1lez"
+      "https://www.eldiario.es/andalucia/constitucional-ordena-rebajar-condena-inhabilitacion-expresidente-chaves-ere-andalucia_1_11525694.html",
+      "https://www.eldiario.es/andalucia/bruselas-frena-pp-justicia-europea-revise-fallo-tc-anulo-condenas-chaves-grinan_1_13155857.html"
     ]
   },
   {
     "id": 16,
     "suspect": "Teresa Ribera Rodríguez",
     "title": "ex-Ministra de Transición Ecológica, Comisaria Europea",
-    "caseName": "Caso DANA",
+    "categories": [
+      "gobierno"
+    ],
+    "causes": [
+      {
+        "name": "Caso DANA",
+        "status": "sobreseido"
+      }
+    ],
     "accusations": 1,
     "sentences": 0,
-    "category": "gobierno",
-    "status": "sobreseido",
     "court": "Tribunal Supremo",
     "startYear": 2025,
-    "lastUpdated": "2026-08-05",
-    "summary": "El Tribunal Supremo archivó todas las querellas contra Ribera por la gestión de la DANA de octubre de 2024, al considerar que los hechos no eran constitutivos de delito. La causa quedó sobreseída en 2026.",
-    "relatedCaseIds": [18],
+    "lastUpdated": "2026-10-07",
+    "summary": "El Tribunal Supremo archivó las querellas contra Ribera por la gestión de la DANA de octubre de 2024 (auto de 5-mar-2026, tras archivos previos en 2025), al considerar que los hechos no son constitutivos de delito.",
     "sourceUrls": [
+      "https://www.eldiario.es/comunitat-valenciana/supremo-archiva-querella-teresa-ribera-dana-barranco-poyo_1_13076149.html",
       "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/el-supremo-archiva-otra-querella-contra-teresa-ribera-por-la-dana-y-el-barranco-del-poyo",
-      "https://www.elindependiente.com/espana/2025/07/30/supremo-archiva-denuncias-sanchez-ministros-dana/",
-      "https://es.wikipedia.org/wiki/Teresa_Ribera"
-    ]
-  },
-  {
-    "id": 17,
-    "suspect": "Francina Armengol Socías",
-    "title": "Presidenta del Congreso de los Diputados, ex-Presidenta del Govern Balear",
-    "caseName": "Caso Can Domenge",
-    "accusations": 2,
-    "sentences": 0,
-    "category": "psoe",
-    "status": "investigado",
-    "court": "Juzgado de Instrucción de Palma",
-    "startYear": 2023,
-    "lastUpdated": "2026-08-05",
-    "summary": "Investigada por presuntas irregularidades urbanísticas en la gestión del complejo deportivo Can Domenge en Palma de Mallorca durante su presidencia del Govern Balear. El caso investiga tráfico de influencias y prevaricación en decisiones de planeamiento.",
-    "sourceUrls": [
-      "https://es.wikipedia.org/wiki/Francina_Armengol"
-    ]
-  },
-  {
-    "id": 18,
-    "suspect": "Fernando Grande-Marlaska Gómez",
-    "title": "Ministro del Interior",
-    "caseName": "Caso Pérez de los Cobos / Caso Leire Díez",
-    "accusations": 3,
-    "sentences": 0,
-    "category": "gobierno",
-    "status": "investigado",
-    "court": "Tribunal Supremo",
-    "startYear": 2021,
-    "lastUpdated": "2026-08-05",
-    "summary": "Investigado por dos causas: (1) presunta prevaricación al cesar al coronel Pérez de los Cobos en 2021; (2) el DAO de la Guardia Civil le señaló en julio de 2026 como responsable de abrir expedientes internos contra agentes de la UCO que investigaban al PSOE.",
-    "relatedCaseIds": [8],
-    "sourceUrls": [
-      "https://www.elespanol.com/espana/20260717/dao-acorralado-implica-ministro-marlaska-mercedes-gonzalez-alega-uco-no-debe-proactiva-investigar/1003744324386_0.html",
-      "https://www.elperiodico.com/es/politica/20260606/jupol-exige-dimision-inmediata-marlaska-director-general-policia-nacional-131098349",
-      "https://es.wikipedia.org/wiki/Fernando_Grande-Marlaska"
+      "https://www.elindependiente.com/espana/2025/07/30/supremo-archiva-denuncias-sanchez-ministros-dana/"
     ]
   },
   {
     "id": 19,
     "suspect": "Eugenio Domínguez Collado",
     "title": "ex-subdirector de Evaluación Ambiental del Ministerio de Transición Ecológica",
-    "caseName": "Caso Forestalia",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Forestalia",
+        "status": "investigado",
+        "amount": 5200000
+      }
+    ],
     "accusations": 4,
     "sentences": 0,
-    "category": "institucional",
-    "status": "investigado",
-    "court": "Audiencia Nacional",
+    "court": "Tribunal de Instancia nº 1 de Teruel",
     "startYear": 2026,
-    "lastUpdated": "2026-08-05",
-    "amount": 5200000,
-    "summary": "Detenido en marzo de 2026 por la UCOMA de la Guardia Civil por presuntamente amañar permisos ambientales en favor del grupo Forestalia a cambio de ~5,2 millones de euros. Investigado por prevaricación ambiental, cohecho, blanqueo de capitales y organización criminal.",
-    "relatedCaseIds": [8, 6],
+    "lastUpdated": "2026-10-07",
+    "summary": "Detenido en mar-2026 por la UCOMA e investigado en Teruel por prevaricación, cohecho, blanqueo y organización criminal por presuntamente amañar permisos ambientales a favor de Forestalia (unos 5,2 M€). Instrucción prorrogada en may-2026; la Fiscalía pidió remitirla a la Audiencia Nacional.",
     "sourceUrls": [
-      "https://theobjective.com/espana/2026-03-07/diez-claves-caso-forestalia-teresa-ribera/",
-      "https://www.eldebate.com/espana/20260309/uco-calcula-alto-cargo-ribera-cobro-52-millones-manipular-documentacion-ministerio-favor-forestalia_393980.html",
-      "https://www.publico.es/politica/tribunales/caso-forestalia-claves-trama-pone-jaque-mayor-parque-eolico-espana.html"
+      "https://www.diariodeteruel.es/teruel/el-juez-prorroga-seis-meses-mas-la-instruccion-del-caso-forestalia-a-la-espera-de-informes",
+      "https://www.libertaddigital.com/espana/2026-04-11/la-fiscalia-solicita-remitir-la-investigacion-del-caso-forestalia-al-juez-pedraz-de-la-audiencia-nacional-7386861/",
+      "https://theobjective.com/espana/2026-03-07/diez-claves-caso-forestalia-teresa-ribera/"
     ]
   },
   {
     "id": 20,
     "suspect": "Gaspar Zarrías Arévalo",
     "title": "ex-dirigente PSOE Andalucía, ex-consejero Junta de Andalucía",
-    "caseName": "Caso Leire Díez",
-    "accusations": 3,
+    "categories": [
+      "psoe"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado"
+      }
+    ],
+    "accusations": 9,
     "sentences": 0,
-    "category": "psoe",
-    "status": "investigado",
     "court": "Audiencia Nacional",
     "startYear": 2026,
-    "lastUpdated": "2026-08-05",
-    "summary": "Imputado en mayo de 2026 por el juez Pedraz en el caso de las 'cloacas' del PSOE por presunta financiación de la red de Leire Díez. La UCO halló 19.850 euros en efectivo en su domicilio. El juez investiga si el PSOE canalizó pagos a través de él.",
-    "relatedCaseIds": [8, 6],
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputado el 27-may-2026 por el juez Pedraz en el caso de las 'cloacas' del PSOE por nueve delitos, entre ellos organización criminal, cohecho, revelación de secretos, falsedad, prevaricación y tráfico de influencias. La UCO halló 19.850 € en efectivo en su domicilio.",
     "sourceUrls": [
-      "https://www.elconfidencial.com/espana/2026-05-27/juez-imputa-cerdan-zarrias-gerente-psoe-financiacion-cloacas-psoe_4362320/",
-      "https://www.vozpopuli.com/espana/politica/la-uco-aflora-19850-euros-en-un-baul-del-salon-del-domicilio-del-socialista-gaspar-zarrias.html",
-      "https://www.abc.es/espana/andalucia/uco-halla-20000-euros-metalico-salon-casa-20260603143123-nts.html"
+      "https://www.eldiario.es/politica/uco-persona-sede-psoe-ferraz-investigacion-audiencia-nacional_1_13252759.html",
+      "https://www.abc.es/espana/andalucia/uco-halla-20000-euros-metalico-salon-casa-20260603143123-nts.html",
+      "https://www.moncloa.com/2026/10/06/pp-juez-pedraz-caso-leire-3443394"
+    ]
+  },
+  {
+    "id": 21,
+    "suspect": "Ana María Fuentes Pacheco",
+    "title": "gerente del PSOE",
+    "categories": [
+      "psoe"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado"
+      }
+    ],
+    "accusations": 1,
+    "sentences": 0,
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputada el 27-may-2026 por el juez Pedraz tras el registro de la UCO en Ferraz, por presunta falsedad en documento mercantil en los pagos en efectivo del PSOE. En sep-2026 declaró que Santos Cerdán le dio la orden de emitir los pagos a las 'cloacas'.",
+    "sourceUrls": [
+      "https://www.eleconomista.es/actualidad/noticias/13939754/05/26/quien-es-ana-maria-fuentes-la-gerente-del-psoe-imputada-por-el-juez-tras-la-entrada-de-la-uco-en-ferraz.html",
+      "https://www.deia.eus/politica/2026/09/17/gerente-psoe-apunto-cerdan-maxima-11554251.html"
+    ]
+  },
+  {
+    "id": 22,
+    "suspect": "Mercedes González",
+    "title": "Directora General de la Guardia Civil",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado"
+      }
+    ],
+    "accusations": 2,
+    "sentences": 0,
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputada el 2-jul-2026 por el juez Pedraz por prevaricación administrativa continuada y delito contra la Administración de Justicia, por las investigaciones internas abiertas contra agentes de la UCO que investigaban al PSOE. Declaró el 16-jul-2026.",
+    "sourceUrls": [
+      "https://www.estrelladigital.es/articulo/tribunales/que-delitos-imputa-pedraz-mercedes-gonzalez-dao-guardia-civil-uco-caso-leire/20260702132039448229.html",
+      "https://www.infobae.com/espana/2026/10/07/el-juez-del-caso-leire-diez-reclama-a-la-guardia-civil-que-aclare-que-sabia-su-directora-de-las-tres-investigaciones-abiertas-por-el-dao-contra-agentes-de-la-uco/"
+    ]
+  },
+  {
+    "id": 23,
+    "suspect": "Manuel Llamas",
+    "title": "Director Adjunto Operativo (DAO) de la Guardia Civil",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Leire Díez",
+        "status": "investigado"
+      }
+    ],
+    "accusations": 2,
+    "sentences": 0,
+    "court": "Audiencia Nacional",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-07",
+    "summary": "Imputado el 2-jul-2026 por el juez Pedraz por prevaricación administrativa continuada y delito contra la Administración de Justicia, por abrir expedientes internos a agentes de la UCO. En su declaración (jul-2026) atribuyó el origen de la actuación a una llamada del ministro del Interior.",
+    "sourceUrls": [
+      "https://www.estrelladigital.es/articulo/tribunales/que-delitos-imputa-pedraz-mercedes-gonzalez-dao-guardia-civil-uco-caso-leire/20260702132039448229.html",
+      "https://www.elespanol.com/espana/20260717/dao-acorralado-implica-ministro-marlaska-mercedes-gonzalez-alega-uco-no-debe-proactiva-investigar/1003744324386_0.html"
     ]
   }
 ]
