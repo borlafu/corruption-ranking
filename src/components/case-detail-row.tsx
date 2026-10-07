@@ -1,8 +1,9 @@
 "use client";
 
-import { ExternalLink, Scale, Calendar, Euro } from "lucide-react";
+import { ExternalLink, Scale, Euro, Gavel } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import type { SuspectView } from "@/lib/schema";
+import { formatPenalty, type SuspectView } from "@/lib/schema";
+import { statusConfig } from "@/lib/status-ui";
 
 type Props = {
   caseData: SuspectView;
@@ -38,18 +39,46 @@ export function CaseDetailRow({ caseData: c, allCases }: Props) {
                 {c.court}
               </span>
             )}
-            {c.startYear && (
-              <span className="flex items-center gap-1.5">
-                <Calendar className="h-3.5 w-3.5 shrink-0" />
-                Caso abierto en {c.startYear}
-              </span>
-            )}
             {amountFormatted && (
               <span className="flex items-center gap-1.5">
                 <Euro className="h-3.5 w-3.5 shrink-0" />
                 {amountFormatted}
               </span>
             )}
+          </div>
+
+          <div className="space-y-2">
+            {c.causes.map((cause) => (
+              <div key={cause.name} className="rounded-md border border-border/40 p-2 space-y-1.5">
+                <div className="flex flex-wrap items-center gap-2 text-xs">
+                  <span className="font-semibold">{cause.name}</span>
+                  <Badge variant="outline" className={`text-[10px] ${statusConfig[cause.status].className}`}>
+                    {statusConfig[cause.status].label}
+                  </Badge>
+                </div>
+                <div className="flex flex-wrap gap-1">
+                  {cause.charges.map((crime) => {
+                    const convicted = cause.convictions?.includes(crime) ?? false;
+                    return (
+                      <Badge
+                        key={crime}
+                        variant="outline"
+                        className={`text-[10px] ${convicted ? statusConfig.condenado.className : ""}`}
+                      >
+                        {crime}
+                      </Badge>
+                    );
+                  })}
+                </div>
+                {cause.sentence && (
+                  <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                    <Gavel className="h-3.5 w-3.5 shrink-0" />
+                    {formatPenalty(cause.sentence)} ·{" "}
+                    {new Date(cause.sentence.date).toLocaleDateString("es-ES", { day: "numeric", month: "short", year: "numeric" })}
+                  </p>
+                )}
+              </div>
+            ))}
           </div>
 
           {relatedCases.length > 0 && (

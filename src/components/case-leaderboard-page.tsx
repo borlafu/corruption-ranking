@@ -1,10 +1,11 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import type { SuspectView, Allegiance } from "@/lib/schema";
+import type { SuspectView, Allegiance, Crime } from "@/lib/schema";
 import { LeaderboardTable } from "@/components/leaderboard-table";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Landmark, Users, Flower2, Briefcase, Search, Handshake } from "lucide-react";
 import Image from "next/image";
 
@@ -23,7 +24,18 @@ type CaseLeaderboardPageProps = {
 
 export function CaseLeaderboardPage({ cases: initialCases }: CaseLeaderboardPageProps) {
   const [activeFilter, setActiveFilter] = useState<Allegiance | "all">("all");
+  const [activeYear, setActiveYear] = useState<number | null>(null);
+  const [activeCrime, setActiveCrime] = useState<Crime | "all">("all");
   const [searchQuery, setSearchQuery] = useState("");
+
+  const years = useMemo(
+    () => [...new Set(initialCases.map((c) => c.startYear))].sort((a, b) => b - a),
+    [initialCases]
+  );
+  const crimes = useMemo(
+    () => [...new Set(initialCases.flatMap((c) => c.crimes))].sort((a, b) => a.localeCompare(b, "es")),
+    [initialCases]
+  );
 
   const lastUpdated = useMemo(() => {
     const maxDate = initialCases
@@ -40,19 +52,21 @@ export function CaseLeaderboardPage({ cases: initialCases }: CaseLeaderboardPage
   }, [initialCases]);
 
   const filteredCases = useMemo(() => {
-    const byCategory =
-      activeFilter === "all"
-        ? initialCases
-        : initialCases.filter((c) => c.categories.includes(activeFilter));
-    if (!searchQuery.trim()) return byCategory;
+    const byFilters = initialCases.filter(
+      (c) =>
+        (activeFilter === "all" || c.categories.includes(activeFilter)) &&
+        (activeYear === null || c.startYear === activeYear) &&
+        (activeCrime === "all" || c.crimes.includes(activeCrime))
+    );
+    if (!searchQuery.trim()) return byFilters;
     const q = searchQuery.toLowerCase();
-    return byCategory.filter(
+    return byFilters.filter(
       (c) =>
         c.suspect.toLowerCase().includes(q) ||
         c.caseName.toLowerCase().includes(q) ||
         c.title.toLowerCase().includes(q)
     );
-  }, [initialCases, activeFilter, searchQuery]);
+  }, [initialCases, activeFilter, activeYear, activeCrime, searchQuery]);
 
   return (
     <div
@@ -101,6 +115,42 @@ export function CaseLeaderboardPage({ cases: initialCases }: CaseLeaderboardPage
                 <span>{filter.label}</span>
               </Button>
             ))}
+          </div>
+
+          <div className="mb-4 flex flex-wrap gap-2 items-center justify-center">
+            <p className="text-sm font-medium mr-2 text-muted-foreground">Año:</p>
+            <Button
+              variant={activeYear === null ? "secondary" : "outline"}
+              size="sm"
+              onClick={() => setActiveYear(null)}
+              className="transition-colors duration-300"
+            >
+              Todos
+            </Button>
+            {years.map((year) => (
+              <Button
+                key={year}
+                variant={activeYear === year ? "secondary" : "outline"}
+                size="sm"
+                onClick={() => setActiveYear(year)}
+                className="font-mono transition-colors duration-300"
+              >
+                {year}
+              </Button>
+            ))}
+            <Select value={activeCrime} onValueChange={(v) => setActiveCrime(v as Crime | "all")}>
+              <SelectTrigger className="w-[260px] h-9 bg-card/60 backdrop-blur-sm" aria-label="Filtrar por delito">
+                <SelectValue placeholder="Delito" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Todos los delitos</SelectItem>
+                {crimes.map((crime) => (
+                  <SelectItem key={crime} value={crime}>
+                    {crime}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
 
           <div className="mb-4 relative max-w-sm mx-auto">
