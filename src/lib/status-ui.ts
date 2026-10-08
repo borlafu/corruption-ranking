@@ -18,7 +18,7 @@ export const categoryConfig: Record<Allegiance, { label: string; icon: LucideIco
   entorno: { label: "Entorno", icon: Handshake },
 };
 
-// Text only: no party logos or colours.
+// Text only: no party logos or colours. Charts use the neutral --color-chart-* ramp for the same reason.
 export const partyLabel: Record<Party, string> = {
   psoe: "PSOE",
   pp: "PP",

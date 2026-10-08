@@ -2,10 +2,11 @@
 
 import { useState, useMemo, useEffect, useCallback, useRef } from "react";
 import { PARTIES, type SuspectView } from "@/lib/schema";
-import { filterCases, findCause, parseFilters, toSearch, type Filters } from "@/lib/filters";
+import { applyPatch, filterCases, findCause, parseFilters, toSearch, type Filters } from "@/lib/filters";
 import { LeaderboardTable } from "@/components/leaderboard-table";
 import { FilterBar } from "@/components/filter-bar";
 import { CaseBanner } from "@/components/case-banner";
+import { InsightsPanel } from "@/components/insights-panel";
 import { NavContext, type Nav } from "@/components/nav";
 
 type Props = {
@@ -20,10 +21,6 @@ const HASH_PREFIX = "#s-";
 
 const urlFor = (f: Filters, openId: number | null) =>
   `${toSearch(f) || "?"}${openId ? `${HASH_PREFIX}${openId}` : ""}`;
-
-/** Drops undefined keys so `{...f, cat: undefined}` really clears the filter. */
-const merge = (f: Filters, patch: Filters): Filters =>
-  Object.fromEntries(Object.entries({ ...f, ...patch }).filter(([, v]) => v !== undefined && v !== "")) as Filters;
 
 export function CaseLeaderboardPage({ cases, lastUpdated }: Props) {
   const [filters, setFilters] = useState<Filters>({});
@@ -75,9 +72,9 @@ export function CaseLeaderboardPage({ cases, lastUpdated }: Props) {
   const nav: Nav = useMemo(
     () => ({
       filters,
-      filterHref: (patch) => urlFor(merge(filters, patch), null),
+      filterHref: (patch) => urlFor(applyPatch(filters, patch), null),
       suspectHref: (id) => urlFor({}, id),
-      applyFilters: (patch) => commit(merge(filters, patch), null, "push"),
+      applyFilters: (patch) => commit(applyPatch(filters, patch), null, "push"),
       openSuspect: (id) => {
         // Clear filters only if they hide the target suspect.
         const visible = filteredCases.some((c) => c.id === id);
@@ -110,7 +107,7 @@ export function CaseLeaderboardPage({ cases, lastUpdated }: Props) {
           crimes={crimes}
           caseName={cause?.name}
           onChange={nav.applyFilters}
-          onSearch={(q) => commit(merge(filters, { q }), null, "replace")}
+          onSearch={(q) => commit(applyPatch(filters, { q }), null, "replace")}
           onClear={() => commit({}, null, "push")}
         />
 
@@ -119,6 +116,8 @@ export function CaseLeaderboardPage({ cases, lastUpdated }: Props) {
         <p role="status" className="mb-2 text-center text-sm text-muted-foreground">
           {filteredCases.length} de {cases.length} sospechosos
         </p>
+
+        <InsightsPanel cases={filteredCases} />
 
         <div className="rounded-lg border shadow-lg overflow-hidden bg-card/80">
           <LeaderboardTable

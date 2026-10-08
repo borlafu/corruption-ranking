@@ -39,6 +39,24 @@
   --radius-sm: calc(var(--radius) - 4px);
 }
 
+/*
+ * Chart series ramp, read as inline SVG fills by src/components/insights-panel.tsx.
+ * Deliberately a neutral lightness scale: no party gets a colour of its own.
+ * Kept out of @theme on purpose — Tailwind drops theme variables that no utility class uses.
+ */
+:root {
+  /* Stops at 42% so the darkest series is still visible on --color-card (15%). */
+  --chart-1: hsl(0 0% 92%);
+  --chart-2: hsl(0 0% 86%);
+  --chart-3: hsl(0 0% 80%);
+  --chart-4: hsl(0 0% 73%);
+  --chart-5: hsl(0 0% 67%);
+  --chart-6: hsl(0 0% 61%);
+  --chart-7: hsl(0 0% 55%);
+  --chart-8: hsl(0 0% 48%);
+  --chart-9: hsl(0 0% 42%);
+}
+
 @layer base {
   * {
     @apply border-border;
