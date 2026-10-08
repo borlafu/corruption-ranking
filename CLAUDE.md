@@ -28,5 +28,7 @@ Next.js 16, React 19, TypeScript 7 (`tsc`) with the TS 6 API aliased as `typescr
 
 ## Frontend
 
-- Design tokens live in `src/app/globals.css` `@theme` (single dark theme; text colors AA on `--color-card`). Status/category labels, icons and classes: `src/lib/status-ui.ts`.
-- Filters and the open suspect live in the URL (`?cat&partido&anio&delito&caso&q#s-<id>`), parsed by `src/lib/filters.ts`. Entity links use `FilterLink`/`SuspectLink` from `src/components/nav.tsx`; add new cross-links through them rather than local state.
+- Design tokens live in `src/app/globals.css` `@theme` (single dark theme; text colors AA on `--color-card`). Status/category labels, icons and classes: `src/lib/status-ui.ts`. Values read from JS instead of a utility class (`--party-*`) sit in a plain `:root` block — Tailwind drops `@theme` variables no class uses.
+- Filters and the open suspect live in the URL (`?cat&partido&anio&delito&caso&q#s-<id>`), parsed by `src/lib/filters.ts`. `cat`/`partido`/`anio`/`delito` are comma-separated multi-value facets (OR within, AND across); `caso` and `q` are single. Patches go through `applyPatch`, where an array **toggles** membership and `undefined` clears the field.
+- Entity links use `FilterLink`/`SuspectLink` from `src/components/nav.tsx`; add new cross-links through them rather than local state.
+- `src/components/insights-panel.tsx` charts the filtered set (recharts, lazily mounted inside `<details>`); the counts come from `src/lib/insights.ts`. Chart series use the `--party-*` tokens: a hue that evokes each party, desaturated to the site's register, never its brand colour. Badges and labels stay text-only.

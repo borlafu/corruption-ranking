@@ -170,7 +170,7 @@ export function LeaderboardTable({ cases, allCases, openId, onToggle }: Props) {
                           return (
                             <FilterLink
                               key={cat}
-                              patch={{ cat }}
+                              patch={{ cat: [cat] }}
                               title={`Filtrar por ${label}`}
                               className={`${badgeVariants({ variant: "outline" })} gap-2 hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring`}
                             >
@@ -181,7 +181,7 @@ export function LeaderboardTable({ cases, allCases, openId, onToggle }: Props) {
                         })}
                         {c.party && (
                           <FilterLink
-                            patch={{ partido: c.party }}
+                            patch={{ partido: [c.party] }}
                             title={`Filtrar por ${partyLabel[c.party]}`}
                             className={`${badgeVariants({ variant: "outline" })} hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring`}
                           >
@@ -194,7 +194,7 @@ export function LeaderboardTable({ cases, allCases, openId, onToggle }: Props) {
                       <span className={`${badgeVariants({ variant: "outline" })} ${status.className}`}>{status.label}</span>
                     </TableCell>
                     <TableCell className="hidden sm:table-cell text-right font-mono text-muted-foreground">
-                      <FilterLink patch={{ anio: c.startYear }} title={`Filtrar por ${c.startYear}`} className={subtleLink}>
+                      <FilterLink patch={{ anio: [c.startYear] }} title={`Filtrar por ${c.startYear}`} className={subtleLink}>
                         {c.startYear}
                       </FilterLink>
                     </TableCell>

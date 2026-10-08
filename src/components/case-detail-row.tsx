@@ -56,7 +56,7 @@ export function CaseDetailRow({ caseData: c, allCases }: Props) {
                     return (
                       <FilterLink
                         key={crime}
-                        patch={{ delito: crime }}
+                        patch={{ delito: [crime] }}
                         title={`Filtrar por ${crime}`}
                         className={`${chip} ${convicted ? statusConfig.condenado.className : ""}`}
                       >
