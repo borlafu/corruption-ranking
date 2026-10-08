@@ -4762,5 +4762,308 @@
     "sourceUrls": [
       "https://www.eldiario.es/canariasahora/tribunales/admitida-querella-anticorrupcion-director-servicio-canario-salud-caso-mascarillas_1_9186789.html"
     ]
+  },
+  {
+    "id": 148,
+    "suspect": "Ricardo Cabezas Martín",
+    "title": "Diputado provincial de Cultura de la Diputación de Badajoz, concejal del PSOE en Badajoz",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 108,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Badajoz",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenado el 14-jul-2026 por la Audiencia Provincial de Badajoz a 9 años de inhabilitación por prevaricación administrativa en la plaza creada a medida para David Sánchez. Dejó sus cargos de concejal y diputado provincial en sep-2026. Sentencia no firme, recurrida ante el TSJ de Extremadura.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/nacional/260715/2091237/hermano-sanchez-condenado-9-anos-inhabilitacion-carcel.html",
+      "https://www.esdiario.com/nacional/260907/197142/condena-caso-david-sanchez-sacude-psoe-dos-concejalas-abandonan-cargos.html",
+      "https://www.cope.es/emisoras/extremadura/badajoz-provincia/badajoz/noticias/recurren-hermano-sanchez-sea-condenado-trafico-influencias-20260730_3413230.html"
+    ]
+  },
+  {
+    "id": 149,
+    "suspect": "Francisco Martos",
+    "title": "Alcalde de Castuera, ex-diputado provincial de Cultura de la Diputación de Badajoz",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 108,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Badajoz",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-08",
+    "summary": "Diputado provincial de Cultura anterior a Ricardo Cabezas. Condenado el 14-jul-2026 por la Audiencia Provincial de Badajoz a 9 años de inhabilitación por prevaricación administrativa en la creación de la plaza de David Sánchez. Sentencia no firme, recurrida ante el TSJ de Extremadura.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/nacional/260715/2091237/hermano-sanchez-condenado-9-anos-inhabilitacion-carcel.html",
+      "https://www.esdiario.com/nacional/260907/197142/condena-caso-david-sanchez-sacude-psoe-dos-concejalas-abandonan-cargos.html"
+    ]
+  },
+  {
+    "id": 150,
+    "suspect": "Cristina Núñez",
+    "title": "Concejala en Talavera la Real, ex-diputada provincial de Cultura de la Diputación de Badajoz",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 108,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Badajoz",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-08",
+    "summary": "Diputada provincial de Cultura en 2016-2017, cuando se creó la plaza. Condenada el 14-jul-2026 a 9 años de inhabilitación por prevaricación administrativa; renunció a su cargo de concejala en Talavera la Real en sep-2026. Sentencia no firme, recurrida ante el TSJ de Extremadura.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/nacional/260715/2091237/hermano-sanchez-condenado-9-anos-inhabilitacion-carcel.html",
+      "https://www.esdiario.com/nacional/260907/197142/condena-caso-david-sanchez-sacude-psoe-dos-concejalas-abandonan-cargos.html"
+    ]
+  },
+  {
+    "id": 151,
+    "suspect": "Juana Cinta Calderón",
+    "title": "Directora de Cooperación Municipal de la Diputación de Badajoz, ex-concejala en Olivenza",
+    "categories": [
+      "institucional"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 108,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Badajoz",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-08",
+    "summary": "Condenada el 14-jul-2026 por la Audiencia Provincial de Badajoz a 9 años de inhabilitación por prevaricación administrativa en la plaza de David Sánchez. Renunció a su cargo de concejala en Olivenza al día siguiente del fallo. Sentencia no firme, recurrida ante el TSJ de Extremadura.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/nacional/260715/2091237/hermano-sanchez-condenado-9-anos-inhabilitacion-carcel.html",
+      "https://www.esdiario.com/nacional/260907/197142/condena-caso-david-sanchez-sacude-psoe-dos-concejalas-abandonan-cargos.html"
+    ]
+  },
+  {
+    "id": 152,
+    "suspect": "Félix González",
+    "title": "funcionario de la Diputación de Badajoz",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 108,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Badajoz",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-08",
+    "summary": "Funcionario de la Diputación de Badajoz condenado el 14-jul-2026 a 9 años de inhabilitación especial por prevaricación administrativa en la plaza creada a medida para David Sánchez. Perdería su puesto si la sentencia se confirma; está recurrida ante el TSJ de Extremadura.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/nacional/260715/2091237/hermano-sanchez-condenado-9-anos-inhabilitacion-carcel.html",
+      "https://www.esdiario.com/nacional/260714/193254/gallardo-queda-fuera-juego-dos-prevaricaciones-18-anos-inhabilitacion.html"
+    ]
+  },
+  {
+    "id": 153,
+    "suspect": "Emilia Parejo",
+    "title": "funcionaria de la Diputación de Badajoz",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 108,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Badajoz",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-08",
+    "summary": "Funcionaria de la Diputación de Badajoz condenada el 14-jul-2026 a 9 años de inhabilitación especial por prevaricación administrativa en la plaza creada a medida para David Sánchez. Perdería su puesto si la sentencia se confirma; está recurrida ante el TSJ de Extremadura.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/nacional/260715/2091237/hermano-sanchez-condenado-9-anos-inhabilitacion-carcel.html",
+      "https://www.esdiario.com/nacional/260714/193254/gallardo-queda-fuera-juego-dos-prevaricaciones-18-anos-inhabilitacion.html"
+    ]
+  },
+  {
+    "id": 154,
+    "suspect": "Manuel Candalija",
+    "title": "funcionario de la Diputación de Badajoz",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 108,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Badajoz",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-08",
+    "summary": "Funcionario de la Diputación de Badajoz condenado el 14-jul-2026 a 9 años de inhabilitación especial por prevaricación administrativa en la plaza creada a medida para David Sánchez. Perdería su puesto si la sentencia se confirma; está recurrida ante el TSJ de Extremadura.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/nacional/260715/2091237/hermano-sanchez-condenado-9-anos-inhabilitacion-carcel.html",
+      "https://www.esdiario.com/nacional/260714/193254/gallardo-queda-fuera-juego-dos-prevaricaciones-18-anos-inhabilitacion.html"
+    ]
+  },
+  {
+    "id": 155,
+    "suspect": "Elisa Moriano",
+    "title": "ex-empleada de la Diputación de Badajoz",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 108,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Badajoz",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-08",
+    "summary": "Ex-empleada de la Diputación de Badajoz condenada el 14-jul-2026 por la Audiencia Provincial de Badajoz a 9 años de inhabilitación especial por prevaricación administrativa en la plaza creada a medida para David Sánchez. Sentencia no firme, recurrida ante el TSJ de Extremadura.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/nacional/260715/2091237/hermano-sanchez-condenado-9-anos-inhabilitacion-carcel.html",
+      "https://www.esdiario.com/nacional/260714/193254/gallardo-queda-fuera-juego-dos-prevaricaciones-18-anos-inhabilitacion.html"
+    ]
+  },
+  {
+    "id": 156,
+    "suspect": "Luis Carrero",
+    "title": "ex-empleado de Moncloa, cargo de la Diputación de Badajoz",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso David Sánchez",
+        "status": "condenado",
+        "charges": [
+          "prevaricación"
+        ],
+        "convictions": [
+          "prevaricación"
+        ],
+        "sentence": {
+          "date": "2026-07-14",
+          "disqualificationMonths": 108,
+          "firm": false
+        }
+      }
+    ],
+    "court": "Audiencia Provincial de Badajoz",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-08",
+    "summary": "Ex-empleado de Moncloa y amigo de David Sánchez, para quien elaboró los informes de la plaza. Condenado el 14-jul-2026 a 9 años de inhabilitación especial por prevaricación administrativa. El 20-jul-2026 la justicia anuló su nombramiento en la Diputación. Sentencia no firme.",
+    "sourceUrls": [
+      "https://www.diariodeleon.es/nacional/260715/2091237/hermano-sanchez-condenado-9-anos-inhabilitacion-carcel.html",
+      "https://www.esdiario.com/nacional/260714/193254/gallardo-queda-fuera-juego-dos-prevaricaciones-18-anos-inhabilitacion.html",
+      "https://www.cope.es/emisoras/extremadura/badajoz-provincia/badajoz/noticias/recurren-hermano-sanchez-sea-condenado-trafico-influencias-20260730_3413230.html"
+    ]
   }
 ]
