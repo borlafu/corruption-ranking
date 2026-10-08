@@ -11,6 +11,7 @@ import { slug } from "@/lib/filters";
 import { categoryConfig, partyLabel, statusConfig } from "@/lib/status-ui";
 import { CaseDetailRow } from "@/components/case-detail-row";
 import { FilterLink } from "@/components/nav";
+import { YearInfo } from "@/components/info-popover";
 import { SourceList } from "@/components/source-list";
 
 type SortKey = keyof Pick<SuspectView, "suspect" | "accusations" | "sentences" | "startYear" | "penaltyMonths">;
@@ -28,6 +29,7 @@ function SortableHeader({
   direction,
   onSort,
   className,
+  info,
 }: {
   label: string;
   sortKey: SortKey;
@@ -35,14 +37,19 @@ function SortableHeader({
   direction: SortDirection;
   onSort: (key: SortKey) => void;
   className?: string;
+  /** Rendered beside the sort button, never inside it: no nested interactive elements. */
+  info?: React.ReactNode;
 }) {
   const Icon = !active ? ArrowUpDown : direction === "asc" ? ArrowUp : ArrowDown;
   return (
     <TableHead className={className} aria-sort={active ? (direction === "asc" ? "ascending" : "descending") : "none"}>
-      <Button variant="ghost" onClick={() => onSort(sortKey)} className="px-2">
-        {label}
-        <Icon className={`h-4 w-4 ${active ? "" : "text-muted-foreground/60"}`} aria-hidden />
-      </Button>
+      <span className="inline-flex items-center">
+        <Button variant="ghost" onClick={() => onSort(sortKey)} className="px-2">
+          {label}
+          <Icon className={`h-4 w-4 ${active ? "" : "text-muted-foreground/60"}`} aria-hidden />
+        </Button>
+        {info}
+      </span>
     </TableHead>
   );
 }
@@ -105,6 +112,7 @@ export function LeaderboardTable({ cases, allCases, openId, onToggle }: Props) {
               sortKey="startYear"
               active={sortKey === "startYear"}
               className="hidden sm:table-cell text-right"
+              info={<YearInfo />}
               {...sortProps}
             />
             <SortableHeader
@@ -159,9 +167,13 @@ export function LeaderboardTable({ cases, allCases, openId, onToggle }: Props) {
                           </Fragment>
                         ))}
                       </div>
-                      <span className={`sm:hidden mt-1 ${badgeVariants({ variant: "outline" })} ${status.className}`}>
+                      <FilterLink
+                        patch={{ estado: [c.status] }}
+                        title={`Filtrar por ${status.label}`}
+                        className={`sm:hidden mt-1 ${badgeVariants({ variant: "outline" })} ${status.className} focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring`}
+                      >
                         {status.label}
-                      </span>
+                      </FilterLink>
                     </TableCell>
                     <TableCell className="hidden md:table-cell">
                       <div className="flex flex-wrap gap-1">
@@ -191,7 +203,13 @@ export function LeaderboardTable({ cases, allCases, openId, onToggle }: Props) {
                       </div>
                     </TableCell>
                     <TableCell className="hidden sm:table-cell">
-                      <span className={`${badgeVariants({ variant: "outline" })} ${status.className}`}>{status.label}</span>
+                      <FilterLink
+                        patch={{ estado: [c.status] }}
+                        title={`Filtrar por ${status.label}`}
+                        className={`${badgeVariants({ variant: "outline" })} ${status.className} focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring`}
+                      >
+                        {status.label}
+                      </FilterLink>
                     </TableCell>
                     <TableCell className="hidden sm:table-cell text-right font-mono text-muted-foreground">
                       <FilterLink patch={{ anio: [c.startYear] }} title={`Filtrar por ${c.startYear}`} className={subtleLink}>

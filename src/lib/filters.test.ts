@@ -8,16 +8,17 @@ const cases = deriveView(DataSchema.parse(data));
 const names = (f: Parameters<typeof filterCases>[1]) => filterCases(cases, f).map((c) => c.suspect);
 
 test("query string round-trips through parseFilters/toSearch", () => {
-  const search = "?cat=gobierno&partido=psoe&anio=2024&delito=cohecho&caso=caso-koldo&q=abalos";
+  const search = "?cat=gobierno&partido=psoe&estado=condenado&anio=2024&delito=cohecho&caso=caso-koldo&q=abalos";
   assert.equal(toSearch(parseFilters(search)), search);
   assert.equal(toSearch({}), "");
 });
 
 test("multi-value filters round-trip with readable commas", () => {
-  const search = "?cat=gobierno,familia&partido=psoe,pp&anio=2024,2025";
+  const search = "?cat=gobierno,familia&partido=psoe,pp&estado=condenado,procesado&anio=2024,2025";
   assert.deepEqual(parseFilters(search), {
     cat: ["gobierno", "familia"],
     partido: ["psoe", "pp"],
+    estado: ["condenado", "procesado"],
     anio: [2024, 2025],
   });
   assert.equal(toSearch(parseFilters(search)), search);
@@ -31,6 +32,21 @@ test("keeps the valid members of a list and drops the rest", () => {
   assert.deepEqual(parseFilters("?cat=gobierno,robo,familia,gobierno"), { cat: ["gobierno", "familia"] });
   assert.deepEqual(parseFilters("?anio=2024,abc,,2024"), { anio: [2024] });
   assert.deepEqual(parseFilters("?delito=robo"), {});
+  assert.deepEqual(parseFilters("?estado=condenado,inventado"), { estado: ["condenado"] });
+});
+
+test("estado matches the derived worst status, not each cause", () => {
+  // Rato is condenado in two causes and absuelto in Caso Bankia: he is not an absuelto.
+  const rato = cases.find((c) => c.suspect === "Rodrigo Rato");
+  assert.ok(rato?.causes.some((k) => k.status === "absuelto"));
+  assert.ok(names({ estado: ["condenado"] }).includes("Rodrigo Rato"));
+  assert.ok(!names({ estado: ["absuelto"] }).includes("Rodrigo Rato"));
+
+  for (const c of filterCases(cases, { estado: ["procesado"] })) assert.equal(c.status, "procesado");
+
+  const two = filterCases(cases, { estado: ["condenado", "procesado"] });
+  assert.equal(two.length, names({ estado: ["condenado"] }).length + names({ estado: ["procesado"] }).length);
+  assert.ok(filterCases(cases, { estado: ["condenado"], partido: ["pp"] }).every((c) => c.party === "pp" && c.status === "condenado"));
 });
 
 test("legacy cat=psoe maps to partido=psoe", () => {
