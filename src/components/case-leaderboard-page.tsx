@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect, useCallback, useRef } from "react";
-import { PARTIES, type SuspectView } from "@/lib/schema";
+import { PARTIES, STATUSES, type SuspectView } from "@/lib/schema";
 import { applyPatch, filterCases, findCause, parseFilters, toSearch, type Filters } from "@/lib/filters";
 import { LeaderboardTable } from "@/components/leaderboard-table";
 import { FilterBar } from "@/components/filter-bar";
@@ -52,6 +52,7 @@ export function CaseLeaderboardPage({ cases, lastUpdated }: Props) {
   }, []);
 
   const parties = useMemo(() => PARTIES.filter((p) => cases.some((c) => c.party === p)), [cases]);
+  const statuses = useMemo(() => STATUSES.filter((st) => cases.some((c) => c.status === st)), [cases]);
   const years = useMemo(() => [...new Set(cases.map((c) => c.startYear))].sort((a, b) => b - a), [cases]);
   const crimes = useMemo(
     () => [...new Set(cases.flatMap((c) => c.crimes))].sort((a, b) => a.localeCompare(b, "es")),
@@ -104,6 +105,7 @@ export function CaseLeaderboardPage({ cases, lastUpdated }: Props) {
           filters={filters}
           years={years}
           parties={parties}
+          statuses={statuses}
           crimes={crimes}
           caseName={cause?.name}
           onChange={nav.applyFilters}

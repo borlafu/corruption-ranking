@@ -4,14 +4,16 @@ import { X, Search, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { CATEGORIES, type Crime, type Party } from "@/lib/schema";
+import { CATEGORIES, type CaseStatus, type Crime, type Party } from "@/lib/schema";
 import { hasFilters, type Filters } from "@/lib/filters";
-import { categoryConfig, partyLabel } from "@/lib/status-ui";
+import { categoryConfig, partyLabel, statusConfig } from "@/lib/status-ui";
+import { YearInfo } from "@/components/info-popover";
 
 type Props = {
   filters: Filters;
   years: number[];
   parties: Party[];
+  statuses: CaseStatus[];
   crimes: Crime[];
   /** Display name for the active `caso` slug. */
   caseName?: string;
@@ -22,12 +24,14 @@ type Props = {
 
 const chipClass = "transition-colors";
 
-function ChipGroup({ label, children }: { label: string; children: React.ReactNode }) {
+/** `info` sits outside the aria-hidden label so it stays reachable by assistive tech. */
+function ChipGroup({ label, info, children }: { label: string; info?: React.ReactNode; children: React.ReactNode }) {
   return (
     <div role="group" aria-label={label} className="flex flex-wrap gap-2 items-center justify-center">
-      <span className="text-sm font-medium mr-2 text-muted-foreground" aria-hidden>
+      <span className={`text-sm font-medium text-muted-foreground ${info ? "" : "mr-2"}`} aria-hidden>
         {label}:
       </span>
+      {info}
       {children}
     </div>
   );
@@ -50,10 +54,11 @@ function Chip({ pressed, onClick, children, className = "" }: { pressed: boolean
 /** One removable pill per selected value. Patches with an array toggle that single value off. */
 type Pill = { id: string; label: string; patch: Filters };
 
-export function FilterBar({ filters, years, parties, crimes, caseName, onChange, onSearch, onClear }: Props) {
+export function FilterBar({ filters, years, parties, statuses, crimes, caseName, onChange, onSearch, onClear }: Props) {
   const pills: Pill[] = [
     ...(filters.cat ?? []).map((cat) => ({ id: `cat-${cat}`, label: categoryConfig[cat].label, patch: { cat: [cat] } })),
     ...(filters.partido ?? []).map((p) => ({ id: `partido-${p}`, label: partyLabel[p], patch: { partido: [p] } })),
+    ...(filters.estado ?? []).map((st) => ({ id: `estado-${st}`, label: statusConfig[st].label, patch: { estado: [st] } })),
     ...(filters.anio ?? []).map((year) => ({ id: `anio-${year}`, label: String(year), patch: { anio: [year] } })),
     ...(filters.delito ?? []).map((crime) => ({ id: `delito-${crime}`, label: crime, patch: { delito: [crime] } })),
     ...(filters.caso ? [{ id: "caso", label: caseName ?? filters.caso, patch: { caso: undefined } }] : []),
@@ -99,7 +104,22 @@ export function FilterBar({ filters, years, parties, crimes, caseName, onChange,
         ))}
       </ChipGroup>
 
-      <ChipGroup label="Año">
+      <ChipGroup label="Estado">
+        <Chip pressed={!filters.estado?.length} onClick={() => onChange({ estado: undefined })}>
+          Todos
+        </Chip>
+        {statuses.map((st) => (
+          <Chip
+            key={st}
+            pressed={filters.estado?.includes(st) ?? false}
+            onClick={() => onChange({ estado: [st] })}
+          >
+            {statusConfig[st].label}
+          </Chip>
+        ))}
+      </ChipGroup>
+
+      <ChipGroup label="Año" info={<YearInfo />}>
         <Chip pressed={!filters.anio?.length} onClick={() => onChange({ anio: undefined })}>
           Todos
         </Chip>

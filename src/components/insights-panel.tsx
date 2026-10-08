@@ -5,6 +5,7 @@ import { Bar, BarChart, CartesianGrid, Cell, Legend, ResponsiveContainer, Toolti
 import type { SuspectView } from "@/lib/schema";
 import { NO_PARTY, statusCounts, yearPartyRows, type PartyKey } from "@/lib/insights";
 import { partyLabel, statusConfig } from "@/lib/status-ui";
+import { YearInfo } from "@/components/info-popover";
 
 type Props = { cases: SuspectView[] };
 
@@ -52,10 +53,13 @@ function DataTable({ caption, columns, rows }: { caption: string; columns: strin
   );
 }
 
-function Chart({ title, children }: { title: string; children: React.ReactNode }) {
+function Chart({ title, info, children }: { title: string; info?: React.ReactNode; children: React.ReactNode }) {
   return (
     <section className="rounded-lg border bg-card/60 p-4">
-      <h3 className="mb-3 text-sm font-semibold">{title}</h3>
+      <div className="mb-3 flex items-center gap-1">
+        <h3 className="text-sm font-semibold">{title}</h3>
+        {info}
+      </div>
       {children}
     </section>
   );
@@ -94,7 +98,7 @@ function Charts({ cases }: Props) {
         </ResponsiveContainer>
       </Chart>
 
-      <Chart title="Sospechosos por año y partido">
+      <Chart title="Sospechosos por año y partido" info={<YearInfo />}>
         <DataTable
           caption="Sospechosos por año y partido"
           columns={["Año", ...keys.map(partyKeyLabel)]}

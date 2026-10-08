@@ -1,4 +1,4 @@
-import { CATEGORIES, CRIMES, PARTIES, normalize, type Allegiance, type Party, type CaseStatus, type Crime, type SuspectView } from "@/lib/schema";
+import { CATEGORIES, CRIMES, PARTIES, STATUSES, normalize, type Allegiance, type Party, type CaseStatus, type Crime, type SuspectView } from "@/lib/schema";
 
 /**
  * Table filters. Every field maps 1:1 to a URL query param of the same name.
@@ -8,13 +8,15 @@ import { CATEGORIES, CRIMES, PARTIES, normalize, type Allegiance, type Party, ty
 export type Filters = {
   cat?: Allegiance[];
   partido?: Party[];
+  /** Matches the suspect's worst status, the one the Estado badge shows — not each cause's. */
+  estado?: CaseStatus[];
   anio?: number[];
   delito?: Crime[];
   caso?: string;
   q?: string;
 };
 
-const KEYS = ["cat", "partido", "anio", "delito", "caso", "q"] as const satisfies readonly (keyof Filters)[];
+const KEYS = ["cat", "partido", "estado", "anio", "delito", "caso", "q"] as const satisfies readonly (keyof Filters)[];
 
 /** URL-safe key for a cause name: "Caso Ábalos/Koldo" -> "caso-abalos-koldo". */
 export const slug = (text: string): string => normalize(text).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -39,6 +41,7 @@ export function parseFilters(search: string): Filters {
   // Legacy links: PSOE used to be a category.
   const legacy: Party[] = parts(rawCat).includes("psoe") ? ["psoe"] : [];
   const partido = unique([...legacy, ...members(p.get("partido"), PARTIES)]);
+  const estado = members(p.get("estado"), STATUSES);
   const anio = unique(parts(p.get("anio")).map(Number).filter((n) => Number.isInteger(n) && n > 0));
   const delito = members(p.get("delito"), CRIMES);
   const caso = p.get("caso");
@@ -46,6 +49,7 @@ export function parseFilters(search: string): Filters {
   return {
     ...(cat.length > 0 && { cat }),
     ...(partido.length > 0 && { partido }),
+    ...(estado.length > 0 && { estado }),
     ...(anio.length > 0 && { anio }),
     ...(delito.length > 0 && { delito }),
     ...(caso && /^[a-z0-9-]+$/.test(caso) && { caso }),
@@ -101,6 +105,7 @@ export function filterCases(cases: SuspectView[], f: Filters): SuspectView[] {
     (c) =>
       anyOf(f.cat, (cat) => c.categories.includes(cat)) &&
       anyOf(f.partido, (party) => c.party === party) &&
+      anyOf(f.estado, (status) => c.status === status) &&
       anyOf(f.anio, (year) => c.startYear === year) &&
       anyOf(f.delito, (crime) => c.crimes.includes(crime)) &&
       (!f.caso || c.causes.some((k) => slug(k.name) === f.caso)) &&
