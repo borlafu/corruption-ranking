@@ -9,12 +9,9 @@ import { partyLabel, statusConfig } from "@/lib/status-ui";
 type Props = { cases: SuspectView[] };
 
 const CHART_HEIGHT = 260;
-/** Number of shades in the chart ramp declared in globals.css. */
-const RAMP_SIZE = 9;
 
-/** Spreads the series over the whole ramp, so two series land at opposite ends instead of next to each other. */
-const rampColor = (index: number, total: number): string =>
-  `var(--chart-${total < 2 ? 1 : Math.round((index * (RAMP_SIZE - 1)) / (total - 1)) + 1})`;
+/** One --party-* token per series key, declared in globals.css. */
+const partyFill = (key: PartyKey): string => `var(--party-${key})`;
 
 const axis = { stroke: "var(--color-muted-foreground)", fontSize: 12 } as const;
 const tooltipStyle = {
@@ -110,13 +107,13 @@ function Charts({ cases }: Props) {
             <YAxis allowDecimals={false} width={32} {...axis} />
             <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "var(--color-muted)", opacity: 0.4 }} />
             <Legend wrapperStyle={{ fontSize: 12 }} />
-            {keys.map((key, i) => (
+            {keys.map((key) => (
               <Bar
                 key={key}
                 dataKey={key}
                 name={partyKeyLabel(key)}
                 stackId="parties"
-                fill={rampColor(i, keys.length)}
+                fill={partyFill(key)}
                 stroke="var(--color-card)"
                 isAnimationActive={false}
               />

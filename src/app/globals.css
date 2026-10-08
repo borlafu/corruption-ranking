@@ -40,21 +40,26 @@
 }
 
 /*
- * Chart series ramp, read as inline SVG fills by src/components/insights-panel.tsx.
- * Deliberately a neutral lightness scale: no party gets a colour of its own.
+ * Chart series per party, read as inline SVG fills by src/components/insights-panel.tsx.
+ * Each hue only *evokes* the party it stands for: it is desaturated and lightened to the
+ * same register as the status tokens above, never the party's own brand colour. Hues are
+ * spread so adjacent stack segments stay apart; lightness stays >= 60% to read on
+ * --color-card (15%). Retune here, this block is the whole palette.
  * Kept out of @theme on purpose — Tailwind drops theme variables that no utility class uses.
  */
 :root {
-  /* Stops at 42% so the darkest series is still visible on --color-card (15%). */
-  --chart-1: hsl(0 0% 92%);
-  --chart-2: hsl(0 0% 86%);
-  --chart-3: hsl(0 0% 80%);
-  --chart-4: hsl(0 0% 73%);
-  --chart-5: hsl(0 0% 67%);
-  --chart-6: hsl(0 0% 61%);
-  --chart-7: hsl(0 0% 55%);
-  --chart-8: hsl(0 0% 48%);
-  --chart-9: hsl(0 0% 42%);
+  --party-psoe: hsl(0 62% 70%);
+  --party-pp: hsl(212 58% 68%);
+  --party-vox: hsl(132 40% 62%);
+  --party-podemos: hsl(282 42% 72%);
+  --party-sumar: hsl(330 48% 72%);
+  --party-iu: hsl(350 40% 60%);
+  --party-junts: hsl(182 42% 62%);
+  --party-erc: hsl(44 56% 68%);
+  --party-pnv: hsl(96 32% 62%);
+  --party-cs: hsl(26 58% 66%);
+  /* Not a party: stays neutral. */
+  --party-sin: hsl(0 0% 70%);
 }
 
 @layer base {
