@@ -4,7 +4,7 @@ import { FilterLink, SuspectLink } from "@/components/nav";
 import { SourceList } from "@/components/source-list";
 import { formatPenalty, type SuspectView } from "@/lib/schema";
 import { slug } from "@/lib/filters";
-import { formatDate, formatEur, statusConfig } from "@/lib/status-ui";
+import { KIND_LABEL, entryId, formatDate, formatEur, statusConfig } from "@/lib/status-ui";
 
 type Props = {
   caseData: SuspectView;
@@ -96,6 +96,24 @@ export function CaseDetailRow({ caseData: c, allCases }: Props) {
         <div>
           <p className="text-xs font-semibold text-muted-foreground mb-1.5">Fuentes ({c.sourceUrls.length})</p>
           <SourceList urls={c.sourceUrls} />
+          {c.history.length > 0 && (
+            <>
+              <p className="text-xs font-semibold text-muted-foreground mt-3 mb-1.5">Historial de cambios</p>
+              <ul className="space-y-1 text-xs">
+                {c.history.map((h) => (
+                  <li key={h.date}>
+                    <a
+                      href={`/cambios#${entryId(h.date)}`}
+                      className="text-primary hover:underline underline-offset-2 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    >
+                      <time dateTime={h.date}>{formatDate(h.date)}</time>
+                    </a>{" "}
+                    · {KIND_LABEL[h.kind]}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
       </div>
     </div>
