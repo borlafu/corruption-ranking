@@ -252,12 +252,14 @@
     ],
     "court": "Audiencia Provincial de Badajoz",
     "startYear": 2024,
-    "lastUpdated": "2026-10-07",
-    "summary": "Condenado el 14-jul-2026 por la Audiencia Provincial de Badajoz a 9 años de inhabilitación por cooperación necesaria en prevaricación (su plaza en la Diputación de Badajoz); absuelto de tráfico de influencias. Sentencia no firme, recurrida ante el TSJ de Extremadura.",
+    "lastUpdated": "2026-10-13",
+    "summary": "Condenado el 14-jul-2026 por la Audiencia de Badajoz a 9 años de inhabilitación por cooperación necesaria en prevaricación (su plaza en la Diputación); absuelto de tráfico de influencias. No firme: recurrida ante el TSJ de Extremadura; el 9-oct-2026 la Fiscalía también recurre por falta de pruebas.",
     "sourceUrls": [
       "https://es.euronews.com/2026/07/14/david-sanchez-condenado-a-nueve-anos-de-inhabilitacion-por-prevaricacion",
       "https://www.rtve.es/noticias/20260714/claves-entender-sentencia-david-sanchez-hermano-presidente-condenado-prevaricacion/17156475.shtml",
-      "https://www.infobae.com/espana/agencias/2026/09/17/acusacion-recurre-la-sentencia-a-david-sanchez-por-no-recoger-trafico-de-influencias/"
+      "https://www.infobae.com/espana/agencias/2026/09/17/acusacion-recurre-la-sentencia-a-david-sanchez-por-no-recoger-trafico-de-influencias/",
+      "https://theobjective.com/espana/tribunales/2026-10-09/la-fiscalia-impugna-la-sentencia-a-david-sanchez-por-considerar-que-no-aporta-pruebas/",
+      "https://www.moncloa.com/2026/10/09/fiscalia-david-sanchez-tsj-extremadura-3445543/"
     ]
   },
   {
@@ -2235,12 +2237,14 @@
     ],
     "court": "Audiencia Nacional",
     "startYear": 2017,
-    "lastUpdated": "2026-10-07",
-    "summary": "Detenido en abr-2017 por el saqueo del Canal de Isabel II. Procesado en tres piezas: Emissao (Fiscalía pide 8 años), campo de golf del Canal (6 años) y tren de Navalcarnero (4 años). Archivadas para él las piezas de Inassa (2019) y blanqueo.",
+    "lastUpdated": "2026-10-13",
+    "summary": "Detenido en abr-2017 por el saqueo del Canal de Isabel II. Procesado en tres piezas: campo de golf del Canal (juicio en la Audiencia Nacional desde el 13-oct-2026; Fiscalía pide 6 años y 550.000 € por cohecho), Emissao (8 años) y tren de Navalcarnero (4 años). Archivadas para él Inassa y blanqueo.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/audiencia-nacional-juzgara-ignacio-gonzalez-campo-golf-canal-23-anos-despues_1_12865400.html",
       "https://www.elindependiente.com/politica/2020/01/29/la-fiscalia-pide-ocho-anos-de-prision-para-ignacio-gonzalez-por-el-caso-lezo/amp/",
-      "https://www.eldiario.es/madrid/audiencia-nacional-comienza-juzgar-caso-lezo-canal-isabel-ii-diez-anos-despues_1_13491733.html"
+      "https://www.eldiario.es/madrid/audiencia-nacional-comienza-juzgar-caso-lezo-canal-isabel-ii-diez-anos-despues_1_13491733.html",
+      "https://www.infobae.com/espana/agencias/2026/10/12/la-an-arranca-esta-semana-el-juicio-a-ignacio-gonzalez-por-adjudicaciones-del-campo-de-golf-del-canal-de-isabel-ii/",
+      "https://www.estrelladigital.es/articulo/tribunales/ignacio-gonzalez-juicio-canal-golf-operacion-lezo/20261013060100452101.html"
     ]
   },
   {
@@ -3071,12 +3075,14 @@
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-07",
-    "summary": "Procesado por el 1-O sin juicio tras marcharse a Bélgica. 1-jul-2024: el Supremo no le aplica la amnistía y mantiene la malversación y la orden de detención; 10-sep-2024 Llarena lo confirma. 6-oct-2026: el Constitucional avala amnistiar la malversación.",
+    "lastUpdated": "2026-10-13",
+    "summary": "Procesado por el 1-O sin juicio tras marcharse a Bélgica. 1-jul-2024: el Supremo no le aplica la amnistía y mantiene la malversación y la orden de detención. 6-oct-2026: el Constitucional avala amnistiar la malversación y Llarena levanta de forma provisional la orden de detención.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/supremo-no-aplica-amnistia-puigdemont-mantiene-malversacion-orden-arresto_1_11490962.html",
       "https://www.eldiario.es/catalunya/juez-llarena-confirma-amnistia-no-perdona-malversacion-atribuida-puigdemont_1_11641214.html",
-      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/El-juez-del-Tribunal-Supremo-Pablo-Llarena-deja-sin-efecto-la-orden-de-detencion-de-Carles-Puigdemont-tras-conocer-la-decision-del-TC-de-estimar-el-recurso-de-Dolors-Bassa",
+      "https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13567873_1125657.html"
     ]
   },
   {
@@ -3097,11 +3103,12 @@
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-07",
-    "summary": "Procesado por malversación en la causa del 1-O, sin juicio tras instalarse en Bélgica. 1-jul-2024: el Supremo rechaza amnistiar la malversación. 6-oct-2026: el Constitucional avala la amnistía del delito y el Supremo debe pronunciarse de nuevo.",
+    "lastUpdated": "2026-10-13",
+    "summary": "Procesado por malversación en la causa del 1-O, sin juicio tras instalarse en Bélgica. 1-jul-2024: el Supremo rechaza amnistiar la malversación. 6-oct-2026: el Constitucional avala la amnistía del delito y Llarena levanta de forma provisional la orden de detención; el Supremo debe pronunciarse.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/comin-considera-decision-supremo-no-amnistiar-malversacion-matar-democracia_1_11492689.html",
-      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
+      "https://www.3cat.cat/3catinfo/el-jutge-llarena-aixeca-lordre-de-detencio-de-puigdemont-comin-i-puig/noticia-amp/3432637/"
     ]
   },
   {
@@ -3123,12 +3130,13 @@
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-07",
-    "summary": "Procesado por malversación en la causa del 1-O; la justicia belga rechazó su entrega el 7-ago-2020 y el 16-ene-2023 descartó comparecer mientras se mantuviera el procesamiento. 6-oct-2026: el Constitucional avala amnistiar la malversación.",
+    "lastUpdated": "2026-10-13",
+    "summary": "Procesado por malversación en la causa del 1-O; la justicia belga rechazó su entrega el 7-ago-2020. 6-oct-2026: el Constitucional avala amnistiar la malversación y Llarena levanta de forma provisional la orden de detención contra él, Puigdemont y Comín.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/lluis-puig-descarta-comparecer-tribunal-supremo-si-mantiene-procesamiento-malversacion_1_9870958.html",
       "https://www.eldiario.es/politica/la-justicia-belga-rechaza-la-entrega-a-espana-del-exconsejero-lluis-puig-por-malversacion_1_6152579.html",
-      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
+      "https://www.3cat.cat/3catinfo/el-jutge-llarena-aixeca-lordre-de-detencio-de-puigdemont-comin-i-puig/noticia-amp/3432637/"
     ]
   },
   {
@@ -3267,12 +3275,13 @@
     ],
     "court": "Audiencia Nacional",
     "startYear": 2017,
-    "lastUpdated": "2026-10-07",
-    "summary": "2-jun-2017: el TSJC lo investiga por la trama del 3% de financiación de CDC. 23-oct-2020: imputado por el blanqueo mediante donaciones. 8-nov-2022: el juez Pedraz abre juicio oral contra él, CDC y el PDeCAT; Anticorrupción pide 18a10m. Juicio pendiente.",
+    "lastUpdated": "2026-10-13",
+    "summary": "2-jun-2017: el TSJC lo investiga por la trama del 3% de financiación de CDC. 23-oct-2020: imputado por el blanqueo mediante donaciones. 8-nov-2022: el juez Pedraz abre juicio oral contra él, CDC y el PDeCAT; Anticorrupción pide 18a10m. Juicio señalado del 8-feb al 4-mar-2027.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/tsjc-investigara-exconseller-germa-gordo_1_3366899.html",
       "https://www.eldiario.es/agencias/el-juez-imputa-a-germa-gordo-por-el-blanqueo-en-cdc-mediante-donaciones_1_6316754.html",
-      "https://www.eldiario.es/politica/juez-pedraz-abre-juicio-pdecat-cdc-3-exgerentes-caso-3_1_9692484.html"
+      "https://www.eldiario.es/politica/juez-pedraz-abre-juicio-pdecat-cdc-3-exgerentes-caso-3_1_9692484.html",
+      "https://elmon.cat/es/politica-es/tribunales/el-juicio-del-caso-3-en-febrero-de-2027-1108829/"
     ]
   },
   {
@@ -3323,11 +3332,13 @@
     ],
     "court": "Audiencia Nacional",
     "startYear": 2014,
-    "lastUpdated": "2026-10-07",
-    "summary": "La Fiscalía le atribuye cobrar las comisiones, blanquearlas y repartirlas entre sus hermanos; la Abogacía del Estado le acusa de delitos fiscales y falsificación. El juicio de la fortuna oculta se celebra entre nov-2025 y abr-2026 en la Audiencia Nacional.",
+    "lastUpdated": "2026-10-13",
+    "summary": "La Fiscalía le atribuye cobrar las comisiones, blanquearlas y repartirlas entre sus hermanos, y pide 29 años; la Abogacía del Estado le acusa de delitos fiscales y falsificación. El juicio de la fortuna oculta en la Audiencia Nacional quedó visto para sentencia el 14-may-2026.",
     "sourceUrls": [
       "https://www.eldiario.es/catalunya/audiencia-nacional-exime-jordi-pujol-juicio-fortuna-oculta-deterioro-cognitivo_1_13166394.html",
-      "https://www.eldiario.es/catalunya/audiencia-nacional-rechaza-jefe-policial-condenado-adulterar-caso-pujol-declare-juicio-familia_1_12436448.html"
+      "https://www.eldiario.es/catalunya/audiencia-nacional-rechaza-jefe-policial-condenado-adulterar-caso-pujol-declare-juicio-familia_1_12436448.html",
+      "https://www.noticiasdenavarra.com/politica/2026/05/14/juicio-pujol-queda-visto-sentencia-11070303.amp.html",
+      "https://www.deia.eus/politica/2026/05/14/juicio-pujol-queda-visto-sentencia-11070304.amp.html"
     ]
   },
   {
@@ -3349,12 +3360,14 @@
     ],
     "court": "Tribunal Superior de Justicia de Cataluña",
     "startYear": 2019,
-    "lastUpdated": "2026-10-07",
-    "summary": "Procesado por la malversación en los preparativos del 1-O; 26-abr-2021 queda a un paso del juicio y 21-nov-2022 se abre juicio oral por malversación. 28-mar-2024: el juicio se aplaza. 30-jul-2024: el TSJC frena la amnistía y eleva la malversación al TC y a Europa.",
+    "lastUpdated": "2026-10-13",
+    "summary": "Procesado por la malversación en los preparativos del 1-O; 21-nov-2022 se abre juicio oral. 30-jul-2024: el TSJC frena la amnistía y eleva la malversación al TC y a Europa. 4-sep-2026: pese a las sentencias del TJUE de julio, el TSJC deniega la amnistía y mantiene sus prejudiciales.",
     "sourceUrls": [
       "https://www.eldiario.es/catalunya/tsjc-deja-paso-juicio-jove-salvado-organizacion-1_1_7870148.html",
       "https://www.eldiario.es/politica/erc-dice-1-democracia-rechaza-suspender-jove-salvado-seran-juzgados-malversacion_1_9730474.html",
-      "https://www.eldiario.es/agencias/justicia-frena-amnistia-jove-salvado-elevar-malversacion-tc-europa_1_11560528.html"
+      "https://www.eldiario.es/agencias/justicia-frena-amnistia-jove-salvado-elevar-malversacion-tc-europa_1_11560528.html",
+      "https://www.infobae.com/espana/agencias/2026/09/04/el-tsjc-deniega-la-amnistia-a-los-excargos-catalanes-salvado-y-jove-y-mantiene-las-cuestiones-prejudiciales-al-tjue/",
+      "https://www.elnacional.cat/es/politica/tsjc-frena-amnistia-jove-salvado-pesar-aval-tjue_1690471_102.html"
     ]
   },
   {
@@ -3376,12 +3389,14 @@
     ],
     "court": "Tribunal Superior de Justicia de Cataluña",
     "startYear": 2019,
-    "lastUpdated": "2026-10-07",
-    "summary": "Procesado por la malversación en los preparativos del 1-O; depositó con Jové 1,6 millones de fianza (25-jun-2020) y el 21-nov-2022 se abrió juicio oral por malversación. 30-jul-2024: el TSJC frena la amnistía y eleva la cuestión al TC y a Europa.",
+    "lastUpdated": "2026-10-13",
+    "summary": "Procesado por la malversación en los preparativos del 1-O; 21-nov-2022 se abre juicio oral. 30-jul-2024: el TSJC frena la amnistía y eleva la cuestión al TC y a Europa. 4-sep-2026: pese a las sentencias del TJUE de julio, el TSJC deniega la amnistía y mantiene sus prejudiciales.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/jove-salvado-depositan-tsjc-millones_1_6054233.html",
       "https://www.eldiario.es/politica/erc-dice-1-democracia-rechaza-suspender-jove-salvado-seran-juzgados-malversacion_1_9730474.html",
-      "https://www.eldiario.es/agencias/justicia-frena-amnistia-jove-salvado-elevar-malversacion-tc-europa_1_11560528.html"
+      "https://www.eldiario.es/agencias/justicia-frena-amnistia-jove-salvado-elevar-malversacion-tc-europa_1_11560528.html",
+      "https://www.infobae.com/espana/agencias/2026/09/04/el-tsjc-deniega-la-amnistia-a-los-excargos-catalanes-salvado-y-jove-y-mantiene-las-cuestiones-prejudiciales-al-tjue/",
+      "https://www.elnacional.cat/es/politica/tsjc-frena-amnistia-jove-salvado-pesar-aval-tjue_1690471_102.html"
     ]
   },
   {
@@ -3405,12 +3420,13 @@
     ],
     "court": "Audiencia Provincial de Sevilla",
     "startYear": 2020,
-    "lastUpdated": "2026-10-07",
-    "summary": "Procesado el 20-ene-2023 por el presunto fraude de un préstamo de 2,5 millones del Ministerio de Industria (dic-2016) para una planta de pélets en Niebla que nunca se construyó. 20-mar-2024: fianza de 3,3 millones. Juicio señalado en la Audiencia de Sevilla para may-2026.",
+    "lastUpdated": "2026-10-13",
+    "summary": "Procesado el 20-ene-2023 por el presunto fraude de un préstamo de 2,5 millones del Ministerio de Industria (dic-2016) para una planta de pélets en Niebla que nunca se construyó. 20-mar-2024: fianza de 3,3 millones. Juicio en la Audiencia de Sevilla (Sección 4ª) del 15-mar al 7-abr-2027.",
     "sourceUrls": [
       "https://www.eldiario.es/agencias/procesado-exlider-vox-francisco-serrano-fraude-ayuda-millonaria_1_9882991.html",
       "https://www.eldiario.es/andalucia/juzgado-pide-3-3-millones-fianza-exlider-vox-andalucia-fraude-ayudas-publicas_1_11229620.html",
-      "https://www.infobae.com/espana/2025/05/01/el-exlider-de-vox-en-andalucia-francisco-serrano-se-sentara-en-el-banquillo-de-los-acusados-en-2026-por-un-presunto-fraude-de-subvenciones/"
+      "https://www.infobae.com/espana/2025/05/01/el-exlider-de-vox-en-andalucia-francisco-serrano-se-sentara-en-el-banquillo-de-los-acusados-en-2026-por-un-presunto-fraude-de-subvenciones/",
+      "https://vivirediciones.es/?p=1045024"
     ]
   },
   {
@@ -4241,19 +4257,21 @@
         ],
         "sentence": {
           "date": "2023-09-21",
-          "prisonMonths": 63,
+          "prisonMonths": 54,
           "firm": false
         }
       }
     ],
     "court": "Audiencia Provincial de Sevilla",
     "startYear": 2018,
-    "lastUpdated": "2026-10-08",
-    "summary": "Exdirectora económico-financiera de la FAFFE entre 2004 y 2011, condenada el 21-sep-2023 por un jurado a 5 años y 3 meses de prisión por malversación, por su colaboración en la salida irregular de los fondos gastados en prostíbulos. Declaró en el juicio el 30-may-2023 negando conocerlo.",
+    "lastUpdated": "2026-10-13",
+    "summary": "Exdirectora económico-financiera de la FAFFE entre 2004 y 2011, condenada el 21-sep-2023 por un jurado a 5 años y 3 meses por malversación, por su colaboración en la salida de los fondos gastados en prostíbulos. El 24-abr-2026 el TSJA rebajó la pena a 4 años y 6 meses por dilaciones indebidas.",
     "sourceUrls": [
       "https://okdiario.com/andalucia/socialista-que-gasto-32-000-prostibulos-condenado-nuevo-prision-enchufes-faffe-14693661",
       "https://www.eldiario.es/agencias/abren-juicio-exdirectivos-faffe-gastos-prostibulos_1_8930628.html",
-      "https://www.eldiario.es/andalucia/exdirectora-contable-faffe-niega-conociese-pagos-prostibulos-siente-totalmente-enganada_1_10252434.html"
+      "https://www.eldiario.es/andalucia/exdirectora-contable-faffe-niega-conociese-pagos-prostibulos-siente-totalmente-enganada_1_10252434.html",
+      "https://okdiario.com/andalucia/rebajan-condena-retrasos-proceso-director-faffe-que-gasto-32-566-prostibulos-16671089",
+      "https://vivirediciones.es/?p=1020305"
     ]
   },
   {
