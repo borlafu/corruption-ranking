@@ -426,7 +426,12 @@
           119,
           123
         ],
-        "description": "Vallejo Serrano, Rodríguez Román y Cañete Rolloso pasan en el Caso Avales de sobreseído (archivo de 2019) a procesado, al reabrirse el caso como piezas separadas por el juez Vilaplana. Sánchez García (126) y Soler (128) siguen sobreseídos porque no figuran en las piezas reabiertas."
+        "description": "Vallejo Serrano, Rodríguez Román y Cañete Rolloso pasan en el Caso Avales de sobreseído (archivo de 2019) a procesado, al reabrirse el caso como piezas separadas por el juez Vilaplana. Sánchez García (126) y Soler (128) siguen sobreseídos porque no figuran en las piezas reabiertas.",
+        "statusChange": {
+          "cause": "Caso Avales",
+          "from": "sobreseido",
+          "to": "procesado"
+        }
       },
       {
         "kind": "nuevo",
@@ -723,7 +728,12 @@
         "ids": [
           10
         ],
-        "description": "Juan Bernardo Fuentes Curbelo: pasa de investigado a procesado, con la Audiencia Provincial de Santa Cruz de Tenerife y seis delitos del auto de apertura de juicio oral."
+        "description": "Juan Bernardo Fuentes Curbelo: pasa de investigado a procesado, con la Audiencia Provincial de Santa Cruz de Tenerife y seis delitos del auto de apertura de juicio oral.",
+        "statusChange": {
+          "cause": "Caso Mediador",
+          "from": "investigado",
+          "to": "procesado"
+        }
       },
       {
         "kind": "actualizado",

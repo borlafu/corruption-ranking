@@ -158,6 +158,11 @@ export const ChangeSchema = z.object({
   description: z.string().min(1),
   rationale: z.string().min(1).optional(),
   sourceUrls: z.array(httpsUrl).optional(),
+  /** Status move on one cause, shared by every id in the change (split the change otherwise). */
+  statusChange: z
+    .object({ cause: z.string().min(1), from: z.enum(STATUSES), to: z.enum(STATUSES) })
+    .refine((s) => s.from !== s.to, "from and to must differ")
+    .optional(),
 });
 
 export const ChangelogEntrySchema = z.object({
@@ -178,16 +183,24 @@ export const ChangelogSchema = z.array(ChangelogEntrySchema).min(1);
 
 /** Cross-file rules the per-file schemas cannot see. Returns messages; empty = valid. */
 export function changelogIssues(log: ChangelogEntry[], suspects: Suspect[]): string[] {
-  const ids = new Set(suspects.map((s) => s.id));
+  const byId = new Map(suspects.map((s) => [s.id, s]));
   const issues: string[] = [];
   const issue = (message: string) => issues.push(message);
   log.forEach((e, i) => {
     if (i > 0 && e.date >= log[i - 1].date) issue(`${e.date}: entries must be newest first with unique dates`);
     const refs = [...e.changes.flatMap((c) => c.ids), ...e.watchlist.flatMap((w) => w.ids)];
-    refs.filter((id) => !ids.has(id)).forEach((id) => issue(`${e.date}: unknown record id ${id}`));
+    refs.filter((id) => !byId.has(id)).forEach((id) => issue(`${e.date}: unknown record id ${id}`));
     e.changes
       .filter((c) => c.kind !== "eliminado" && c.ids.length === 0)
       .forEach((c) => issue(`${e.date}: "${c.kind}" change needs ids (${c.description.slice(0, 40)}…)`));
+    for (const c of e.changes) {
+      if (!c.statusChange) continue;
+      if (c.kind !== "actualizado") issue(`${e.date}: statusChange only on "actualizado" changes`);
+      const cause = normalize(c.statusChange.cause);
+      c.ids
+        .filter((id) => !byId.get(id)?.causes.some((k) => normalize(k.name) === cause))
+        .forEach((id) => issue(`${e.date}: record ${id} has no cause "${c.statusChange!.cause}"`));
+    }
   });
   const newestData = suspects.map((s) => s.lastUpdated).sort().at(-1) ?? "";
   if (log[0].date < newestData) issue(`newest changelog entry ${log[0].date} is older than data lastUpdated ${newestData}`);
