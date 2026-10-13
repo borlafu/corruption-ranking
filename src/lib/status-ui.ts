@@ -1,5 +1,5 @@
 import { Briefcase, Handshake, Landmark, Users, Vote, type LucideIcon } from "lucide-react";
-import type { Allegiance, CaseStatus, Party } from "@/lib/schema";
+import type { Allegiance, CaseStatus, ChangeKind, Party } from "@/lib/schema";
 
 // Class names are spelled out in full so Tailwind can detect them.
 export const statusConfig: Record<CaseStatus, { label: string; className: string }> = {
@@ -44,3 +44,8 @@ export function formatDate(iso: string, options: Intl.DateTimeFormatOptions = UT
 export function formatEur(amount: number): string {
   return new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(amount);
 }
+
+export const KIND_LABEL: Record<ChangeKind, string> = { nuevo: "Alta", actualizado: "Actualización", eliminado: "Baja" };
+
+/** Anchor of a changelog entry on /cambios. */
+export const entryId = (date: string) => `r-${date}`;

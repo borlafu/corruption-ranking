@@ -1,11 +1,12 @@
 import { CaseLeaderboardPage } from "@/components/case-leaderboard-page";
 import { DataSchema, deriveView } from "@/lib/schema";
+import { changelog } from "@/lib/changelog";
 import { formatDate } from "@/lib/status-ui";
 import { SCOPE_START, SITE_DESCRIPTION, SITE_NAME, SITE_URL, lastReviewedISO, lastUpdatedISO } from "@/lib/site";
 import data from "@/lib/data.json";
 
 // Server component in a static export: parsing and formatting run once at build time.
-const cases = deriveView(DataSchema.parse(data));
+const cases = deriveView(DataSchema.parse(data), changelog);
 const longDate = (iso: string) => (iso ? formatDate(iso, { day: "numeric", month: "long", year: "numeric" }) : "");
 const lastUpdated = longDate(lastUpdatedISO);
 const lastReviewed = longDate(lastReviewedISO);

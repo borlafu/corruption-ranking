@@ -198,6 +198,8 @@ export type SuspectView = Suspect & {
   penaltyMonths: number;
   /** Sentence of the condenado cause, if any. */
   sentence?: Sentence;
+  /** Changelog entries that changed this record, newest first. */
+  history: { date: string; kind: ChangeKind }[];
 };
 
 /** Lower-case, accent-stripped key for comparisons. */
@@ -211,7 +213,15 @@ export function worstStatus(causes: Cause[]): CaseStatus {
 
 const unique = <T,>(xs: T[]): T[] => [...new Set(xs)];
 
-export function deriveView(suspects: Suspect[]): SuspectView[] {
+export function deriveView(suspects: Suspect[], changelog: ChangelogEntry[] = []): SuspectView[] {
+  const history = new Map<number, SuspectView["history"]>();
+  for (const e of changelog)
+    for (const c of e.changes)
+      for (const id of new Set(c.ids)) {
+        const mine = history.get(id) ?? [];
+        // One line per entry: a record touched twice in one run shows once.
+        if (mine.at(-1)?.date !== e.date) history.set(id, [...mine, { date: e.date, kind: c.kind }]);
+      }
   const keys = (s: Suspect) => s.causes.map((c) => normalize(c.name));
   return suspects.map((s) => {
     const mine = new Set(keys(s));
@@ -228,6 +238,7 @@ export function deriveView(suspects: Suspect[]): SuspectView[] {
       sentences: unique(s.causes.flatMap((c) => c.convictions ?? [])).length,
       penaltyMonths: max((x) => x.prisonMonths) || max((x) => x.disqualificationMonths),
       sentence: sentences[0],
+      history: history.get(s.id) ?? [],
     };
   });
 }

@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ChangelogHashOpen } from "@/components/changelog-hash-open";
 import { SourceList } from "@/components/source-list";
-import { ChangelogSchema, DataSchema, type ChangeKind, type ChangelogEntry } from "@/lib/schema";
-import { formatDate } from "@/lib/status-ui";
+import { DataSchema } from "@/lib/schema";
+import { changelog, countLine } from "@/lib/changelog";
+import { KIND_LABEL, entryId, formatDate } from "@/lib/status-ui";
 import { SITE_NAME } from "@/lib/site";
-import changelogData from "@/lib/changelog.json";
 import data from "@/lib/data.json";
 
 // Server component in a static export: parsed once at build time, like the root page.
-const changelog = ChangelogSchema.parse(changelogData);
 const names = new Map(DataSchema.parse(data).map((s) => [s.id, s.suspect]));
 
 const title = `Registro de cambios — ${SITE_NAME}`;
@@ -20,35 +19,15 @@ export const metadata: Metadata = {
   title,
   description,
   // The layout's canonical is the root; this page is its own document.
-  alternates: { canonical: "/cambios" },
+  alternates: { canonical: "/cambios", types: { "application/rss+xml": "/cambios/feed.xml" } },
   openGraph: { url: "/cambios", title, description },
+  twitter: { card: "summary", title, description },
 };
-
-const KIND_LABEL: Record<ChangeKind, string> = { nuevo: "Alta", actualizado: "Actualización", eliminado: "Baja" };
 
 const linkClass =
   "text-primary hover:underline underline-offset-2 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
 
 const longDate = (date: string) => formatDate(date, { day: "numeric", month: "long", year: "numeric" });
-const entryId = (date: string) => `r-${date}`;
-
-/** Distinct records touched by a kind; id-less changes (bajas) count one each. */
-function countKind(entry: ChangelogEntry, kind: ChangeKind) {
-  const changes = entry.changes.filter((c) => c.kind === kind);
-  return new Set(changes.flatMap((c) => c.ids)).size + changes.filter((c) => c.ids.length === 0).length;
-}
-
-function countLine(entry: ChangelogEntry) {
-  const [altas, updates, bajas] = (["nuevo", "actualizado", "eliminado"] as const).map((k) => countKind(entry, k));
-  const parts = [
-    altas && `${altas} ${altas === 1 ? "alta" : "altas"}`,
-    updates && `${updates} ${updates === 1 ? "registro actualizado" : "registros actualizados"}`,
-    bajas && `${bajas} ${bajas === 1 ? "baja" : "bajas"}`,
-    entry.notAdded.length > 0 && `${entry.notAdded.length} ${entry.notAdded.length === 1 ? "descartado" : "descartados"}`,
-    entry.watchlist.length > 0 && `${entry.watchlist.length} en seguimiento`,
-  ].filter(Boolean);
-  return [...(altas || updates || bajas ? [] : ["sin cambios en los registros"]), ...parts].join(" · ");
-}
 
 function Suspects({ ids }: { ids: number[] }) {
   if (ids.length === 0) return null;
@@ -102,6 +81,11 @@ export default function ChangelogPage() {
         </p>
         <h1 className="font-headline text-4xl lg:text-5xl font-bold uppercase tracking-wider mt-4">Registro de cambios</h1>
         <p className="text-muted-foreground mt-2">{description}</p>
+        <p className="text-xs mt-2">
+          <a href="/cambios/feed.xml" className={linkClass}>
+            Suscríbete por RSS
+          </a>
+        </p>
       </header>
 
       <div className="lg:grid lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-8 lg:items-start">
