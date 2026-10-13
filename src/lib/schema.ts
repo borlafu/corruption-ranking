@@ -120,6 +120,61 @@ export const DataSchema = z.array(SuspectSchema).superRefine((all, ctx) => {
     if (amounts.size > 1) issue(`cause "${name}" has differing amounts`);
 });
 
+/**
+ * Public changelog (`changelog.json`, shown at /cambios): one entry per data run, newest first,
+ * written even when no record changed. Text is Spanish. Records are referenced by id and their
+ * names resolved from data.json at build time; a removed record has no id left, so its
+ * `eliminado` change names it in `description` and lists no ids.
+ */
+export const CHANGE_KINDS = ["nuevo", "actualizado", "eliminado"] as const;
+
+const httpsUrl = z.url({ protocol: /^https$/ });
+
+export const ChangeSchema = z.object({
+  kind: z.enum(CHANGE_KINDS),
+  ids: z.array(z.number().int().positive()).default([]),
+  description: z.string().min(1),
+  rationale: z.string().min(1).optional(),
+  sourceUrls: z.array(httpsUrl).optional(),
+});
+
+export const ChangelogEntrySchema = z.object({
+  /** Date of the run. */
+  date: z.iso.date(),
+  /** PRs that shipped the run. Not rendered: the repo is private. */
+  prs: z.array(z.number().int().positive()).default([]),
+  summary: z.string().min(1),
+  changes: z.array(ChangeSchema),
+  /** Candidates found but left out, with the reason. */
+  notAdded: z.array(z.object({ who: z.string().min(1), cause: z.string().optional(), reason: z.string().min(1) })).default([]),
+  /** Cause names that could not be verified this run. */
+  unverifiable: z.array(z.string().min(1)).default([]),
+  watchlist: z.array(z.object({ text: z.string().min(1), ids: z.array(z.number().int().positive()).default([]) })).default([]),
+});
+
+export const ChangelogSchema = z.array(ChangelogEntrySchema).min(1);
+
+/** Cross-file rules the per-file schemas cannot see. Returns messages; empty = valid. */
+export function changelogIssues(log: ChangelogEntry[], suspects: Suspect[]): string[] {
+  const ids = new Set(suspects.map((s) => s.id));
+  const issues: string[] = [];
+  const issue = (message: string) => issues.push(message);
+  log.forEach((e, i) => {
+    if (i > 0 && e.date >= log[i - 1].date) issue(`${e.date}: entries must be newest first with unique dates`);
+    const refs = [...e.changes.flatMap((c) => c.ids), ...e.watchlist.flatMap((w) => w.ids)];
+    refs.filter((id) => !ids.has(id)).forEach((id) => issue(`${e.date}: unknown record id ${id}`));
+    e.changes
+      .filter((c) => c.kind !== "eliminado" && c.ids.length === 0)
+      .forEach((c) => issue(`${e.date}: "${c.kind}" change needs ids (${c.description.slice(0, 40)}…)`));
+  });
+  const newestData = suspects.map((s) => s.lastUpdated).sort().at(-1) ?? "";
+  if (log[0].date < newestData) issue(`newest changelog entry ${log[0].date} is older than data lastUpdated ${newestData}`);
+  return issues;
+}
+
+export type ChangeKind = (typeof CHANGE_KINDS)[number];
+export type ChangelogEntry = z.infer<typeof ChangelogEntrySchema>;
+
 export type Allegiance = (typeof CATEGORIES)[number];
 export type Party = (typeof PARTIES)[number];
 export type CaseStatus = (typeof STATUSES)[number];

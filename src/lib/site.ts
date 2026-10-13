@@ -1,4 +1,5 @@
 import data from "@/lib/data.json";
+import changelog from "@/lib/changelog.json";
 
 /** Canonical origin. Every absolute URL — canonical, og:url, robots, sitemap — derives from it. */
 export const SITE_URL = "https://corruption-ranking.web.app";
@@ -19,3 +20,6 @@ export const SCOPE_START = "2018-01-01";
  * the validation boundary, so a second parse here would buy nothing.
  */
 export const lastUpdatedISO: string = data.map((s) => s.lastUpdated).sort().at(-1) ?? "";
+
+/** Date of the newest data run, changed records or not: entries are newest first. */
+export const lastReviewedISO: string = changelog[0]?.date ?? "";

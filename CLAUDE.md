@@ -19,12 +19,12 @@ Next.js 16, React 19, TypeScript 7 (`tsc`) with the TS 6 API aliased as `typescr
 - One record = one suspect; `causes[]` holds each court case with its own `status`. Related suspects are those sharing a cause name. `categories` are roles; `party` (optional, `PARTIES` enum) is separate.
 - Each cause carries `charges[]`/`convictions[]` from the `CRIMES` enum and, when condenado, a `sentence` (date, prison/disqualification months, fine, `firm`). Counts shown in the UI are derived in `deriveView`, never stored. `amount` is per case, on the cause.
 - Never bump `lastUpdated` without a content change. Never cite Wikipedia alone. Only court-opened causes (imputado/procesado/condenado/absuelto/sobreseido) qualify; complaints alone do not. Scope: all parties, national + regional (no municipal), causes open or resolved since 2018-01-01.
-- Updates: `/update-data` skill (`.claude/skills/update-data/SKILL.md`), run weekly by a local Claude Code scheduled task; it opens a PR, merge deploys. Research is per cause, not per suspect (43 causes hold the records); settled causes are swept monthly.
+- Updates: `/update-data` skill (`.claude/skills/update-data/SKILL.md`), run weekly by a local Claude Code scheduled task; it opens a PR, merge deploys. Research is per cause, not per suspect (43 causes hold the records); settled causes are swept monthly. Every run, changes or not, prepends a Spanish entry to `src/lib/changelog.json` (shown at `/cambios`); `validate-data` checks its ids against `data.json` and that its newest date is not older than the newest `lastUpdated`.
 
 ## Notes
 
 - Static export — no server-side runtime. API routes not supported. `page.tsx` parses data at build time.
-- SEO surfaces: `src/lib/site.ts` holds the canonical origin, the one shared description and the newest `lastUpdated`; `layout.tsx` (canonical + Open Graph), `page.tsx` (`Dataset` JSON-LD), `robots.ts` and `sitemap.ts` all read from it. Metadata routes need `export const dynamic = "force-static"` under `output: 'export'`. `firebase.json` has no catch-all rewrite on purpose: filters are query strings, so a `** → /index.html` rewrite would only turn unknown paths into 200s and shadow `404.html`.
+- SEO surfaces: `src/lib/site.ts` holds the canonical origin, the one shared description and the newest `lastUpdated`; `layout.tsx` (canonical + Open Graph), `page.tsx` (`Dataset` JSON-LD), `robots.ts` and `sitemap.ts` all read from it. `/cambios` (`src/app/cambios/page.tsx`) sets its own canonical; `firebase.json` `cleanUrls` serves `cambios.html` there. Metadata routes need `export const dynamic = "force-static"` under `output: 'export'`. `firebase.json` has no catch-all rewrite on purpose: filters are query strings, so a `** → /index.html` rewrite would only turn unknown paths into 200s and shadow `404.html`.
 - Type errors fail the build. `validate-data` is the data regression check; `npm test` covers URL filter logic.
 
 ## Frontend

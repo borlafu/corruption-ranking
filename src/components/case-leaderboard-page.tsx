@@ -13,6 +13,8 @@ type Props = {
   cases: SuspectView[];
   /** Pre-formatted at build time. */
   lastUpdated: string;
+  /** Pre-formatted date of the newest changelog entry. */
+  lastReviewed: string;
 };
 
 type HistoryMode = "push" | "replace";
@@ -22,7 +24,7 @@ const HASH_PREFIX = "#s-";
 const urlFor = (f: Filters, openId: number | null) =>
   `${toSearch(f) || "?"}${openId ? `${HASH_PREFIX}${openId}` : ""}`;
 
-export function CaseLeaderboardPage({ cases, lastUpdated }: Props) {
+export function CaseLeaderboardPage({ cases, lastUpdated, lastReviewed }: Props) {
   const [filters, setFilters] = useState<Filters>({});
   const [openId, setOpenId] = useState<number | null>(null);
   // Suspect to scroll to and focus once its row has rendered.
@@ -98,7 +100,13 @@ export function CaseLeaderboardPage({ cases, lastUpdated }: Props) {
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
             Un marcador no oficial que rastrea acusaciones y condenas en casos de corrupción en España.
           </p>
-          {lastUpdated && <p className="text-xs text-muted-foreground mt-1">Última actualización: {lastUpdated}</p>}
+          <p className="text-xs text-muted-foreground mt-1">
+            {lastUpdated && <>Última actualización: {lastUpdated} · </>}
+            <a href="/cambios" className="underline underline-offset-2 hover:text-foreground rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+              Registro de cambios
+            </a>
+            {lastReviewed && <> (revisado el {lastReviewed})</>}
+          </p>
         </header>
 
         <FilterBar
