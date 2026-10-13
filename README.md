@@ -1,70 +1,134 @@
 # España Corrupta
 
-Un marcador no oficial que rastrea acusaciones y sentencias en casos de corrupción en España. Este es un sitio web estático construido con Next.js y alojado en Firebase Hosting.
+Unofficial static leaderboard of Spanish corruption court cases: suspects, charges, procedural status and sentences, across all parties, national and regional level, for causes open or resolved since 2018-01-01. The site is in Spanish.
 
-## Empezando
+Live site: <https://corruption-ranking.web.app>
 
-Sigue estas instrucciones para obtener una copia local del proyecto en funcionamiento para desarrollo y pruebas, y para desplegarlo en producción.
+## Editorial criteria
 
-### Prerrequisitos
+- Only causes opened by a court qualify (`investigado`, `procesado`, `condenado`, `absuelto`, `sobreseido`). Complaints (querellas, denuncias) alone do not.
+- A status is a judicial stage, not a finding of guilt. `investigado` never means convicted.
+- Dismissals and acquittals are kept with their true status.
+- One bar for every party: same sources, same scepticism. Only crimes in the `CRIMES` enum count; political offences are out of scope. Municipal-only cases are out of scope.
+- Every record cites HTTPS sources, at least one not Wikipedia.
+- Every data run, with or without record changes, is logged in a public changelog at `/cambios`, also available as RSS at `/cambios/feed.xml`.
 
-Asegúrate de tener instalado lo siguiente:
+## Features
 
-*   [Node.js](https://nodejs.org/) (versión 18 o superior)
-*   [Firebase CLI](https://firebase.google.com/docs/cli#install-cli-windows)
+- Leaderboard with filters kept in the URL (`?cat&partido&estado&anio&delito&caso&q`). `cat`, `partido`, `estado`, `anio` and `delito` accept several comma-separated values (OR within a facet, AND across facets).
+- Suspect detail: causes, charges, convictions, sentences, amount, sources, related suspects and a per-suspect change history. The open suspect is deep-linkable (`#s-<id>`).
+- Insights panel: charts of the filtered set (recharts, lazy-loaded only when the panel is open).
+- Changelog page and RSS feed.
+- SEO: canonical URLs, Open Graph, `robots.txt`, sitemap, `Dataset` JSON-LD.
 
-### Instalación
+## Stack
 
-1.  Clona el repositorio o descarga el código fuente.
-2.  Abre una terminal en el directorio raíz del proyecto.
-3.  Instala las dependencias del proyecto ejecutando:
+- Next.js 16 (static export), React 19, TypeScript 7 (`tsc`; TypeScript 6 is aliased as `typescript` for typescript-eslint and Next's type check)
+- Tailwind CSS v4, Radix UI / shadcn, lucide-react, recharts
+- Zod 4 for the data schema
+- ESLint 9 (flat config, `eslint-config-next`), tests with `node:test` through `tsx`
+- Firebase Hosting, GitHub Actions
 
-    ```bash
-    npm install
-    ```
+## Getting started
 
-## Desarrollo Local
-
-Para iniciar el servidor de desarrollo y ver el sitio en tu máquina local, ejecuta:
+Prerequisite: Node.js 20.9 or newer (the minimum Next.js 16 declares; CI uses the runner's default Node).
 
 ```bash
+npm ci
 npm run dev
 ```
 
-Abre [http://localhost:9002](http://localhost:9002) en tu navegador para ver el resultado.
+Open <http://localhost:9002>.
 
-Puedes empezar a editar la página modificando `src/app/page.tsx`. La página se actualiza automáticamente a medida que editas el archivo.
+| Script | What it does |
+| --- | --- |
+| `npm run dev` | Next.js dev server with Turbopack on port 9002 |
+| `npm run build` | Production static export to `out/` |
+| `npm run start` | `next start`; does not work with `output: 'export'`. Serve `out/` with any static file server instead |
+| `npm run lint` | ESLint, including jsx-a11y rules |
+| `npm test` | Unit tests, `src/lib/*.test.ts` |
+| `npm run typecheck` | `tsc --noEmit` |
+| `npm run validate-data` | Validate `data.json` and `changelog.json` against the Zod schema and cross-file rules |
 
-## Compilación y Despliegue
+## Project structure
 
-Este sitio está configurado para ser un sitio estático y desplegado en Firebase Hosting.
-
-### 1. Compilar el Sitio
-
-Para compilar el sitio para producción, ejecuta el siguiente comando:
-
-```bash
-npm run build
+```text
+src/
+  app/
+    page.tsx            Leaderboard (parses data at build time, Dataset JSON-LD)
+    layout.tsx          Metadata, canonical, Open Graph
+    cambios/page.tsx    Public changelog (/cambios)
+    cambios/feed.xml/   RSS route handler
+    robots.ts, sitemap.ts
+    globals.css         Design tokens (@theme)
+  components/           Leaderboard, filters, insights, nav links; ui/ holds shadcn primitives
+  lib/
+    schema.ts           Single source of truth: Zod schema, types, view derivation
+    data.json           The dataset
+    changelog.json      Public changelog, newest entry first
+    changelog.ts        Parses changelog.json
+    filters.ts          URL filter parsing and patches
+    insights.ts         Counts behind the charts
+    status-ui.ts        Status/category labels, icons, classes
+    site.ts             Canonical origin, shared description, content dates
+scripts/validate-data.ts   Data validation entry point
+.claude/skills/update-data/SKILL.md   Data update procedure
+.github/workflows/      Firebase Hosting deploys
+firebase.json           Hosting config (public dir: out, cleanUrls)
 ```
 
-Este comando generará una versión estática y optimizada de tu sitio en la carpeta `out`.
+## Data model
 
-### 2. Desplegar en Firebase Hosting
+`src/lib/schema.ts` is the single source of truth; read its JSDoc for field semantics.
 
-Sigue estos pasos para desplegar tu sitio:
+- One record in `data.json` is one suspect (`id`, `suspect`, `title`, `categories`, optional `party`, `startYear`, `lastUpdated`, `sourceUrls`, optional `court` and `summary` up to 300 characters).
+- `causes[]` holds each court case the suspect is in, with its own data:
+  - `status`: `investigado`, `procesado`, `condenado`, `absuelto` or `sobreseido`.
+  - `charges[]` and, only when `condenado`, `convictions[]` (a subset of charges), both from the `CRIMES` enum.
+  - `sentence` only when `condenado`: `date`, `prisonMonths`, `disqualificationMonths`, `fineEur`, `suspended`, `firm`.
+  - `amount`: total EUR of the whole case, identical for every suspect sharing the cause.
+- Suspects sharing a cause name are related. Counts shown in the UI are derived in `deriveView`, never stored.
+- `categories` are roles (`gobierno`, `familia`, `partido`, `institucional`, `entorno`); `party` comes from the `PARTIES` enum and is separate.
+- `changelog.json` entries: `date`, `summary`, `changes[]` (`nuevo`, `actualizado` or `eliminado`, with record `ids`, `description`, optional `rationale` and `sourceUrls`), `notAdded[]`, `unverifiable[]`, `watchlist[]`, `prs[]`. Text is Spanish.
 
-1.  **Inicia sesión en Firebase:**
-    Si aún no lo has hecho, inicia sesión en tu cuenta de Google a través de la Firebase CLI:
+`npm run validate-data` enforces, among others:
 
-    ```bash
-    firebase login
-    ```
+- convictions and sentence present if and only if the cause is `condenado`; convictions are a subset of charges; a sentence has prison, disqualification or a fine;
+- unique ids, suspect names and cause names per suspect; same-name causes agree on `amount`;
+- HTTPS-only, non-duplicate sources, at least one not Wikipedia;
+- changelog entries newest first with unique dates, known record ids, and the newest entry not older than the newest `lastUpdated`.
 
-2.  **Despliega el sitio:**
-    Usa el siguiente comando para desplegar los contenidos de la carpeta `out` en Firebase Hosting:
+Never bump `lastUpdated` without a content change.
 
-    ```bash
-    firebase deploy --only hosting
-    ```
+## Workflows
 
-Una vez que el comando finalice, la CLI de Firebase te proporcionará la URL donde tu sitio está desplegado y accesible públicamente.
+### Weekly data update
+
+The `/update-data` Claude Code skill (`.claude/skills/update-data/SKILL.md`) is run weekly by a local Claude Code scheduled task:
+
+1. Research per cause (not per suspect). Active causes every run, settled causes monthly. One discovery pass for new qualifying causes.
+2. Edit `src/lib/data.json`.
+3. Prepend an entry to `src/lib/changelog.json`. This happens on every run, even when no record changed.
+4. Run `npm run validate-data && npm run typecheck && npm run build`.
+5. Open a PR (`chore(data): case update YYYY-MM-DD`, or `case review` when only the changelog changed).
+
+A human reviews and merges. The skill never merges.
+
+### CI/CD
+
+Both workflows run `npm ci && npm run validate-data && npm run lint && npm test && npm run build`. `npm run typecheck` is not a separate step; Next's build type-checks and type errors fail the build.
+
+- Pull request (`firebase-hosting-pull-request.yml`): a `build` job runs the checks; a `preview` job then repeats them and deploys a Firebase Hosting preview channel. It is skipped for Dependabot and for PRs from forks.
+- Push to `main` (`firebase-hosting-merge.yml`): runs the same checks and deploys to the `live` channel of the `corruption-ranking` project.
+
+### Contributing a data correction
+
+1. Edit `src/lib/data.json` following the schema rules above. Cite sources and do not upgrade a status beyond what a court has done.
+2. Bump `lastUpdated` on the records you changed, and only those.
+3. Prepend an entry to `src/lib/changelog.json` describing the change.
+4. Run `npm run validate-data`.
+5. Open a PR.
+
+## Disclaimer
+
+No license file is present in the repository. Data comes from press and judicial sources. Statuses describe judicial stages, not findings of guilt.
