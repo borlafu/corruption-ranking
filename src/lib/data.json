@@ -2935,18 +2935,24 @@
           "date": "2023-02-13",
           "disqualificationMonths": 156,
           "firm": false
+        },
+        "clemency": {
+          "kind": "indulto",
+          "date": "2021-06-22",
+          "scope": "parcial"
         }
       }
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-07",
+    "lastUpdated": "2026-10-13",
     "summary": "14-oct-2019: 13 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo revisa la pena tras la reforma penal y mantiene 13 años de inhabilitación por malversación. 30-sep-2024: deniega la amnistía. 6-oct-2026: el Constitucional la avala.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
       "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
       "https://www.eldiario.es/agencias/supremo-confirma-no-amnistiar-malversacion-junqueras_1_11692918.html",
-      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
+      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx"
     ]
   },
   {
@@ -2971,17 +2977,23 @@
           "date": "2023-02-13",
           "disqualificationMonths": 144,
           "firm": false
+        },
+        "clemency": {
+          "kind": "indulto",
+          "date": "2021-06-22",
+          "scope": "parcial"
         }
       }
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-07",
+    "lastUpdated": "2026-10-13",
     "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación al revisar la sentencia. 6-oct-2026: el Constitucional avala amnistiar la malversación y el Supremo debe pronunciarse de nuevo.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
       "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
-      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
+      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx"
     ]
   },
   {
@@ -3006,17 +3018,23 @@
           "date": "2023-02-13",
           "disqualificationMonths": 144,
           "firm": false
+        },
+        "clemency": {
+          "kind": "indulto",
+          "date": "2021-06-22",
+          "scope": "parcial"
         }
       }
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-07",
+    "lastUpdated": "2026-10-13",
     "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultada el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación. 6-oct-2026: el Constitucional estima su recurso y avala amnistiar la malversación; el Supremo debe aplicarla.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
       "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
-      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
+      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx"
     ]
   },
   {
@@ -3042,17 +3060,23 @@
           "date": "2023-02-13",
           "disqualificationMonths": 144,
           "firm": false
+        },
+        "clemency": {
+          "kind": "indulto",
+          "date": "2021-06-22",
+          "scope": "parcial"
         }
       }
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-07",
+    "lastUpdated": "2026-10-13",
     "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación al revisar la sentencia. 6-oct-2026: el Constitucional avala amnistiar la malversación del procés.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
       "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
-      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html"
+      "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
+      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx"
     ]
   },
   {
@@ -3208,17 +3232,23 @@
           "disqualificationMonths": 156,
           "fineEur": 36000,
           "firm": true
+        },
+        "clemency": {
+          "kind": "indulto",
+          "date": "2026-07-28",
+          "scope": "parcial"
         }
       }
     ],
     "court": "Tribunal Superior de Justicia de Cataluña",
     "startYear": 2020,
-    "lastUpdated": "2026-10-07",
-    "summary": "30-mar-2023: condenada por fraccionar contratos de la Institució de les Lletres Catalanes para favorecer a un amigo; 4a6m de prisión, 13 años de inhabilitación y 36.000 € de multa. jul-2026: el Gobierno le indulta la prisión; 4-sep-2026 el TSJC la da por conmutada.",
+    "lastUpdated": "2026-10-13",
+    "summary": "30-mar-2023: condenada por fraccionar contratos de la Institució de les Lletres Catalanes para favorecer a un amigo; 4a6m de prisión, 13 años de inhabilitación y 36.000 € de multa. 28-jul-2026: indulto parcial del Gobierno, que rebaja la prisión a 2 años; 4-sep-2026 el TSJC la da por conmutada.",
     "sourceUrls": [
       "https://www.eldiario.es/catalunya/justicia-da-conmutada-pena-prision-corrupcion-laura-borras-indulto-gobierno_1_13486760.html",
       "https://www.eldiario.es/politica/supremo-revisa-condena-4-anos-prision-laura-borras_1_12023792.html",
-      "https://www.eldiario.es/catalunya/supremo-mantiene-laura-borras-escano-parlament-despues-condena-corrupcion_1_10645105.html"
+      "https://www.eldiario.es/catalunya/supremo-mantiene-laura-borras-escano-parlament-despues-condena-corrupcion_1_10645105.html",
+      "https://es.euronews.com/my-europe/2026/07/28/el-gobierno-concede-un-indulto-parcial-a-laura-borras-expresidenta-de-junts"
     ]
   },
   {
