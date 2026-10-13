@@ -1,5 +1,5 @@
 import { Briefcase, Handshake, Landmark, Users, Vote, type LucideIcon } from "lucide-react";
-import type { Allegiance, CaseStatus, ChangeKind, Party } from "@/lib/schema";
+import type { Allegiance, CaseStatus, ChangeKind, Clemency, Party } from "@/lib/schema";
 
 // Class names are spelled out in full so Tailwind can detect them.
 export const statusConfig: Record<CaseStatus, { label: string; className: string }> = {
@@ -49,3 +49,19 @@ export const KIND_LABEL: Record<ChangeKind, string> = { nuevo: "Alta", actualiza
 
 /** Anchor of a changelog entry on /cambios. */
 export const entryId = (date: string) => `r-${date}`;
+
+/** Neutral, not a status colour: clemency never changes the status shown beside it. */
+export const clemencyClassName = "border-border bg-muted text-foreground";
+
+/** "Indultado/a (parcial)", "Amnistiado/a". */
+export function clemencyLabel(c: Clemency): string {
+  return c.kind === "indulto" ? `Indultado/a (${c.scope})` : "Amnistiado/a";
+}
+
+/**
+ * Short suffix for the penalty column. Names the measure, not the penalty: a partial indulto
+ * may have remitted a part (prison) that the displayed penalty no longer shows.
+ */
+export function clemencySuffix(c: Clemency): string {
+  return c.kind === "indulto" ? `indulto ${c.scope}` : "amnistía";
+}

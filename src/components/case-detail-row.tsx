@@ -4,7 +4,7 @@ import { FilterLink, SuspectLink } from "@/components/nav";
 import { SourceList } from "@/components/source-list";
 import { formatPenalty, type SuspectView } from "@/lib/schema";
 import { slug } from "@/lib/filters";
-import { KIND_LABEL, entryId, formatDate, formatEur, statusConfig } from "@/lib/status-ui";
+import { KIND_LABEL, clemencyClassName, clemencyLabel, entryId, formatDate, formatEur, statusConfig } from "@/lib/status-ui";
 
 type Props = {
   caseData: SuspectView;
@@ -43,6 +43,11 @@ export function CaseDetailRow({ caseData: c, allCases }: Props) {
                   <span className={`${badgeVariants({ variant: "outline" })} ${statusConfig[cause.status].className}`}>
                     {statusConfig[cause.status].label}
                   </span>
+                  {cause.clemency && (
+                    <span className={`${badgeVariants({ variant: "outline" })} ${clemencyClassName}`}>
+                      {clemencyLabel(cause.clemency)} · <time dateTime={cause.clemency.date}>{formatDate(cause.clemency.date)}</time>
+                    </span>
+                  )}
                   {cause.amount !== undefined && (
                     <span className="flex items-center gap-1 text-muted-foreground">
                       <Euro className="h-3.5 w-3.5 shrink-0" aria-hidden />

@@ -1,56 +1,102 @@
 [
   {
     "date": "2026-10-13",
-    "prs": [58],
-    "summary": "Revisión semanal: se investigaron 26 causas activas y se hizo una pasada de descubrimiento de causas nuevas. Se actualizaron 11 registros con hitos procesales recientes; no hay cambios de estado, altas ni bajas. Las causas ya resueltas no se revisaron porque se verificaron el 7 y el 8 de octubre y el repaso mensual aún no toca. El total se mantiene en 154 registros.",
+    "prs": [
+      58
+    ],
+    "summary": "Revisión semanal: se investigaron 26 causas activas y se hizo una pasada de descubrimiento de causas nuevas. Se actualizaron 11 registros con hitos procesales recientes; no hay cambios de estado, altas ni bajas. Las causas ya resueltas no se revisaron porque se verificaron el 7 y el 8 de octubre y el repaso mensual aún no toca. El total se mantiene en 154 registros. Además, los indultos pasan a registrarse como dato propio de cada causa, sin cambiar su estado: se marcan los de Junqueras, Romeva, Bassa, Turull y Borràs.",
     "changes": [
       {
         "kind": "actualizado",
-        "ids": [7],
+        "ids": [
+          7
+        ],
         "description": "La Fiscalía presentó el 9-oct-2026 un recurso de apelación ante el TSJ de Extremadura contra la sentencia del Caso David Sánchez. El estado no cambia: condenado, sentencia no firme.",
         "rationale": "Recurso confirmado en dos medios (The Objective y moncloa.com) el 9-oct-2026."
       },
       {
         "kind": "actualizado",
-        "ids": [73],
+        "ids": [
+          73
+        ],
         "description": "La pieza del campo de golf del Canal fue a juicio en la Audiencia Nacional el 13-oct-2026. La Fiscalía pide 6 años de prisión y 550.000 € por cohecho.",
         "rationale": "Inicio del juicio oral de la pieza del Caso Lezo."
       },
       {
         "kind": "actualizado",
-        "ids": [98, 99, 100],
+        "ids": [
+          98,
+          99,
+          100
+        ],
         "description": "El 6-oct-2026 el juez Llarena levantó provisionalmente las órdenes de detención nacionales contra Puigdemont, Comín y Puig tras la sentencia del Tribunal Constitucional sobre Bassa. Esto no supone aplicar la amnistía. El estado sigue siendo procesado.",
         "rationale": "Auto del Tribunal Supremo recogido por el Poder Judicial, 3Cat y elDiario.es."
       },
       {
         "kind": "actualizado",
-        "ids": [104],
+        "ids": [
+          104
+        ],
         "description": "Juicio del Caso 3% fijado del 8-feb al 4-mar-2027 en la Audiencia Nacional.",
         "rationale": "Fecha publicada por El Món en ene-2026; es la única fuente localizada."
       },
       {
         "kind": "actualizado",
-        "ids": [106],
+        "ids": [
+          106
+        ],
         "description": "El juicio del Caso Pujol quedó visto para sentencia el 14-may-2026; la Fiscalía pide 29 años de prisión. El texto anterior decía que el juicio se celebraba hasta abr-2026.",
         "rationale": "Corrección de la fecha de cierre del juicio según Noticias de Navarra y Deia."
       },
       {
         "kind": "actualizado",
-        "ids": [107, 108],
+        "ids": [
+          107,
+          108
+        ],
         "description": "El 4-sep-2026 el TSJC rechazó aplicar la amnistía y mantuvo sus cuestiones prejudiciales ante el TJUE en el Caso organización del 1-O.",
         "rationale": "Resolución del TSJC recogida por Infobae y El Nacional."
       },
       {
         "kind": "actualizado",
-        "ids": [109],
+        "ids": [
+          109
+        ],
         "description": "El juicio del Caso Bio Wood Niebla pasa de may-2026 a celebrarse del 15-mar al 7-abr-2027 en la Sección 4ª de la Audiencia de Sevilla. No se conoce el motivo del aplazamiento.",
         "rationale": "Calendario publicado por EFE a través de Vivir Ediciones."
       },
       {
         "kind": "actualizado",
-        "ids": [130],
+        "ids": [
+          130
+        ],
         "description": "La pena de prisión de Ana Valls pasa de 63 a 54 meses: el TSJA la redujo a 4 años y 6 meses por dilaciones indebidas el 24-abr-2026. Se mantiene la fecha de la sentencia de primera instancia, igual que en el registro de Villén. Sigue sin ser firme: cabe casación.",
         "rationale": "Reducción de pena por dilaciones indebidas, recogida por OKDiario y por EFE a través de Vivir Ediciones."
+      },
+      {
+        "kind": "actualizado",
+        "ids": [
+          94,
+          95,
+          96,
+          97
+        ],
+        "description": "Se registra como dato estructurado el indulto parcial del 22-jun-2021 (perdón de la prisión pendiente; la inhabilitación se mantiene). El estado sigue siendo condenado.",
+        "rationale": "Un indulto remite la pena, no la condena: los hechos y la sentencia se mantienen en el registro.",
+        "sourceUrls": [
+          "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx"
+        ]
+      },
+      {
+        "kind": "actualizado",
+        "ids": [
+          102
+        ],
+        "description": "Se registra el indulto parcial del 28-jul-2026, que rebaja la prisión a 2 años; multa e inhabilitación se mantienen. El estado sigue siendo condenada.",
+        "rationale": "Un indulto remite la pena, no la condena: los hechos y la sentencia se mantienen en el registro.",
+        "sourceUrls": [
+          "https://es.euronews.com/my-europe/2026/07/28/el-gobierno-concede-un-indulto-parcial-a-laura-borras-expresidenta-de-junts"
+        ]
       }
     ],
     "notAdded": [
@@ -79,81 +125,259 @@
       "Caso Hidrocarburos"
     ],
     "watchlist": [
-      { "text": "Sentencia de Kitchen, vista para sentencia desde el 28-jul-2026.", "ids": [45, 46, 47, 48, 49, 50] },
-      { "text": "Sentencia del Caso Pujol en la Audiencia Nacional.", "ids": [106] },
-      { "text": "Aplicación de la amnistía a la malversación por el Supremo tras la resolución del Tribunal Constitucional del 6-oct-2026.", "ids": [94, 95, 96, 97, 98, 99, 100] },
-      { "text": "Decisión del TSJC sobre la amnistía en el Caso organización del 1-O.", "ids": [107, 108] },
-      { "text": "Nuevas sentencias del Caso ERE en Sevilla cuando responda el TJUE.", "ids": [14, 15, 20, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 137] },
-      { "text": "Apelación ante el TSJ de Extremadura en el Caso David Sánchez.", "ids": [7, 9, 148, 149, 150, 151, 152, 153, 154, 155, 156] },
-      { "text": "Casación del Caso Erial.", "ids": [69, 70, 71] },
-      { "text": "Casación del Caso Rato.", "ids": [78] },
-      { "text": "Casación del Caso Perla Negra y sentencia de la trama eólica en Valladolid.", "ids": [83, 84] },
-      { "text": "Apelación del Caso Invercaria ante el TSJA.", "ids": [117, 141] },
-      { "text": "Casación del Caso Faffe.", "ids": [129, 130] },
-      { "text": "Veredicto de la pieza del golf del Canal (Caso Lezo), previsto después del 6-nov-2026.", "ids": [73] },
-      { "text": "Juicios señalados: Lezo Emissao (12-ene-2027), Caso 3% (8-feb-2027), Bio Wood Niebla (15-mar-2027), Lezo Navalcarnero (28-jun-2027) y Desaladora La Sal II (15-sep-2027).", "ids": [73, 104, 109] },
-      { "text": "Juicio con jurado de Begoña Gómez, sin fecha fijada.", "ids": [2] },
-      { "text": "Declaración de Cerdán en el Caso Leire Díez; la Fiscalía considera prematura imputar al PSOE como persona jurídica y el juez Pedraz lo descartó por ahora el 9-oct-2026.", "ids": [6] },
-      { "text": "Declaración de Nervis Villalobos el 30-oct-2026.", "ids": [24] },
-      { "text": "Caso Plus Ultra: Verhoeven declara el 16-oct-2026 y las hermanas Rodríguez Espinosa el 30-nov-2026.", "ids": [41, 38, 39] }
+      {
+        "text": "Sentencia de Kitchen, vista para sentencia desde el 28-jul-2026.",
+        "ids": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      {
+        "text": "Sentencia del Caso Pujol en la Audiencia Nacional.",
+        "ids": [
+          106
+        ]
+      },
+      {
+        "text": "Aplicación de la amnistía a la malversación por el Supremo tras la resolución del Tribunal Constitucional del 6-oct-2026.",
+        "ids": [
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100
+        ]
+      },
+      {
+        "text": "Decisión del TSJC sobre la amnistía en el Caso organización del 1-O.",
+        "ids": [
+          107,
+          108
+        ]
+      },
+      {
+        "text": "Nuevas sentencias del Caso ERE en Sevilla cuando responda el TJUE.",
+        "ids": [
+          14,
+          15,
+          20,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          137
+        ]
+      },
+      {
+        "text": "Apelación ante el TSJ de Extremadura en el Caso David Sánchez.",
+        "ids": [
+          7,
+          9,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ]
+      },
+      {
+        "text": "Casación del Caso Erial.",
+        "ids": [
+          69,
+          70,
+          71
+        ]
+      },
+      {
+        "text": "Casación del Caso Rato.",
+        "ids": [
+          78
+        ]
+      },
+      {
+        "text": "Casación del Caso Perla Negra y sentencia de la trama eólica en Valladolid.",
+        "ids": [
+          83,
+          84
+        ]
+      },
+      {
+        "text": "Apelación del Caso Invercaria ante el TSJA.",
+        "ids": [
+          117,
+          141
+        ]
+      },
+      {
+        "text": "Casación del Caso Faffe.",
+        "ids": [
+          129,
+          130
+        ]
+      },
+      {
+        "text": "Veredicto de la pieza del golf del Canal (Caso Lezo), previsto después del 6-nov-2026.",
+        "ids": [
+          73
+        ]
+      },
+      {
+        "text": "Juicios señalados: Lezo Emissao (12-ene-2027), Caso 3% (8-feb-2027), Bio Wood Niebla (15-mar-2027), Lezo Navalcarnero (28-jun-2027) y Desaladora La Sal II (15-sep-2027).",
+        "ids": [
+          73,
+          104,
+          109
+        ]
+      },
+      {
+        "text": "Juicio con jurado de Begoña Gómez, sin fecha fijada.",
+        "ids": [
+          2
+        ]
+      },
+      {
+        "text": "Declaración de Cerdán en el Caso Leire Díez; la Fiscalía considera prematura imputar al PSOE como persona jurídica y el juez Pedraz lo descartó por ahora el 9-oct-2026.",
+        "ids": [
+          6
+        ]
+      },
+      {
+        "text": "Declaración de Nervis Villalobos el 30-oct-2026.",
+        "ids": [
+          24
+        ]
+      },
+      {
+        "text": "Caso Plus Ultra: Verhoeven declara el 16-oct-2026 y las hermanas Rodríguez Espinosa el 30-nov-2026.",
+        "ids": [
+          41,
+          38,
+          39
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-08",
-    "prs": [51, 52, 53],
+    "prs": [
+      51,
+      52,
+      53
+    ],
     "summary": "Se completó la ampliación del conjunto de datos a todos los partidos con las últimas tandas de descubrimiento: Vox, Junts, ERC, PNV, Cs y los casos autonómicos del PSOE, y después los condenados del Caso David Sánchez de la Diputación de Badajoz. El total pasó de 91 a 154 registros. El criterio es el mismo para todos los partidos: causa abierta por un tribunal, ámbito nacional o autonómico y causa abierta o resuelta desde el 1-ene-2018. La mayoría de registros se apoyan en una sola cabecera de prensa, por la limitación de las herramientas de búsqueda de esa sesión.",
     "changes": [
       {
         "kind": "nuevo",
-        "ids": [94, 95, 96, 97, 98, 99, 100],
+        "ids": [
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
         "description": "Caso procés, solo en lo referido a malversación: Junqueras, Romeva, Bassa y Turull, condenados por malversación (inhabilitación de 12 a 13 años, sin firmeza), y Puigdemont, Comín y Puig, procesados sin juicio. Los cuatro condenados figuran como no firmes porque el 6-oct-2026 el Tribunal Constitucional ordenó al Supremo pronunciarse de nuevo sobre la amnistía de la malversación.",
         "rationale": "Regla de alcance: entran quienes tienen malversación; quedan fuera los condenados solo por sedición o desobediencia (Rull, Forn, Forcadell, Sànchez, Cuixart, Borràs, Mundó y Vila). El Tribunal de Cuentas no se usa como fuente de estado."
       },
       {
         "kind": "nuevo",
-        "ids": [101],
+        "ids": [
+          101
+        ],
         "description": "Oriol Pujol Ferrusola, Caso ITV: condenado por cohecho, falsedad documental y tráfico de influencias por conformidad ante la Audiencia de Barcelona el 24-jul-2018 (30 meses de prisión, 24 de inhabilitación y 76.000 € de multa, firme)."
       },
       {
         "kind": "nuevo",
-        "ids": [102],
+        "ids": [
+          102
+        ],
         "description": "Laura Borràs, Caso ILC: condenada por prevaricación y falsedad documental por el TSJC el 30-mar-2023 (54 meses de prisión, 156 de inhabilitación y 36.000 € de multa). El Gobierno le indultó la prisión en jul-2026 y el TSJC la dio por conmutada el 4-sep-2026; el resto de la pena sigue en vigor."
       },
       {
         "kind": "nuevo",
-        "ids": [103],
+        "ids": [
+          103
+        ],
         "description": "Daniel Osàcar, Caso Palau de la Música: condenado por blanqueo de capitales por la Audiencia de Barcelona el 15-ene-2018 (53 meses de prisión)."
       },
       {
         "kind": "nuevo",
-        "ids": [104],
+        "ids": [
+          104
+        ],
         "description": "Germà Gordó, Caso 3%: procesado por blanqueo de capitales desde la apertura de juicio oral del 8-nov-2022; juicio pendiente."
       },
       {
         "kind": "nuevo",
-        "ids": [105, 106],
+        "ids": [
+          105,
+          106
+        ],
         "description": "Jordi Pujol Soley (sobreseído el 27-abr-2026: la Audiencia Nacional lo apartó del juicio por deterioro cognitivo) y Jordi Pujol Ferrusola (procesado por blanqueo de capitales, fraude a la Hacienda Pública y falsedad documental; juicio celebrado entre nov-2025 y abr-2026 sin sentencia) en el Caso Pujol."
       },
       {
         "kind": "nuevo",
-        "ids": [107, 108],
+        "ids": [
+          107,
+          108
+        ],
         "description": "Josep Maria Jové y Lluís Salvadó, Caso organización del 1-O: procesados solo por malversación. Apertura de juicio oral el 21-nov-2022; el 30-jul-2024 el TSJC frenó la amnistía y elevó la cuestión al Tribunal Constitucional y a Europa."
       },
       {
         "kind": "nuevo",
-        "ids": [109],
+        "ids": [
+          109
+        ],
         "description": "Francisco Serrano (Vox), Caso Bio Wood Niebla: procesado por estafa en la Audiencia Provincial de Sevilla desde el 20-ene-2023; importe de 2,5 M €. Juicio señalado entonces para may-2026.",
         "rationale": "Se le asigna Vox porque se afilió en 2014 y fue candidato en 2015, antes del préstamo de dic-2016. Solo se registra estafa: el fraude de subvenciones no tiene valor equivalente en el esquema de delitos."
       },
       {
         "kind": "nuevo",
-        "ids": [110, 111, 112],
+        "ids": [
+          110,
+          111,
+          112
+        ],
         "description": "Alfredo de Miguel, Koldo Ochandiano y Aitor Tellería, Caso De Miguel (Diputación de Álava): condenados por la Audiencia de Álava el 17-dic-2019 (148, 90 y 61 meses de prisión), con sentencia confirmada por el Supremo el 10-ene-2023 y firme.",
         "rationale": "La asociación ilícita de la sentencia no se registra porque no existe como valor en el esquema de delitos."
       },
       {
         "kind": "nuevo",
-        "ids": [113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128],
+        "ids": [
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128
+        ],
         "description": "Pieza política del Caso ERE: 16 registros con las penas por persona del Supremo de 26-jul-2022. Doce condenados, tres absueltos (Aguado Hinojal, Sánchez García y Medina Varo) y un sobreseído (Soler Márquez). Solo Viera Chacón y Márquez Contreras figuran como firmes, porque su amparo fue rechazado; el resto figura como no firme porque el Tribunal Constitucional anuló o mandó reducir varias condenas en 2024 y la Audiencia de Sevilla elevó la cuestión al TJUE el 15-jul-2025.",
         "rationale": "Datos de la lista de condenados del Supremo y de las resoluciones de amparo del Tribunal Constitucional. El importe de la causa (680.000.000 €) coincide con el de los registros existentes.",
         "sourceUrls": [
@@ -165,12 +389,17 @@
       },
       {
         "kind": "actualizado",
-        "ids": [20],
+        "ids": [
+          20
+        ],
         "description": "Gaspar Zarrías, ya presente por el Caso Leire Díez, incorpora la causa del Caso ERE en lugar de crear un registro duplicado."
       },
       {
         "kind": "nuevo",
-        "ids": [136, 137],
+        "ids": [
+          136,
+          137
+        ],
         "description": "Caso ERE, nuevas piezas: Manuel Recio Menéndez, procesado el 29-abr-2026 por 54,28 M € en ayudas a Boliden Apirsa, y Daniel Alberto Rivera, condenado el 3-jun-2026 a 1 año de prisión y 5 de inhabilitación por ayudas de 37.500 €. El mismo auto de 29-abr-2026 sobreseyó a Antonio Fernández (114) y a Martín Soler (128), lo que se refleja en sus registros.",
         "sourceUrls": [
           "https://www.eldiario.es/sevilla/juez-procesa-siete-ex-altos-cargos-junta-dar-ayudas-54-millones-ere-boliden-minera-aznalcollar_1_13181414.html",
@@ -179,7 +408,11 @@
       },
       {
         "kind": "nuevo",
-        "ids": [138, 139, 140],
+        "ids": [
+          138,
+          139,
+          140
+        ],
         "description": "Caso Avales (Agencia IDEA): Antonio Valverde Ramos y Francisco del Río Muñoz, procesados con apertura de juicio oral el 8-jul-2026 por el aval de 1,18 M € a Cofrutex, y Gaspar Llanes, investigado desde el 20-ene-2026 por el aval de 1,3 M € a Pickman La Cartuja. El caso no lleva importe único porque abarca piezas con cifras muy distintas.",
         "sourceUrls": [
           "https://www.eldebate.com/espana/andalucia/sevilla/20260709/juez-sienta-banquillo-14-ex-altos-cargos-psoe-andalucia-aval-publico-12-millones_437682.html",
@@ -188,18 +421,30 @@
       },
       {
         "kind": "actualizado",
-        "ids": [117, 119, 123],
+        "ids": [
+          117,
+          119,
+          123
+        ],
         "description": "Vallejo Serrano, Rodríguez Román y Cañete Rolloso pasan en el Caso Avales de sobreseído (archivo de 2019) a procesado, al reabrirse el caso como piezas separadas por el juez Vilaplana. Sánchez García (126) y Soler (128) siguen sobreseídos porque no figuran en las piezas reabiertas."
       },
       {
         "kind": "nuevo",
-        "ids": [141],
+        "ids": [
+          141
+        ],
         "description": "Tomás Pérez Sauquillo, Caso Invercaria: condenado el 20-jul-2026 a 3 años y 6 meses de prisión y 6 años de inhabilitación, con 1.180.000 € a la Agencia IDEA. Francisco Vallejo (117) incorpora la misma causa con su propia pena (3 años y 6 meses de prisión y 6 años y 6 meses de inhabilitación).",
-        "sourceUrls": ["https://www.canalsur.es/noticias/andalucia/condena-tres-anos-vallejo-perez_1_1423981.html"]
+        "sourceUrls": [
+          "https://www.canalsur.es/noticias/andalucia/condena-tres-anos-vallejo-perez_1_1423981.html"
+        ]
       },
       {
         "kind": "nuevo",
-        "ids": [129, 130, 135],
+        "ids": [
+          129,
+          130,
+          135
+        ],
         "description": "Caso Faffe: Fernando José Villén Rueda y Ana Valls, condenados por jurado el 21-sep-2023 por malversación, y Antonio Torres, condenado el 30-abr-2025 a 2 años y 3 meses de prisión. Villén suma otra condena de 30-abr-2025 por la contratación en Lebrija (3 años y 6 meses de prisión y 7 de inhabilitación). El TSJA redujo la pena de Villén el 24-abr-2026, pero ninguna fuente accesible indicó la nueva cifra, por lo que el registro conserva la anterior. Solo Torres figura con partido (PSOE).",
         "sourceUrls": [
           "https://okdiario.com/andalucia/socialista-que-gasto-32-000-prostibulos-condenado-nuevo-prision-enchufes-faffe-14693661",
@@ -208,7 +453,14 @@
       },
       {
         "kind": "nuevo",
-        "ids": [131, 132, 133, 142, 143, 144],
+        "ids": [
+          131,
+          132,
+          133,
+          142,
+          143,
+          144
+        ],
         "description": "Caso Mediador: Taishet Fuentes, Álvaro de la Bárcena y Estefanía Margarita González, procesados con apertura de juicio oral a 14 personas el 24-sep-2026; y Marco Antonio Navarro Tacoronte, Francisco Espinosa y Antonio Bautista, condenados el 25-feb-2026 en la primera pieza por cohecho continuado (4 meses y medio, 9 meses y 9 meses de prisión). La causa no lleva importe, igual que el registro existente.",
         "sourceUrls": [
           "https://www.eldiario.es/canariasahora/tribunales/caso-mediador-juicio-tito-berni-general-espinosa-navarro-tacoronte-trama-sobornos_1_13536306.html",
@@ -217,13 +469,21 @@
       },
       {
         "kind": "nuevo",
-        "ids": [145, 146, 147],
+        "ids": [
+          145,
+          146,
+          147
+        ],
         "description": "Caso Mascarillas Canarias (Juzgado de Instrucción nº 7 de Las Palmas, querella de Anticorrupción admitida el 19-jul-2022): Conrado Domínguez, Ana María Pérez y Rayco Rubén González, investigados por la compra de mascarillas pagada por adelantado (4 M €) y no entregada. Ninguno figura con partido.",
-        "sourceUrls": ["https://www.eldiario.es/canariasahora/tribunales/admitida-querella-anticorrupcion-director-servicio-canario-salud-caso-mascarillas_1_9186789.html"]
+        "sourceUrls": [
+          "https://www.eldiario.es/canariasahora/tribunales/admitida-querella-anticorrupcion-director-servicio-canario-salud-caso-mascarillas_1_9186789.html"
+        ]
       },
       {
         "kind": "nuevo",
-        "ids": [134],
+        "ids": [
+          134
+        ],
         "description": "Olga García García, Caso FV Tagus: imputada por prevaricación el 3-jul-2026; la Audiencia de Madrid dejó sin efecto la imputación en jul-2026 por una prórroga de la instrucción fuera de plazo. Se registra como sobreseída. Fondenex ha anunciado que volverá a presentar la denuncia.",
         "sourceUrls": [
           "https://www.eldiario.es/extremadura/politica/juez-peinado-imputa-exconsejera-extremena-olga-garcia-prevaricacion-macroplanta-solar-alcantara_1_13355663.html",
@@ -232,7 +492,17 @@
       },
       {
         "kind": "nuevo",
-        "ids": [148, 149, 150, 151, 152, 153, 154, 155, 156],
+        "ids": [
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ],
         "description": "Caso David Sánchez: los nueve condenados restantes de la sentencia de la Audiencia Provincial de Badajoz de 14-jul-2026 (once en total con Gallardo y David Sánchez). Todos por un delito de prevaricación administrativa, 108 meses de inhabilitación especial y sin prisión, porque el tribunal rechazó el tráfico de influencias. La sentencia no es firme. Cuatro figuran como PSOE (Cabezas, Martos, Núñez y Calderón) y cinco son funcionarios o exempleados de la Diputación sin partido.",
         "rationale": "Se incorporan por decisión de alcance del mantenedor: las diputaciones provinciales cuentan, igual que el registro de Gallardo ya existente.",
         "sourceUrls": [
@@ -277,21 +547,112 @@
     ],
     "unverifiable": [],
     "watchlist": [
-      { "text": "El Supremo debe pronunciarse sobre la amnistía de la malversación tras la resolución del Tribunal Constitucional del 6-oct-2026.", "ids": [94, 95, 96, 97, 98, 100] },
-      { "text": "Sentencia del Caso Pujol, tras un juicio terminado en abr-2026.", "ids": [105, 106] },
-      { "text": "Juicio del Caso 3%, aún no celebrado.", "ids": [104] },
-      { "text": "Juicio del Caso Bio Wood Niebla, señalado para may-2026 sin resultado publicado.", "ids": [109] },
-      { "text": "Cuestiones ante el Tribunal Constitucional y el TJUE en el Caso organización del 1-O.", "ids": [107, 108] },
-      { "text": "Nuevas sentencias del Caso ERE cuando el TJUE decida sobre su competencia; hasta entonces las condenas no firmes se mantienen.", "ids": [113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124] },
-      { "text": "Recursos del Caso Avales (Cofrutex) y del Caso Invercaria.", "ids": [117, 138, 139, 141] },
-      { "text": "Fecha de juicio y firmeza de las condenas de la primera pieza del Caso Mediador.", "ids": [131, 132, 133, 142, 143, 144] },
-      { "text": "Apelación ante el TSJ de Extremadura en el Caso David Sánchez: recursos de la defensa (15-jul-2026), de Vox (30-jul-2026) y de Hazte Oír (sep-2026).", "ids": [7, 9, 148, 149, 150, 151, 152, 153, 154, 155, 156] },
-      { "text": "Fondenex ha anunciado que volverá a presentar la denuncia en el Caso FV Tagus.", "ids": [134] }
+      {
+        "text": "El Supremo debe pronunciarse sobre la amnistía de la malversación tras la resolución del Tribunal Constitucional del 6-oct-2026.",
+        "ids": [
+          94,
+          95,
+          96,
+          97,
+          98,
+          100
+        ]
+      },
+      {
+        "text": "Sentencia del Caso Pujol, tras un juicio terminado en abr-2026.",
+        "ids": [
+          105,
+          106
+        ]
+      },
+      {
+        "text": "Juicio del Caso 3%, aún no celebrado.",
+        "ids": [
+          104
+        ]
+      },
+      {
+        "text": "Juicio del Caso Bio Wood Niebla, señalado para may-2026 sin resultado publicado.",
+        "ids": [
+          109
+        ]
+      },
+      {
+        "text": "Cuestiones ante el Tribunal Constitucional y el TJUE en el Caso organización del 1-O.",
+        "ids": [
+          107,
+          108
+        ]
+      },
+      {
+        "text": "Nuevas sentencias del Caso ERE cuando el TJUE decida sobre su competencia; hasta entonces las condenas no firmes se mantienen.",
+        "ids": [
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124
+        ]
+      },
+      {
+        "text": "Recursos del Caso Avales (Cofrutex) y del Caso Invercaria.",
+        "ids": [
+          117,
+          138,
+          139,
+          141
+        ]
+      },
+      {
+        "text": "Fecha de juicio y firmeza de las condenas de la primera pieza del Caso Mediador.",
+        "ids": [
+          131,
+          132,
+          133,
+          142,
+          143,
+          144
+        ]
+      },
+      {
+        "text": "Apelación ante el TSJ de Extremadura en el Caso David Sánchez: recursos de la defensa (15-jul-2026), de Vox (30-jul-2026) y de Hazte Oír (sep-2026).",
+        "ids": [
+          7,
+          9,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ]
+      },
+      {
+        "text": "Fondenex ha anunciado que volverá a presentar la denuncia en el Caso FV Tagus.",
+        "ids": [
+          134
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-07",
-    "prs": [44, 46, 49, 50],
+    "prs": [
+      44,
+      46,
+      49,
+      50
+    ],
     "summary": "El conjunto de datos existía desde dic-2025 con actualizaciones manuales; esta fue la primera revisión verificada en la web con el nuevo esquema de datos, y el historial anterior solo consta en git. Cada registro es ahora un sospechoso con una lista de causas judiciales, cada una con su estado, delitos imputados y condenas, y la actualización pasó a un proceso semanal documentado. Se verificaron los registros existentes, se eliminaron dos que no cumplían el criterio de causa abierta por un tribunal y se añadieron registros nuevos, incluida la ampliación a casos del PP y de Podemos e IU. El total pasó de 21 a 91 registros.",
     "changes": [
       {
@@ -308,114 +669,184 @@
       },
       {
         "kind": "actualizado",
-        "ids": [1],
+        "ids": [
+          1
+        ],
         "description": "Álvaro García Ortiz: se sustituyó un enlace caído del Poder Judicial y se anotaron el informe sobre el indulto y las costas. Sentencia del 20-nov-2025 con 2 años de inhabilitación y 7.200 € de multa."
       },
       {
         "kind": "actualizado",
-        "ids": [2],
+        "ids": [
+          2
+        ],
         "description": "Begoña Gómez: apertura de juicio oral con jurado el 21-sep-2026 por tráfico de influencias y malversación."
       },
       {
         "kind": "actualizado",
-        "ids": [3],
+        "ids": [
+          3
+        ],
         "description": "Isabel Pardo de Vera: su causa pasa al Caso Koldo (obra pública, Juzgado Central de Instrucción nº 2 de la Audiencia Nacional), con cinco delitos imputados."
       },
       {
         "kind": "actualizado",
-        "ids": [4, 5],
+        "ids": [
+          4,
+          5
+        ],
         "description": "Koldo García y José Luis Ábalos: el 7-oct-2026 se rechazó la nulidad. Condenados por cuatro delitos y absueltos de tres, que se registran como imputaciones. Se corrigió el tope de pena de Ábalos a 16 años y 6 meses, con penas de 19 años y 8 meses y de 24 años y 3 meses."
       },
       {
         "kind": "actualizado",
-        "ids": [6],
+        "ids": [
+          6
+        ],
         "description": "Santos Cerdán: pasa a tener dos causas (Caso Koldo y Caso Leire Díez), con nueve delitos distintos y la declaración de la gerente del PSOE."
       },
       {
         "kind": "actualizado",
-        "ids": [7, 9],
+        "ids": [
+          7,
+          9
+        ],
         "description": "David Sánchez y Miguel Ángel Gallardo: la sentencia no es firme y está recurrida ante el TSJ de Extremadura; inhabilitaciones de 9 y 18 años."
       },
       {
         "kind": "actualizado",
-        "ids": [8],
+        "ids": [
+          8
+        ],
         "description": "Leire Díez: se eliminó el delito de acoso sin respaldo en las fuentes y se consignaron los nueve delitos del auto del juez Pedraz."
       },
       {
         "kind": "actualizado",
-        "ids": [10],
+        "ids": [
+          10
+        ],
         "description": "Juan Bernardo Fuentes Curbelo: pasa de investigado a procesado, con la Audiencia Provincial de Santa Cruz de Tenerife y seis delitos del auto de apertura de juicio oral."
       },
       {
         "kind": "actualizado",
-        "ids": [11],
+        "ids": [
+          11
+        ],
         "description": "Vicente Fernández Guerrero: tribunal corregido a la Audiencia Nacional y motivo corregido a las comisiones de Hirurok, en lugar de «rescates de la pandemia»."
       },
       {
         "kind": "actualizado",
-        "ids": [12],
+        "ids": [
+          12
+        ],
         "description": "Víctor de Aldama: se eliminó una cifra de 3,7 M € que no estaba respaldada. Condenado solo por organización criminal y cohecho (sentencia del Supremo 418/2026), con 4 años y 6 meses suspendidos. Se añade una segunda causa, Caso Hidrocarburos, como investigado."
       },
       {
         "kind": "actualizado",
-        "ids": [13],
+        "ids": [
+          13
+        ],
         "description": "José Luis Rodríguez Zapatero: tres delitos imputados; el blanqueo es el tema del caso y no se le atribuye personalmente. Se añade la declaración de sep-2026 sobre una comisión del 1 %."
       },
       {
         "kind": "actualizado",
-        "ids": [14, 15],
+        "ids": [
+          14,
+          15
+        ],
         "description": "Griñán y Chaves: el Tribunal Constitucional anuló la malversación y ordenó rebajar las penas en 2024. El tribunal pasa a ser la Audiencia de Sevilla y las condenas figuran como no firmes. Se sustituyó la fuente Wikipedia."
       },
       {
         "kind": "actualizado",
-        "ids": [16],
+        "ids": [
+          16
+        ],
         "description": "Teresa Ribera: el archivo se fecha el 5-mar-2026 y se sustituyó la fuente Wikipedia."
       },
       {
         "kind": "actualizado",
-        "ids": [19],
+        "ids": [
+          19
+        ],
         "description": "Eugenio Domínguez Collado: el tribunal pasa a ser el Tribunal de Instancia nº 1 de Teruel."
       },
       {
         "kind": "actualizado",
-        "ids": [20],
+        "ids": [
+          20
+        ],
         "description": "Gaspar Zarrías: se consignan nueve delitos imputados."
       },
       {
         "kind": "nuevo",
-        "ids": [21, 22, 23],
+        "ids": [
+          21,
+          22,
+          23
+        ],
         "description": "Imputados por el juez Pedraz en el Caso Leire Díez: Ana María Fuentes Pacheco (gerente del PSOE), Mercedes González (directora general de la Guardia Civil) y Manuel Llamas (director adjunto operativo)."
       },
       {
         "kind": "nuevo",
-        "ids": [24],
+        "ids": [
+          24
+        ],
         "description": "Nervis Villalobos, investigado en el Caso Leire Díez (Audiencia Nacional, juez Pedraz): citado el 6-oct-2026 por falsedad documental en su expediente de nacionalidad española («ley de nietos»). Declara el 30-oct-2026."
       },
       {
         "kind": "nuevo",
-        "ids": [25, 26, 27, 28, 29, 30, 31, 32],
+        "ids": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
         "description": "Caso Koldo (Audiencia Nacional, juez Moreno): ocho investigados que faltaban, imputados entre jul-2025 y jul-2026 por malversación, tráfico de influencias, cohecho u organización criminal según el caso. Antxon Alonso (29) consta también en el Caso Leire Díez.",
         "rationale": "Estado confirmado con dos fuentes por registro. La atribución de delitos es más débil para los ids 26 y 27 (redacción conjunta de las tres citaciones del 3-jul-2026) y para los ids 30 a 32, cuyo auto habla de «posibles delitos»."
       },
       {
         "kind": "nuevo",
-        "ids": [33, 34, 35, 36, 37],
+        "ids": [
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
         "description": "Caso Leire Díez (juez Pedraz): cinco investigados que faltaban, entre mayo y jul-2026. Para Oliver (34) y Pérez Dolset (36) se aplicó la lista de nueve delitos que el auto atribuye a Cerdán, Díez, Zarrías, Pérez Dolset y Oliver.",
         "rationale": "La atribución de delitos es más débil para Serrano (33), cuyo auto no enumera delitos."
       },
       {
         "kind": "nuevo",
-        "ids": [38, 39, 40, 41],
+        "ids": [
+          38,
+          39,
+          40,
+          41
+        ],
         "description": "Caso Plus Ultra (juez Calama): Laura y Alba Rodríguez Espinosa y Gertrudis Alcázar, imputadas el 18-jun-2026, y Simon Leendert Verhoeven, entregado en sep-2026, todos por tráfico de influencias y blanqueo de capitales (organización criminal además en Verhoeven)."
       },
       {
         "kind": "nuevo",
-        "ids": [42, 43, 44],
+        "ids": [
+          42,
+          43,
+          44
+        ],
         "description": "Caso Begoña Gómez: Cristina Álvarez, procesada por malversación con apertura de juicio oral el 21-sep-2026; Juan Carlos Barrabés, investigado por tráfico de influencias y prevaricación; y Francisco Martín Aguirre, sobreseído por la Audiencia de Madrid en dic-2025."
       },
       {
         "kind": "nuevo",
-        "ids": [45, 46, 47, 48, 49, 50],
+        "ids": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ],
         "description": "Caso Kitchen: Jorge Fernández Díaz, Francisco Martínez Vázquez, Eugenio Pino, Andrés Gómez Gordo, José Manuel Villarejo y Sergio Ríos Esgueva, procesados por malversación. El juicio quedó visto para sentencia el 28-jul-2026.",
         "rationale": "Delitos tomados del escrito de la Fiscalía.",
         "sourceUrls": [
@@ -426,7 +857,22 @@
       },
       {
         "kind": "nuevo",
-        "ids": [51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64],
+        "ids": [
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
         "description": "Caso Montoro: 14 investigados, entre ellos el exministro Cristóbal Montoro, con los delitos de la imputación a nivel de caso. El Supremo se declaró incompetente el 6-oct-2026 y dejó la cuestión de la competencia en manos de la Audiencia de Tarragona.",
         "sourceUrls": [
           "https://www.infobae.com/espana/2025/07/22/miguel-ferre-abandona-kreab-por-su-imputacion-en-el-caso-montoro-quienes-son-los-otros-27-involucrados-en-la-trama-de-hacienda/",
@@ -436,7 +882,12 @@
       },
       {
         "kind": "nuevo",
-        "ids": [65, 66, 67, 68],
+        "ids": [
+          65,
+          66,
+          67,
+          68
+        ],
         "description": "Caso Gürtel: Luis Bárcenas (condenado también en el Caso Papeles de Bárcenas, 1.072.000 € de reforma de la sede de Génova pagada en B), Alberto López Viejo y Milagrosa Martínez (condenados) y Francisco Camps (absuelto).",
         "sourceUrls": [
           "https://www.libertaddigital.com/espana/2020-10-14/el-supremo-penas-gurtel-condena-pp-contradictoria-6669927/",
@@ -445,25 +896,42 @@
       },
       {
         "kind": "nuevo",
-        "ids": [69, 70, 71],
+        "ids": [
+          69,
+          70,
+          71
+        ],
         "description": "Caso Erial: Eduardo Zaplana, Juan Francisco García y Francisco Grau, condenados por la Audiencia de Valencia (10 años y 5 meses de prisión para Zaplana); recurso de casación pendiente.",
-        "sourceUrls": ["https://www.poderjudicial.es/cgpj/ca/Poder-Judicial/Novetats/La-Audiencia-de-Valencia-condena-a-10-anos-y-5-meses-de-prision-al-expresidente-de-la-Generalitat-Eduardo-Zaplana-por-el--caso-Erial-"]
+        "sourceUrls": [
+          "https://www.poderjudicial.es/cgpj/ca/Poder-Judicial/Novetats/La-Audiencia-de-Valencia-condena-a-10-anos-y-5-meses-de-prision-al-expresidente-de-la-Generalitat-Eduardo-Zaplana-por-el--caso-Erial-"
+        ]
       },
       {
         "kind": "nuevo",
-        "ids": [72],
+        "ids": [
+          72
+        ],
         "description": "Serafín Castellano, Caso Cártel del Fuego: condenado por la Audiencia Nacional.",
-        "sourceUrls": ["https://www.esdiario.com/comunidad-valenciana/valencia/250206/152251/condenado-exconseller-serafin-castellano-cartel-fuego.html"]
+        "sourceUrls": [
+          "https://www.esdiario.com/comunidad-valenciana/valencia/250206/152251/condenado-exconseller-serafin-castellano-cartel-fuego.html"
+        ]
       },
       {
         "kind": "nuevo",
-        "ids": [73],
+        "ids": [
+          73
+        ],
         "description": "Ignacio González, Caso Lezo: procesado; la Audiencia Nacional lo juzga por la pieza del campo de golf del Canal.",
-        "sourceUrls": ["https://www.eldiario.es/politica/audiencia-nacional-juzgara-ignacio-gonzalez-campo-golf-canal-23-anos-despues_1_12865400.html"]
+        "sourceUrls": [
+          "https://www.eldiario.es/politica/audiencia-nacional-juzgara-ignacio-gonzalez-campo-golf-canal-23-anos-despues_1_12865400.html"
+        ]
       },
       {
         "kind": "nuevo",
-        "ids": [74, 81],
+        "ids": [
+          74,
+          81
+        ],
         "description": "Caso Púnica: Francisco Granados, condenado (2 años y medio de prisión), y Juan Carlos Ruiz, condenado en la trama murciana por la Audiencia Nacional.",
         "sourceUrls": [
           "https://orain.eus/es/politica/2026/07/02/dos-anos-medio-carcel-el-exconsejero-madrileno-francisco-granados-punica/",
@@ -472,7 +940,11 @@
       },
       {
         "kind": "nuevo",
-        "ids": [75, 76, 77],
+        "ids": [
+          75,
+          76,
+          77
+        ],
         "description": "Caso Máster: Cristina Cifuentes, absuelta; María Teresa Feito y Cecilia Rosado, condenadas, con la reducción de penas del Supremo aplicada.",
         "sourceUrls": [
           "https://www.elindependiente.com/espana/2021/06/28/el-tribunal-superior-de-madrid-confirma-la-absolucion-de-cifuentes/",
@@ -481,7 +953,9 @@
       },
       {
         "kind": "nuevo",
-        "ids": [78],
+        "ids": [
+          78
+        ],
         "description": "Rodrigo Rato: condenado en el Caso Rato y en el Caso Tarjetas black (apropiación indebida, 4 años y medio de prisión confirmados por el Supremo) y absuelto en el Caso Bankia; casación pendiente. Se añade apropiación indebida al listado de delitos.",
         "sourceUrls": [
           "https://www.elespanol.com/espana/tribunales/20241220/justicia-condena-rodrigo-rato-exvicepresidente-economico-pp-anos-carcel-fraude-fiscal/910159133_0.html",
@@ -490,7 +964,10 @@
       },
       {
         "kind": "nuevo",
-        "ids": [79, 80],
+        "ids": [
+          79,
+          80
+        ],
         "description": "Ramón Luis Valcárcel (procesado) y Antonio Cerdá (investigado) en el Caso Desaladora de Escombreras; Cerdá además figura como absuelto en el Caso Novo Carthago.",
         "sourceUrls": [
           "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/La-juez-ordena-la-apertura-de-juicio-oral-contra-el-expresidente-de-la-Region-de-Murcia-por-delitos-de-prevaricacion--malversacion-y-fraude",
@@ -499,19 +976,36 @@
       },
       {
         "kind": "nuevo",
-        "ids": [82],
+        "ids": [
+          82
+        ],
         "description": "Jaume Matas, Caso Son Espases: condenado; el Supremo confirmó la condena en nov-2021.",
-        "sourceUrls": ["https://theobjective.com/espana/tribunales/2021-11-02/supremo-condena-jaume-matas-son-espases/"]
+        "sourceUrls": [
+          "https://theobjective.com/espana/tribunales/2021-11-02/supremo-condena-jaume-matas-son-espases/"
+        ]
       },
       {
         "kind": "nuevo",
-        "ids": [83, 84],
+        "ids": [
+          83,
+          84
+        ],
         "description": "Caso Perla Negra: Rafael Delgado y Begoña Hernández, condenados; la sentencia de la trama eólica en Valladolid sigue pendiente.",
-        "sourceUrls": ["https://www.diariodeleon.es/castilla-y-leon/250108/1763649/corrupcion-perla-negra-zanja-dos-anos-medio-prision.html"]
+        "sourceUrls": [
+          "https://www.diariodeleon.es/castilla-y-leon/250108/1763649/corrupcion-perla-negra-zanja-dos-anos-medio-prision.html"
+        ]
       },
       {
         "kind": "nuevo",
-        "ids": [85, 86, 87, 88, 89, 90, 91],
+        "ids": [
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
         "description": "Caso Neurona (363.000 €, Juzgado de Instrucción nº 42 de Madrid): Monedero, de Frutos, del Olmo, Val, Deodato, García Ramos (IU) y Castejón, todos sobreseídos. Causa abierta el 16-jul-2020 por administración desleal y malversación; sobreseimiento provisional el 12-dic-2023, ratificado por la Audiencia Provincial de Madrid el 9-oct-2024. Se añade IU como partido.",
         "sourceUrls": [
           "https://www.eldiario.es/politica/archivan-caso-neurona-juez-concluye-no-apropio-fondos-electorales_1_10760967.html",
@@ -520,7 +1014,10 @@
       },
       {
         "kind": "nuevo",
-        "ids": [92, 93],
+        "ids": [
+          92,
+          93
+        ],
         "description": "Caso Niñera: Teresa Arévalo y Gara Santana, investigadas por malversación y sobreseídas el 29-jul-2022.",
         "sourceUrls": [
           "https://www.eldiario.es/agencias/vuelco-caso-ninera-tribunal-deja-efecto-investigado_1_8463727.html",
@@ -558,17 +1055,86 @@
     ],
     "unverifiable": [],
     "watchlist": [
-      { "text": "Sentencia de Kitchen, vista para sentencia desde el 28-jul-2026.", "ids": [45, 46, 47, 48, 49, 50] },
-      { "text": "Casación de Zaplana en el Caso Erial.", "ids": [69, 70, 71] },
-      { "text": "Casación de Rato.", "ids": [78] },
-      { "text": "Sentencia de la trama eólica del Caso Perla Negra en Valladolid.", "ids": [83, 84] },
-      { "text": "Recurso de amparo ante el Tribunal Constitucional y decisión sobre el indulto de García Ortiz; amparo de Ábalos y Koldo.", "ids": [1, 4, 5] },
-      { "text": "Pregunta al TJUE y nuevas sentencias del Caso ERE en Sevilla.", "ids": [14, 15] },
-      { "text": "Apelación ante el TSJ de Extremadura en el Caso David Sánchez.", "ids": [7, 9] },
-      { "text": "Juicio de Begoña Gómez, sin fecha fijada.", "ids": [2] },
-      { "text": "Nervis Villalobos declara el 30-oct-2026.", "ids": [24] },
-      { "text": "Caso Plus Ultra: Verhoeven declara el 16-oct-2026 y las hermanas Rodríguez Espinosa el 30-nov-2026.", "ids": [41, 38, 39] },
-      { "text": "Sentencia del Caso Lezo por la pieza Inassa, vista para sentencia el 7-oct-2026.", "ids": [73] }
+      {
+        "text": "Sentencia de Kitchen, vista para sentencia desde el 28-jul-2026.",
+        "ids": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      {
+        "text": "Casación de Zaplana en el Caso Erial.",
+        "ids": [
+          69,
+          70,
+          71
+        ]
+      },
+      {
+        "text": "Casación de Rato.",
+        "ids": [
+          78
+        ]
+      },
+      {
+        "text": "Sentencia de la trama eólica del Caso Perla Negra en Valladolid.",
+        "ids": [
+          83,
+          84
+        ]
+      },
+      {
+        "text": "Recurso de amparo ante el Tribunal Constitucional y decisión sobre el indulto de García Ortiz; amparo de Ábalos y Koldo.",
+        "ids": [
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Pregunta al TJUE y nuevas sentencias del Caso ERE en Sevilla.",
+        "ids": [
+          14,
+          15
+        ]
+      },
+      {
+        "text": "Apelación ante el TSJ de Extremadura en el Caso David Sánchez.",
+        "ids": [
+          7,
+          9
+        ]
+      },
+      {
+        "text": "Juicio de Begoña Gómez, sin fecha fijada.",
+        "ids": [
+          2
+        ]
+      },
+      {
+        "text": "Nervis Villalobos declara el 30-oct-2026.",
+        "ids": [
+          24
+        ]
+      },
+      {
+        "text": "Caso Plus Ultra: Verhoeven declara el 16-oct-2026 y las hermanas Rodríguez Espinosa el 30-nov-2026.",
+        "ids": [
+          41,
+          38,
+          39
+        ]
+      },
+      {
+        "text": "Sentencia del Caso Lezo por la pieza Inassa, vista para sentencia el 7-oct-2026.",
+        "ids": [
+          73
+        ]
+      }
     ]
   }
 ]
