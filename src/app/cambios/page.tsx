@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { ChangelogHashOpen } from "@/components/changelog-hash-open";
 import { SourceList } from "@/components/source-list";
 import { DataSchema } from "@/lib/schema";
@@ -56,7 +58,12 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 const summaryClass =
-  "cursor-pointer rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
+  "flex cursor-pointer list-none items-center gap-2 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring [&::-webkit-details-marker]:hidden";
+
+/** Disclosure marker for every <details> here; its <details> must carry `group`. */
+function Chevron({ className = "" }: { className?: string }) {
+  return <ChevronRight aria-hidden className={cn("h-4 w-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-90", className)} />;
+}
 
 export default function ChangelogPage() {
   const dateLinks = (
@@ -90,8 +97,11 @@ export default function ChangelogPage() {
 
       <div className="lg:grid lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-8 lg:items-start">
         <nav aria-label="Actualizaciones" className="mb-6 lg:mb-0 lg:sticky lg:top-6">
-          <details className="rounded-lg border bg-card/80 p-4 lg:hidden">
-            <summary className={`${summaryClass} text-sm font-semibold uppercase tracking-wide text-muted-foreground`}>Actualizaciones</summary>
+          <details className="group rounded-lg border bg-card/80 p-4 lg:hidden">
+            <summary className={cn(summaryClass, "text-sm font-semibold uppercase tracking-wide text-muted-foreground")}>
+              <Chevron />
+              Actualizaciones
+            </summary>
             {dateLinks}
           </details>
           <div className="hidden lg:block rounded-lg border bg-card/80 p-4">
@@ -108,8 +118,8 @@ export default function ChangelogPage() {
               open={index === 0}
               className="group scroll-mt-6 rounded-lg border bg-card/80 shadow-lg"
             >
-              <summary className="flex cursor-pointer list-none items-start gap-3 p-5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring [&::-webkit-details-marker]:hidden">
-                <span aria-hidden className="mt-2 text-muted-foreground transition-transform group-open:rotate-90">▸</span>
+              <summary className={cn(summaryClass, "items-start gap-3 p-5 rounded-lg")}>
+                <Chevron className="mt-2.5" />
                 <div>
                   <h2 className="font-headline text-2xl font-bold">
                     <time dateTime={entry.date}>{longDate(entry.date)}</time>
