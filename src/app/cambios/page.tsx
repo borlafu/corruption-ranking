@@ -6,7 +6,8 @@ import { ChangelogHashOpen } from "@/components/changelog-hash-open";
 import { SourceList } from "@/components/source-list";
 import { DataSchema } from "@/lib/schema";
 import { changelog, countLine } from "@/lib/changelog";
-import { KIND_LABEL, entryId, formatDate } from "@/lib/status-ui";
+import { KIND_LABEL, entryId, formatDate, statusConfig } from "@/lib/status-ui";
+import { badgeVariants } from "@/components/ui/badge";
 import { SITE_NAME } from "@/lib/site";
 import data from "@/lib/data.json";
 
@@ -139,6 +140,19 @@ export default function ChangelogPage() {
                       <span className="mr-2 text-xs font-semibold uppercase text-muted-foreground">{KIND_LABEL[c.kind]}</span>
                       <Suspects ids={c.ids} />
                       {c.description}
+                      {c.statusChange && (
+                        <p className="mt-1 flex flex-wrap items-center gap-1.5 text-xs">
+                          <span className="text-muted-foreground">{c.statusChange.cause}:</span>
+                          <span className={`${badgeVariants({ variant: "outline" })} ${statusConfig[c.statusChange.from].className}`}>
+                            {statusConfig[c.statusChange.from].label}
+                          </span>
+                          <span aria-hidden>→</span>
+                          <span className="sr-only">pasa a</span>
+                          <span className={`${badgeVariants({ variant: "outline" })} ${statusConfig[c.statusChange.to].className}`}>
+                            {statusConfig[c.statusChange.to].label}
+                          </span>
+                        </p>
+                      )}
                       {c.rationale && <p className="mt-1 text-muted-foreground">Motivo: {c.rationale}</p>}
                       {c.sourceUrls && c.sourceUrls.length > 0 && (
                         <div className="mt-1">
