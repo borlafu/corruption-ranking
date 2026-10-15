@@ -8,6 +8,7 @@ import { FilterBar } from "@/components/filter-bar";
 import { CaseBanner } from "@/components/case-banner";
 import { InsightsPanel } from "@/components/insights-panel";
 import { NavContext, type Nav } from "@/components/nav";
+import { suspectPath } from "@/lib/suspects";
 
 type Props = {
   cases: SuspectView[];
@@ -60,6 +61,7 @@ export function CaseLeaderboardPage({ cases, lastUpdated, lastReviewed }: Props)
     () => [...new Set(cases.flatMap((c) => c.crimes))].sort((a, b) => a.localeCompare(b, "es")),
     [cases]
   );
+  const pathById = useMemo(() => new Map(cases.map((c) => [c.id, suspectPath(c.suspect)])), [cases]);
   const filteredCases = useMemo(() => filterCases(cases, filters), [cases, filters]);
   const cause = useMemo(() => (filters.caso ? findCause(cases, filters.caso) : undefined), [cases, filters.caso]);
 
@@ -76,7 +78,9 @@ export function CaseLeaderboardPage({ cases, lastUpdated, lastReviewed }: Props)
     () => ({
       filters,
       filterHref: (patch) => urlFor(applyPatch(filters, patch), null),
-      suspectHref: (id) => urlFor({}, id),
+      // The suspect's own page, so the 154 records are crawlable from this HTML; a plain click is
+      // still intercepted below and expands the row in place.
+      suspectHref: (id) => pathById.get(id) ?? urlFor({}, id),
       applyFilters: (patch) => commit(applyPatch(filters, patch), null, "push"),
       openSuspect: (id) => {
         // Clear filters only if they hide the target suspect.
@@ -85,7 +89,7 @@ export function CaseLeaderboardPage({ cases, lastUpdated, lastReviewed }: Props)
         commit(visible ? filters : {}, id, "push");
       },
     }),
-    [filters, filteredCases, commit]
+    [filters, filteredCases, commit, pathById]
   );
 
   return (
