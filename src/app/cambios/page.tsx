@@ -9,10 +9,13 @@ import { changelog, countLine } from "@/lib/changelog";
 import { KIND_LABEL, entryId, formatDate, statusConfig } from "@/lib/status-ui";
 import { badgeVariants } from "@/components/ui/badge";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { suspectPaths } from "@/lib/suspects";
 import data from "@/lib/data.json";
 
 // Server component in a static export: parsed once at build time, like the root page.
-const names = new Map(DataSchema.parse(data).map((s) => [s.id, s.suspect]));
+const suspects = DataSchema.parse(data);
+const names = new Map(suspects.map((s) => [s.id, s.suspect]));
+const paths = suspectPaths(suspects);
 
 const title = `Registro de cambios — ${SITE_NAME}`;
 const description =
@@ -50,7 +53,7 @@ function Suspects({ ids }: { ids: number[] }) {
       {ids.map((id, i) => (
         <span key={id}>
           {i > 0 && ", "}
-          <Link href={`/#s-${id}`} className={linkClass}>
+          <Link href={paths[id] ?? `/#s-${id}`} className={linkClass}>
             {names.get(id) ?? `#${id}`}
           </Link>
         </span>

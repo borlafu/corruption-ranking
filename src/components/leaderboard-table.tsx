@@ -10,7 +10,7 @@ import { formatPenalty, type SuspectView } from "@/lib/schema";
 import { slug } from "@/lib/filters";
 import { categoryConfig, clemencySuffix, partyLabel, statusConfig } from "@/lib/status-ui";
 import { CaseDetailRow } from "@/components/case-detail-row";
-import { FilterLink } from "@/components/nav";
+import { FilterLink, SuspectLink } from "@/components/nav";
 import { YearInfo } from "@/components/info-popover";
 import { SourceList } from "@/components/source-list";
 
@@ -156,7 +156,13 @@ export function LeaderboardTable({ cases, allCases, openId, onToggle }: Props) {
                   >
                     <TableCell className="text-center text-muted-foreground font-medium">{index + 1}</TableCell>
                     <TableCell className="font-medium">
-                      <div>{c.suspect}</div>
+                      {/* A real href to the record's own page, so all 154 are crawlable from this
+                          HTML; a plain click is intercepted and expands the row instead. */}
+                      <div>
+                        <SuspectLink id={c.id} title={`Ficha de ${c.suspect}`}>
+                          {c.suspect}
+                        </SuspectLink>
+                      </div>
                       <div className="text-xs text-muted-foreground font-normal">
                         {c.causes.map((k, i) => (
                           <Fragment key={k.name}>
