@@ -2,10 +2,23 @@
   "hosting": {
     "public": "out",
     "cleanUrls": true,
+    "trailingSlash": false,
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "comment": "The route handler's Content-Type is build-time only: a static export leaves a plain .xml that Hosting would type as application/xml, contradicting the rel=alternate on /cambios.",
+        "source": "**/feed.xml",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/rss+xml; charset=utf-8"
+          }
+        ]
+      }
     ]
   }
 }

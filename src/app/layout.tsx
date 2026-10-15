@@ -13,9 +13,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title,
   description: SITE_DESCRIPTION,
-  // Filters live in the query string, so every `?cat=…&anio=…` combination serves this same
-  // page. One canonical collapses that whole crawl space onto the root.
-  alternates: { canonical: '/' },
+  alternates: {
+    // Filters live in the query string, so every `?cat=…&anio=…` combination serves this same
+    // page. One canonical collapses that whole crawl space onto the root.
+    canonical: '/',
+    // The feed covers the whole site's updates, so the root advertises it too. /cambios replaces
+    // this whole `alternates` object with its own.
+    types: { 'application/rss+xml': '/cambios/feed.xml' },
+  },
   openGraph: {
     type: 'website',
     locale: 'es_ES',

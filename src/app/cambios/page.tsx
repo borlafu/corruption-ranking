@@ -8,7 +8,7 @@ import { DataSchema } from "@/lib/schema";
 import { changelog, countLine } from "@/lib/changelog";
 import { KIND_LABEL, entryId, formatDate, statusConfig } from "@/lib/status-ui";
 import { badgeVariants } from "@/components/ui/badge";
-import { SITE_NAME } from "@/lib/site";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 import data from "@/lib/data.json";
 
 // Server component in a static export: parsed once at build time, like the root page.
@@ -25,6 +25,17 @@ export const metadata: Metadata = {
   alternates: { canonical: "/cambios", types: { "application/rss+xml": "/cambios/feed.xml" } },
   openGraph: { url: "/cambios", title, description },
   twitter: { card: "summary", title, description },
+};
+
+/** The header links back to the root, so the trail the crawler sees matches the one on screen. */
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: SITE_NAME, item: SITE_URL },
+    // No `item` on the current page, per schema.org's guidance for the last crumb.
+    { "@type": "ListItem", position: 2, name: "Registro de cambios" },
+  ],
 };
 
 const linkClass =
@@ -80,6 +91,7 @@ export default function ChangelogPage() {
   );
   return (
     <main className="container mx-auto px-4 py-8 md:py-12 max-w-5xl">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <ChangelogHashOpen />
       <header className="mb-8 text-center">
         <p className="font-headline text-3xl font-bold uppercase tracking-wider">
