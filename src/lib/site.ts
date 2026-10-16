@@ -11,6 +11,10 @@ export const SITE_DESCRIPTION =
   "Marcador no oficial de los casos de corrupción en los tribunales españoles desde 2018: " +
   "investigados, procesados y condenados de todos los partidos.";
 
+/** The data controller and privacy contact that /cookies and /privacidad publish (GDPR art. 13). */
+export const OWNER_NAME = "Borja Lafuente";
+export const PRIVACY_EMAIL = "borlafu+gdpr@gmail.com";
+
 /** Dataset scope: causes open or resolved since this date (see CLAUDE.md). */
 export const SCOPE_START = "2018-01-01";
 

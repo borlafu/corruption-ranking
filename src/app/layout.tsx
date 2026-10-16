@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter, Oswald } from 'next/font/google';
+import { Analytics } from '@/components/analytics';
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
 import './globals.css';
 
@@ -45,7 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${inter.variable} ${oswald.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
