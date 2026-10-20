@@ -1,5 +1,5 @@
 import { Briefcase, Handshake, Landmark, Users, Vote, type LucideIcon } from "lucide-react";
-import type { Allegiance, CaseStatus, ChangeKind, Clemency, Party } from "@/lib/schema";
+import { STATUS_SEVERITY, type Allegiance, type CaseStatus, type ChangeKind, type Clemency, type Party } from "@/lib/schema";
 
 // Class names are spelled out in full so Tailwind can detect them.
 export const statusConfig: Record<CaseStatus, { label: string; className: string }> = {
@@ -40,6 +40,16 @@ const UTC_DATE: Intl.DateTimeFormatOptions = { timeZone: "UTC", day: "numeric", 
 export function formatDate(iso: string, options: Intl.DateTimeFormatOptions = UTC_DATE): string {
   return new Date(iso).toLocaleDateString("es-ES", { ...options, timeZone: "UTC" });
 }
+
+/** "1 condenado/a", "5 condenados/as": every status label ends in "o/a". */
+export function statusCount(status: CaseStatus, n: number): string {
+  const label = statusConfig[status].label.toLowerCase();
+  return `${n} ${n === 1 ? label : label.replace(/o\/a$/, "os/as")}`;
+}
+
+/** How many hold each status, most severe first, absent statuses dropped. */
+export const statusTally = (statuses: readonly CaseStatus[]): { status: CaseStatus; n: number }[] =>
+  STATUS_SEVERITY.map((status) => ({ status, n: statuses.filter((s) => s === status).length })).filter(({ n }) => n > 0);
 
 export function formatEur(amount: number): string {
   return new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(amount);

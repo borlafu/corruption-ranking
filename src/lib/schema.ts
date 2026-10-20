@@ -43,7 +43,7 @@ export const CRIMES = [
 ] as const;
 
 /** Most serious first. Used to pick the badge shown in the table. */
-const STATUS_SEVERITY: readonly CaseStatus[] = ["condenado", "procesado", "investigado", "absuelto", "sobreseido"];
+export const STATUS_SEVERITY: readonly CaseStatus[] = ["condenado", "procesado", "investigado", "absuelto", "sobreseido"];
 
 const SUMMARY_MAX = 300;
 
