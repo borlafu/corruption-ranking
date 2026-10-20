@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { DataSchema, deriveView } from "@/lib/schema";
-import { applyPatch, filterCases, findCause, parseFilters, slug, toSearch } from "@/lib/filters";
+import { applyPatch, describeCause, filterCases, findCause, parseFilters, slug, toSearch } from "@/lib/filters";
 import data from "@/lib/data.json";
 
 const cases = deriveView(DataSchema.parse(data));
@@ -106,4 +106,31 @@ test("applyPatch replaces scalars and never mutates its input", () => {
   assert.deepEqual(before, { cat: ["gobierno"], q: "abalos" });
   assert.deepEqual(after, { cat: ["gobierno"], q: "koldo", caso: "caso-koldo" });
   assert.deepEqual(applyPatch(after, { q: "" }), { cat: ["gobierno"], caso: "caso-koldo" });
+});
+
+test("describes a cause from its members' records", () => {
+  // Arrange
+  const cause = findCause(cases, "caso-ere");
+  assert.ok(cause);
+  const condenados = cause.members.filter((m) => m.status === "condenado").length;
+
+  // Act
+  const text = describeCause(cause);
+
+  // Assert
+  assert.match(text, new RegExp(`^${cause.members.length} personas en esta causa: ${condenados} condenados/as`));
+  assert.match(text, /Delitos imputados: [^.]*malversación/);
+  assert.match(text, /Importe: /);
+});
+
+test("names a court only when it comes from a member with that single cause", () => {
+  const cause = findCause(cases, "caso-ere");
+  assert.ok(cause);
+  const courtsOf = (single: boolean) =>
+    cause.members.flatMap((m) => ((m.suspect.causes.length === 1) === single && m.suspect.court ? [m.suspect.court] : []));
+  const singleCourts = new Set(courtsOf(true));
+
+  const text = describeCause(cause);
+
+  for (const court of courtsOf(false)) if (!singleCourts.has(court)) assert.ok(!text.includes(court), court);
 });
