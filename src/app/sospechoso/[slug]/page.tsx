@@ -7,7 +7,7 @@ import { StaticNav } from "@/components/static-nav";
 import { DataSchema, deriveView, type SuspectView } from "@/lib/schema";
 import { changelog } from "@/lib/changelog";
 import { formatDate, partyLabel, statusConfig } from "@/lib/status-ui";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { suspectPath, suspectPaths, suspectSlug } from "@/lib/suspects";
 import data from "@/lib/data.json";
 
@@ -42,6 +42,18 @@ function describe(c: SuspectView): string {
   return clamp(head.length + tail.length <= META_MAX ? head + tail : head);
 }
 
+/**
+ * Names the cause that carries the suspect's derived status, so "Condenado/a en Caso X" is never
+ * pinned on a cause where they were only investigated. Other causes are counted, not named.
+ */
+function titleFor(c: SuspectView): string {
+  const status = statusConfig[c.status].label.toLowerCase();
+  const cause = c.causes.find((k) => k.status === c.status) ?? c.causes[0];
+  const others = c.causes.length - 1;
+  const more = others === 0 ? "" : others === 1 ? " y 1 causa más" : ` y ${others} causas más`;
+  return `${c.suspect}, ${status} en el ${cause.name}${more} | ${SITE_NAME}`;
+}
+
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -49,15 +61,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const c = bySlug.get(slug);
   if (!c) return {};
 
-  const title = `${c.suspect}: causas judiciales — ${SITE_NAME}`;
+  const title = titleFor(c);
   const description = describe(c);
   const path = suspectPath(c.suspect);
   return {
     title,
     description,
     alternates: { canonical: path },
-    openGraph: { type: "profile", url: path, title, description },
-    twitter: { card: "summary", title, description },
+    openGraph: { type: "profile", url: path, title, description, images: OG_IMAGE },
+    twitter: { card: "summary_large_image", title, description, images: OG_IMAGE },
   };
 }
 
@@ -138,7 +150,7 @@ export default async function SuspectPage({ params }: Props) {
             href="/"
             className="text-primary hover:underline underline-offset-2 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
-            Ver el marcador completo
+            Ver todos los casos
           </Link>
         </p>
       </footer>
