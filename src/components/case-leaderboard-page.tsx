@@ -8,7 +8,7 @@ import { FilterBar } from "@/components/filter-bar";
 import { CaseBanner } from "@/components/case-banner";
 import { InsightsPanel } from "@/components/insights-panel";
 import { NavContext, type Nav } from "@/components/nav";
-import { suspectPath } from "@/lib/suspects";
+import { pagePath, suspectPath } from "@/lib/suspects";
 
 type Props = {
   cases: SuspectView[];
@@ -77,7 +77,12 @@ export function CaseLeaderboardPage({ cases, lastUpdated, lastReviewed }: Props)
   const nav: Nav = useMemo(
     () => ({
       filters,
-      filterHref: (patch) => urlFor(applyPatch(filters, patch), null),
+      // A lone cause or party links its own page, so this HTML passes crawlers on to them; a plain
+      // click is still intercepted and filters the table in place.
+      filterHref: (patch) => {
+        const f = applyPatch(filters, patch);
+        return pagePath(f) ?? urlFor(f, null);
+      },
       // The suspect's own page, so the 154 records are crawlable from this HTML; a plain click is
       // still intercepted below and expands the row in place.
       suspectHref: (id) => pathById.get(id) ?? urlFor({}, id),

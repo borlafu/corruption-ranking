@@ -1,14 +1,16 @@
 import Link from "next/link";
 import { badgeVariants } from "@/components/ui/badge";
 import { StatusCounts } from "@/components/case-banner";
-import type { CaseStatus, SuspectView } from "@/lib/schema";
-import { STATUS_SEVERITY } from "@/lib/schema";
+import { STATUS_SEVERITY, formatPenalty, type Cause, type CaseStatus, type SuspectView } from "@/lib/schema";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
-import { formatDate, partyLabel, statusConfig } from "@/lib/status-ui";
+import { clemencyLabel, formatDate, partyLabel, statusConfig } from "@/lib/status-ui";
 import { causePath, partyPath, suspectPath } from "@/lib/suspects";
 
-/** A suspect as listed on a cause or party page, with the status that page is about. */
-export type Member = { suspect: SuspectView; status: CaseStatus };
+/**
+ * A suspect as listed on a cause or party page, with the status that page is about. A cause page
+ * also passes the member's record of that cause, shown as charges, sentence and summary.
+ */
+export type Member = { suspect: SuspectView; status: CaseStatus; cause?: Cause };
 
 const linkClass =
   "rounded-sm hover:underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
@@ -62,7 +64,7 @@ export function EntityPage({ title, path, subtitle, members, children }: Props) 
       {children}
 
       <ul className="rounded-lg border bg-card/80 shadow-lg divide-y divide-border/40">
-        {members.map(({ suspect: s, status }) => (
+        {members.map(({ suspect: s, status, cause }) => (
           <li key={s.id} className="p-4 space-y-1.5">
             <div className="flex flex-wrap items-center gap-2">
               <Link href={suspectPath(s.suspect)} className={`font-semibold ${linkClass}`}>
@@ -78,6 +80,7 @@ export function EntityPage({ title, path, subtitle, members, children }: Props) 
               )}
             </div>
             <p className="text-sm text-muted-foreground">{s.title}</p>
+            {cause && <CauseRecord cause={cause} summary={s.summary} />}
             <p className="flex flex-wrap gap-x-3 gap-y-1 text-xs">
               {s.causes.map((k) => (
                 <Link key={k.name} href={causePath(k.name)} className={linkClass}>
@@ -103,5 +106,31 @@ export function EntityPage({ title, path, subtitle, members, children }: Props) 
         </p>
       </footer>
     </main>
+  );
+}
+
+/** One member's record of the cause the page is about. */
+function CauseRecord({ cause, summary }: { cause: Cause; summary?: string }) {
+  const convicted = new Set(cause.convictions ?? []);
+  return (
+    <div className="space-y-1 text-sm">
+      <p>
+        <span className="text-muted-foreground">Delitos: </span>
+        {cause.charges.map((crime, i) => (
+          <span key={crime}>
+            {i > 0 && ", "}
+            {convicted.has(crime) ? <strong>{crime} (condena)</strong> : crime}
+          </span>
+        ))}
+      </p>
+      {cause.sentence && (
+        <p>
+          <span className="text-muted-foreground">Pena: </span>
+          {formatPenalty(cause.sentence)} · {formatDate(cause.sentence.date)}
+          {cause.clemency?.map((cl) => ` · ${clemencyLabel(cl)}`)}
+        </p>
+      )}
+      {summary && <p className="text-muted-foreground leading-relaxed">{summary}</p>}
+    </div>
   );
 }

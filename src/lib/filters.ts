@@ -1,4 +1,5 @@
-import { CATEGORIES, CRIMES, PARTIES, STATUSES, normalize, type Allegiance, type Party, type CaseStatus, type Crime, type SuspectView } from "@/lib/schema";
+import { CATEGORIES, CRIMES, PARTIES, STATUSES, normalize, type Allegiance, type Party, type Cause, type CaseStatus, type Crime, type SuspectView } from "@/lib/schema";
+import { formatEur, statusCount, statusTally } from "@/lib/status-ui";
 
 /**
  * Table filters. Every field maps 1:1 to a URL query param of the same name.
@@ -116,7 +117,8 @@ export function filterCases(cases: SuspectView[], f: Filters): SuspectView[] {
 export type CauseOverview = {
   name: string;
   amount?: number;
-  members: { suspect: SuspectView; status: CaseStatus }[];
+  /** Each member with their own record of this cause: status, charges, sentence. */
+  members: { suspect: SuspectView; status: CaseStatus; cause: Cause }[];
 };
 
 /** Everyone in one cause, with their status in that cause. Undefined if the slug matches nothing. */
@@ -129,6 +131,36 @@ export function findCause(cases: SuspectView[], caso: string): CauseOverview | u
   return {
     name: cause.name,
     amount: cause.amount,
-    members: inCause.map(({ suspect, cause: k }) => ({ suspect, status: k.status })),
+    members: inCause.map(({ suspect, cause: k }) => ({ suspect, status: k.status, cause: k })),
   };
+}
+
+/** Distinct values, most frequent first, ties in first-seen order. */
+const byFrequency = <T,>(xs: T[]): T[] => {
+  const count = new Map<T, number>();
+  for (const x of xs) count.set(x, (count.get(x) ?? 0) + 1);
+  return [...count.keys()].sort((a, b) => count.get(b)! - count.get(a)!);
+};
+
+/**
+ * A cause's summary in prose, from its members' own records of it. Courts come only from members
+ * whose single cause this is: `court` is per suspect, so a multi-cause suspect's may be another's.
+ */
+export function describeCause(c: CauseOverview): string {
+  const n = c.members.length;
+  const tally = statusTally(c.members.map((m) => m.status)).map(({ status, n: k }) => statusCount(status, k));
+  const charges = byFrequency(c.members.flatMap((m) => m.cause.charges));
+  const convictions = byFrequency(c.members.flatMap((m) => m.cause.convictions ?? []));
+  const courts = byFrequency(
+    c.members.flatMap((m) => (m.suspect.causes.length === 1 && m.suspect.court ? [m.suspect.court] : [])),
+  );
+  return [
+    `${n} ${n === 1 ? "persona" : "personas"} en esta causa: ${tally.join(", ")}.`,
+    `Delitos imputados: ${charges.join(", ")}.`,
+    convictions.length > 0 && `Condenas por: ${convictions.join(", ")}.`,
+    courts.length > 0 && `${courts.length === 1 ? "Tribunal" : "Tribunales"}: ${courts.join("; ")}.`,
+    c.amount !== undefined && `Importe: ${formatEur(c.amount)}.`,
+  ]
+    .filter(Boolean)
+    .join(" ");
 }

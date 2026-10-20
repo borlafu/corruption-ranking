@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { EntityPage, byStatusThenName } from "@/components/entity-page";
 import { DataSchema, deriveView } from "@/lib/schema";
-import { findCause, slug } from "@/lib/filters";
+import { describeCause, findCause, slug } from "@/lib/filters";
 import { OG_IMAGE, SITE_NAME, clampDescription } from "@/lib/site";
-import { formatEur, statusCount, statusTally } from "@/lib/status-ui";
 import { causePath } from "@/lib/suspects";
 import data from "@/lib/data.json";
 
@@ -24,11 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!cause) return {};
 
   const title = `${cause.name}: investigados, procesados y condenados | ${SITE_NAME}`;
-  const counts = statusTally(cause.members.map((m) => m.status)).map(({ status, n }) => statusCount(status, n));
-  const amount = cause.amount !== undefined ? ` Importe: ${formatEur(cause.amount)}.` : "";
-  const description = clampDescription(
-    `${cause.name}: ${counts.join(", ")}.${amount} Quién es quién, penas, indultos y fuentes judiciales.`,
-  );
+  const description = clampDescription(`${cause.name}: ${describeCause(cause)}`);
   const path = causePath(cause.name);
   return {
     title,
@@ -48,8 +43,9 @@ export default async function CausePage({ params }: Props) {
     <EntityPage
       title={cause.name}
       path={causePath(cause.name)}
-      subtitle={cause.amount !== undefined ? `Importe: ${formatEur(cause.amount)}` : undefined}
       members={[...cause.members].sort(byStatusThenName)}
-    />
+    >
+      <p className="mb-6 text-muted-foreground leading-relaxed">{describeCause(cause)}</p>
+    </EntityPage>
   );
 }
