@@ -7,8 +7,8 @@ import { StaticNav } from "@/components/static-nav";
 import { DataSchema, deriveView, type SuspectView } from "@/lib/schema";
 import { changelog } from "@/lib/changelog";
 import { formatDate, partyLabel, statusConfig } from "@/lib/status-ui";
-import { OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/site";
-import { suspectPath, suspectPaths, suspectSlug } from "@/lib/suspects";
+import { OG_IMAGE, SITE_NAME, SITE_URL, META_MAX, clampDescription } from "@/lib/site";
+import { partyPath, suspectPath, suspectPaths, suspectSlug } from "@/lib/suspects";
 import data from "@/lib/data.json";
 
 // Parsed once at build time, like the other pages; every slug is prerendered.
@@ -24,11 +24,6 @@ export function generateStaticParams() {
   return [...bySlug.keys()].map((slug) => ({ slug }));
 }
 
-const META_MAX = 155;
-
-const clamp = (text: string): string =>
-  text.length <= META_MAX ? text : `${text.slice(0, META_MAX - 1).trimEnd()}…`;
-
 /** Built from the record itself, so it describes this page and no other. */
 function describe(c: SuspectView): string {
   const causes = c.causes.map((k) => k.name).join(", ");
@@ -39,7 +34,7 @@ function describe(c: SuspectView): string {
   const head = `${c.suspect}, ${c.title}. ${status} en ${c.causes.length} ${plural}: ${causes}.`;
   // The court is the one fact that lifts the short records into the 120-160 window.
   const tail = c.court ? ` ${c.court}.` : "";
-  return clamp(head.length + tail.length <= META_MAX ? head + tail : head);
+  return clampDescription(head.length + tail.length <= META_MAX ? head + tail : head);
 }
 
 /**
@@ -128,7 +123,11 @@ export default async function SuspectPage({ params }: Props) {
         <p className="text-muted-foreground mt-2 text-center">{c.title}</p>
         <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
           <span className={`${badgeVariants({ variant: "outline" })} ${status.className}`}>{status.label}</span>
-          {c.party && <span className={badgeVariants({ variant: "outline" })}>{partyLabel[c.party]}</span>}
+          {c.party && (
+            <Link href={partyPath(c.party)} className={`${badgeVariants({ variant: "outline" })} hover:bg-muted`}>
+              {partyLabel[c.party]}
+            </Link>
+          )}
           <span className="text-muted-foreground">
             Año <time dateTime={String(c.startYear)}>{c.startYear}</time>
           </span>

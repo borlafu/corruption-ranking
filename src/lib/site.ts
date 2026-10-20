@@ -6,6 +6,12 @@ export const SITE_URL = "https://corruption-ranking.web.app";
 
 export const SITE_NAME = "España Corrupta";
 
+export const META_MAX = 155;
+
+/** Cuts a meta description to what search results show, with an ellipsis when cut. */
+export const clampDescription = (text: string): string =>
+  text.length <= META_MAX ? text : `${text.slice(0, META_MAX - 1).trimEnd()}…`;
+
 /** Main page title, also the share card's alt text. */
 export const SITE_TITLE = `Políticos imputados y condenados por corrupción | ${SITE_NAME}`;
 

@@ -1,7 +1,7 @@
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
 import { DataSchema } from "./schema";
-import { slugCollisions, suspectPath, suspectPaths, suspectSlug } from "./suspects";
+import { causePath, pagePath, partyPath, slugCollisions, suspectPath, suspectPaths, suspectSlug } from "./suspects";
 import data from "./data.json";
 
 const suspects = DataSchema.parse(data);
@@ -42,4 +42,17 @@ test("every slug in the dataset is unique and URL-safe", () => {
     const key = suspectSlug(s.suspect);
     assert.match(key, /^[a-z0-9]+(-[a-z0-9]+)*$/, `${s.suspect} -> "${key}"`);
   }
+});
+
+test("builds cause and party page paths", () => {
+  assert.equal(causePath("Caso Ábalos/Koldo"), "/caso/caso-abalos-koldo");
+  assert.equal(partyPath("pp"), "/partido/pp");
+});
+
+test("maps a single-facet filter to its own page, anything else to none", () => {
+  assert.equal(pagePath({ caso: "caso-ere" }), "/caso/caso-ere");
+  assert.equal(pagePath({ partido: ["psoe"] }), "/partido/psoe");
+  assert.equal(pagePath({ partido: ["psoe", "pp"] }), undefined);
+  assert.equal(pagePath({ caso: "caso-ere", partido: ["pp"] }), undefined);
+  assert.equal(pagePath({ delito: ["cohecho"] }), undefined);
 });

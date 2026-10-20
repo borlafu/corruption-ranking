@@ -1,5 +1,5 @@
-import { slug } from "@/lib/filters";
-import type { Suspect } from "@/lib/schema";
+import { slug, type Filters } from "@/lib/filters";
+import type { Party, Suspect } from "@/lib/schema";
 
 /**
  * URL key for a suspect: "Álvaro García Ortiz" -> "alvaro-garcia-ortiz". `DataSchema` already
@@ -10,6 +10,23 @@ export const suspectSlug = (suspect: string): string => slug(suspect);
 
 /** Canonical path of a suspect's own page. */
 export const suspectPath = (suspect: string): string => `/sospechoso/${suspectSlug(suspect)}`;
+
+/** Canonical path of a cause's own page, keyed like the `caso` filter. */
+export const causePath = (cause: string): string => `/caso/${slug(cause)}`;
+
+/** Canonical path of a party's own page. Party ids are already URL-safe. */
+export const partyPath = (party: Party): string => `/partido/${party}`;
+
+/**
+ * The standalone page a filter has, if any: one cause, or one party, and nothing else. Every other
+ * combination only exists as a query string on the leaderboard.
+ */
+export function pagePath(f: Filters): string | undefined {
+  if (Object.keys(f).length !== 1) return undefined;
+  if (f.caso) return `/caso/${f.caso}`;
+  if (f.partido?.length === 1) return partyPath(f.partido[0]);
+  return undefined;
+}
 
 /** id -> path, for links that carry only an id (related suspects, changelog entries). */
 export const suspectPaths = (suspects: readonly Pick<Suspect, "id" | "suspect">[]): Record<number, string> =>

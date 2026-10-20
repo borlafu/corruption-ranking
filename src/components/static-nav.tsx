@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { NavContext, type Nav } from "@/components/nav";
 import { applyPatch, toSearch, type Filters } from "@/lib/filters";
+import { pagePath } from "@/lib/suspects";
 
 type Props = {
   /** id -> suspect page path, for the ids `SuspectLink` can reach from here. */
@@ -19,7 +20,11 @@ export function StaticNav({ paths, children }: Props) {
   const router = useRouter();
 
   const nav = useMemo<Nav>(() => {
-    const filterHref = (patch: Filters) => `/${toSearch(applyPatch({}, patch))}`;
+    // A lone cause or party has its own page; any other filter lands on the leaderboard.
+    const filterHref = (patch: Filters) => {
+      const f = applyPatch({}, patch);
+      return pagePath(f) ?? `/${toSearch(f)}`;
+    };
     const suspectHref = (id: number) => paths[id] ?? "/";
     return {
       filters: {},
