@@ -71,14 +71,18 @@ export const CauseSchema = z
     sentence: SentenceSchema.optional(),
     /** Total EUR for the whole case, not per suspect. Same-name causes must agree. */
     amount: z.number().nonnegative().optional(),
+    /** Every measure on this cause, oldest first (e.g. a 2021 indulto, then a 2026 amnistía). */
     clemency: z
-      .object({
-        kind: z.enum(CLEMENCY_KINDS),
-        /** Date of the Consejo de Ministros decision (indulto) or of the ruling applying the amnistía. */
-        date: z.iso.date(),
-        /** indulto only: total = whole penalty remitted; parcial = part of it (e.g. prison only). */
-        scope: z.enum(["total", "parcial"]).optional(),
-      })
+      .array(
+        z.object({
+          kind: z.enum(CLEMENCY_KINDS),
+          /** Date of the Consejo de Ministros decision (indulto) or of the ruling applying the amnistía. */
+          date: z.iso.date(),
+          /** indulto only: total = whole penalty remitted; parcial = part of it (e.g. prison only). */
+          scope: z.enum(["total", "parcial"]).optional(),
+        }),
+      )
+      .min(1)
       .optional(),
   })
   .superRefine((c, ctx) => {
@@ -91,12 +95,16 @@ export const CauseSchema = z
     if (c.convictions?.some((k) => !c.charges.includes(k))) issue("convictions must be a subset of charges", ["convictions"]);
     if (c.sentence && !c.sentence.prisonMonths && !c.sentence.disqualificationMonths && !c.sentence.fineEur)
       issue("sentence needs prison, disqualification or fine", ["sentence"]);
-    const cl = c.clemency;
-    if (cl?.kind === "indulto" && !convicted) issue("an indulto needs a condenado cause", ["clemency"]);
-    if (cl?.kind === "indulto" && !cl.scope) issue("an indulto needs scope total or parcial", ["clemency"]);
-    if (cl?.kind === "amnistía" && cl.scope) issue("scope applies to indultos only", ["clemency"]);
-    if (cl?.kind === "amnistía" && !["condenado", "procesado", "investigado"].includes(c.status))
-      issue("an amnistía applies to an open or convicted cause", ["clemency"]);
+    const measures = c.clemency ?? [];
+    measures.forEach((cl, i) => {
+      const at = ["clemency", String(i)];
+      if (cl.kind === "indulto" && !convicted) issue("an indulto needs a condenado cause", at);
+      if (cl.kind === "indulto" && !cl.scope) issue("an indulto needs scope total or parcial", at);
+      if (cl.kind === "amnistía" && cl.scope) issue("scope applies to indultos only", at);
+      if (cl.kind === "amnistía" && !["condenado", "procesado", "investigado"].includes(c.status))
+        issue("an amnistía applies to an open or convicted cause", at);
+      if (i > 0 && cl.date < measures[i - 1].date) issue("clemency must be oldest first", at);
+    });
   });
 
 export const SuspectSchema = z
@@ -215,7 +223,7 @@ export type Party = (typeof PARTIES)[number];
 export type CaseStatus = (typeof STATUSES)[number];
 export type Crime = (typeof CRIMES)[number];
 export type Sentence = z.infer<typeof SentenceSchema>;
-export type Clemency = NonNullable<Cause["clemency"]>;
+export type Clemency = NonNullable<Cause["clemency"]>[number];
 export type Cause = z.infer<typeof CauseSchema>;
 export type Suspect = z.infer<typeof SuspectSchema>;
 
@@ -234,8 +242,8 @@ export type SuspectView = Suspect & {
   penaltyMonths: number;
   /** Sentence of the condenado cause, if any. */
   sentence?: Sentence;
-  /** Clemency on that same cause, shown beside its penalty. */
-  clemency?: Clemency;
+  /** Clemency on that same cause, oldest first, shown beside its penalty. */
+  clemency?: Clemency[];
   /** Changelog entries that changed this record, newest first. */
   history: { date: string; kind: ChangeKind }[];
 };

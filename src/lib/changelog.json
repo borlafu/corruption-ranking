@@ -1,5 +1,273 @@
 [
   {
+    "date": "2026-10-20",
+    "prs": [
+      66
+    ],
+    "summary": "Revisión semanal: se investigaron las 26 causas activas y se hizo una pasada de descubrimiento de causas abiertas o agravadas desde el 7-oct-2026. Se actualizaron 11 registros. El cambio principal: el Supremo aplicó el 19-oct-2026 la amnistía a la malversación de Junqueras, Romeva, Bassa y Turull, que siguen como condenados con la amnistía señalada. Hay un cambio de estado (Antonio Cerdá, de investigado a procesado, por corrección). No hay altas ni bajas. Las causas resueltas no se revisaron; el repaso mensual toca a partir del 7-nov-2026. El total se mantiene en 154 registros.",
+    "changes": [
+      {
+        "kind": "actualizado",
+        "ids": [
+          94,
+          95,
+          96,
+          97
+        ],
+        "description": "El 19-oct-2026 la Sala de lo Penal del Supremo aplicó la amnistía a la malversación del Caso procés, declaró extinguida la responsabilidad penal y archivó la ejecutoria, con lo que decae la inhabilitación pendiente. El estado sigue siendo condenado: la amnistía se registra aparte y no borra la condena. La sentencia pasa a figurar como firme porque ya no queda pendiente el nuevo pronunciamiento ordenado por el Constitucional. La amnistía se añade al indulto de 2021, que se mantiene.",
+        "rationale": "Auto del 19-oct-2026 confirmado en Infobae y Catalunya Press.",
+        "sourceUrls": [
+          "https://www.infobae.com/espana/2026/10/20/el-supremo-amnistia-a-junqueras-y-otros-tres-lideres-del-proces-tras-verse-obligado-a-asumir-la-doctrina-del-constitucional/",
+          "https://www.catalunyapress.es/articulo/politica/2026-10-20/6058597-supremo-acata-mandato-constitucional-amnistia-malversacion-junqueras-turull-romeva-bassa"
+        ]
+      },
+      {
+        "kind": "actualizado",
+        "ids": [
+          98,
+          99,
+          100
+        ],
+        "description": "El 19-oct-2026 el juez Llarena retiró definitivamente las órdenes de detención nacionales contra Puigdemont, Comín y Puig, que había levantado de forma provisional el 6-oct. El procesamiento sigue en pie: falta que la Sala Segunda del Supremo aplique la amnistía. El estado sigue siendo procesado.",
+        "rationale": "Auto recogido por El Español; no archiva la causa.",
+        "sourceUrls": [
+          "https://www.elespanol.com/espana/tribunales/20261019/juez-llarena-retira-orden-detener-puigddemont-acata-fallo-tc-no-comparto-afea-descalificaciones-ts/1003744425386_0.html"
+        ]
+      },
+      {
+        "kind": "actualizado",
+        "ids": [
+          80
+        ],
+        "statusChange": {
+          "cause": "Caso Desaladora de Escombreras",
+          "from": "investigado",
+          "to": "procesado"
+        },
+        "description": "Antonio Cerdá figuraba como investigado en el Caso Desaladora de Escombreras (La Sal I), pero el juzgado abrió juicio oral contra él y otros 14 acusados el 12-nov-2024, lo que equivale a procesado. Se añade que el 6-oct-2026 la Audiencia de Murcia confirmó la fianza de 70 M€.",
+        "rationale": "Corrección: la propia fuente del Poder Judicial ya citada en el registro recoge la apertura de juicio oral, y RR News (8-oct-2026) lo nombra entre los 15 acusados.",
+        "sourceUrls": [
+          "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/La-juez-ordena-la-apertura-de-juicio-oral-a-15-investigados-del-proyecto-de-la-planta-desalinizadora-de-Escombreras--Cartagena-",
+          "https://rrnews.es/2026/10/caso-desaladora-la-audiencia-de-murcia-confirma-una-fianza-de-70-millones-y-advierte-de-que-la-cantidad-se-queda-corta.html"
+        ]
+      },
+      {
+        "kind": "actualizado",
+        "ids": [
+          79
+        ],
+        "description": "El juicio de Valcárcel (La Sal II) está señalado del 15-sep al 9-nov-2027; antes decía «finales de 2027».",
+        "rationale": "Fechas publicadas por RR News el 8-oct-2026.",
+        "sourceUrls": [
+          "https://rrnews.es/2026/10/caso-desaladora-la-audiencia-de-murcia-confirma-una-fianza-de-70-millones-y-advierte-de-que-la-cantidad-se-queda-corta.html"
+        ]
+      },
+      {
+        "kind": "actualizado",
+        "ids": [
+          41
+        ],
+        "description": "Simon Verhoeven declaró como investigado en el Caso Plus Ultra el 16-oct-2026: negó conocer el rescate de 53 M€ y no reconoció su firma en los contratos aportados. Sigue investigado.",
+        "sourceUrls": [
+          "https://elindependiente.com/espana/tribunales/2026/10/16/presunto-cerebro-financiero-niega-conocer-rescate-plus-ultra-no-reconoce-firma-contratos"
+        ]
+      },
+      {
+        "kind": "actualizado",
+        "ids": [
+          9
+        ],
+        "description": "La Fiscalía recurrió el 9-oct-2026 también la condena de Miguel Ángel Gallardo en el Caso David Sánchez y pide revocarla. Sigue condenado, sentencia no firme.",
+        "sourceUrls": [
+          "https://www.infobae.com/espana/agencias/2026/10/09/fiscal-recurre-sentencia-a-david-sanchez-al-sustituir-relato-de-hechos-por-valoraciones/"
+        ]
+      }
+    ],
+    "notAdded": [
+      {
+        "who": "Inés Miranda, Rafael Luis Pedrero, Juan José Sánchez y otros cuatro acusados",
+        "cause": "Jornadas del Paisaje del Cabildo de Gran Canaria",
+        "reason": "Juicio oral abierto en oct-2026, pero el Cabildo es administración insular (local, no autonómica), solo hay una fuente (Canarias7, 16-oct-2026) y no consta el partido."
+      },
+      {
+        "who": "Enrique Pelegrín y Francisco Javier López Ballesteros",
+        "cause": "Caso Bio Wood Niebla",
+        "reason": "Coacusados con juicio oral abierto; falta verificar en una segunda fuente su papel y los delitos que se les atribuyen. Se revisarán en una próxima ejecución."
+      },
+      {
+        "who": "Marcelino Martín Blas",
+        "cause": "Caso Kitchen",
+        "reason": "Aparece como acusado en el juicio (la Fiscalía pide 2,5 años), pero no se ha verificado su situación en una segunda fuente. Se revisará cuando llegue la sentencia."
+      },
+      {
+        "who": "PSOE como persona jurídica",
+        "cause": "Caso Leire Díez",
+        "reason": "El 9-oct-2026 el juez Pedraz descartó por ahora imputar al partido. Además, el conjunto de datos solo recoge personas."
+      }
+    ],
+    "unverifiable": [
+      "Caso Koldo",
+      "Caso Hidrocarburos",
+      "Caso Forestalia",
+      "Caso 3%",
+      "Caso Erial",
+      "Caso Rato",
+      "Caso Perla Negra"
+    ],
+    "watchlist": [
+      {
+        "text": "Sentencia de Kitchen, vista para sentencia desde el 28-jul-2026.",
+        "ids": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      {
+        "text": "Sentencia del Caso Pujol en la Audiencia Nacional (vista desde el 14-may-2026).",
+        "ids": [
+          106
+        ]
+      },
+      {
+        "text": "La Sala Segunda del Supremo debe aplicar la amnistía a la malversación de Puigdemont, Comín y Puig; se marcará como amnistía sin cambiar el estado.",
+        "ids": [
+          98,
+          99,
+          100
+        ]
+      },
+      {
+        "text": "Decisión del TSJC sobre la amnistía en el Caso organización del 1-O tras la doctrina del Constitucional del 6-oct-2026.",
+        "ids": [
+          107,
+          108
+        ]
+      },
+      {
+        "text": "Veredicto de la pieza del golf del Canal (Caso Lezo), juicio iniciado el 13-oct-2026.",
+        "ids": [
+          73
+        ]
+      },
+      {
+        "text": "Apelación ante el TSJ de Extremadura en el Caso David Sánchez.",
+        "ids": [
+          7,
+          9,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ]
+      },
+      {
+        "text": "Nuevas sentencias del Caso ERE en Sevilla cuando responda el TJUE.",
+        "ids": [
+          14,
+          15,
+          20,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          137
+        ]
+      },
+      {
+        "text": "Casaciones pendientes: Erial, Rato, Perla Negra y Faffe; apelación de Invercaria ante el TSJA; sentencia de la trama eólica en Valladolid.",
+        "ids": [
+          69,
+          70,
+          71,
+          78,
+          83,
+          84,
+          129,
+          130,
+          135,
+          117,
+          141
+        ]
+      },
+      {
+        "text": "Resolución de la competencia territorial del Caso Montoro (Tarragona o Madrid).",
+        "ids": [
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      {
+        "text": "Juicios señalados: Lezo Emissao (12-ene-2027), Caso 3% (8-feb-2027), Bio Wood Niebla (15-mar-2027) y Desaladora La Sal II (15-sep-2027).",
+        "ids": [
+          73,
+          104,
+          109,
+          79
+        ]
+      },
+      {
+        "text": "Juicio con jurado de Begoña Gómez, pendiente de señalamiento en la Audiencia Provincial de Madrid.",
+        "ids": [
+          2,
+          42
+        ]
+      },
+      {
+        "text": "Declaración de Cerdán y Leire Díez como investigados; la imputación del PSOE como persona jurídica queda aplazada.",
+        "ids": [
+          6,
+          8
+        ]
+      },
+      {
+        "text": "Declaración de Nervis Villalobos el 30-oct-2026.",
+        "ids": [
+          24
+        ]
+      },
+      {
+        "text": "Caso Plus Ultra: las hermanas Rodríguez Espinosa declaran el 30-nov-2026.",
+        "ids": [
+          38,
+          39
+        ]
+      },
+      {
+        "text": "Instrucción del Caso Hidrocarburos prorrogada hasta dic-2026.",
+        "ids": [
+          12
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-13",
     "prs": [
       58

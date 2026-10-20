@@ -325,12 +325,13 @@
     ],
     "court": "Audiencia Provincial de Badajoz",
     "startYear": 2024,
-    "lastUpdated": "2026-10-07",
-    "summary": "Condenado el 14-jul-2026 por la Audiencia Provincial de Badajoz por dos delitos de prevaricación administrativa (18 años de inhabilitación en total) al crear y adjudicar a dedo el puesto de David Sánchez en la Diputación de Badajoz. Sentencia no firme, recurrida ante el TSJ de Extremadura.",
+    "lastUpdated": "2026-10-20",
+    "summary": "Condenado el 14-jul-2026 por la Audiencia de Badajoz por dos prevaricaciones (18 años de inhabilitación) al crear y adjudicar a dedo el puesto de David Sánchez en la Diputación. No firme: recurrida ante el TSJ de Extremadura; el 9-oct-2026 la Fiscalía también pide revocarla.",
     "sourceUrls": [
       "https://www.esdiario.com/nacional/260714/193254/gallardo-queda-fuera-juego-dos-prevaricaciones-18-anos-inhabilitacion.html",
       "https://www.rtve.es/noticias/20260714/claves-entender-sentencia-david-sanchez-hermano-presidente-condenado-prevaricacion/17156475.shtml",
-      "https://www.infobae.com/espana/agencias/2026/09/17/acusacion-recurre-la-sentencia-a-david-sanchez-por-no-recoger-trafico-de-influencias/"
+      "https://www.infobae.com/espana/agencias/2026/09/17/acusacion-recurre-la-sentencia-a-david-sanchez-por-no-recoger-trafico-de-influencias/",
+      "https://www.infobae.com/espana/agencias/2026/10/09/fiscal-recurre-sentencia-a-david-sanchez-al-sustituir-relato-de-hechos-por-valoraciones/"
     ]
   },
   {
@@ -1234,11 +1235,12 @@
     ],
     "court": "Audiencia Nacional",
     "startYear": 2026,
-    "lastUpdated": "2026-10-07",
-    "summary": "Detenido en Alemania y entregado a España en sep-2026; el juez Calama lo dejó en libertad con retirada de pasaporte. Investigado por tráfico de influencias, blanqueo de capitales y organización criminal. Declara como investigado el 16-oct-2026.",
+    "lastUpdated": "2026-10-20",
+    "summary": "Detenido en Alemania y entregado a España en sep-2026; el juez Calama lo dejó en libertad con retirada de pasaporte. Investigado por tráfico de influencias, blanqueo de capitales y organización criminal. 16-oct-2026: declara, niega conocer el rescate y no reconoce su firma en los contratos.",
     "sourceUrls": [
       "https://www.democrata.es/tribunales/el-juez-interroga-como-imputado-al-supuesto-cerebro-financiero-del-caso-plus-ultra-el-16-de-octubre/",
-      "https://www.elespanol.com/espana/20260922/detenido-alemania-simon-verhoeven-cerebro-financiero-caso-plus-ultra/1003744393308_0.html"
+      "https://www.elespanol.com/espana/20260922/detenido-alemania-simon-verhoeven-cerebro-financiero-caso-plus-ultra/1003744393308_0.html",
+      "https://elindependiente.com/espana/tribunales/2026/10/16/presunto-cerebro-financiero-niega-conocer-rescate-plus-ultra-no-reconoce-firma-contratos"
     ]
   },
   {
@@ -2460,12 +2462,13 @@
     ],
     "court": "Audiencia Provincial de Murcia",
     "startYear": 2020,
-    "lastUpdated": "2026-10-07",
-    "summary": "30-mar-2023: la jueza abre juicio oral por prevaricación continuada, fraude continuado y malversación en el arrendamiento de la desaladora de Escombreras; fianza de 74,2 M€. Fiscalía pide 11 años. Juicio previsto para finales de 2027.",
+    "lastUpdated": "2026-10-20",
+    "summary": "30-mar-2023: la jueza abre juicio oral por prevaricación continuada, fraude continuado y malversación en el arrendamiento de la desaladora de Escombreras; fianza de 74,2 M€. Fiscalía pide 11 años. Juicio (La Sal II) señalado del 15-sep al 9-nov-2027.",
     "sourceUrls": [
       "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/La-juez-ordena-la-apertura-de-juicio-oral-contra-el-expresidente-de-la-Region-de-Murcia-por-delitos-de-prevaricacion--malversacion-y-fraude",
       "https://www.eldiario.es/murcia/politica/jueza-abre-juicio-oral-expresidente-murcia-ramon-luis-valcarcel-delitos-prevaricacion-malversacion-fraude_1_10080738.html",
-      "https://www.eldiario.es/murcia/politica/trama-murciana-caso-punica-acaba-nueve-condenados-decada-despues_1_12587138.html"
+      "https://www.eldiario.es/murcia/politica/trama-murciana-caso-punica-acaba-nueve-condenados-decada-despues_1_12587138.html",
+      "https://rrnews.es/2026/10/caso-desaladora-la-audiencia-de-murcia-confirma-una-fianza-de-70-millones-y-advierte-de-que-la-cantidad-se-queda-corta.html"
     ]
   },
   {
@@ -2487,7 +2490,7 @@
       },
       {
         "name": "Caso Desaladora de Escombreras",
-        "status": "investigado",
+        "status": "procesado",
         "charges": [
           "prevaricación",
           "malversación"
@@ -2496,12 +2499,13 @@
     ],
     "court": "Audiencia Provincial de Murcia",
     "startYear": 2013,
-    "lastUpdated": "2026-10-07",
-    "summary": "Novo Carthago: absuelto con todos los acusados por la Audiencia de Murcia (nov-2025); la orden del PORN de 2003 había prescrito. Desaladora de Escombreras (La Sal I): investigado como presidente del Ente Público del Agua; juicio oral abierto a 15 investigados (12-nov-2024).",
+    "lastUpdated": "2026-10-20",
+    "summary": "Novo Carthago: absuelto con todos los acusados por la Audiencia de Murcia (nov-2025); la orden del PORN de 2003 había prescrito. Desaladora de Escombreras (La Sal I): procesado como presidente del Ente Público del Agua; juicio oral a 15 acusados (12-nov-2024); 6-oct-2026: fianza de 70 M€ confirmada.",
     "sourceUrls": [
       "https://www.eldiario.es/murcia/politica/audiencia-absuelve-acusados-caso-novo-carthago_1_12782915.html",
       "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/La-Audiencia-de-Murcia-absuelve-a-todos-los-acusados-en-el-caso-Novo-Carthago-",
-      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/La-juez-ordena-la-apertura-de-juicio-oral-a-15-investigados-del-proyecto-de-la-planta-desalinizadora-de-Escombreras--Cartagena-"
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/La-juez-ordena-la-apertura-de-juicio-oral-a-15-investigados-del-proyecto-de-la-planta-desalinizadora-de-Escombreras--Cartagena-",
+      "https://rrnews.es/2026/10/caso-desaladora-la-audiencia-de-murcia-confirma-una-fianza-de-70-millones-y-advierte-de-que-la-cantidad-se-queda-corta.html"
     ]
   },
   {
@@ -2934,25 +2938,33 @@
         "sentence": {
           "date": "2023-02-13",
           "disqualificationMonths": 156,
-          "firm": false
+          "firm": true
         },
-        "clemency": {
-          "kind": "indulto",
-          "date": "2021-06-22",
-          "scope": "parcial"
-        }
+        "clemency": [
+          {
+            "kind": "indulto",
+            "date": "2021-06-22",
+            "scope": "parcial"
+          },
+          {
+            "kind": "amnistía",
+            "date": "2026-10-19"
+          }
+        ]
       }
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-13",
-    "summary": "14-oct-2019: 13 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo revisa la pena tras la reforma penal y mantiene 13 años de inhabilitación por malversación. 30-sep-2024: deniega la amnistía. 6-oct-2026: el Constitucional la avala.",
+    "lastUpdated": "2026-10-20",
+    "summary": "14-oct-2019: 13 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo mantiene 13 años de inhabilitación por malversación. 6-oct-2026: el Constitucional avala amnistiarla. 19-oct-2026: el Supremo aplica la amnistía y extingue la responsabilidad penal.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
       "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
       "https://www.eldiario.es/agencias/supremo-confirma-no-amnistiar-malversacion-junqueras_1_11692918.html",
       "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
-      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx"
+      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx",
+      "https://www.infobae.com/espana/2026/10/20/el-supremo-amnistia-a-junqueras-y-otros-tres-lideres-del-proces-tras-verse-obligado-a-asumir-la-doctrina-del-constitucional/",
+      "https://www.catalunyapress.es/articulo/politica/2026-10-20/6058597-supremo-acata-mandato-constitucional-amnistia-malversacion-junqueras-turull-romeva-bassa"
     ]
   },
   {
@@ -2976,24 +2988,32 @@
         "sentence": {
           "date": "2023-02-13",
           "disqualificationMonths": 144,
-          "firm": false
+          "firm": true
         },
-        "clemency": {
-          "kind": "indulto",
-          "date": "2021-06-22",
-          "scope": "parcial"
-        }
+        "clemency": [
+          {
+            "kind": "indulto",
+            "date": "2021-06-22",
+            "scope": "parcial"
+          },
+          {
+            "kind": "amnistía",
+            "date": "2026-10-19"
+          }
+        ]
       }
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-13",
-    "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación al revisar la sentencia. 6-oct-2026: el Constitucional avala amnistiar la malversación y el Supremo debe pronunciarse de nuevo.",
+    "lastUpdated": "2026-10-20",
+    "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación. 6-oct-2026: el Constitucional avala amnistiarla. 19-oct-2026: el Supremo aplica la amnistía y extingue la responsabilidad penal.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
       "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
       "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
-      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx"
+      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx",
+      "https://www.infobae.com/espana/2026/10/20/el-supremo-amnistia-a-junqueras-y-otros-tres-lideres-del-proces-tras-verse-obligado-a-asumir-la-doctrina-del-constitucional/",
+      "https://www.catalunyapress.es/articulo/politica/2026-10-20/6058597-supremo-acata-mandato-constitucional-amnistia-malversacion-junqueras-turull-romeva-bassa"
     ]
   },
   {
@@ -3017,24 +3037,32 @@
         "sentence": {
           "date": "2023-02-13",
           "disqualificationMonths": 144,
-          "firm": false
+          "firm": true
         },
-        "clemency": {
-          "kind": "indulto",
-          "date": "2021-06-22",
-          "scope": "parcial"
-        }
+        "clemency": [
+          {
+            "kind": "indulto",
+            "date": "2021-06-22",
+            "scope": "parcial"
+          },
+          {
+            "kind": "amnistía",
+            "date": "2026-10-19"
+          }
+        ]
       }
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-13",
-    "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultada el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación. 6-oct-2026: el Constitucional estima su recurso y avala amnistiar la malversación; el Supremo debe aplicarla.",
+    "lastUpdated": "2026-10-20",
+    "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultada el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación. 6-oct-2026: el Constitucional estima su recurso. 19-oct-2026: el Supremo aplica la amnistía y extingue la responsabilidad penal.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
       "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
       "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
-      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx"
+      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx",
+      "https://www.infobae.com/espana/2026/10/20/el-supremo-amnistia-a-junqueras-y-otros-tres-lideres-del-proces-tras-verse-obligado-a-asumir-la-doctrina-del-constitucional/",
+      "https://www.catalunyapress.es/articulo/politica/2026-10-20/6058597-supremo-acata-mandato-constitucional-amnistia-malversacion-junqueras-turull-romeva-bassa"
     ]
   },
   {
@@ -3059,24 +3087,32 @@
         "sentence": {
           "date": "2023-02-13",
           "disqualificationMonths": 144,
-          "firm": false
+          "firm": true
         },
-        "clemency": {
-          "kind": "indulto",
-          "date": "2021-06-22",
-          "scope": "parcial"
-        }
+        "clemency": [
+          {
+            "kind": "indulto",
+            "date": "2021-06-22",
+            "scope": "parcial"
+          },
+          {
+            "kind": "amnistía",
+            "date": "2026-10-19"
+          }
+        ]
       }
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-13",
-    "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación al revisar la sentencia. 6-oct-2026: el Constitucional avala amnistiar la malversación del procés.",
+    "lastUpdated": "2026-10-20",
+    "summary": "14-oct-2019: 12 años de prisión por sedición y malversación; indultado el 22-jun-2021. 13-feb-2023: el Supremo mantiene la inhabilitación por malversación. 6-oct-2026: el Constitucional avala amnistiarla. 19-oct-2026: el Supremo aplica la amnistía y extingue la responsabilidad penal.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/supremo-turull-romeva-bassa-forn_1_1314488.html",
       "https://www.eldiario.es/politica/tribunal-supremo-mantiene-13-anos-inhabilitacion-junqueras_1_9947926.html",
       "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
-      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx"
+      "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/220621-enlace-indultos.aspx",
+      "https://www.infobae.com/espana/2026/10/20/el-supremo-amnistia-a-junqueras-y-otros-tres-lideres-del-proces-tras-verse-obligado-a-asumir-la-doctrina-del-constitucional/",
+      "https://www.catalunyapress.es/articulo/politica/2026-10-20/6058597-supremo-acata-mandato-constitucional-amnistia-malversacion-junqueras-turull-romeva-bassa"
     ]
   },
   {
@@ -3099,14 +3135,15 @@
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-13",
-    "summary": "Procesado por el 1-O sin juicio tras marcharse a Bélgica. 1-jul-2024: el Supremo no le aplica la amnistía y mantiene la malversación y la orden de detención. 6-oct-2026: el Constitucional avala amnistiar la malversación y Llarena levanta de forma provisional la orden de detención.",
+    "lastUpdated": "2026-10-20",
+    "summary": "Procesado por el 1-O sin juicio tras irse a Bélgica. 1-jul-2024: el Supremo no le aplica la amnistía a la malversación. 6-oct-2026: el Constitucional la avala. 19-oct-2026: Llarena retira definitivamente la orden de detención; el procesamiento sigue a falta de que el Supremo aplique la amnistía.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/supremo-no-aplica-amnistia-puigdemont-mantiene-malversacion-orden-arresto_1_11490962.html",
       "https://www.eldiario.es/catalunya/juez-llarena-confirma-amnistia-no-perdona-malversacion-atribuida-puigdemont_1_11641214.html",
       "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
       "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/El-juez-del-Tribunal-Supremo-Pablo-Llarena-deja-sin-efecto-la-orden-de-detencion-de-Carles-Puigdemont-tras-conocer-la-decision-del-TC-de-estimar-el-recurso-de-Dolors-Bassa",
-      "https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13567873_1125657.html"
+      "https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13567873_1125657.html",
+      "https://www.elespanol.com/espana/tribunales/20261019/juez-llarena-retira-orden-detener-puigddemont-acata-fallo-tc-no-comparto-afea-descalificaciones-ts/1003744425386_0.html"
     ]
   },
   {
@@ -3127,12 +3164,13 @@
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-13",
-    "summary": "Procesado por malversación en la causa del 1-O, sin juicio tras instalarse en Bélgica. 1-jul-2024: el Supremo rechaza amnistiar la malversación. 6-oct-2026: el Constitucional avala la amnistía del delito y Llarena levanta de forma provisional la orden de detención; el Supremo debe pronunciarse.",
+    "lastUpdated": "2026-10-20",
+    "summary": "Procesado por malversación en la causa del 1-O, sin juicio tras instalarse en Bélgica. 1-jul-2024: el Supremo rechaza amnistiarla. 6-oct-2026: el Constitucional la avala. 19-oct-2026: Llarena retira definitivamente la orden de detención; el Supremo aún debe aplicar la amnistía.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/comin-considera-decision-supremo-no-amnistiar-malversacion-matar-democracia_1_11492689.html",
       "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
-      "https://www.3cat.cat/3catinfo/el-jutge-llarena-aixeca-lordre-de-detencio-de-puigdemont-comin-i-puig/noticia-amp/3432637/"
+      "https://www.3cat.cat/3catinfo/el-jutge-llarena-aixeca-lordre-de-detencio-de-puigdemont-comin-i-puig/noticia-amp/3432637/",
+      "https://www.elespanol.com/espana/tribunales/20261019/juez-llarena-retira-orden-detener-puigddemont-acata-fallo-tc-no-comparto-afea-descalificaciones-ts/1003744425386_0.html"
     ]
   },
   {
@@ -3154,13 +3192,14 @@
     ],
     "court": "Tribunal Supremo",
     "startYear": 2017,
-    "lastUpdated": "2026-10-13",
-    "summary": "Procesado por malversación en la causa del 1-O; la justicia belga rechazó su entrega el 7-ago-2020. 6-oct-2026: el Constitucional avala amnistiar la malversación y Llarena levanta de forma provisional la orden de detención contra él, Puigdemont y Comín.",
+    "lastUpdated": "2026-10-20",
+    "summary": "Procesado por malversación en la causa del 1-O; la justicia belga rechazó su entrega el 7-ago-2020. 6-oct-2026: el Constitucional avala amnistiarla. 19-oct-2026: Llarena retira definitivamente la orden de detención; el Supremo aún debe aplicar la amnistía.",
     "sourceUrls": [
       "https://www.eldiario.es/politica/lluis-puig-descarta-comparecer-tribunal-supremo-si-mantiene-procesamiento-malversacion_1_9870958.html",
       "https://www.eldiario.es/politica/la-justicia-belga-rechaza-la-entrega-a-espana-del-exconsejero-lluis-puig-por-malversacion_1_6152579.html",
       "https://www.publico.es/politica/tribunales/constitucional-remite-supremo-sentencia-avala-amnistiar-malversacion-proces-1.html",
-      "https://www.3cat.cat/3catinfo/el-jutge-llarena-aixeca-lordre-de-detencio-de-puigdemont-comin-i-puig/noticia-amp/3432637/"
+      "https://www.3cat.cat/3catinfo/el-jutge-llarena-aixeca-lordre-de-detencio-de-puigdemont-comin-i-puig/noticia-amp/3432637/",
+      "https://www.elespanol.com/espana/tribunales/20261019/juez-llarena-retira-orden-detener-puigddemont-acata-fallo-tc-no-comparto-afea-descalificaciones-ts/1003744425386_0.html"
     ]
   },
   {
@@ -3233,11 +3272,13 @@
           "fineEur": 36000,
           "firm": true
         },
-        "clemency": {
-          "kind": "indulto",
-          "date": "2026-07-28",
-          "scope": "parcial"
-        }
+        "clemency": [
+          {
+            "kind": "indulto",
+            "date": "2026-07-28",
+            "scope": "parcial"
+          }
+        ]
       }
     ],
     "court": "Tribunal Superior de Justicia de Cataluña",

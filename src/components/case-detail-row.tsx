@@ -43,11 +43,11 @@ export function CaseDetailRow({ caseData: c, allCases }: Props) {
                   <span className={`${badgeVariants({ variant: "outline" })} ${statusConfig[cause.status].className}`}>
                     {statusConfig[cause.status].label}
                   </span>
-                  {cause.clemency && (
-                    <span className={`${badgeVariants({ variant: "outline" })} ${clemencyClassName}`}>
-                      {clemencyLabel(cause.clemency)} · <time dateTime={cause.clemency.date}>{formatDate(cause.clemency.date)}</time>
+                  {cause.clemency?.map((cl) => (
+                    <span key={`${cl.kind}-${cl.date}`} className={`${badgeVariants({ variant: "outline" })} ${clemencyClassName}`}>
+                      {clemencyLabel(cl)} · <time dateTime={cl.date}>{formatDate(cl.date)}</time>
                     </span>
-                  )}
+                  ))}
                   {cause.amount !== undefined && (
                     <span className="flex items-center gap-1 text-muted-foreground">
                       <Euro className="h-3.5 w-3.5 shrink-0" aria-hidden />
