@@ -2940,10 +2940,17 @@
           "disqualificationMonths": 156,
           "firm": true
         },
-        "clemency": {
-          "kind": "amnistía",
-          "date": "2026-10-19"
-        }
+        "clemency": [
+          {
+            "kind": "indulto",
+            "date": "2021-06-22",
+            "scope": "parcial"
+          },
+          {
+            "kind": "amnistía",
+            "date": "2026-10-19"
+          }
+        ]
       }
     ],
     "court": "Tribunal Supremo",
@@ -2983,10 +2990,17 @@
           "disqualificationMonths": 144,
           "firm": true
         },
-        "clemency": {
-          "kind": "amnistía",
-          "date": "2026-10-19"
-        }
+        "clemency": [
+          {
+            "kind": "indulto",
+            "date": "2021-06-22",
+            "scope": "parcial"
+          },
+          {
+            "kind": "amnistía",
+            "date": "2026-10-19"
+          }
+        ]
       }
     ],
     "court": "Tribunal Supremo",
@@ -3025,10 +3039,17 @@
           "disqualificationMonths": 144,
           "firm": true
         },
-        "clemency": {
-          "kind": "amnistía",
-          "date": "2026-10-19"
-        }
+        "clemency": [
+          {
+            "kind": "indulto",
+            "date": "2021-06-22",
+            "scope": "parcial"
+          },
+          {
+            "kind": "amnistía",
+            "date": "2026-10-19"
+          }
+        ]
       }
     ],
     "court": "Tribunal Supremo",
@@ -3068,10 +3089,17 @@
           "disqualificationMonths": 144,
           "firm": true
         },
-        "clemency": {
-          "kind": "amnistía",
-          "date": "2026-10-19"
-        }
+        "clemency": [
+          {
+            "kind": "indulto",
+            "date": "2021-06-22",
+            "scope": "parcial"
+          },
+          {
+            "kind": "amnistía",
+            "date": "2026-10-19"
+          }
+        ]
       }
     ],
     "court": "Tribunal Supremo",
@@ -3244,11 +3272,13 @@
           "fineEur": 36000,
           "firm": true
         },
-        "clemency": {
-          "kind": "indulto",
-          "date": "2026-07-28",
-          "scope": "parcial"
-        }
+        "clemency": [
+          {
+            "kind": "indulto",
+            "date": "2026-07-28",
+            "scope": "parcial"
+          }
+        ]
       }
     ],
     "court": "Tribunal Superior de Justicia de Cataluña",

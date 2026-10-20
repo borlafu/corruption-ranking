@@ -228,7 +228,7 @@ export function LeaderboardTable({ cases, allCases, openId, onToggle }: Props) {
                       className={`hidden lg:table-cell text-xs ${c.sentence?.prisonMonths ? "text-status-condenado" : "text-muted-foreground"}`}
                     >
                       {c.sentence ? formatPenalty(c.sentence) : "—"}
-                      {c.clemency && ` · ${clemencySuffix(c.clemency)}`}
+                      {c.clemency?.map((cl) => ` · ${clemencySuffix(cl)}`).join("")}
                     </TableCell>
                     <TableCell className="text-center">
                       <Popover>
