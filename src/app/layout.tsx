@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     title,
     description: SITE_DESCRIPTION,
   },
+  // Google Search Console ownership for the URL-prefix property. Public by design: it is served
+  // in every page's <head>, which is how Google checks it.
+  verification: { google: 'zBiEMf0TAunhqoico-KYB-JIVkuVxBX4YaOe9eG8H54' },
   // The image is `opengraph-image.tsx`, which Next also emits as twitter:image.
   twitter: { card: 'summary_large_image', title, description: SITE_DESCRIPTION },
 };
