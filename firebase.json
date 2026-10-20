@@ -18,6 +18,16 @@
             "value": "application/rss+xml; charset=utf-8"
           }
         ]
+      },
+      {
+        "comment": "The share card is exported as a file with no extension, which Hosting would serve as application/octet-stream; crawlers then refuse it as an og:image.",
+        "source": "/opengraph-image",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "image/png"
+          }
+        ]
       }
     ]
   }

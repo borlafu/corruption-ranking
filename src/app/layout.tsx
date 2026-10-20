@@ -1,14 +1,14 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter, Oswald } from 'next/font/google';
 import { Analytics } from '@/components/analytics';
-import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
+import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from '@/lib/site';
 import './globals.css';
 
 // Self-hosted at build time: no request to Google from the visitor's browser.
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 const oswald = Oswald({ subsets: ['latin'], weight: '700', variable: '--font-oswald', display: 'swap' });
 
-const title = 'España Corrupta — marcador de casos de corrupción';
+const title = SITE_TITLE;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     title,
     description: SITE_DESCRIPTION,
   },
-  // `summary` and not `summary_large_image`: there is no og:image to fill a large card.
-  twitter: { card: 'summary', title, description: SITE_DESCRIPTION },
+  // The image is `opengraph-image.tsx`, which Next also emits as twitter:image.
+  twitter: { card: 'summary_large_image', title, description: SITE_DESCRIPTION },
 };
 
 export const viewport: Viewport = {

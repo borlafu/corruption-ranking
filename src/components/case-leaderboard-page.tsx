@@ -102,7 +102,7 @@ export function CaseLeaderboardPage({ cases, lastUpdated, lastReviewed }: Props)
             </a>
           </h1>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-            Un marcador no oficial que rastrea acusaciones y condenas en casos de corrupción en España.
+            Seguimiento independiente de las causas judiciales por corrupción en España: quién está investigado, procesado o condenado, en qué caso y con qué pena.
           </p>
           <p className="text-xs text-muted-foreground mt-1">
             {lastUpdated && <>Última actualización: {lastUpdated} · </>}

@@ -2,7 +2,7 @@ import { CaseLeaderboardPage } from "@/components/case-leaderboard-page";
 import { DataSchema, deriveView } from "@/lib/schema";
 import { changelog } from "@/lib/changelog";
 import { formatDate } from "@/lib/status-ui";
-import { SCOPE_START, SITE_DESCRIPTION, SITE_NAME, SITE_URL, lastReviewedISO, lastUpdatedISO } from "@/lib/site";
+import { FIRST_YEAR, SITE_DESCRIPTION, SITE_NAME, SITE_URL, lastReviewedISO, lastUpdatedISO } from "@/lib/site";
 import data from "@/lib/data.json";
 
 // Server component in a static export: parsing and formatting run once at build time.
@@ -20,9 +20,9 @@ const datasetJsonLd = {
   url: SITE_URL,
   inLanguage: "es",
   isAccessibleForFree: true,
-  temporalCoverage: `${SCOPE_START}/..`,
+  temporalCoverage: `${FIRST_YEAR}/..`,
   dateModified: lastUpdatedISO,
-  keywords: ["corrupción", "España", "causas judiciales", "política", "sentencias"],
+  keywords: ["corrupción", "España", "políticos imputados", "condenados por corrupción", "causas judiciales", "sentencias", "indultos"],
 };
 
 export default function Home() {

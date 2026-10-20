@@ -8,7 +8,7 @@ import { DataSchema } from "@/lib/schema";
 import { changelog, countLine } from "@/lib/changelog";
 import { KIND_LABEL, entryId, formatDate, statusConfig } from "@/lib/status-ui";
 import { badgeVariants } from "@/components/ui/badge";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { suspectPaths } from "@/lib/suspects";
 import data from "@/lib/data.json";
 
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   description,
   // The layout's canonical is the root; this page is its own document.
   alternates: { canonical: "/cambios", types: { "application/rss+xml": "/cambios/feed.xml" } },
-  openGraph: { url: "/cambios", title, description },
-  twitter: { card: "summary", title, description },
+  openGraph: { url: "/cambios", title, description, images: OG_IMAGE },
+  twitter: { card: "summary_large_image", title, description, images: OG_IMAGE },
 };
 
 /** The header links back to the root, so the trail the crawler sees matches the one on screen. */
