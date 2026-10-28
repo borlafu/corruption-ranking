@@ -4568,14 +4568,26 @@
           "prevaricación",
           "malversación"
         ]
+      },
+      {
+        "name": "Caso Santana Motor",
+        "status": "investigado",
+        "charges": [
+          "prevaricación",
+          "malversación",
+          "falsedad documental"
+        ],
+        "amount": 44023930
       }
     ],
     "court": "Juzgado de Instrucción nº 6 de Sevilla",
     "startYear": 2025,
-    "lastUpdated": "2026-10-08",
-    "summary": "Ex-director general. Procesado en sep-2025 y enviado a juicio oral el 8-jul-2026 por el aval público de más de 1,18 M€ a la cooperativa Cofrutex, concedido sin que la empresa hubiera ni solicitado la ayuda. Anticorrupción pide 98 años de prisión para los 14 ex altos cargos acusados.",
+    "lastUpdated": "2026-10-29",
+    "summary": "Procesado en sep-2025 y enviado a juicio oral el 8-jul-2026 por el aval de 1,18 M€ a Cofrutex (Caso Avales). 27-oct-2026: citado como investigado por los más de 44 M€ de la Agencia IDEA a Santana Motor (Plan Linares Futuro).",
     "sourceUrls": [
-      "https://www.eldebate.com/espana/andalucia/sevilla/20260709/juez-sienta-banquillo-14-ex-altos-cargos-psoe-andalucia-aval-publico-12-millones_437682.html"
+      "https://www.eldebate.com/espana/andalucia/sevilla/20260709/juez-sienta-banquillo-14-ex-altos-cargos-psoe-andalucia-aval-publico-12-millones_437682.html",
+      "https://www.libertaddigital.com/andalucia/2026-10-27/fiscalia-anticorrupcion-imputa-18-ex-altos-caros-psoe-de-andalucia-por-desviar-ayudas-millonarias-a-santana-motor-empresa-ya-quebrada-a-traves-agencia-publica-idea-7482810/",
+      "https://www.elcorreogallego.es/espana/2026/10/28/imputado-exconsejero-socialista-junta-andalucia-135831488.html"
     ]
   },
   {
@@ -5153,6 +5165,145 @@
       "https://www.diariodeleon.es/nacional/260715/2091237/hermano-sanchez-condenado-9-anos-inhabilitacion-carcel.html",
       "https://www.esdiario.com/nacional/260714/193254/gallardo-queda-fuera-juego-dos-prevaricaciones-18-anos-inhabilitacion.html",
       "https://www.cope.es/emisoras/extremadura/badajoz-provincia/badajoz/noticias/recurren-hermano-sanchez-sea-condenado-trafico-influencias-20260730_3413230.html"
+    ]
+  },
+  {
+    "id": 157,
+    "suspect": "Antonio Ávila Cano",
+    "title": "ex-Consejero de Economía, Innovación y Ciencia de la Junta de Andalucía",
+    "categories": [
+      "gobierno"
+    ],
+    "party": "psoe",
+    "causes": [
+      {
+        "name": "Caso Santana Motor",
+        "status": "investigado",
+        "charges": [
+          "prevaricación",
+          "malversación",
+          "falsedad documental"
+        ],
+        "amount": 44023930
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 6 de Sevilla",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-29",
+    "summary": "27-oct-2026: el juez Vilaplana lo cita como investigado por prevaricación, malversación y falsedad en el desvío de más de 44 M€ de la Agencia IDEA, vía Incuba, a Santana Motor y Fasur (Plan Linares Futuro, 2011). Declara el 24-nov-2026.",
+    "sourceUrls": [
+      "https://www.elespanol.com/espana/andalucia/20261027/sobrino-felipe-gonzalez-ex-altos-cargos-junta-imputados-desviar-ayudas-santana-motor/1003744436138_0.html",
+      "https://www.libertaddigital.com/andalucia/2026-10-27/fiscalia-anticorrupcion-imputa-18-ex-altos-caros-psoe-de-andalucia-por-desviar-ayudas-millonarias-a-santana-motor-empresa-ya-quebrada-a-traves-agencia-publica-idea-7482810/",
+      "https://www.elcorreogallego.es/espana/2026/10/28/imputado-exconsejero-socialista-junta-andalucia-135831488.html"
+    ]
+  },
+  {
+    "id": 158,
+    "suspect": "Luis Nieto Ballesteros",
+    "title": "ex-Viceconsejero de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Santana Motor",
+        "status": "investigado",
+        "charges": [
+          "prevaricación",
+          "malversación",
+          "falsedad documental"
+        ],
+        "amount": 44023930
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 6 de Sevilla",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-29",
+    "summary": "27-oct-2026: el juez Vilaplana lo cita como investigado, entre 18 ex altos cargos, por prevaricación, malversación y falsedad en el desvío de más de 44 M€ de la Agencia IDEA a Santana Motor y Fasur (Plan Linares Futuro).",
+    "sourceUrls": [
+      "https://www.elespanol.com/espana/andalucia/20261027/sobrino-felipe-gonzalez-ex-altos-cargos-junta-imputados-desviar-ayudas-santana-motor/1003744436138_0.html",
+      "https://www.libertaddigital.com/andalucia/2026-10-27/fiscalia-anticorrupcion-imputa-18-ex-altos-caros-psoe-de-andalucia-por-desviar-ayudas-millonarias-a-santana-motor-empresa-ya-quebrada-a-traves-agencia-publica-idea-7482810/"
+    ]
+  },
+  {
+    "id": 159,
+    "suspect": "Justo Mañas",
+    "title": "ex-Viceconsejero de la Junta de Andalucía",
+    "categories": [
+      "institucional"
+    ],
+    "causes": [
+      {
+        "name": "Caso Santana Motor",
+        "status": "investigado",
+        "charges": [
+          "prevaricación",
+          "malversación",
+          "falsedad documental"
+        ],
+        "amount": 44023930
+      }
+    ],
+    "court": "Juzgado de Instrucción nº 6 de Sevilla",
+    "startYear": 2026,
+    "lastUpdated": "2026-10-29",
+    "summary": "27-oct-2026: el juez Vilaplana lo cita como investigado, entre 18 ex altos cargos, por prevaricación, malversación y falsedad en el desvío de más de 44 M€ de la Agencia IDEA a Santana Motor y Fasur (Plan Linares Futuro).",
+    "sourceUrls": [
+      "https://www.elespanol.com/espana/andalucia/20261027/sobrino-felipe-gonzalez-ex-altos-cargos-junta-imputados-desviar-ayudas-santana-motor/1003744436138_0.html",
+      "https://www.libertaddigital.com/andalucia/2026-10-27/fiscalia-anticorrupcion-imputa-18-ex-altos-caros-psoe-de-andalucia-por-desviar-ayudas-millonarias-a-santana-motor-empresa-ya-quebrada-a-traves-agencia-publica-idea-7482810/",
+      "https://www.elcorreogallego.es/espana/2026/10/28/imputado-exconsejero-socialista-junta-andalucia-135831488.html"
+    ]
+  },
+  {
+    "id": 160,
+    "suspect": "Enrique Pelegrín",
+    "title": "ex-socio de Francisco Serrano y cofundador de Bio Wood Niebla",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Bio Wood Niebla",
+        "status": "procesado",
+        "charges": [
+          "estafa"
+        ],
+        "amount": 2500000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-29",
+    "summary": "Coacusado con Serrano: el 18-mar-2024 el Juzgado de Instrucción nº 16 de Sevilla abrió juicio oral por estafa o fraude de subvenciones del préstamo de 2,5 M€ de Industria; fianza de 3,3 M€. Juicio en la Audiencia de Sevilla del 15-mar al 7-abr-2027.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-retrasa-juicio-exlider-vox-andalucia-marzo-2027_1_13250641.html",
+      "https://www.infobae.com/espana/2025/05/01/el-exlider-de-vox-en-andalucia-francisco-serrano-se-sentara-en-el-banquillo-de-los-acusados-en-2026-por-un-presunto-fraude-de-subvenciones/"
+    ]
+  },
+  {
+    "id": 161,
+    "suspect": "Francisco Javier López Ballesteros",
+    "title": "ex-socio de Bio Wood Niebla",
+    "categories": [
+      "entorno"
+    ],
+    "causes": [
+      {
+        "name": "Caso Bio Wood Niebla",
+        "status": "procesado",
+        "charges": [
+          "estafa"
+        ],
+        "amount": 2500000
+      }
+    ],
+    "court": "Audiencia Provincial de Sevilla",
+    "startYear": 2024,
+    "lastUpdated": "2026-10-29",
+    "summary": "Coacusado con Serrano: el 18-mar-2024 el Juzgado de Instrucción nº 16 de Sevilla abrió juicio oral por estafa o fraude de subvenciones del préstamo de 2,5 M€ de Industria; fianza de 3,3 M€. Juicio en la Audiencia de Sevilla del 15-mar al 7-abr-2027.",
+    "sourceUrls": [
+      "https://www.eldiario.es/andalucia/audiencia-sevilla-retrasa-juicio-exlider-vox-andalucia-marzo-2027_1_13250641.html",
+      "https://www.infobae.com/espana/2025/05/01/el-exlider-de-vox-en-andalucia-francisco-serrano-se-sentara-en-el-banquillo-de-los-acusados-en-2026-por-un-presunto-fraude-de-subvenciones/"
     ]
   }
 ]
