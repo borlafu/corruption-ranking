@@ -1,5 +1,263 @@
 [
   {
+    "date": "2026-10-29",
+    "prs": [],
+    "summary": "Revisión semanal: se investigaron las 26 causas activas y se hizo una pasada de descubrimiento de causas abiertas o agravadas desde el 13-oct-2026. No hubo sentencias ni cambios de estado en las causas activas. Se añade una causa nueva, el Caso Santana Motor (Junta de Andalucía, Agencia IDEA), con tres altas y un registro existente que se suma a ella, y se dan de alta los dos socios de Francisco Serrano acusados en el Caso Bio Wood Niebla, pendientes desde la revisión anterior. Las causas resueltas no se revisaron; el repaso mensual toca a partir del 7-nov-2026. El total pasa de 154 a 159 registros.",
+    "changes": [
+      {
+        "kind": "nuevo",
+        "ids": [
+          157,
+          158,
+          159
+        ],
+        "description": "Nueva causa, Caso Santana Motor: el 27-oct-2026 el juez Vilaplana (Juzgado de Instrucción nº 6 de Sevilla) citó como investigados a 18 ex altos cargos y miembros del Consejo Rector de la Agencia IDEA por prevaricación, malversación y falsedad documental en el desvío de más de 44 M€, a través de la filial Incuba, a Santana Motor y Fasur (Plan Linares Futuro, 2011). Se dan de alta el exconsejero de Economía Antonio Ávila Cano y los exviceconsejeros Luis Nieto Ballesteros y Justo Mañas. Las declaraciones empiezan el 24-nov-2026.",
+        "rationale": "Imputación recogida por El Español, Libertad Digital y El Correo Gallego; cada alta aparece nombrada en al menos dos de ellos. El importe es la suma de la aportación de 15,7 M€ y la ampliación de capital de 28,3 M€ que detalla El Correo Gallego. No consta el partido de los dos exviceconsejeros, así que se deja en blanco.",
+        "sourceUrls": [
+          "https://www.elespanol.com/espana/andalucia/20261027/sobrino-felipe-gonzalez-ex-altos-cargos-junta-imputados-desviar-ayudas-santana-motor/1003744436138_0.html",
+          "https://www.libertaddigital.com/andalucia/2026-10-27/fiscalia-anticorrupcion-imputa-18-ex-altos-caros-psoe-de-andalucia-por-desviar-ayudas-millonarias-a-santana-motor-empresa-ya-quebrada-a-traves-agencia-publica-idea-7482810/",
+          "https://www.elcorreogallego.es/espana/2026/10/28/imputado-exconsejero-socialista-junta-andalucia-135831488.html"
+        ]
+      },
+      {
+        "kind": "actualizado",
+        "ids": [
+          138
+        ],
+        "description": "Antonio Valverde Ramos, ya procesado en el Caso Avales, figura también entre los investigados del Caso Santana Motor como exdirector general de la Agencia IDEA. Se añade la causa a su registro en lugar de crear uno nuevo.",
+        "rationale": "Nombrado como investigado por los tres medios.",
+        "sourceUrls": [
+          "https://www.elespanol.com/espana/andalucia/20261027/sobrino-felipe-gonzalez-ex-altos-cargos-junta-imputados-desviar-ayudas-santana-motor/1003744436138_0.html",
+          "https://www.libertaddigital.com/andalucia/2026-10-27/fiscalia-anticorrupcion-imputa-18-ex-altos-caros-psoe-de-andalucia-por-desviar-ayudas-millonarias-a-santana-motor-empresa-ya-quebrada-a-traves-agencia-publica-idea-7482810/",
+          "https://www.elcorreogallego.es/espana/2026/10/28/imputado-exconsejero-socialista-junta-andalucia-135831488.html"
+        ]
+      },
+      {
+        "kind": "nuevo",
+        "ids": [
+          160,
+          161
+        ],
+        "description": "Se dan de alta Enrique Pelegrín y Francisco Javier López Ballesteros, exsocios de Francisco Serrano en Bio Wood Niebla, acusados con él desde que el Juzgado de Instrucción nº 16 de Sevilla abrió juicio oral el 18-mar-2024 por estafa o fraude de subvenciones. Juicio del 15-mar al 7-abr-2027 en la Audiencia de Sevilla.",
+        "rationale": "Quedaron pendientes de una segunda fuente en la revisión del 20-oct; eldiario.es e Infobae los nombran como acusados. Sin cargo público ni partido conocidos. El año de entrada es el de la apertura de juicio oral, la primera fecha verificada de su implicación.",
+        "sourceUrls": [
+          "https://www.eldiario.es/andalucia/audiencia-sevilla-retrasa-juicio-exlider-vox-andalucia-marzo-2027_1_13250641.html",
+          "https://www.infobae.com/espana/2025/05/01/el-exlider-de-vox-en-andalucia-francisco-serrano-se-sentara-en-el-banquillo-de-los-acusados-en-2026-por-un-presunto-fraude-de-subvenciones/"
+        ]
+      }
+    ],
+    "notAdded": [
+      {
+        "who": "Francisco del Río Muñoz",
+        "cause": "Caso Santana Motor",
+        "reason": "Ya está en el conjunto de datos (Caso Avales). Solo El Español lo nombra como investigado en esta causa (declara el 26-nov-2026); falta una segunda fuente para añadirle la causa."
+      },
+      {
+        "who": "Juan María González Mejías, Francisco José Morillo Sánchez, Juan Carlos Soriano Hernández, Francisco Triguero Ruiz, Isabel de Haro Aramberri y otros ocho no identificados",
+        "cause": "Caso Santana Motor",
+        "reason": "Solo una fuente los nombra y no aclara si los vocales del Consejo Rector están citados como investigados ni el cargo de cada uno. Se revisarán con las declaraciones de noviembre."
+      },
+      {
+        "who": "Claudio Rivas",
+        "cause": "Caso Hidrocarburos",
+        "reason": "Socio de Aldama y empresario privado; declara como investigado el 3-dic-2026, pero no se ha verificado cuándo fue imputado. Se revisará entonces."
+      },
+      {
+        "who": "Sandra Gómez, Joan Ribó y Miguel Chavarria",
+        "cause": "Piscina de Alboraya",
+        "reason": "Causa municipal (fuera del alcance); la posible exposición razonada al Supremo sobre la eurodiputada no tiene fecha confirmada."
+      },
+      {
+        "who": "Directivos de Duro Felguera",
+        "cause": "Sobornos en Venezuela",
+        "reason": "Juicio en la Audiencia Nacional desde oct-2026 contra directivos privados por sobornos en el extranjero; no hay cargo público español implicado."
+      }
+    ],
+    "unverifiable": [
+      "Caso Forestalia",
+      "Caso 3%",
+      "Caso Rato",
+      "Caso Mascarillas Canarias"
+    ],
+    "watchlist": [
+      {
+        "text": "Sentencia de Kitchen, vista para sentencia desde el 28-jul-2026.",
+        "ids": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      {
+        "text": "Sentencia del Caso Pujol en la Audiencia Nacional (vista desde el 14-may-2026).",
+        "ids": [
+          106
+        ]
+      },
+      {
+        "text": "Llarena debe concluir el sumario y la Sala Segunda aplicar la amnistía a la malversación de Puigdemont, Comín y Puig; se marcará sin cambiar el estado.",
+        "ids": [
+          98,
+          99,
+          100
+        ]
+      },
+      {
+        "text": "Decisión del TSJC sobre la amnistía en el Caso organización del 1-O.",
+        "ids": [
+          107,
+          108
+        ]
+      },
+      {
+        "text": "Veredicto de la pieza del golf del Canal (Caso Lezo), en juicio desde el 13-oct-2026.",
+        "ids": [
+          73
+        ]
+      },
+      {
+        "text": "Apelaciones de David Sánchez, Gallardo y la Fiscalía ante el TSJ de Extremadura.",
+        "ids": [
+          7,
+          9,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ]
+      },
+      {
+        "text": "Nuevas sentencias del Caso ERE en Sevilla cuando responda el TJUE; apertura de juicio oral de la pieza Boliden Apirsa.",
+        "ids": [
+          14,
+          15,
+          20,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          136,
+          137
+        ]
+      },
+      {
+        "text": "Casaciones pendientes: Erial, Rato, Perla Negra y Faffe; apelación de Invercaria.",
+        "ids": [
+          69,
+          70,
+          71,
+          78,
+          83,
+          84,
+          129,
+          130,
+          135,
+          117,
+          141
+        ]
+      },
+      {
+        "text": "Competencia territorial del Caso Montoro, pendiente en la Audiencia de Tarragona.",
+        "ids": [
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      {
+        "text": "Caso Santana Motor: declaraciones de investigados el 24 y 26-nov y el 1-dic-2026.",
+        "ids": [
+          157,
+          158,
+          159,
+          138
+        ]
+      },
+      {
+        "text": "Caso Plus Ultra: la instrucción vence el 28-nov-2026 y el juez estudia prorrogarla; las hermanas Rodríguez Espinosa declaran el 30-nov.",
+        "ids": [
+          13,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      {
+        "text": "Posible imputación de Acciona como persona jurídica en la pieza de obra pública del Caso Koldo; amparo de Ábalos y Koldo ante el TC.",
+        "ids": [
+          3,
+          4,
+          5,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      {
+        "text": "Caso Leire Díez: declaración de Nervis Villalobos el 30-oct-2026; el PSOE debe entregar sus contratos con despachos hacia el 7-nov.",
+        "ids": [
+          24
+        ]
+      },
+      {
+        "text": "Juicios señalados: Lezo Emissao (12-ene-2027), Caso 3% (8-feb-2027), Bio Wood Niebla (15-mar-2027) y Desaladora La Sal II (15-sep-2027).",
+        "ids": [
+          73,
+          104,
+          109,
+          160,
+          161,
+          79
+        ]
+      },
+      {
+        "text": "Juicio con jurado de Begoña Gómez y Caso Mediador, pendientes de señalamiento.",
+        "ids": [
+          2,
+          42,
+          10,
+          131,
+          132,
+          133
+        ]
+      },
+      {
+        "text": "Instrucción del Caso Hidrocarburos prorrogada hasta dic-2026; Claudio Rivas declara el 3-dic.",
+        "ids": [
+          12
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-20",
     "prs": [
       66
