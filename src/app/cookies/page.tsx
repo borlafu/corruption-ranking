@@ -18,7 +18,7 @@ const cookies = [
 
 export default function CookiesPage() {
   return (
-    <LegalPage title="Política de cookies" updated="2026-10-17">
+    <LegalPage title="Política de cookies" updated="2026-10-29">
       <p>
         Esta web usa cookies solo para medir la audiencia, y solo si lo aceptas. Aquí se explica cuáles son, para qué
         sirven y cómo cambiar de opinión.
