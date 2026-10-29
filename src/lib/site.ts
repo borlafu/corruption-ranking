@@ -27,7 +27,19 @@ export const SITE_DESCRIPTION =
   "de todos los partidos: causas, penas, indultos y fuentes.";
 
 /** The data controller and privacy contact that /cookies and /privacidad publish (GDPR art. 13). */
-export const OWNER_NAME = "Borja Lafuente";
+export const OWNER_NAME = "Borja Lafuente Romero";
+
+/** Dataset author for the JSON-LD and the license line: the owner, with GitHub handle and profile. */
+export const DATA_AUTHOR = {
+  "@type": "Person",
+  name: OWNER_NAME,
+  alternateName: "borlafu",
+  url: "https://github.com/borlafu",
+} as const;
+
+/** CC BY 4.0: any reuse, AI included, as long as the author is credited. Covers database rights too. */
+export const DATA_LICENSE = "https://creativecommons.org/licenses/by/4.0/";
+export const DATA_LICENSE_NAME = "CC BY 4.0";
 export const PRIVACY_EMAIL = "borlafu+gdpr@gmail.com";
 
 /**

@@ -18,7 +18,7 @@ const email = (
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Política de privacidad" updated="2026-10-17">
+    <LegalPage title="Política de privacidad" updated="2026-10-29">
       <p>
         Esta web no tiene registro, formularios ni comentarios: no te pide ningún dato. Solo trata los datos técnicos
         necesarios para servirte las páginas y, si aceptas las cookies, los de medición de audiencia.
