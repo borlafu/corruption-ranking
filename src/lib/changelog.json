@@ -1,5 +1,282 @@
 [
   {
+    "date": "2026-11-03",
+    "prs": [],
+    "summary": "Revisión semanal sin cambios en los registros: se investigaron las 27 causas activas y se hizo una pasada de descubrimiento de causas abiertas o agravadas desde el 29-oct-2026. No hubo sentencias, cambios de estado ni causas nuevas que cumplan el criterio de apertura judicial. Las causas resueltas no se revisaron; el repaso mensual toca a partir del 7-nov-2026. El buscador devolvió muy poco posterior a mediados de octubre, por lo que la ausencia de novedades se lee como no verificada y no como confirmada. El total se mantiene en 159 registros.",
+    "changes": [],
+    "notAdded": [
+      {
+        "who": "Fernando Camino, Alberto González Amador y Gloria Carrasco",
+        "cause": "Comisión mascarillas (Quirón)",
+        "reason": "Imputados por el Juzgado de Instrucción nº 19 de Madrid (declaración de Camino el 3-dic-2026), pero la causa es un negocio privado sin cargo público implicado; solo se revisará si un tribunal vincula a la Comunidad de Madrid."
+      },
+      {
+        "who": "Leticia de la Hoz",
+        "cause": "Caso Leire Díez",
+        "reason": "Abogada de Koldo García imputada por Pedraz en jun-2026; no ocupa cargo público ni pertenece a un partido y no es una novedad de esta semana."
+      },
+      {
+        "who": "Félix Alonso Cantorné, Joan Ignasi Elena y Joan Herrera",
+        "cause": "Contratos de Altafulla",
+        "reason": "Causa de origen municipal (fuera del alcance); el Supremo estudia remitirla tras perder el aforamiento."
+      },
+      {
+        "who": "Alfonso Carlos Moscoso",
+        "cause": "Jueza de paz de Villaluenga del Rosario",
+        "reason": "Causa de origen municipal (fuera del alcance) y posible remisión a un juzgado inferior sin confirmar."
+      },
+      {
+        "who": "Pedro Bestard",
+        "cause": "Coches oficiales del Consell de Mallorca",
+        "reason": "La querella de la Fiscalía (3-nov-2026) aún no ha sido admitida y el ámbito es insular; no cumple el criterio de apertura judicial."
+      },
+      {
+        "who": "Vicente Merino (denuncia)",
+        "cause": "Biorrefinería de Zamora",
+        "reason": "Denuncia sin investigación abierta ni imputados."
+      },
+      {
+        "who": "Fiscalía Europea, mantenimiento del AVE Madrid-Sevilla",
+        "cause": "Fraude de fondos de la UE",
+        "reason": "Investigación abierta desde mar-2026 sin imputados confirmados."
+      }
+    ],
+    "unverifiable": [
+      "Caso Hidrocarburos",
+      "Caso Forestalia",
+      "Caso ERE",
+      "Caso Mascarillas Canarias",
+      "Caso 3%",
+      "Caso Erial",
+      "Caso Rato"
+    ],
+    "watchlist": [
+      {
+        "text": "Caso Koldo: la instrucción en la Audiencia Nacional se prorrogó el 5-ago-2026 hasta marzo de 2027 según El Debate; hay que contrastarlo con el resumen del registro 3 antes de editarlo.",
+        "ids": [
+          3,
+          6,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      {
+        "text": "Caso Leire Díez: el 9-oct-2026 Pedraz descartó por ahora imputar al PSOE como persona jurídica y espera la declaración de Santos Cerdán, sin fecha.",
+        "ids": [
+          6,
+          8,
+          11,
+          20,
+          21,
+          22,
+          23,
+          24,
+          29,
+          33,
+          34,
+          35,
+          36,
+          37
+        ]
+      },
+      {
+        "text": "Caso Lezo: Esperanza Aguirre declaró como testigo el 22-oct-2026 en el juicio del golf del Canal; la sentencia está pendiente.",
+        "ids": [
+          73
+        ]
+      },
+      {
+        "text": "Caso Begoña Gómez: el expediente debe llegar a la Audiencia de Madrid para asignar sección, presidente del jurado y fecha de juicio.",
+        "ids": [
+          2,
+          42,
+          43
+        ]
+      },
+      {
+        "text": "Caso Mediador: la Audiencia de Santa Cruz de Tenerife aún no fija fecha de juicio.",
+        "ids": [
+          10,
+          131,
+          132,
+          133
+        ]
+      },
+      {
+        "text": "Caso Santana Motor: la fecha del 24-nov-2026 para la declaración de Ávila Cano no se pudo confirmar en una segunda fuente.",
+        "ids": [
+          157
+        ]
+      },
+      {
+        "text": "Sentencia de Kitchen, vista para sentencia desde el 28-jul-2026.",
+        "ids": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      {
+        "text": "Sentencia del Caso Pujol en la Audiencia Nacional (vista desde el 14-may-2026).",
+        "ids": [
+          106
+        ]
+      },
+      {
+        "text": "Llarena debe concluir el sumario y la Sala Segunda aplicar la amnistía a la malversación de Puigdemont, Comín y Puig; se marcará sin cambiar el estado.",
+        "ids": [
+          98,
+          99,
+          100
+        ]
+      },
+      {
+        "text": "Decisión del TSJC sobre la amnistía en el Caso organización del 1-O.",
+        "ids": [
+          107,
+          108
+        ]
+      },
+      {
+        "text": "Veredicto de la pieza del golf del Canal (Caso Lezo), en juicio desde el 13-oct-2026.",
+        "ids": [
+          73
+        ]
+      },
+      {
+        "text": "Apelaciones de David Sánchez, Gallardo y la Fiscalía ante el TSJ de Extremadura.",
+        "ids": [
+          7,
+          9,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ]
+      },
+      {
+        "text": "Nuevas sentencias del Caso ERE en Sevilla cuando responda el TJUE; apertura de juicio oral de la pieza Boliden Apirsa.",
+        "ids": [
+          14,
+          15,
+          20,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          136,
+          137
+        ]
+      },
+      {
+        "text": "Casaciones pendientes: Erial, Rato, Perla Negra y Faffe; apelación de Invercaria.",
+        "ids": [
+          69,
+          70,
+          71,
+          78,
+          83,
+          84,
+          129,
+          130,
+          135,
+          117,
+          141
+        ]
+      },
+      {
+        "text": "Competencia territorial del Caso Montoro, pendiente en la Audiencia de Tarragona.",
+        "ids": [
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      {
+        "text": "Caso Plus Ultra: la instrucción vence el 28-nov-2026 y el juez estudia prorrogarla; las hermanas Rodríguez Espinosa declaran el 30-nov.",
+        "ids": [
+          13,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      {
+        "text": "Posible imputación de Acciona como persona jurídica en la pieza de obra pública del Caso Koldo; amparo de Ábalos y Koldo ante el TC.",
+        "ids": [
+          3,
+          4,
+          5,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      {
+        "text": "Juicios señalados: Lezo Emissao (12-ene-2027), Caso 3% (8-feb-2027), Bio Wood Niebla (15-mar-2027) y Desaladora La Sal II (15-sep-2027).",
+        "ids": [
+          73,
+          104,
+          109,
+          160,
+          161,
+          79
+        ]
+      },
+      {
+        "text": "Juicio con jurado de Begoña Gómez y Caso Mediador, pendientes de señalamiento.",
+        "ids": [
+          2,
+          42,
+          10,
+          131,
+          132,
+          133
+        ]
+      },
+      {
+        "text": "Instrucción del Caso Hidrocarburos prorrogada hasta dic-2026; Claudio Rivas declara el 3-dic.",
+        "ids": [
+          12
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-29",
     "prs": [
       71
