@@ -1,5 +1,375 @@
 [
   {
+    "date": "2026-11-10",
+    "prs": [],
+    "summary": "Revisión semanal: se investigaron las 27 causas activas, se hizo el repaso mensual de las 17 causas resueltas y una pasada de descubrimiento desde el 29-oct-2026. Cambios: (1) el 3-nov-2026 el juez Llarena dejó sin efecto el procesamiento de Puigdemont, Comín y Puig en el Caso procés (malversación) y remitió la amnistía a la Sala de lo Penal; pasan de procesado a investigado hasta que la Sala decida. (2) Se incorporan 25 investigados de la pieza SEPI del Caso Leire Díez, citados por Pedraz el 29-jun-2026 y no recogidos hasta ahora. El resto de causas no registra sentencias ni cambios de estado verificados. El buscador devolvió poco posterior a mediados de octubre, por lo que las causas sin novedad se leen como no verificadas. El total pasa de 159 a 184 registros.",
+    "changes": [
+      {
+        "kind": "actualizado",
+        "ids": [
+          98,
+          99,
+          100
+        ],
+        "description": "Caso procés (malversación): el 3-nov-2026 el juez Llarena (Supremo) deja sin efecto el procesamiento de Puigdemont, Comín y Puig, declara concluso el sumario y remite a la Sala de lo Penal la decisión sobre la amnistía. Las órdenes de detención ya estaban sin efecto desde el 19-oct. Los indicios subsisten; la Sala aún no ha archivado, así que no pasan a sobreseido.",
+        "rationale": "El procesamiento ya no está en vigor, pero la causa no está archivada: el estado más próximo es investigado hasta que la Sala resuelva. Confirmado en la nota del Poder Judicial y en prensa.",
+        "statusChange": {
+          "cause": "Caso procés",
+          "from": "procesado",
+          "to": "investigado"
+        },
+        "sourceUrls": [
+          "https://www.poderjudicial.es/cgpj/en/Judiciary/Novelties/El-instructor-del--proces--deja-sin-efecto-el-procesamiento-del-expresident-de-la-Generalitat-catalana-Carles-Puigdemont-y-de-los-exconsellers-Antoni-Comin-y-Lluis-Puig",
+          "https://www.moncloa.com/2026/11/03/llarena-cierra-causa-puigdemont-amnistia-3461066/",
+          "https://www.articulo14.es/politica/el-juez-llarena-cierra-la-causa-para-puigdemont-y-deja-la-amnistia-en-manos-del-tribunal-que-juzgo-el-proces-20261103.html"
+        ]
+      },
+      {
+        "kind": "nuevo",
+        "ids": [
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186
+        ],
+        "description": "Pieza SEPI del Caso Leire Díez (Audiencia Nacional, juez Pedraz): el 29-jun-2026 cita como investigados, a petición de Anticorrupción, a 25 personas, entre ellas la presidenta de la SEPI, directivos de la SEPI, Tubos Reunidos, Enusa, Mercasa, Isdefe y Sepides, y personas del entorno de Forestalia. Se registran con los delitos de la causa (tráfico de influencias, prevaricación, malversación y organización criminal), porque el auto no detalla los delitos por persona; no se asigna partido porque ninguna fuente lo establece.",
+        "rationale": "Alta tardía: la citación es anterior a esta revisión y no se había recogido. Cumple el criterio de apertura judicial (citación como investigados por la Audiencia Nacional). Varios cargos se describen de forma distinta según la fuente (Azcona Lacarra, Carrillo, Figueroa, Sánchez Campos) y así se indica en el título del registro.",
+        "sourceUrls": [
+          "https://www.eldiario.es/politica/juez-caso-leire-imputa-presidenta-sepi-24-personas-supuestos-amanos-contratacion-publica_1_13342324.html",
+          "https://www.elespanol.com/espana/tribunales/20260629/juez-pedraz-suma-investigada-caso-leire-actual-presidenta-sepi-rescate-tubos-reunidos/1003744303872_0.html",
+          "https://orain.eus/es/politica/2026/06/29/caso-leire-imputados-la-presidenta-la-sepi-el-expresidente-el-director-tubos-reunidos/"
+        ]
+      }
+    ],
+    "notAdded": [
+      {
+        "who": "Cristian Corvillo, Rubén Corvillo, Andrea de la Torre y otros tres detenidos",
+        "cause": "Caso Koldo (pieza secreta Transportes-Adif)",
+        "reason": "Detenidos el 5-nov-2026 y liberados el 6-nov sin declarar; el secreto no se ha levantado y no consta imputación formal ni cargos."
+      },
+      {
+        "who": "Eduard Rivas",
+        "cause": "Fundació per a la Inclusió Laboral / contratos de Esparreguera",
+        "reason": "Investigado en el Juzgado de Martorell, pero los hechos son de origen municipal (alcaldía de Esparreguera), fuera del alcance, y no consta fecha de la imputación."
+      },
+      {
+        "who": "Francisco del Río y Juan María González Mejías",
+        "cause": "Caso Santana Motor",
+        "reason": "Fuentes contradictorias sobre si son investigados o testigos; los otros 12 de los 18 investigados no están nombrados en las fuentes consultadas."
+      },
+      {
+        "who": "Zapatero (joyas decomisadas)",
+        "cause": "Caso Plus Ultra",
+        "reason": "El 6-nov-2026 el juez Calama rechazó imputarle malversación por las joyas; no cambia su estado de investigado."
+      }
+    ],
+    "unverifiable": [
+      "Caso Púnica",
+      "Caso Rato",
+      "Caso Erial",
+      "Caso Perla Negra",
+      "Caso Mascarillas Canarias",
+      "Caso Desaladora de Escombreras",
+      "Caso 3%",
+      "Caso Forestalia",
+      "Caso Hidrocarburos",
+      "Caso organización del 1-O"
+    ],
+    "watchlist": [
+      {
+        "text": "Pieza secreta del Caso Koldo (Audiencia Nacional, juez Moreno): los seis detenidos el 5-nov-2026 (entre ellos Cristian Corvillo y Andrea de la Torre) quedaron en libertad el 6-nov sin declarar; se prevé citarlos como investigados, pero el secreto no se ha levantado y no consta imputación formal ni cargos. Se añadirán cuando el juez los formalice.",
+        "ids": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Caso Koldo: la instrucción en la Audiencia Nacional se prorrogó el 5-ago-2026 hasta marzo de 2027 según El Debate; hay que contrastarlo con el resumen del registro 3 antes de editarlo.",
+        "ids": [
+          3,
+          6,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      {
+        "text": "Caso Leire Díez: el 9-oct-2026 Pedraz descartó por ahora imputar al PSOE como persona jurídica y espera la declaración de Santos Cerdán, sin fecha.",
+        "ids": [
+          6,
+          8,
+          11,
+          20,
+          21,
+          22,
+          23,
+          24,
+          29,
+          33,
+          34,
+          35,
+          36,
+          37
+        ]
+      },
+      {
+        "text": "Caso Lezo: Esperanza Aguirre declaró como testigo el 22-oct-2026 en el juicio del golf del Canal; la sentencia está pendiente.",
+        "ids": [
+          73
+        ]
+      },
+      {
+        "text": "Caso Begoña Gómez: el expediente debe llegar a la Audiencia de Madrid para asignar sección, presidente del jurado y fecha de juicio.",
+        "ids": [
+          2,
+          42,
+          43
+        ]
+      },
+      {
+        "text": "Caso Mediador: la Audiencia de Santa Cruz de Tenerife aún no fija fecha de juicio.",
+        "ids": [
+          10,
+          131,
+          132,
+          133
+        ]
+      },
+      {
+        "text": "Caso Santana Motor: la fecha del 24-nov-2026 para la declaración de Ávila Cano no se pudo confirmar en una segunda fuente.",
+        "ids": [
+          157
+        ]
+      },
+      {
+        "text": "Sentencia de Kitchen, vista para sentencia desde el 28-jul-2026.",
+        "ids": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      {
+        "text": "Sentencia del Caso Pujol en la Audiencia Nacional (vista desde el 14-may-2026).",
+        "ids": [
+          106
+        ]
+      },
+      {
+        "text": "Caso procés: tras el auto de Llarena del 3-nov-2026 (deja sin efecto el procesamiento y cierra el sumario), la Sala de lo Penal del Supremo debe decidir el archivo por amnistía de la malversación de Puigdemont, Comín y Puig; sin fecha. Pasarían a sobreseido y se marcaría la amnistía.",
+        "ids": [
+          98,
+          99,
+          100
+        ]
+      },
+      {
+        "text": "Decisión del TSJC sobre la amnistía en el Caso organización del 1-O.",
+        "ids": [
+          107,
+          108
+        ]
+      },
+      {
+        "text": "Veredicto de la pieza del golf del Canal (Caso Lezo), en juicio desde el 13-oct-2026.",
+        "ids": [
+          73
+        ]
+      },
+      {
+        "text": "Apelaciones de David Sánchez, Gallardo y la Fiscalía ante el TSJ de Extremadura.",
+        "ids": [
+          7,
+          9,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ]
+      },
+      {
+        "text": "Nuevas sentencias del Caso ERE en Sevilla cuando responda el TJUE; apertura de juicio oral de la pieza Boliden Apirsa.",
+        "ids": [
+          14,
+          15,
+          20,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          136,
+          137
+        ]
+      },
+      {
+        "text": "Casaciones pendientes: Erial, Rato, Perla Negra y Faffe; apelación de Invercaria.",
+        "ids": [
+          69,
+          70,
+          71,
+          78,
+          83,
+          84,
+          129,
+          130,
+          135,
+          117,
+          141
+        ]
+      },
+      {
+        "text": "Competencia territorial del Caso Montoro, pendiente en la Audiencia de Tarragona.",
+        "ids": [
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      {
+        "text": "Caso Plus Ultra: la instrucción vence el 28-nov-2026 y el juez estudia prorrogarla; las hermanas Rodríguez Espinosa declaran el 30-nov.",
+        "ids": [
+          13,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      {
+        "text": "Posible imputación de Acciona como persona jurídica en la pieza de obra pública del Caso Koldo; amparo de Ábalos y Koldo ante el TC.",
+        "ids": [
+          3,
+          4,
+          5,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      {
+        "text": "Juicios señalados: Lezo Emissao (12-ene-2027), Caso 3% (8-feb-2027), Bio Wood Niebla (15-mar-2027) y Desaladora La Sal II (15-sep-2027).",
+        "ids": [
+          73,
+          104,
+          109,
+          160,
+          161,
+          79
+        ]
+      },
+      {
+        "text": "Juicio con jurado de Begoña Gómez y Caso Mediador, pendientes de señalamiento.",
+        "ids": [
+          2,
+          42,
+          10,
+          131,
+          132,
+          133
+        ]
+      },
+      {
+        "text": "Instrucción del Caso Hidrocarburos prorrogada hasta dic-2026; Claudio Rivas declara el 3-dic.",
+        "ids": [
+          12
+        ]
+      },
+      {
+        "text": "Caso Santana Motor (Plan Linares Futuro): el juez Vilaplana citó el 27-oct-2026 a 18 exaltos cargos; solo 4 constan en el dataset. Hay fuentes contradictorias sobre si Francisco del Río y Juan María González Mejías (declara el 1-dic-2026) son investigados o testigos.",
+        "ids": [
+          138,
+          157,
+          158,
+          159
+        ]
+      },
+      {
+        "text": "Caso Leire Díez, pieza SEPI: instrucción prorrogada hasta el 10-jun-2027 y sin fechas de declaración para los 25 citados el 29-jun-2026; se revisará si alguno recurre, declara o es archivado. Quedan fuera del registro los delitos por persona hasta que se conozca el auto.",
+        "ids": [
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-03",
     "prs": [],
     "summary": "Revisión semanal sin cambios en los registros: se investigaron las 27 causas activas y se hizo una pasada de descubrimiento de causas abiertas o agravadas desde el 29-oct-2026. No hubo sentencias, cambios de estado ni causas nuevas que cumplan el criterio de apertura judicial. Las causas resueltas no se revisaron; el repaso mensual toca a partir del 7-nov-2026. El buscador devolvió muy poco posterior a mediados de octubre, por lo que la ausencia de novedades se lee como no verificada y no como confirmada. El total se mantiene en 159 registros.",
