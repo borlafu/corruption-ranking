@@ -2,7 +2,7 @@
   {
     "date": "2026-11-10",
     "prs": [],
-    "summary": "Revisión semanal: se investigaron las 27 causas activas, se hizo el repaso mensual de las 17 causas resueltas y una pasada de descubrimiento desde el 29-oct-2026. Un cambio: el 3-nov-2026 el juez Llarena dejó sin efecto el procesamiento de Puigdemont, Comín y Puig en el Caso procés (malversación) y remitió la amnistía a la Sala de lo Penal; pasan de procesado a investigado hasta que la Sala decida. El resto de causas no registra sentencias ni cambios de estado verificados. El buscador devolvió poco posterior a mediados de octubre, por lo que las causas sin novedad se leen como no verificadas. En el descubrimiento se detectó que la pieza SEPI del Caso Leire Díez (25 investigados desde el 29-jun-2026) no está recogida: queda en seguimiento hasta verificar a cada persona. El total se mantiene en 159 registros.",
+    "summary": "Revisión semanal: se investigaron las 27 causas activas, se hizo el repaso mensual de las 17 causas resueltas y una pasada de descubrimiento desde el 29-oct-2026. Cambios: (1) el 3-nov-2026 el juez Llarena dejó sin efecto el procesamiento de Puigdemont, Comín y Puig en el Caso procés (malversación) y remitió la amnistía a la Sala de lo Penal; pasan de procesado a investigado hasta que la Sala decida. (2) Se incorporan 25 investigados de la pieza SEPI del Caso Leire Díez, citados por Pedraz el 29-jun-2026 y no recogidos hasta ahora. El resto de causas no registra sentencias ni cambios de estado verificados. El buscador devolvió poco posterior a mediados de octubre, por lo que las causas sin novedad se leen como no verificadas. El total pasa de 159 a 184 registros.",
     "changes": [
       {
         "kind": "actualizado",
@@ -23,6 +23,43 @@
           "https://www.moncloa.com/2026/11/03/llarena-cierra-causa-puigdemont-amnistia-3461066/",
           "https://www.articulo14.es/politica/el-juez-llarena-cierra-la-causa-para-puigdemont-y-deja-la-amnistia-en-manos-del-tribunal-que-juzgo-el-proces-20261103.html"
         ]
+      },
+      {
+        "kind": "nuevo",
+        "ids": [
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186
+        ],
+        "description": "Pieza SEPI del Caso Leire Díez (Audiencia Nacional, juez Pedraz): el 29-jun-2026 cita como investigados, a petición de Anticorrupción, a 25 personas, entre ellas la presidenta de la SEPI, directivos de la SEPI, Tubos Reunidos, Enusa, Mercasa, Isdefe y Sepides, y personas del entorno de Forestalia. Se registran con los delitos de la causa (tráfico de influencias, prevaricación, malversación y organización criminal), porque el auto no detalla los delitos por persona; no se asigna partido porque ninguna fuente lo establece.",
+        "rationale": "Alta tardía: la citación es anterior a esta revisión y no se había recogido. Cumple el criterio de apertura judicial (citación como investigados por la Audiencia Nacional). Varios cargos se describen de forma distinta según la fuente (Azcona Lacarra, Carrillo, Figueroa, Sánchez Campos) y así se indica en el título del registro.",
+        "sourceUrls": [
+          "https://www.eldiario.es/politica/juez-caso-leire-imputa-presidenta-sepi-24-personas-supuestos-amanos-contratacion-publica_1_13342324.html",
+          "https://www.elespanol.com/espana/tribunales/20260629/juez-pedraz-suma-investigada-caso-leire-actual-presidenta-sepi-rescate-tubos-reunidos/1003744303872_0.html",
+          "https://orain.eus/es/politica/2026/06/29/caso-leire-imputados-la-presidenta-la-sepi-el-expresidente-el-director-tubos-reunidos/"
+        ]
       }
     ],
     "notAdded": [
@@ -35,11 +72,6 @@
         "who": "Eduard Rivas",
         "cause": "Fundació per a la Inclusió Laboral / contratos de Esparreguera",
         "reason": "Investigado en el Juzgado de Martorell, pero los hechos son de origen municipal (alcaldía de Esparreguera), fuera del alcance, y no consta fecha de la imputación."
-      },
-      {
-        "who": "Belén Gualda y otros 24 investigados de la pieza SEPI",
-        "cause": "Caso Leire Díez",
-        "reason": "Citados por Pedraz el 29-jun-2026 (anterior a esta revisión y no recogidos antes); las fuentes no dan el delito por persona ni partido. Pendiente de verificar persona a persona; en seguimiento."
       },
       {
         "who": "Francisco del Río y Juan María González Mejías",
@@ -297,16 +329,42 @@
         ]
       },
       {
-        "text": "Caso Leire Díez, pieza SEPI: el 29-jun-2026 Pedraz citó como investigados a 25 personas (Belén Gualda, presidenta de la SEPI; directivos de Tubos Reunidos, Enusa, SEPI, Mercasa e Isdefe; Fernando Samper, de Forestalia; y otros) por la causa en general, sin delito por persona publicado. Ninguna salvo Cerdán y los ya registrados figura en el dataset: se incorporarán cuando se verifiquen cargo, cargos imputados y fuente por persona.",
-        "ids": []
-      },
-      {
         "text": "Caso Santana Motor (Plan Linares Futuro): el juez Vilaplana citó el 27-oct-2026 a 18 exaltos cargos; solo 4 constan en el dataset. Hay fuentes contradictorias sobre si Francisco del Río y Juan María González Mejías (declara el 1-dic-2026) son investigados o testigos.",
         "ids": [
           138,
           157,
           158,
           159
+        ]
+      },
+      {
+        "text": "Caso Leire Díez, pieza SEPI: instrucción prorrogada hasta el 10-jun-2027 y sin fechas de declaración para los 25 citados el 29-jun-2026; se revisará si alguno recurre, declara o es archivado. Quedan fuera del registro los delitos por persona hasta que se conozca el auto.",
+        "ids": [
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186
         ]
       }
     ]
