@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-11-15",
+    "prs": [],
+    "summary": "Revisión semanal: se investigaron las 27 causas activas y una pasada de descubrimiento desde el 8-nov-2026; no se hizo repaso de las causas resueltas (el mensual se hizo el 10-nov). Ninguna fuente nueva verificada cambia el estado, la sentencia o el importe de un registro, por lo que no hay cambios en los datos. El buscador devolvió poco posterior a mediados de octubre, así que las causas sin novedad se leen como no verificadas, no como confirmadas. Novedades de contexto: el 3-nov-2026 Pedraz prorrogó hasta el 10-jun-2027 la instrucción del Caso Leire Díez, y el 6-nov-2026 Anticorrupción pidió al juez Moreno cerrar la instrucción de la pieza de mascarillas-Transportes del Caso Koldo para abrir juicio contra 13 personas.",
+    "changes": [],
+    "notAdded": [
+      {
+        "who": "Cristian Corvillo, Andrea de la Torre y otros detenidos del 5-nov-2026",
+        "cause": "Caso Koldo (pieza secreta Transportes-Adif)",
+        "reason": "Liberados sin declarar a la espera de que el juez los cite como investigados; no consta imputación formal ni cargos. Se añadirán cuando el juez los formalice."
+      },
+      {
+        "who": "Luis José Sáenz de Tejada Vallejo",
+        "cause": "Caso Leire Díez",
+        "reason": "Solo medios secundarios lo dan por imputado por Pedraz en octubre (citado el 28-oct); sin fuente judicial ni resultado de la declaración, no cumple el listón de verificación."
+      },
+      {
+        "who": "Patricia Uriz, Ignacio Díaz Tapia, César Moreno, Javier Serrano, Rubén Villalba, Juan Carlos Cueto, Iñigo Rotaeche",
+        "cause": "Caso Koldo (pieza Transportes)",
+        "reason": "Citados en el escrito de Anticorrupción del 6-nov-2026, pero no se verificó su condición de investigados ni su fecha de imputación; se revisarán la próxima semana."
+      },
+      {
+        "who": "Miguel Ángel Pérez Triano",
+        "cause": "Entrada masiva en Ceuta (Audiencia Nacional)",
+        "reason": "Citado como investigado el 18-nov, pero los delitos no se especifican y no parecen de corrupción."
+      },
+      {
+        "who": "Alcalde de Estepona y otros alcaldes",
+        "cause": "Contratación municipal",
+        "reason": "Hechos de ámbito municipal, fuera del alcance."
+      }
+    ],
+    "unverifiable": [
+      "Caso Desaladora de Escombreras",
+      "Caso 3%",
+      "Caso Montoro",
+      "Caso Avales",
+      "Caso Faffe"
+    ],
+    "watchlist": [
+      {
+        "text": "Sentencia de Kitchen (vista para sentencia desde el 28-jul-2026): afectaría a los seis procesados.",
+        "ids": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      {
+        "text": "Sentencia del Caso Pujol para Jordi Pujol Ferrusola (vista para sentencia desde el 14-may-2026); no consta publicada en las fuentes consultadas.",
+        "ids": [
+          106
+        ]
+      },
+      {
+        "text": "Caso Koldo, pieza Transportes: Anticorrupción pidió el 6-nov-2026 abrir juicio contra 13 personas; pendiente la decisión del juez Moreno y la imputación formal de los detenidos del 5-nov (Corvillo, De la Torre).",
+        "ids": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "text": "Caso Leire Díez: instrucción prorrogada hasta el 10-jun-2027; el juez condiciona imputar al PSOE como persona jurídica a la declaración de Santos Cerdán, sin fecha.",
+        "ids": [
+          6
+        ]
+      },
+      {
+        "text": "Caso Plus Ultra: declaran el 19-nov (exdirectivos) y el 30-nov-2026 (hermanas Rodríguez Espinosa); la instrucción vence el 28-nov.",
+        "ids": [
+          13,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      {
+        "text": "Caso procés: la Sala de lo Penal del Supremo debe decidir sobre la amnistía de Puigdemont, Comín y Puig, que pasarían a sobreseido, y su aplicación a Junqueras, Romeva, Bassa y Turull.",
+        "ids": [
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100
+        ]
+      },
+      {
+        "text": "Caso Perla Negra: pendiente la sentencia de la trama eólica (Audiencia de Valladolid, juicio visto para sentencia desde ene-2026) para Delgado y Hernández.",
+        "ids": [
+          83,
+          84
+        ]
+      },
+      {
+        "text": "Caso Mascarillas Canarias: la investigación la lleva la Fiscalía Europea desde la inhibición del juzgado en nov-2022; sin novedad judicial.",
+        "ids": [
+          145,
+          146,
+          147
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-10",
     "prs": [],
     "summary": "Revisión semanal: se investigaron las 27 causas activas, se hizo el repaso mensual de las 17 causas resueltas y una pasada de descubrimiento desde el 29-oct-2026. Cambios: (1) el 3-nov-2026 el juez Llarena dejó sin efecto el procesamiento de Puigdemont, Comín y Puig en el Caso procés (malversación) y remitió la amnistía a la Sala de lo Penal; pasan de procesado a investigado hasta que la Sala decida. (2) Se incorporan 25 investigados de la pieza SEPI del Caso Leire Díez, citados por Pedraz el 29-jun-2026 y no recogidos hasta ahora. El resto de causas no registra sentencias ni cambios de estado verificados. El buscador devolvió poco posterior a mediados de octubre, por lo que las causas sin novedad se leen como no verificadas. El total pasa de 159 a 184 registros.",
