@@ -1,5 +1,217 @@
 [
   {
+    "date": "2026-11-17",
+    "prs": [],
+    "summary": "Revisión semanal: se investigaron las 27 causas activas con una pasada de descubrimiento desde el 5-nov-2026; no se hizo el repaso mensual de las causas resueltas (el último fue el 10-nov). Cambios: se actualiza el juicio del golf del Canal en el Caso Lezo (visto para sentencia el 5-nov-2026) y la fecha de declaración de Nervis Villalobos (24-nov-2026). Ninguna causa registra sentencias ni cambios de estado verificados. El buscador devolvió poco posterior a mediados de noviembre, por lo que las causas sin novedad se leen como no verificadas. Total: 184 registros.",
+    "changes": [
+      {
+        "kind": "actualizado",
+        "ids": [
+          73
+        ],
+        "description": "Caso Lezo, pieza del golf del Canal: el juicio quedó visto para sentencia el 5-nov-2026 en la Audiencia Nacional; la Fiscalía rebajó su petición de 6 a 5 años al apreciar dilaciones indebidas. Sigue procesado, sin sentencia.",
+        "rationale": "Hito procesal posterior a la última revisión; no cambia el estado.",
+        "sourceUrls": [
+          "https://www.diariodeleon.es/nacional/261105/2102292/fiscal-pide-sentencia-expresidente-comunidad-madrid-ignacio-gonzalez-sea-ejemplar-corrupcion.html",
+          "https://es.euronews.com/2026/10/22/esperanza-aguirre-niega-conocer-la-presunta-corrupcion-de-ignacio-gonzalez-en-el-caso-lezo"
+        ]
+      },
+      {
+        "kind": "actualizado",
+        "ids": [
+          24
+        ],
+        "description": "Caso Leire Díez: la declaración de Nervis Villalobos como investigado, antes fijada para el 30-oct-2026, figura ahora para el 24-nov-2026.",
+        "rationale": "Dos fuentes secundarias coinciden; no cambia el estado.",
+        "sourceUrls": [
+          "https://www.esdiario.com/nacional/261116/203071/los-jueces-mantienen-el-cerco-judicial-al-psoe-en-plena-campana-pese-a-la-llamada-al-freno-de-bolanos.html",
+          "https://diarioenpositivo.com/politica/29n-tribunales-paran-campana-electoral-declaraciones-casos-leire-koldo-plus-ultra-ceuta/20261115133614097704.html"
+        ]
+      }
+    ],
+    "notAdded": [
+      {
+        "who": "Cristian Corvillo, Rubén Corvillo, Andrea de la Torre y otros tres detenidos",
+        "cause": "Caso Koldo (pieza secreta Transportes-Adif)",
+        "reason": "Detenidos el 5-nov-2026 y liberados el mismo día; el secreto no se ha levantado y no consta imputación formal ni cargos."
+      },
+      {
+        "who": "Félix Alonso Cantorné, Joan Ignasi Elena y Joan Herrera",
+        "cause": "Caso Altafulla",
+        "reason": "Posible causa por prevaricación (TS y TSJC, 2026) hallada por una sola pasada de búsqueda y sin contrastar con una segunda fuente; el origen es municipal. Pendiente de verificar en la próxima revisión."
+      },
+      {
+        "who": "Miguel Ángel Pérez Triano",
+        "cause": "Entrada masiva en Ceuta (Audiencia Nacional)",
+        "reason": "El delito investigado no es de corrupción ni figura en el enum de delitos."
+      },
+      {
+        "who": "Francisco del Río y Juan María González Mejías",
+        "cause": "Caso Santana Motor",
+        "reason": "Fuentes contradictorias sobre si son investigados o testigos; solo 4 de los 18 investigados están nombrados."
+      }
+    ],
+    "unverifiable": [
+      "Caso Faffe",
+      "Caso Forestalia",
+      "Caso Hidrocarburos",
+      "Caso Mascarillas Canarias",
+      "Caso Perla Negra",
+      "Caso Erial",
+      "Caso Desaladora de Escombreras",
+      "Caso Avales"
+    ],
+    "watchlist": [
+      {
+        "text": "Caso Koldo, pieza secreta (Audiencia Nacional, juez Moreno): los seis detenidos del 5-nov-2026 (entre ellos Cristian Corvillo y Andrea de la Torre) no han sido citados formalmente; se añadirán cuando se levante el secreto y consten cargos. Amparo de Ábalos y Koldo pendiente en el TC.",
+        "ids": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Caso Plus Ultra: el juez Calama prorrogó la instrucción hasta el 28-may-2027 (en torno al 11-nov-2026) y advierte de posibles nuevas imputaciones; las hermanas Rodríguez Espinosa declaran el 30-nov. Anticorrupción puede recurrir la negativa a imputar a Zapatero por malversación.",
+        "ids": [
+          13,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      {
+        "text": "Caso Leire Díez: Pedraz decidirá tras las elecciones del 29-nov si cita a Santos Cerdán y si imputa a Juan Francisco Serrano (aforado); declaración de Villalobos el 24-nov. Pieza SEPI sin fechas de declaración.",
+        "ids": [
+          6,
+          24
+        ]
+      },
+      {
+        "text": "Caso procés: la Sala de lo Penal del Supremo debe decidir la amnistía de la malversación de Puigdemont, Comín y Puig; sin fecha. Pasarían a sobreseido y se marcaría la amnistía.",
+        "ids": [
+          98,
+          99,
+          100
+        ]
+      },
+      {
+        "text": "Caso Lezo: sentencia de la pieza del golf del Canal, vista para sentencia desde el 5-nov-2026.",
+        "ids": [
+          73
+        ]
+      },
+      {
+        "text": "Caso Santana Motor: declaraciones de los investigados el 24, 26 y 27-nov y el 1-dic-2026; instrucción hasta finales de diciembre. Solo 4 de los 18 investigados constan en el registro.",
+        "ids": [
+          138,
+          157,
+          158,
+          159
+        ]
+      },
+      {
+        "text": "Sentencia de Kitchen, vista para sentencia desde el 28-jul-2026.",
+        "ids": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      {
+        "text": "Sentencia del Caso Pujol en la Audiencia Nacional (vista desde el 14-may-2026).",
+        "ids": [
+          106
+        ]
+      },
+      {
+        "text": "Decisión del TSJC sobre la amnistía en el Caso organización del 1-O.",
+        "ids": [
+          107,
+          108
+        ]
+      },
+      {
+        "text": "Caso Begoña Gómez: el expediente debe remitirse a la Audiencia de Madrid para asignar sección, presidente del jurado y fecha de juicio (prevista en otoño de 2027).",
+        "ids": [
+          2,
+          42,
+          43
+        ]
+      },
+      {
+        "text": "Apelaciones de David Sánchez, Gallardo y las acusaciones ante el TSJ de Extremadura.",
+        "ids": [
+          7,
+          9,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ]
+      },
+      {
+        "text": "Casaciones pendientes: Erial, Rato, Perla Negra y Faffe; apelación de Invercaria. Caso ERE: nuevas sentencias cuando responda el TJUE.",
+        "ids": [
+          69,
+          70,
+          71,
+          78,
+          83,
+          84,
+          129,
+          130,
+          135,
+          141,
+          14,
+          15,
+          20
+        ]
+      },
+      {
+        "text": "Caso Montoro: competencia territorial pendiente; instrucción prorrogada en jul-2026 (la fecha final no está confirmada).",
+        "ids": [
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      {
+        "text": "Juicios señalados: Lezo Emissao (12-ene-2027), Caso 3% (8-feb-2027), Bio Wood Niebla (15-mar-2027). Caso Mediador pendiente de señalamiento.",
+        "ids": [
+          73,
+          104,
+          109,
+          160,
+          161,
+          10,
+          131,
+          132,
+          133
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-10",
     "prs": [],
     "summary": "Revisión semanal: se investigaron las 27 causas activas, se hizo el repaso mensual de las 17 causas resueltas y una pasada de descubrimiento desde el 29-oct-2026. Cambios: (1) el 3-nov-2026 el juez Llarena dejó sin efecto el procesamiento de Puigdemont, Comín y Puig en el Caso procés (malversación) y remitió la amnistía a la Sala de lo Penal; pasan de procesado a investigado hasta que la Sala decida. (2) Se incorporan 25 investigados de la pieza SEPI del Caso Leire Díez, citados por Pedraz el 29-jun-2026 y no recogidos hasta ahora. El resto de causas no registra sentencias ni cambios de estado verificados. El buscador devolvió poco posterior a mediados de octubre, por lo que las causas sin novedad se leen como no verificadas. El total pasa de 159 a 184 registros.",
