@@ -1,5 +1,202 @@
 [
   {
+    "date": "2026-11-24",
+    "prs": [],
+    "summary": "Revisión semanal: se investigaron las 27 causas activas con una pasada de descubrimiento desde el 10-nov-2026; no se hizo el repaso mensual de las causas resueltas (el último fue el 10-nov). Cambios: el juez de Teruel se inhibe a favor de la Audiencia Nacional en el Caso Forestalia (17-nov) y el juez Moreno rechaza anular el registro de la UCO en casa de Ábalos (18-nov). Ninguna causa registra sentencias ni cambios de estado verificados. El buscador devolvió poco posterior a mediados de noviembre, por lo que las causas sin novedad se leen como no verificadas. Total: 184 registros.",
+    "changes": [
+      {
+        "kind": "actualizado",
+        "ids": [
+          19
+        ],
+        "description": "Caso Forestalia: el 17-nov-2026 el juez de Instrucción de Teruel se inhibió a favor de la Audiencia Nacional (juez Pedraz) por conexión con el Caso Leire Díez. Sigue investigado; pendiente de que la AN acepte la competencia.",
+        "rationale": "Hito procesal posterior a la última revisión; no cambia el estado.",
+        "sourceUrls": [
+          "https://www.infobae.com/espana/agencias/2026/11/18/el-juez-del-caso-forestalia-se-inhibe-a-favor-de-pedraz-por-la-conexion-con-el-caso-leire/",
+          "https://www.elindependiente.com/espana/2026/11/18/juez-teruel-envia-caso-forestalia-audiencia-nacional-une-caso-leire/"
+        ]
+      },
+      {
+        "kind": "actualizado",
+        "ids": [
+          5
+        ],
+        "description": "Caso Koldo: el 18-nov-2026 el juez Moreno (AN) rechazó la nulidad que planteó Ábalos contra el registro de la UCO en su domicilio de Valencia (5-nov). Sigue condenado.",
+        "rationale": "Hito procesal posterior a la última revisión; no cambia el estado.",
+        "sourceUrls": [
+          "https://www.infobae.com/espana/agencias/2026/11/18/el-juez-del-caso-koldo-descarta-que-se-vulneraran-derechos-de-abalos-en-el-ultimo-registro-de-la-uco-en-su-casa/"
+        ]
+      }
+    ],
+    "notAdded": [
+      {
+        "who": "Cristian Corvillo, Andrea de la Torre y otros detenidos del 5-nov-2026",
+        "cause": "Caso Koldo (pieza Transportes-Adif)",
+        "reason": "Secreto levantado el 12-nov, pero ningún medio consultado indica imputación formal; se añadirán cuando conste."
+      },
+      {
+        "who": "Juan Marcos López Gutiérrez (Cabañas Raras)",
+        "cause": "Prevaricación, León",
+        "reason": "Ámbito municipal, fuera del alcance."
+      }
+    ],
+    "unverifiable": [
+      "Caso Perla Negra",
+      "Caso 3%",
+      "Caso Mascarillas Canarias",
+      "Caso Desaladora de Escombreras"
+    ],
+    "watchlist": [
+      {
+        "text": "Caso Koldo, pieza secreta (Audiencia Nacional, juez Moreno): los seis detenidos del 5-nov-2026 (entre ellos Cristian Corvillo y Andrea de la Torre) no han sido citados formalmente; se añadirán cuando se levante el secreto y consten cargos. Amparo de Ábalos y Koldo pendiente en el TC.",
+        "ids": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "text": "Caso Plus Ultra: el juez Calama prorrogó la instrucción hasta el 28-may-2027 (en torno al 11-nov-2026) y advierte de posibles nuevas imputaciones; las hermanas Rodríguez Espinosa declaran el 30-nov. Anticorrupción puede recurrir la negativa a imputar a Zapatero por malversación.",
+        "ids": [
+          13,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      {
+        "text": "Caso Leire Díez: Pedraz decidirá tras las elecciones del 29-nov si cita a Santos Cerdán y si imputa a Juan Francisco Serrano (aforado); declaración de Villalobos el 24-nov. Pieza SEPI sin fechas de declaración.",
+        "ids": [
+          6,
+          24
+        ]
+      },
+      {
+        "text": "Caso procés: la Sala de lo Penal del Supremo debe decidir la amnistía de la malversación de Puigdemont, Comín y Puig; sin fecha. Pasarían a sobreseido y se marcaría la amnistía.",
+        "ids": [
+          98,
+          99,
+          100
+        ]
+      },
+      {
+        "text": "Caso Lezo: sentencia de la pieza del golf del Canal, vista para sentencia desde el 5-nov-2026.",
+        "ids": [
+          73
+        ]
+      },
+      {
+        "text": "Caso Santana Motor: declaraciones de los investigados el 24, 26 y 27-nov y el 1-dic-2026; instrucción hasta finales de diciembre. Solo 4 de los 18 investigados constan en el registro.",
+        "ids": [
+          138,
+          157,
+          158,
+          159
+        ]
+      },
+      {
+        "text": "Sentencia de Kitchen, vista para sentencia desde el 28-jul-2026.",
+        "ids": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      {
+        "text": "Sentencia del Caso Pujol en la Audiencia Nacional (vista desde el 14-may-2026).",
+        "ids": [
+          106
+        ]
+      },
+      {
+        "text": "Decisión del TSJC sobre la amnistía en el Caso organización del 1-O.",
+        "ids": [
+          107,
+          108
+        ]
+      },
+      {
+        "text": "Caso Begoña Gómez: el expediente debe remitirse a la Audiencia de Madrid para asignar sección, presidente del jurado y fecha de juicio (prevista en otoño de 2027).",
+        "ids": [
+          2,
+          42,
+          43
+        ]
+      },
+      {
+        "text": "Apelaciones de David Sánchez, Gallardo y las acusaciones ante el TSJ de Extremadura.",
+        "ids": [
+          7,
+          9,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ]
+      },
+      {
+        "text": "Casaciones pendientes: Erial, Rato, Perla Negra y Faffe; apelación de Invercaria. Caso ERE: nuevas sentencias cuando responda el TJUE.",
+        "ids": [
+          69,
+          70,
+          71,
+          78,
+          83,
+          84,
+          129,
+          130,
+          135,
+          141,
+          14,
+          15,
+          20
+        ]
+      },
+      {
+        "text": "Caso Montoro: competencia territorial pendiente; instrucción prorrogada en jul-2026 (la fecha final no está confirmada).",
+        "ids": [
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      {
+        "text": "Juicios señalados: Lezo Emissao (12-ene-2027), Caso 3% (8-feb-2027), Bio Wood Niebla (15-mar-2027). Caso Mediador pendiente de señalamiento.",
+        "ids": [
+          73,
+          104,
+          109,
+          160,
+          161,
+          10,
+          131,
+          132,
+          133
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-17",
     "prs": [],
     "summary": "Revisión semanal: se investigaron las 27 causas activas con una pasada de descubrimiento desde el 5-nov-2026; no se hizo el repaso mensual de las causas resueltas (el último fue el 10-nov). Cambios: se actualiza el juicio del golf del Canal en el Caso Lezo (visto para sentencia el 5-nov-2026) y la fecha de declaración de Nervis Villalobos (24-nov-2026). Ninguna causa registra sentencias ni cambios de estado verificados. El buscador devolvió poco posterior a mediados de noviembre, por lo que las causas sin novedad se leen como no verificadas. Total: 184 registros.",
